@@ -49,8 +49,8 @@ https://obliviontattoo.xyz
 Clone the repository:
 
 ```bash
-git clone https://github.com/eugeniucc/trinko-next-clean.git
-cd trinko-next-clean
+git clone https://github.com/gengensh7/obliviontattoo.git
+cd obliviontattoo
 ```
 
 Install dependencies:
