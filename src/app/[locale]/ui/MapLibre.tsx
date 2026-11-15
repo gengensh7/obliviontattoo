@@ -1,0 +1,101 @@
+'use client'
+
+import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from 'maplibre-gl'
+import 'maplibre-gl/dist/maplibre-gl.css'
+import { useEffect, useRef } from 'react'
+import { LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
+
+setWorkerUrl('/maplibre/maplibre-gl-worker.mjs')
+
+export default function Map3D() {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!ref.current) return
+    const map = new MapLibreMap({
+      container: ref.current,
+      style: `https://api.maptiler.com/maps/voyager/style.json?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`,
+      center: [28.8473541, 47.0200287],
+      zoom: 17,
+      pitch: 45,
+      bearing: -20
+    })
+
+    map.on('error', (event) => {
+      console.error('MapLibre error:', event.error)
+    })
+
+    map.addControl(new NavigationControl(), 'top-right')
+
+    map.on('load', () => {
+      map.resize()
+      map.addSource('terrain', {
+        type: 'raster-dem',
+        url: `https://api.maptiler.com/tiles/terrain-rgb/tiles.json?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`
+      })
+      map.setTerrain({ source: 'terrain', exaggeration: 1 })
+
+      if (!map.getSource('buildings')) {
+        map.addSource('buildings', {
+          type: 'vector',
+          url: `https://api.maptiler.com/tiles/v3/tiles.json?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`
+        })
+      }
+
+      const layers = map.getStyle().layers || []
+      const labelLayer = layers.find((l) => l.type === 'symbol' && l.layout?.['text-field'])
+      const labelLayerId = labelLayer?.id || layers[layers.length - 1]?.id
+
+      map.addLayer(
+        {
+          id: '3d-buildings',
+          source: 'buildings',
+          'source-layer': 'building',
+          type: 'fill-extrusion',
+          minzoom: 15,
+          paint: {
+            'fill-extrusion-color': 'lightgray',
+            'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 15, 0, 16, ['get', 'render_height']],
+            'fill-extrusion-base': ['get', 'render_min_height'],
+            'fill-extrusion-opacity': 0.6
+          }
+        },
+        labelLayerId
+      )
+
+      const el = document.createElement('a')
+      el.href = LOCATION_GOOGLE_MAPS
+      el.dataset.gtm = 'google-maps-marker'
+      el.target = '_blank'
+      el.rel = 'noopener noreferrer'
+      el.style.display = 'flex'
+      el.style.flexDirection = 'column'
+      el.style.alignItems = 'center'
+      el.style.textAlign = 'center'
+      el.style.textDecoration = 'none'
+
+      const logo = document.createElement('div')
+      logo.style.backgroundImage = `url('/logo.svg')`
+      logo.style.width = '64px'
+      logo.style.height = '91px'
+      logo.style.backgroundSize = 'contain'
+      logo.style.backgroundRepeat = 'no-repeat'
+
+      el.appendChild(logo)
+
+      const marker = new Marker({
+        element: el,
+        opacity: '1',
+        opacityWhenCovered: '1'
+      })
+        .setLngLat([28.8473541, 47.0200287])
+        .addTo(map)
+
+      marker.getElement().style.transition = 'none'
+    })
+
+    return () => map.remove()
+  }, [])
+
+  return <div ref={ref} className="relative h-125 min-h-125 w-full" />
+}

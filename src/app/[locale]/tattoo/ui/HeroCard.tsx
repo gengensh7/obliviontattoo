@@ -1,0 +1,39 @@
+import { LucideIcon } from 'lucide-react'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
+
+export type HeroCardData = {
+  title: string
+  text: string
+  list: string[]
+  button: string
+}
+
+type Props = {
+  item: HeroCardData
+  Icon: LucideIcon
+}
+export const HeroCard = ({ item, Icon }: Props) => {
+  return (
+    <div className="flex h-full flex-col">
+      <div className="flex h-full flex-col justify-between gap-6 rounded-lg bg-zinc-800 p-4">
+        <div className="flex items-center gap-3">
+          <div className="flex items-center justify-center rounded-full bg-red-500 p-2">
+            <Icon className="size-8 shrink-0 text-white" strokeWidth={2} />
+          </div>
+          <h2 className="text-xl font-semibold text-white">{item.title}</h2>
+        </div>
+        <div className="flex flex-1 flex-col gap-6">
+          <p className="text-gray-400">{item.text}</p>
+          <ul className="flex list-disc flex-col gap-1 pl-5 text-gray-400 marker:text-gray-300">
+            {item.list.map((text, i) => (
+              <li key={i}>{text}</li>
+            ))}
+          </ul>
+        </div>
+        <a href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
+          {item.button}
+        </a>
+      </div>
+    </div>
+  )
+}

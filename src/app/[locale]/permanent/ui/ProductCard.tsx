@@ -1,0 +1,93 @@
+import Image from 'next/image'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
+
+export type PermanentCardData = {
+  badge: string
+  title: string
+  text: string
+  subtitle: string
+  list: string[]
+  priceTitle: string
+  price: string
+  timeTitle: string
+  time: string
+  healTitle: string
+  heal: string
+  correctionTitle: string
+  correction: string
+  button: string
+}
+
+type Props = {
+  item: PermanentCardData
+  image: string
+}
+
+export const ProductCard = ({ item, image }: Props) => {
+  return (
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
+      <div className="relative aspect-4/3 h-100 shrink-0">
+        <div className="absolute top-4 left-4 z-2">
+          <span className="flex items-center rounded-full bg-black/30 px-3 py-1 font-medium text-white backdrop-blur-sm">✨ {item.badge}</span>
+        </div>
+        <Image
+          className="object-cover"
+          src={image}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          fetchPriority="low"
+          alt={item.title}
+        />
+      </div>
+
+      <div className="flex grow flex-col gap-6 p-4 sm:p-6">
+        <div className="flex grow flex-col gap-4">
+          <h3 className="text-xl font-bold text-white transition-colors group-hover:text-rose-100">{item.title}</h3>
+          <p className="text-sm leading-relaxed text-zinc-300">{item.text}</p>
+        </div>
+
+        <div className="flex grow flex-col gap-4">
+          <h4 className="text-sm font-semibold text-white">{item.subtitle}</h4>
+          <ul className="flex flex-col gap-1">
+            {item.list.map((text, i) => (
+              <li key={i} className="flex items-start gap-2 text-zinc-400">
+                <span className="mt-0.5 shrink-0 text-rose-300">•</span>
+                <span>{text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-auto grid grid-cols-2 items-center gap-3">
+          <div className="space-y-1">
+            <span className="block text-zinc-500">{item.priceTitle}</span>
+            <span className="text-lg font-bold text-rose-300">{item.price}</span>
+          </div>
+          <div className="space-y-1">
+            <span className="block text-zinc-500">{item.timeTitle}</span>
+            <span className="block font-medium text-white">{item.time}</span>
+          </div>
+
+          <div className="col-span-2 space-y-1">
+            <span className="block text-zinc-500">{item.healTitle}</span>
+            <span className="block font-medium text-zinc-300">{item.heal}</span>
+          </div>
+          <div className="col-span-2 space-y-1">
+            <span className="block text-zinc-500">{item.correctionTitle}</span>
+            <span className="block font-medium text-white">{item.correction}</span>
+          </div>
+        </div>
+
+        <a
+          href={CONTACT_TELEGRAM}
+          data-gtm="telegram"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto w-full rounded-full bg-linear-to-r from-rose-500 to-pink-500 px-2 py-3 text-center text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 sm:px-4"
+        >
+          {item.button}
+        </a>
+      </div>
+    </article>
+  )
+}

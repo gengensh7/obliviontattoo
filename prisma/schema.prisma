@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ImageType {
+  PORTFOLIO
+  SKETCH
+  PERMANENT
+  PIERCING
+}
+
+model Image {
+  id    Int       @id @default(autoincrement())
+  title String
+  url   String    @unique
+  alt   String
+  type  ImageType
+
+  order Int @default(0)
+
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id        Int      @id @default(autoincrement())
+  title     String
+  slug      String   @unique
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

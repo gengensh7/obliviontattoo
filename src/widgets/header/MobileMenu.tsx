@@ -1,0 +1,161 @@
+'use client'
+
+import { Camera, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
+import { cn } from '@/lib/utils'
+
+const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p)
+
+const defaultLocale = 'ru'
+
+type MobileMenuProps = {
+  currentYear: number
+  locale: string
+  links: { label: string; href: string }[]
+  labels: {
+    description: string
+    home: string
+    appointment: string
+    workingHours: string
+    burgerMenu: string
+  }
+}
+
+export default function MobileMenu({ currentYear, locale, links, labels }: MobileMenuProps) {
+  const pathnameRaw = usePathname()
+  const pathname = normalize(pathnameRaw)
+
+  const withLocale = (href: string) => {
+    if (!href.startsWith('/')) return href
+    return locale === defaultLocale ? normalize(href) : normalize(`/${locale}${href}`)
+  }
+
+  const isActive = (href: string) => {
+    const full = withLocale(href)
+    return pathname === full || pathname.startsWith(full + '/')
+  }
+
+  const filteredLinks = links.filter((l) => !(locale !== 'ru' && l.href.startsWith('/blog')))
+
+  return (
+    <div className="flex items-center lg:hidden">
+      <Sheet>
+        <SheetTrigger aria-label={labels.burgerMenu}>
+          <Menu className="text-red-500" />
+        </SheetTrigger>
+
+        <SheetContent className="flex h-full flex-col p-0" side="left">
+          <SheetHeader className="gap-4 px-6 pt-6">
+            <SheetTitle>
+              <span className="mb-12 text-red-500">Oblivion Tattoo</span>
+            </SheetTitle>
+            <SheetDescription>{labels.description}</SheetDescription>
+          </SheetHeader>
+
+          <div className="flex-1 overflow-y-auto px-6 py-4">
+            <nav className="flex flex-col gap-4">
+              <SheetClose asChild>
+                <Link
+                  href={locale === defaultLocale ? '/' : `/${locale}`}
+                  data-gtm="nav-home"
+                  className={cn(
+                    'transition-colors duration-300',
+                    pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-red-500'
+                  )}
+                >
+                  {labels.home}
+                </Link>
+              </SheetClose>
+
+              {filteredLinks.map((link) => (
+                <SheetClose key={link.href} asChild>
+                  <Link
+                    href={withLocale(link.href)}
+                    data-gtm={link.href === '/contacts' ? 'nav-contacts' : 'nav-link'}
+                    data-gtm-destination={link.href}
+                    className={cn(
+                      'transition-colors duration-300',
+                      isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-red-500'
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                </SheetClose>
+              ))}
+            </nav>
+          </div>
+
+          <div className="border-t border-gray-200 px-6 py-4">
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <a
+                  className="flex items-center justify-center gap-2 text-lg font-medium text-black duration-200 hover:text-red-500"
+                  href={CONTACT_PHONE}
+                  data-gtm="phone"
+                  rel="noopener noreferrer"
+                >
+                  <PhoneOutgoing className="size-5 shrink-0" />
+                  <span>+373 79 146 506</span>
+                </a>
+
+                <p className="text-center text-sm text-red-500">{labels.appointment}</p>
+                <p className="text-center text-sm text-gray-600">{labels.workingHours}</p>
+              </div>
+
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <a
+                  href={CONTACT_INSTAGRAM}
+                  data-gtm="instagram"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-red-50 hover:text-red-500"
+                  rel="noopener noreferrer"
+                >
+                  <Camera className="size-5 shrink-0" />
+                  <span className="text-sm">Instagram</span>
+                </a>
+
+                <a
+                  href={CONTACT_TELEGRAM}
+                  data-gtm="telegram"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-blue-50 hover:text-blue-500"
+                  rel="noopener noreferrer"
+                >
+                  <Send className="size-5 shrink-0" />
+                  <span className="text-sm">Telegram</span>
+                </a>
+
+                <a
+                  href={CONTACT_WHATSAPP}
+                  data-gtm="whatsapp"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-green-50 hover:text-green-500"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircleMore className="size-5 shrink-0" />
+                  <span className="text-sm">WhatsApp</span>
+                </a>
+
+                <a
+                  href={CONTACT_VIBER}
+                  data-gtm="viber"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-purple-50 hover:text-purple-500 md:hidden"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircleHeart className="size-5 shrink-0" />
+                  <span className="text-sm">Viber</span>
+                </a>
+              </div>
+
+              <p className="text-center text-xs text-gray-500">Oblivion Tattoo Studio © {currentYear}</p>
+            </div>
+          </div>
+        </SheetContent>
+      </Sheet>
+    </div>
+  )
+}

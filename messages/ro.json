@@ -1,0 +1,787 @@
+{
+  "metadata": {
+    "homePageMetadata": {
+      "title": "Oblivion Tattoo Chișinău | Tatuaje, machiaj permanent, piercing",
+      "description": "Oblivion Tattoo în centrul Chișinăului: tatuaje personalizate, machiaj permanent și piercing. Design individual, condiții sterile și programare online.",
+      "openGraphTitle": "Oblivion Tattoo tatuaje și machiaj permanent în Chișinău | Servicii profesionale",
+      "openGraphDescription": "Studio de tatuaje premium în Chișinău. Artiști cu pregătire artistică, abordare personalizată și proceduri sigure. Programare online pentru tatuaje, piercing sau machiaj permanent.",
+      "twitterTitle": "Oblivion Tattoo tatuaje, piercing și machiaj permanent în Chișinău",
+      "twitterDescription": "Studio profesionist de tatuaje și machiaj permanent în centrul Chișinăului. Design personalizat, mediu steril și programare online. Transformăm ideile tale în artă."
+    },
+    "permanentPageMetadata": {
+      "title": "Machiaj permanent în Chișinău | Oblivion Tattoo",
+      "description": "Machiaj permanent profesional în studioul Oblivion Tattoo din Chișinău: sprâncene, buze și conturul ochilor. Pigmenți siguri, consultație și corecție.",
+      "openGraphTitle": "Machiaj permanent în Chișinău | Sprâncene, buze și ochi",
+      "openGraphDescription": "Machiaj permanent pentru sprâncene, buze și ochi la Oblivion Tattoo. Rezultate naturale, pigmenți siguri și consultație.",
+      "twitterTitle": "Machiaj permanent în Chișinău | Oblivion Tattoo",
+      "twitterDescription": "Sprâncene, buze și conturul ochilor cu pigmenți siguri, consultație și corecție."
+    },
+    "tattooPageMetadata": {
+      "title": "Tatuaje în Chișinău | Design personalizat | Oblivion Tattoo",
+      "description": "Tatuaje personalizate la Oblivion Tattoo în Chișinău. Design individual, toate stilurile, consultație, sterilitate și materiale de calitate.",
+      "openGraphTitle": "Tatuaje profesionale în studioul Oblivion Tattoo, Chișinău",
+      "openGraphDescription": "Transformăm ideea ta de tatuaj din schiță în rezultat final. Stil personalizat, curățenie și atenție la detalii în studioul Oblivion Tattoo.",
+      "twitterTitle": "Studio de tatuaje Oblivion Tattoo în Chișinău | Lucrări personalizate",
+      "twitterDescription": "Comandă un tatuaj unic la Oblivion Tattoo. De la concept la realizare. Toate stilurile: de la minimalism la realism."
+    },
+    "piercingPageMetadata": {
+      "title": "Piercing în Chișinău — prețuri de la 150 MDL | Oblivion Tattoo",
+      "description": "Piercing în Chișinău la Oblivion Tattoo: instrumente sterile de unică folosință și bijuterii de calitate. De la 150 MDL. Programează-te online.",
+      "openGraphTitle": "Piercing la studioul Oblivion Tattoo (Chișinău) — sigur și profesional",
+      "openGraphDescription": "Fă-ți piercingul la specialiști cu experiență. Folosim doar materiale certificate și ace de unică folosință. Instrucțiuni complete pentru vindecare. Programare online.",
+      "twitterTitle": "Piercing în Chișinău | Studioul Oblivion Tattoo",
+      "twitterDescription": "Piercing profesional și sigur în centrul Chișinăului. Condiții sterile, bijuterii de calitate și instrucțiuni detaliate de îngrijire."
+    },
+    "coursePageMetadata": {
+      "title": "Cursuri de tatuaj și machiaj permanent în Chișinău | Oblivion Tattoo",
+      "description": "Cursuri de tatuaj, machiaj permanent și piercing la Oblivion Tattoo în Chișinău. Instruire de la zero, practică pe modele și certificat inclus.",
+      "openGraphTitle": "Cursuri pentru artiști tatuatori și specialiști în machiaj permanent | Oblivion Tattoo Academy",
+      "openGraphDescription": "Formare pentru profesiile viitorului. Programe personalizate, abordare individuală și tot ce ai nevoie pentru a începe o carieră. Înscriere la cursuri de tatuaj, piercing și machiaj permanent.",
+      "twitterTitle": "Cursuri de tatuaj și machiaj permanent în Chișinău | Oblivion Tattoo",
+      "twitterDescription": "Devino un profesionist. Instruire în tatuaj, piercing și machiaj permanent cu practică, suport și certificat la final."
+    },
+    "galleryPageMetadata": {
+      "title": "Galerie de tatuaje | Oblivion Tattoo Chișinău",
+      "description": "Portofoliul tatuajelor realizate de Oblivion Tattoo în Chișinău. Fotografii ale lucrărilor reale, de la minimalism la realism. Idei și inspirație.",
+      "openGraphTitle": "Galeria studioului de tatuaje Oblivion Tattoo | Chișinău",
+      "openGraphDescription": "Descoperă exemple reale de tatuaje create de artiștii noștri din Chișinău. Lucrări alb-negru, color, mari și mici, prezentate în portofoliu.",
+      "twitterTitle": "Galerie tatuaje portofoliu Oblivion Tattoo",
+      "twitterDescription": "Fotografii cu tatuaje din portofoliul studioului Oblivion Tattoo din Chișinău. Inspirație pentru următorul tău tatuaj."
+    },
+    "blogPageMetadata": {
+      "title": "Blog despre tatuaje și machiaj permanent | Sfaturi, tendințe, îngrijire | Oblivion Tattoo",
+      "description": "Blog de specialitate al studioului Oblivion Tattoo din Chișinău. Totul despre tatuaje, machiaj permanent și piercing: ghiduri pentru începători, analize de stil, sfaturi de îngrijire și interviuri cu artiști.",
+      "openGraphTitle": "Blog despre cultura tatuajelor și proceduri beauty | Oblivion Tattoo",
+      "openGraphDescription": "Citește articole originale scrise de artiști profesioniști. Analize detaliate, tendințe actuale și recomandări utile în lumea tatuajelor și a machiajului permanent.",
+      "twitterTitle": "Blog Oblivion Tattoo: articole despre tatuaje și machiaj",
+      "twitterDescription": "Conținut de specialitate despre tatuaje, îngrijire, tendințe și machiaj permanent de la artiștii studioului Oblivion Tattoo. Doar informații utile."
+    },
+    "contactsPageMetadata": {
+      "title": "Contacte Oblivion Tattoo Chișinău | Adresă, telefon, program",
+      "description": "Contacte Oblivion Tattoo în centrul Chișinăului: adresă, telefon, WhatsApp, program și indicații de orientare. Programări pentru tatuaj, piercing și machiaj.",
+      "openGraphTitle": "Cum ne găsești: contactele studioului Oblivion Tattoo din Chișinău",
+      "openGraphDescription": "Adresă, numere de telefon și programul de lucru al studioului de tatuaje și machiaj permanent Oblivion Tattoo din centrul Chișinăului. Ușor de ajuns. Programare disponibilă.",
+      "twitterTitle": "Contacte Oblivion Tattoo | Chișinău",
+      "twitterDescription": "Adresă și numere de telefon pentru programări la studioul Oblivion Tattoo. Ne aflăm în centrul Chișinăului. Deschis zilnic."
+    }
+  },
+  "notFound": {
+    "title": "Pagina nu a fost găsită",
+    "text": "Dar încă îți poți face un tatuaj!",
+    "button": "Înapoi și programează un tatuaj"
+  },
+  "pageSpeedLabel": {
+    "burgerMenu": "Deschide meniul de navigare",
+    "translationButton": "Deschide meniul de traduceri",
+    "homeSlider": {
+      "previousSlide": "Slide anterior",
+      "nextSlide": "Slide următor",
+      "slide": "Slide",
+      "pause": "Oprește prezentarea",
+      "play": "Reia prezentarea"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Acasă",
+    "tattoo": "Tatuaje",
+    "piercing": "Piercinguri",
+    "gallery": "Galerie",
+    "contacts": "Contacte",
+    "course": "Cursuri",
+    "permanent": "Machiaj semipermanent"
+  },
+  "homePage": {
+    "header": {
+      "links": [
+        { "label": "Machiaj Permanent", "href": "/permanent" },
+        { "label": "Tatuaj", "href": "/tattoo" },
+        { "label": "Piercing", "href": "/piercing" },
+        { "label": "Galerie", "href": "/gallery" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Curs", "href": "/course" },
+        { "label": "Contacte", "href": "/contacts" }
+      ]
+    },
+    "headerMobile": {
+      "description": "Navighează prin meniu pentru a explora serviciile noastre.",
+      "home": "Acasă",
+      "appointment": "Tatuajele se efectuează doar pe bază de programare.",
+      "workingHours": "Program: L-D: 10:00 - 20:00"
+    },
+    "heroSection": {
+      "cards": {
+        "firstCard": {
+          "title": "Abordare Completă",
+          "text": "FACEM TOTUL",
+          "description": "Lucrăm ținând cont de preferințele tale: creăm designuri personalizate, alegem forma și culoarea în funcție de tipul de piele și anatomie. Confortul și siguranța sunt prioritățile noastre în fiecare etapă, fie că este vorba de tatuaje, machiaj permanent sau piercing.",
+          "button": "Programează-te"
+        },
+        "secondCard": {
+          "title": "Experiență și Confort",
+          "text": "SESIUNE PENTRU TINE",
+          "description": "Lucrăm ținând cont de preferințele tale: creăm designuri personalizate, alegem forma și culoarea în funcție de tipul de piele și anatomie. Confortul și siguranța sunt prioritățile noastre în fiecare etapă, fie că este vorba de tatuaje, machiaj permanent sau piercing.",
+          "button": "Programează-te"
+        },
+        "thirdCard": {
+          "title": "Creștere și Învățare",
+          "text": "TE ÎNVĂȚĂM TOTUL",
+          "description": "Vrei să devii artist? Instruirea la Oblivion Tattoo include practică pe modele reale, program flexibil, instructori cu experiență și diplomă recunoscută internațional. Obții nu doar cunoștințe, ci o profesie.",
+          "button": "Programează-te"
+        }
+      }
+    },
+    "ourServicesSection": {
+      "mainTitle": "Salon de tatuaje în Chișinău Oblivion Tattoo: Tatuaje profesionale, piercing și machiaj permanent.",
+      "title": "Serviciile noastre de tatuaje în Chișinău",
+      "description": "Salonul nostru de tatuaje din Chișinău oferă o gamă largă de servicii de la tatuaje și piercing până la acoperirea tatuajelor vechi și machiaj permanent. Tatuatorii noștri experimentați din Chișinău garantează calitate, sterilitate și o abordare individuală.",
+      "cards": [
+        {
+          "title": "Tatuaje în Chișinău",
+          "description": "Tatuaje de înaltă calitate, de orice complexitate, în salonul nostru din Chișinău.",
+          "href": "/tattoo"
+        },
+        {
+          "title": "Piercing în Chișinău",
+          "description": "Piercing cu ac în condiții sterile și selecția bijuteriilor în Chișinău.",
+          "href": "/piercing"
+        },
+        {
+          "title": "Acoperire tatuaje și cicatrici",
+          "description": "Acoperim profesionist tatuaje vechi și cicatrici în salonul nostru de tatuaje.",
+          "href": "/tattoo"
+        },
+        {
+          "title": "Design de tatuaje",
+          "description": "Crearea de schițe individuale ținând cont de anatomia clientului.",
+          "href": "/tattoo"
+        },
+        {
+          "title": "Machiaj permanent în Chișinău",
+          "description": "Machiaj de lungă durată realizat de artiști certificați în salonul nostru din Chișinău.",
+          "href": "/permanent"
+        },
+        {
+          "title": "Corectarea tatuajelor",
+          "description": "Împrospătăm culoarea și forma tatuajelor în salonul nostru din Chișinău.",
+          "href": "/tattoo"
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "Câteva cuvinte despre salonul nostru de tatuaje din Chișinău",
+      "text": "Salon de tatuaje în Chișinău cu o echipă experimentată de profesioniști. Oferim tatuaje în Chișinău, piercing, acoperirea tatuajelor și a cicatricilor, machiaj permanent.",
+      "description": "Artiștii noștri cu ani de experiență creează modele unice adaptate anatomiei și dorințelor clientului. Lucrăm steril și în siguranță.",
+      "button": "Programează-te"
+    },
+    "sketchesSection": {
+      "title": "Schițe de Tatuaje în Chișinău",
+      "description": "Creăm schițe de tatuaje personalizate în Chișinău, adaptate ideilor tale și trăsăturilor corpului tău. În galeria noastră poți vedea exemple de lucrări ale artiștilor noștri și să te inspiri pentru viitorul tău tatuaj."
+    },
+    "advantagesSection": {
+      "text": "Avantajele noastre",
+      "title": "De ce aleg oamenii Oblivion Tattoo Salon de Tatuaje în Chișinău",
+      "description": "Oblivion Tattoo este o echipă de artiști, fiecare specializat în domeniul său: tatuaje, piercing sau machiaj permanent. Nu facem doar o lucrare oferim o abordare personalizată pentru ca rezultatul să se potrivească stilului și așteptărilor tale.",
+      "extra": "Fiecare specialist are ani de experiență și își perfecționează constant abilitățile, învățând tehnici și metode moderne. Respectăm cu strictețe standardele de sterilitate și folosim doar materiale verificate.",
+      "more_text": "Oferim condiții transparente, prețuri corecte și atenție sinceră la detalii. Înainte de a începe lucrul, discutăm întotdeauna schița, etapele și îngrijirea ulterioară, pentru ca tu să te simți încrezător în fiecare pas."
+    },
+    "portfolioSection": {
+      "title": "Portofoliul artiștilor tatuatori din Chișinău - Oblivion Tattoo",
+      "text": "Aici puteți vedea lucrările reale ale artiștilor noștri. Tatuaje, piercinguri, acoperiri și schițe toate realizate cu atenție la detalii și în condiții sterile. Suntem mândri de calitatea fiecărei lucrări.",
+      "linkLabel": "Deschide fotografia mărită",
+      "link": "Vezi toate fotografiile"
+    },
+    "locationSection": {
+      "title": "Salon de tatuaje în Chișinău pe hartă",
+      "text": "Salonul nostru de tatuaje se află în centrul Chișinăului. Pe harta de mai jos poți găsi ușor locația studioului și să îți creezi un traseu convenabil.",
+      "appointment": "Programările se fac exclusiv în baza unei rezervări prealabile.",
+      "description": "Dacă întâmpini dificultăți în a ne găsi contactează-ne și te vom ghida cu plăcere."
+    },
+    "contactsSection": {
+      "title": "Programează-te pentru tatuaj, piercing sau machiaj permanent la Chișinău",
+      "text": "Lucrăm doar pe bază de programare. Alege ora convenabilă și contactează-ne maeștrii noștri te vor ajuta să îți realizezi orice idee de tatuaj, vor efectua piercing profesionist sau machiaj permanent impecabil. Abordare individuală, siguranță și confort garantate.",
+      "location": {
+        "title": "Locație",
+        "address": "Strada Tighina 65 (mai jos de Autogara Centrală). Reper: stație de autobuz.",
+        "text": "Lucrăm exclusiv pe bază de programare. Vei primi instrucțiuni detaliate despre cum să ne găsești după confirmarea programării."
+      },
+      "workingHours": {
+        "title": "Program",
+        "time": "Zilnic de la",
+        "text": "Doar pe bază de programare; dacă este necesar, putem organiza ședințe pe timpul nopții."
+      },
+      "contacts": {
+        "title": "Contacte",
+        "text": "Disponibili pe Telegram, WhatsApp și Viber pentru consultații și programări."
+      },
+      "social": "Vizitează paginile noastre"
+    },
+    "footer": {
+      "terms": "Termeni și condiții"
+    }
+  },
+  "permanentPage": {
+    "pm": {
+      "serviceType": "Machiaj permanent pentru sprâncene, buze și pleoape în Chișinău",
+      "offerBrows": "Machiaj permanent sprâncene (tehnica pudrată)",
+      "offerLips": "Machiaj permanent buze (tehnica acvarelă)",
+      "offerEyes": "Machiaj permanent pleoape / contur ochi / infraciliar"
+    },
+    "heroSection": {
+      "title": "Machiaj permanent la Chișinău",
+      "titleExtend": "realizat de un maestru de top",
+      "text": "Evidențiază-ți frumusețea naturală cu ajutorul machiajului permanent profesional. Suntem specializați în cele mai solicitate tehnici: sprâncene pudrate, tatuaj acuarelă pentru buze și eyeliner delicat între gene.",
+      "button": "Programează o consultație",
+      "subtitles": [
+        {
+          "badge": "💎",
+          "title": "Machiaj permanent sprâncene la Chișinău",
+          "text": "Tehnică modernă de pudrare cu pigmenți certificați. Rezultatul natural durează până la 3 ani. Cei mai buni maeștri din Chișinău."
+        },
+        {
+          "badge": "👄",
+          "title": "Machiaj permanent buze la Chișinău",
+          "text": "Tehnica acuarelă oferă un ton uniform și un contur frumos fără ruj. Sterilitate completă și standarde europene de calitate în salonul nostru din Chișinău."
+        },
+        {
+          "badge": "👁️",
+          "title": "Machiaj permanent ochi și eyeliner la Chișinău",
+          "text": "Umplerea liniei genelor și efectul de eyeliner evidențiază privirea și economisesc timp. Maeștri de încredere la Chișinău (Moldova), rezultat sigur și de lungă durată."
+        }
+      ]
+    },
+    "descriptionSection": {
+      "title": "Machiaj permanent la Chișinău - sprâncene, buze și eyeliner",
+      "text": "Machiajul permanent (tatuajul) este o procedură cosmetică modernă care permite obținerea unui machiaj rezistent și natural timp de 1,5–3 ani. Uită de rutina zilnică cu creioane și rujuri.",
+      "button": "Programează o consultație",
+      "labels": [
+        { "badge": "✨", "text": "Trezește-te deja frumoasă și economisește timp în fiecare dimineață" },
+        { "badge": "🏊‍♀️", "text": "Încredere în orice situație: sport, piscină, plajă" },
+        { "badge": "🎨", "text": "Formă și nuanță perfectă pentru tipul tău de frumusețe" },
+        { "badge": "💯", "text": "Evidențiem trăsăturile naturale, nu le mascăm" }
+      ],
+      "subtitle": "Machiaj permanent și tatuaj pentru ochi la Chișinău",
+      "extraText": "Machiajul permanent te ajută să economisești timp și să arăți impecabil în fiecare zi. Oferim prețuri transparente și garantăm calitatea lucrării. Programează o consultație online sau telefonic și află ce tip de tatuaj ți se potrivește cel mai bine.",
+      "secondButton": "Programează o consultație"
+    },
+    "serviceSection": {
+      "title": "Machiaj permanent la Chișinău sprâncene, buze și eyeliner la studioul Oblivion Tattoo",
+      "text": "Studioul nostru de tatuaje din Chișinău oferă machiaj permanent profesional pentru femeile care doresc să arate mereu îngrijite. Folosim tehnici moderne: sprâncene pudrate, buze acuarelă și eyeliner intercilial. Procedura este nedureroasă, sigură și oferă un rezultat natural timp de 1,5–3 ani.",
+      "services": [
+        {
+          "badge": "Sprâncene",
+          "title": "Sprâncene pudrate",
+          "text": "Crearea unui efect de umbră delicată pentru o formă și densitate perfecte. Rezultat natural care arată ca un machiaj profesional zi de zi.",
+          "subtitle": "Avantajele machiajului permanent profesional:",
+          "list": [
+            "Efect de estompare natural fără linii dure",
+            "Crește vizual densitatea sprâncenelor",
+            "Corectarea formei și asimetriei",
+            "Rezultat de lungă durată 1,5–3 ani",
+            "Potrivit pentru toate tipurile de piele"
+          ],
+          "priceTitle": "Preț:",
+          "price": "900 MDL",
+          "timeTitle": "Durata:",
+          "time": "40 min – 1 oră",
+          "healTitle": "Vindecare:",
+          "heal": "7–10 zile",
+          "correctionTitle": "Corecție:",
+          "correction": "după 3 săptămâni (același preț și timp)",
+          "button": "Programează-te"
+        },
+        {
+          "badge": "Buze",
+          "title": "Machiaj permanent buze",
+          "text": "Crearea unui efect acvarelă delicat sau a unui contur definit, după dorință. Opțiuni: contur, contur cu estompare, umplere completă sau efect pudrat. Rezultat – buze naturale, îngrijite și expresive zi de zi.",
+          "subtitle": "Avantaje:",
+          "list": [
+            "Efect natural, de la delicat la intens",
+            "Evidențierea formei și simetriei",
+            "Creșterea vizuală a volumului",
+            "Rezultat de lungă durată 1,5–3 ani",
+            "Potrivit pentru toate tipurile de piele"
+          ],
+          "priceTitle": "Preț:",
+          "price": "900 MDL",
+          "timeTitle": "Durata:",
+          "time": "40 min – 1 oră",
+          "healTitle": "Vindecare:",
+          "heal": "7–10 zile",
+          "correctionTitle": "Corecție:",
+          "correction": "după 3 săptămâni (același preț și timp)",
+          "button": "Programează-te"
+        },
+        {
+          "badge": "Pleope",
+          "title": "Machiaj permanent ochi",
+          "text": "Opțiuni: linie clasică de tuș, spațiu între gene sau linie cu estompare ușoară. Evidențiază expresivitatea privirii și creează efectul de machiaj îngrijit în fiecare zi.",
+          "subtitle": "Avantaje:",
+          "list": [
+            "Rezultat natural sau expresiv",
+            "Crește vizual densitatea genelor",
+            "Corectarea formei ochilor",
+            "Rezultat de lungă durată 2–5 ani",
+            "Potrivit pentru toate tipurile de piele"
+          ],
+          "priceTitle": "Preț:",
+          "price": "900 MDL",
+          "timeTitle": "Durata:",
+          "time": "20 min – 40 min",
+          "healTitle": "Vindecare:",
+          "heal": "7–10 zile",
+          "correctionTitle": "Corecție:",
+          "correction": "după 3 săptămâni (același preț și timp)",
+          "button": "Programează-te"
+        }
+      ]
+    },
+    "gallerySection": {
+      "title": "Galerie de machiaj permanent în Chișinău",
+      "text": "Galeria prezintă lucrări reale realizate de artiștii studioului Oblivion Tattoo: machiaj permanent pentru sprâncene, buze și conturul genelor. Toate procedurile sunt efectuate ținând cont de trăsăturile individuale, structura feței și rezultatul dorit.",
+      "extraText": "Lucrăm în Chișinău, folosim tehnici moderne de machiaj permanent și acordăm o atenție deosebită preciziei, rezultatelor naturale și siguranței."
+    }
+  },
+  "tattooPage": {
+    "tattoo": {
+      "serviceType": "Tatuaj artistic în Chișinău",
+      "offerSmall": "Tatuaj mic (până la 5 cm)",
+      "offerMedium": "Tatuaj mediu (până la 15 cm)",
+      "offerLarge": "Tatuaj mare (de la 20 cm în sus)"
+    },
+    "heroSection": {
+      "title": "Tatuaje în Chișinău: tatuaje color și alb-negru, corecție, acoperire (cover-up) și design de tatuaje",
+      "subtitle": "Salon de tatuaje Chișinău: artiști, prețuri și tatuaje în Moldova",
+      "heroCards": [
+        {
+          "title": "Tatuaje pentru bărbați și femei",
+          "text": "În studioul nostru de tatuaje din Chișinău poți realiza tatuaje artistice în orice stil și dimensiune. Lucrăm în condiții sterile, folosim doar materiale de unică folosință și garantăm măiestrie de înaltă calitate.",
+          "list": [
+            "Gamă largă de stiluri: realism, minimalism, grafică/linework, tatuaje color și alb-negru",
+            "Schițe personalizate după ideile tale",
+            "Siguranță și sterilitate: ace de unică folosință și cerneluri certificate",
+            "Tatuaje pentru bărbați și femei de la mini până la proiecte mari"
+          ],
+          "button": "Programează-te"
+        },
+        {
+          "title": "Reîmprospătare și corecție de tatuaje",
+          "text": "Dacă tatuajul tău s-a estompat sau necesită corecții, oferim reîmprospătare profesională și cover-up al lucrărilor vechi. Artiștii noștri vor găsi soluția potrivită și vor reda frumusețea și expresivitatea tatuajului.",
+          "list": [
+            "Corecția tatuajelor estompate sau de calitate slabă",
+            "Cover-up al lucrărilor vechi cu schițe moderne",
+            "Adăugarea detaliilor și îmbunătățirea culorii",
+            "Abordare individuală pentru fiecare caz"
+          ],
+          "button": "Cere o ofertă"
+        },
+        {
+          "title": "Design de tatuaje",
+          "text": "Creăm schițe unice care îți reflectă caracterul și stilul. Fiecare design este dezvoltat individual de la idee la desenul final pentru ca tatuajul tău să fie cu adevărat special.",
+          "list": [
+            "Schițe personalizate pe baza ideilor și referințelor tale",
+            "Dezvoltare în stiluri populare: realism, grafică/linework, minimalism și altele",
+            "Alegerea formei și a poziționării în funcție de corp",
+            "Colaborare artist–client pentru un rezultat perfect"
+          ],
+          "button": "Discută designul"
+        }
+      ]
+    },
+    "servicesSection": {
+      "title": "Serviciile salonului de tatuaje din Chișinău tatuaje artistice, corecții/cover-up și design de schițe",
+      "description": "Realizăm tatuaje color și black & grey în stiluri populare: realism, minimalism, grafică/linework. Te ajutăm cu ideea și designul, reîmprospătăm și acoperim cu grijă lucrările vechi. Lucrăm în condiții sterile, cu ace de unică folosință și cerneluri certificate.",
+      "usp": [
+        "Stiluri: realism, minimalism, grafică/linework, color/black & grey",
+        "Schițe personalizate după referințele tale",
+        "Corecție și cover-up pentru tatuaje vechi",
+        "Sterilitate: instrumente de unică folosință, cerneluri sigure",
+        "Consultație înainte de programare și îngrijire post-procedură"
+      ],
+      "cta": "Programează-te",
+      "servicesCards": [
+        {
+          "title": "Tatuaj black & grey",
+          "size": "5–10 cm",
+          "price": "400–1300 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Tatuaj color",
+          "size": "5–10 cm",
+          "price": "500–1500 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Tatuaj black & grey",
+          "size": "10–20 cm",
+          "price": "900–3500 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Tatuaj color",
+          "size": "10–20 cm",
+          "price": "1000–4000 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Design de schiță",
+          "text": "Schiță personalizată după ideile și referințele tale: stil, compoziție și amplasare.",
+          "price": "gratuit",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Avans obligatoriu la comandă",
+          "text": "Avansul este inclus în prețul tatuajului și confirmă programarea. În caz de anulare, nu se rambursează.",
+          "price": "300 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Cover-up / corecție tatuaj",
+          "text": "Cover-up profesional și corectarea tatuajelor decolorate sau nereușite. Evaluare după foto și la consultație.",
+          "price": "de la 600 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Schiță pentru cover-up",
+          "text": "Schiță adaptată pentru cover-up: ținem cont de tatuajul vechi, densitate, contrast și dimensiune.",
+          "price": "gratuit",
+          "button": "Programează-te"
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "Studio de tatuaje profesionist în Chișinău",
+      "paragraphs": [
+        "Creăm tatuaje unice de orice complexitate de peste 10 ani. Echipa noastră de artiști profesioniști îți va aduce ideea la viață cu grijă.",
+        "Suntem specializați în tatuaje color și black & grey, reîmprospătarea lucrărilor vechi, cover-up pentru tatuaje nereușite și dezvoltarea designului personalizat.",
+        "Lucrăm în condiții sterile: doar ace de unică folosință și cerneluri certificate, respectarea normelor de igienă și îngrijire detaliată după procedură."
+      ],
+      "advantagesTitle": "Avantajele noastre:",
+      "advantages": [
+        "Artiști experimentați cu un portofoliu de 1000+ lucrări",
+        "Materiale sterile de unică folosință și cerneluri de încredere",
+        "Abordare individuală pentru fiecare client",
+        "Consultație gratuită și schiță de bază",
+        "Garanție pentru lucrările efectuate"
+      ]
+    },
+    "latestTattooSection": {
+      "title": "Portofoliu de tatuaje în Chișinău lucrări recente ale artiștilor",
+      "description": "Aici sunt adunate lucrările recente ale studioului nostru: de la schițe minimaliste mici până la proiecte mari. Toate tatuajele sunt realizate cu ace de unică folosință și cerneluri certificate. Apasă pe fotografie pentru a o mări.",
+      "cta": "Vezi toate fotografiile"
+    }
+  },
+  "piercingPage": {
+    "piercing": {
+      "serviceType": "Piercing în Chișinău: lobul urechii, helix, tragus, septum și buric",
+      "offerLobe": "Piercing lob ureche",
+      "offerHelix": "Piercing helix (marginea externă)",
+      "offerTragus": "Piercing tragus",
+      "offerSeptum": "Piercing sept",
+      "offerNavel": "Piercing buric"
+    },
+    "heroSection": {
+      "title": "Piercing profesional în Chișinău – Studio Oblivion Tattoo",
+      "text": "Perforări sigure, instrumente sterile și bijuterii de calitate. Peste 8 ani de experiență în body-modification. Abordare individuală pentru fiecare client în centrul Chișinăului.",
+      "firstCard": {
+        "title": "Diferite tipuri de piercing – de la clasice la cele mai populare",
+        "text": "Piercing pentru urechi, nas, buze, limbă și buric. Folosim bijuterii din metal chirurgical de cea mai bună calitate. Ace sterile de unică folosință și echipamente profesionale."
+      },
+      "secondCard": {
+        "title": "Siguranța și sterilitatea – prioritatea noastră în Chișinău",
+        "text": "Respectăm toate normele sanitare și sterilizăm instrumentele în autoclav. Consultație detaliată privind îngrijirea. Garanție a calității și siguranței procedurii."
+      },
+      "thirdCard": {
+        "title": "Pierceri cu experiență în centrul Chișinăului",
+        "text": "Selecție individuală a bijuteriei în funcție de anatomie și tipul de piercing. După vindecarea completă, schimb gratuit cu bijuteria ta realizat de specialist."
+      }
+    },
+    "aboutSection": {
+      "title": "Despre studioul de piercing Oblivion Tattoo din Chișinău",
+      "lead": "De peste 10 ani suntem un studio de top în body modification din Republica Moldova. Echipa noastră de pierceri certificați a realizat mii de proceduri, de la perforarea simplă a urechilor până la proiecte anatomice complexe. Suntem mândri de reputația noastră de cel mai sigur și profesionist studio de piercing din Chișinău.",
+      "whyTitle": "De ce suntem aleși pentru piercing în Chișinău?",
+      "why": [
+        {
+          "icon": "shield",
+          "title": "Sterilitate 100%",
+          "text": "Folosim autoclava de clasă B, ace de unică folosință și respectăm toate protocoalele medicale. Fiecare instrument trece printr-un ciclu complet de sterilizare."
+        },
+        {
+          "icon": "award",
+          "title": "Pierceri certificați",
+          "text": "Piercerii noștri au certificări internaționale și se perfecționează constant în tehnici noi și practici de siguranță."
+        },
+        {
+          "icon": "sparkles",
+          "title": "Fără costuri ascunse",
+          "text": "Bijuteria este inclusă în prețul piercingului și este montată direct în timpul procedurii. Plătești pentru rezultatul final, nu pentru poziții separate din listă."
+        }
+      ],
+      "catalogTitle": "Toate tipurile de piercing într-un singur studio",
+      "catalog": [
+        {
+          "category": "Piercing urechi",
+          "description": "De la perforări clasice la compoziții complexe",
+          "services": ["Lob", "Helix", "Tragus", "Conch", "Industrial", "Daith"]
+        },
+        {
+          "category": "Piercing facial",
+          "description": "Evidențiem individualitatea în siguranță",
+          "services": ["Nas", "Septum", "Buze", "Limbă", "Sprânceană"]
+        },
+        {
+          "category": "Piercing corporal",
+          "description": "Zone intime tratate cu deosebită delicatețe",
+          "services": ["Buric", "Sâni"]
+        }
+      ],
+      "processTitle": "Procesul nostru: siguranța pe primul loc",
+      "process": [
+        { "step": "1", "title": "Consultație", "description": "Discutăm anatomia și alegem poziționarea și bijuteriile optime." },
+        { "step": "2", "title": "Pregătire", "description": "Sterilizarea postului de lucru și desigilarea instrumentelor noi." },
+        { "step": "3", "title": "Perforare", "description": "Rapid și precis, cu ace profesionale." },
+        { "step": "4", "title": "Îngrijire", "description": "Instrucțiuni detaliate de aftercare și consultații gratuite ulterior." }
+      ]
+    },
+    "pricingSection": {
+      "title": "Prețuri pentru piercing în Chișinău",
+      "description": "Prețuri transparente, materiale de calitate și lucru profesionist. Prețul include perforarea și o bijuterie de bază din oțel chirurgical.",
+      "badges": {
+        "quality": "Garanție de calitate",
+        "onlineBooking": "Programare online"
+      },
+      "categories": [
+        {
+          "title": "Piercing urechi",
+          "icon": "👂",
+          "services": [
+            { "name": "Lob (lobul urechii)", "price": 150 },
+            { "name": "Flat", "price": 200 },
+            { "name": "Helix (cartilaj superior)", "price": 200 },
+            { "name": "Forward Helix", "price": 200 },
+            { "name": "Tragus", "price": 250 },
+            { "name": "Anti-Tragus", "price": 250 },
+            { "name": "Conch", "price": 200 },
+            { "name": "Daith", "price": 250 },
+            { "name": "Rook", "price": 250 },
+            { "name": "Snug", "price": 300 },
+            { "name": "Orbital (2 perforații)", "price": 250 },
+            { "name": "Industrial (2 perforații)", "price": 300 }
+          ]
+        },
+        {
+          "title": "Piercing facial",
+          "icon": "👃",
+          "services": [
+            { "name": "Sprânceană", "price": 250 },
+            { "name": "Bridge", "price": 300 },
+            { "name": "Nostril (aripa nasului)", "price": 250 },
+            { "name": "Septum", "price": 250 }
+          ]
+        },
+        {
+          "title": "Piercing buze",
+          "icon": "👄",
+          "services": [
+            { "name": "Labret (1 perforație)", "price": 200 },
+            { "name": "Smiley", "price": 250 },
+            { "name": "Labret vertical", "price": 250 },
+            { "name": "Monroe / Madonna", "price": 250 },
+            { "name": "Medusa (philtrum)", "price": 200 },
+            { "name": "Snake bites (2 perforații)", "price": 300 },
+            { "name": "Spider bites (2 perforații)", "price": 300 },
+            { "name": "Angel bites (2 perforații)", "price": 300 },
+            { "name": "Dolphin bites (2 perforații)", "price": 300 },
+            { "name": "Cyber bites (sus + jos)", "price": 300 },
+            { "name": "Shark bites (4 perforații)", "price": 600 }
+          ]
+        },
+        {
+          "title": "Alte tipuri de piercing",
+          "icon": "✨",
+          "services": [
+            { "name": "Limbă", "price": 250 },
+            { "name": "Buric", "price": 300 },
+            { "name": "Piercing mameloane (2 buc.)", "price": 600 }
+          ]
+        }
+      ],
+      "includesTitle": "Ce este inclus în prețul piercingului?",
+      "includes": [
+        "Consultație cu specialistul",
+        "Instrumente sterile de unică folosință",
+        "Bijuterie de bază",
+        "Instrucțiuni detaliate de îngrijire"
+      ],
+      "includesNote": "* Bijuteria din oțel medical este inclusă în preț. Schimbarea bijuteriei după vindecarea completă este gratuită.",
+      "buttons": {
+        "book": "Programează-te"
+      },
+      "labels": {
+        "currency": "lei",
+        "includesBaseJewelry": "Include bijuterie de bază"
+      }
+    },
+    "latestPiercingSection": {
+      "title": "Lucrări recente de piercing în Chișinău Oblivion Tattoo",
+      "contactsLink": "Contact și programare",
+      "description": "Aici publicăm fotografii recente ale lucrărilor noastre: piercing urechi (lob, helix, tragus, conch, daith), nas (nostril, sept), buze (labret, medusa, monroe), limbă și buric. Toate perforațiile sunt realizate în condiții sterile, cu ace de unică folosință și bijuterii din titan/oțel chirurgical. Atinge imaginea pentru a o mări."
+    }
+  },
+  "galleryPage": {
+    "seo": {
+      "title": "Galeria de tatuaje Oblivion Tattoo din Chișinău",
+      "description": "Portofoliu de tatuaje profesionale al studioului Oblivion Tattoo din Chișinău: minimalism, realism și alte stiluri. Vezi cele mai noi lucrări ale maeștrilor noștri."
+    },
+    "title": "Galeria de tatuaje Oblivion Tattoo",
+    "subtitle": "Lucrări recente ale maeștrilor noștri din Chișinău",
+    "text": "Am adunat cele mai bune fotografii cu tatuaje din diferite stiluri: de la minimalism la realism. Derulează mai jos pentru a te inspira și a alege o idee pentru viitorul tău tatuaj."
+  },
+  "contactsPage": {
+    "hero": {
+      "title": "Contacte studio de tatuaje în Chișinău",
+      "subtitle": "Tatuaje profesionale în inima Moldovei",
+      "paragraphs": [
+        "Bine ați venit la studioul nostru de tatuaje din Chișinău! Ne aflăm chiar în inima capitalei Moldovei și oferim servicii profesionale de tatuaj la cea mai înaltă calitate.",
+        "Artiștii noștri experimentați creează lucrări unice pe piele, folosind doar materiale certificate și respectând toate normele sanitare."
+      ]
+    },
+    "features": [
+      {
+        "title": "Amplasare convenabilă",
+        "text": "Ușor de ajuns cu transportul public, aproape de centrul Chișinăului"
+      },
+      {
+        "title": "Program flexibil",
+        "text": "Deschiși 7 zile din 7; programări în prealabil"
+      },
+      {
+        "title": "Abordare individuală",
+        "text": "Fiecare tatuaj este creat ținând cont de dorințele și particularitățile tale"
+      }
+    ],
+    "cta": {
+      "lead": "Cauți cel mai bun studio de tatuaje în Chișinău? Contactează-ne chiar acum!",
+      "appointment": "Programează o consultație",
+      "portfolio": "Vezi portofoliul"
+    },
+    "seoLine": "Studio de tatuaje în Chișinău, Moldova | Tatuaj artistic | Artiști profesioniști | Condiții sterile | Designuri personalizate | Acoperire tatuaje vechi | Consultații pentru îngrijire"
+  },
+  "coursesPage": {
+    "seo": {
+      "pageTitle": "Cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
+      "titleTattooPM": "Curs: Tatuaj / Machiaj permanent",
+      "descriptionTattooPM": "Formare intensivă la Chișinău: bază teoretică solidă și practică sigură pe modele reale, sub îndrumarea unui maestru. Condiții sterile, echipamente profesionale, certificare la final.",
+      "titlePiercing": "Curs: Piercing",
+      "descriptionPiercing": "Start rapid în profesie: tehnici de piercing, igienă, anatomie și practică pe modele. Siguranță, sterilitate și suport după formare."
+    },
+    "hero": {
+      "title": "Cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
+      "lead": "Dacă vrei să stăpânești o profesie creativă și căutată, înscrie-te la cursul de tatuaj din Chișinău, la formarea în machiaj permanent și la cursul de piercing din Chișinău. Toate cursurile sunt potrivite atât pentru începători, cât și pentru maeștri care doresc să-și perfecționeze abilitățile."
+    },
+    "overview": {
+      "title": "Prezentarea cursului",
+      "paragraphs": [
+        "Cursurile noastre oferă o pregătire complexă la Chișinău, oferindu-ți o bază teoretică solidă și abilități practice sigure.",
+        "Din prima zi lucrezi cu modele reale sub îndrumarea unui maestru experimentat. Instruirea are loc în salon, cu echipamente profesionale."
+      ]
+    },
+    "curriculum": {
+      "title": "Programul cursului",
+      "items": [
+        "Bazele sterilității și igienei",
+        "Tipuri de instrumente și utilizarea lor (ace, cartușe, mașini etc.)",
+        "Alegerea zonei și lucrul cu anatomia corpului",
+        "Construirea schiței sau a formelor (în funcție de direcție)",
+        "Lucrul cu culorile și alegerea nuanțelor",
+        "Practică pe modele încă din primele lecții",
+        "Îngrijire post-procedură și recomandări pentru vindecare",
+        "Greșeli frecvente și cum pot fi evitate",
+        "Comunicarea cu clienții și crearea unei atmosfere confortabile",
+        "Foto și video ale lucrărilor pentru portofoliu",
+        "Certificare la finalul cursului",
+        "Diplomă ce poate fi pregătită pentru recunoaștere în alte țări europene"
+      ]
+    },
+    "details": {
+      "title": "Detalii despre curs",
+      "tattooPM": {
+        "title": "Tatuaj / Machiaj permanent",
+        "bullets": [
+          "7 zile: 1 zi teorie, 6 zile practică pe modele",
+          "Program flexibil zilele și orele sunt alese de cursant",
+          "Toate materialele și echipamentele incluse",
+          "Diplomă în română și engleză; alte limbi la cerere"
+        ]
+      },
+      "piercing": {
+        "title": "Piercing",
+        "bullets": [
+          "3 zile: 1 zi teorie, 2 zile practică",
+          "Practică pe modele, program flexibil",
+          "Toate instrumentele și bijuteriile sunt asigurate de salon",
+          "Diplomă în două limbi; alte limbi disponibile la cerere"
+        ]
+      }
+    },
+    "types": {
+      "title": "Tipuri de cursuri",
+      "tattoo": {
+        "title": "Curs de tatuaj Chișinău",
+        "text": "Include teorie și practică pe modele: vei învăța contur, umbre, umplere și culoare, precum și sterilitate, echipamente și particularitățile pielii."
+      },
+      "permanent": {
+        "title": "Curs de machiaj permanent",
+        "text": "Acoperă sprâncene, buze și eyeliner; alegerea formelor, teoria culorilor și lucrul cu anestezia."
+      },
+      "piercing": {
+        "title": "Curs de piercing Chișinău",
+        "text": "Formare intensivă în tehnica de perforare, igienă și practică pe modele sub supravegherea unui maestru experimentat."
+      }
+    },
+    "certificateSection": {
+      "certificates": {
+        "title": "Certificate și diplome",
+        "paragraphs": [
+          "La finalul cursului, fiecare student primește o diplomă și un certificat oficiale care atestă absolvirea.",
+          "Implicit, documentele sunt emise în două limbi română și engleză ceea ce permite utilizarea lor atât în Republica Moldova, cât și în afara țării.",
+          "La cerere, studentul poate solicita eliberarea unei diplome suplimentare într-o altă limbă de exemplu germană, italiană, franceză etc.",
+          "Diploma este codificată și recunoscută în majoritatea țărilor europene, ceea ce deschide oportunități suplimentare de lucru în străinătate."
+        ],
+        "images": {
+          "alt1": "Sigla Oblivion Tattoo",
+          "alt2": "Sigla Oblivion Tattoo"
+        }
+      },
+      "pricing": {
+        "title": "Prețurile cursurilor de tatuaj în Chișinău",
+        "tattooPM": {
+          "title": "Tatuaj și machiaj permanent",
+          "priceLabel": "Preț",
+          "price": "€450 (fiecare curs)",
+          "bullets": [
+            "Teorie și practică de la zero",
+            "Lucru cu echipamente profesionale",
+            "Metode proprii și secretele meseriei",
+            "Suport după formare",
+            "Eliberarea certificatului"
+          ],
+          "cta": "Înscrie-te"
+        },
+        "piercing": {
+          "title": "Piercing",
+          "priceLabel": "Preț",
+          "price": "€300",
+          "bullets": [
+            "Instruire în tehnici de piercing sigure",
+            "Analiza particularităților anatomice",
+            "Igienă și sterilizarea instrumentelor",
+            "Practică pe modele",
+            "Consultații după curs"
+          ],
+          "cta": "Înscrie-te"
+        }
+      }
+    }
+  }
+}

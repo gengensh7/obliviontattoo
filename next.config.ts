@@ -1,0 +1,24 @@
+import type { NextConfig } from 'next'
+import createNextIntlPlugin from 'next-intl/plugin'
+
+const withNextIntl = createNextIntlPlugin()
+
+const nextConfig: NextConfig = {
+  cacheComponents: true,
+  experimental: {
+    globalNotFound: true,
+    inlineCss: true
+  },
+  images: {
+    qualities: [60, 70, 75],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'rpyrrptaqexhjqszbgiq.supabase.co',
+        pathname: '/storage/v1/object/public/**'
+      }
+    ]
+  }
+}
+
+export default withNextIntl(nextConfig)
