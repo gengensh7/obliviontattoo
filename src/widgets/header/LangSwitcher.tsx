@@ -18,7 +18,8 @@ export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel:
       if (routing.locales.includes(segments[1] as AppLocale)) segments.splice(1, 1)
       const path = segments.join('/') || '/'
       const href = newLocale !== routing.defaultLocale && (path === '/blog' || path.startsWith('/blog/')) ? '/' : path
-      router.push(getPathname({ locale: newLocale, href }))
+      const query = path === '/gallery' ? window.location.search : ''
+      router.push(getPathname({ locale: newLocale, href }) + query)
     })
   }
 
@@ -30,7 +31,7 @@ export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel:
         className="flex w-fit min-w-30 items-center gap-2 bg-transparent text-white [&>svg]:text-white!"
       >
         <Languages className="text-white" size={16} />
-        <SelectValue placeholder="Language" />
+        <SelectValue>{locale.toUpperCase()}</SelectValue>
       </SelectTrigger>
       <SelectContent>
         {routing.locales.map((localeOption) => (

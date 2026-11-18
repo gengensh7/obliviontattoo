@@ -2,13 +2,15 @@
 
 import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { Skeleton } from '@/components/ui/skeleton'
 import { LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 
 setWorkerUrl('/maplibre/maplibre-gl-worker.mjs')
 
 export default function Map3D() {
   const ref = useRef<HTMLDivElement>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     if (!ref.current) return
@@ -22,12 +24,14 @@ export default function Map3D() {
     })
 
     map.on('error', (event) => {
+      setIsLoading(false)
       console.error('MapLibre error:', event.error)
     })
 
     map.addControl(new NavigationControl(), 'top-right')
 
     map.on('load', () => {
+      setIsLoading(false)
       map.resize()
       map.addSource('terrain', {
         type: 'raster-dem',
@@ -97,5 +101,10 @@ export default function Map3D() {
     return () => map.remove()
   }, [])
 
-  return <div ref={ref} className="relative h-125 min-h-125 w-full" />
+  return (
+    <div className="relative h-[500px] w-full">
+      <div ref={ref} className="h-full w-full" />
+      {isLoading && <Skeleton aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-none bg-zinc-800" />}
+    </div>
+  )
 }

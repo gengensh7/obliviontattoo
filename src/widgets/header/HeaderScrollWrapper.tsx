@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, useLayoutEffect, useState } from 'react'
+import { ReactNode, useEffect, useRef, useState } from 'react'
 import { cn } from '@/lib/utils'
 
 type Props = {
@@ -8,20 +8,25 @@ type Props = {
 }
 
 export const HeaderScrollWrapper = ({ children }: Props) => {
+  const scrollMarker = useRef<HTMLDivElement>(null)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  useLayoutEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 10)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+  useEffect(() => {
+    if (!scrollMarker.current) return
+
+    const observer = new IntersectionObserver(([entry]) => setIsScrolled(!entry.isIntersecting))
+    observer.observe(scrollMarker.current)
+    return () => observer.disconnect()
   }, [])
 
   return (
-    <header
-      className={cn('fixed top-0 z-50 w-full transition-all duration-300', isScrolled ? 'bg-zinc-900 shadow-md backdrop-blur' : 'bg-transparent')}
-    >
-      {children}
-    </header>
+    <>
+      <div ref={scrollMarker} aria-hidden="true" className="pointer-events-none absolute top-0 left-0 h-[10px] w-px" />
+      <header
+        className={cn('fixed top-0 z-50 w-full transition-all duration-300', isScrolled ? 'bg-zinc-900 shadow-md backdrop-blur' : 'bg-transparent')}
+      >
+        {children}
+      </header>
+    </>
   )
 }

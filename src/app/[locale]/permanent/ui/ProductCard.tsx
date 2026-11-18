@@ -34,7 +34,7 @@ export const ProductCard = ({ item, image }: Props) => {
           className="object-cover"
           src={image}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          sizes="(min-width: 1536px) 461px, (min-width: 1280px) 376px, (min-width: 1024px) 466px, (min-width: 768px) 338px, (min-width: 640px) 608px, calc(100vw - 32px)"
           fetchPriority="low"
           alt={item.title}
         />

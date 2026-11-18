@@ -34,7 +34,7 @@ export const GallerySection = async () => {
                         className="rounded-md object-cover"
                         src={`${SUPABASE_S3_URL}/${photo.url}`}
                         fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                        sizes="(min-width: 1536px) 269px, (min-width: 1280px) 218px, (min-width: 1024px) 304px, (min-width: 768px) 219px, (min-width: 640px) 284px, calc(100vw - 32px)"
                         fetchPriority="low"
                         alt={photo.alt}
                       />

@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     inlineCss: true
   },
   images: {
+    formats: ['image/avif', 'image/webp'],
     qualities: [60, 70, 75],
     remotePatterns: [
       {

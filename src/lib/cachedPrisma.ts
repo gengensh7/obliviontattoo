@@ -46,7 +46,7 @@ export async function getPaginatedImagesCached(page: number, limit: number) {
 
   const skip = (page - 1) * limit
   const [items, total] = await Promise.all([
-    prisma.image.findMany({ orderBy: { order: 'asc' }, skip, take: limit }),
+    prisma.image.findMany({ orderBy: [{ order: 'asc' }, { id: 'asc' }], skip, take: limit }),
     prisma.image.count()
   ])
 

@@ -12,13 +12,12 @@ export default function Logo({ locale }: { locale: string }) {
   return (
     <Link href={locale === routing.defaultLocale ? '/' : `/${locale}`} data-gtm="nav-home-logo">
       <Image
-        src={isPermanent ? '/logo-pickme.svg' : '/logo.svg'}
+        src={isPermanent ? '/logo-pickme.svg' : '/logo.png'}
         alt={isPermanent ? 'PickMe Permanent Makeup' : 'Тату салон в Кишиневе Oblivion Tattoo'}
         width={64}
         height={91}
         loading="eager"
-        fetchPriority="low"
-        unoptimized
+        fetchPriority="high"
       />
     </Link>
   )

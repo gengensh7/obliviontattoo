@@ -1,6 +1,6 @@
 'use client'
 
-import 'photoswipe/style.css'
+import type PhotoSwipe from 'photoswipe'
 import { useEffect, useRef } from 'react'
 
 type Props = {
@@ -9,35 +9,36 @@ type Props = {
 }
 
 const Lightbox = ({ gallery, children }: Props) => {
-  const lightboxRef = useRef<import('photoswipe/lightbox').default | null>(null)
+  const viewer = useRef<PhotoSwipe | null>(null)
 
-  useEffect(() => {
-    return () => lightboxRef.current?.destroy()
-  }, [])
+  useEffect(() => () => viewer.current?.destroy(), [])
 
   const handleClick = async (event: React.MouseEvent<HTMLDivElement>) => {
-    const target = event.target
-    if (!(target instanceof Element)) return
-
-    const link = target.closest<HTMLAnchorElement>('a')
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || !(event.target instanceof Element)) return
+    const link = event.target.closest<HTMLAnchorElement>('a')
     if (!link) return
 
-    const container = event.currentTarget
+    const container = gallery ? link.closest<HTMLElement>(`#${gallery}`) : event.currentTarget
+    if (!container) return
     event.preventDefault()
 
-    if (!lightboxRef.current) {
-      const { default: PhotoSwipeLightbox } = await import('photoswipe/lightbox')
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: `#${gallery}`,
-        children: 'a',
-        pswpModule: () => import('photoswipe')
-      })
-      lightbox.init()
-      lightboxRef.current = lightbox
-    }
+    try {
+      const [{ default: PhotoSwipe }] = await Promise.all([import('photoswipe'), import('photoswipe/style.css')])
+      if (!container.contains(link) || !link.isConnected || viewer.current) return
 
-    const links = Array.from(container.querySelectorAll('a'))
-    lightboxRef.current.loadAndOpen(links.indexOf(link))
+      const instance = new PhotoSwipe({
+        dataSource: { gallery: container },
+        children: 'a',
+        index: Array.from(container.querySelectorAll('a')).indexOf(link)
+      })
+      viewer.current = instance
+      instance.on('destroy', () => {
+        viewer.current = null
+      })
+      instance.init()
+    } catch {
+      if (link.isConnected) window.location.assign(link.href)
+    }
   }
 
   return <div className="contents" onClick={handleClick}>{children}</div>

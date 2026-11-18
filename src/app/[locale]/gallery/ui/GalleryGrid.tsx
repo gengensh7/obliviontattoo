@@ -4,15 +4,8 @@ import { getPaginatedImages } from '@/lib/paginationPrisma'
 import Lightbox from '@/shared/Lightbox'
 import NuqsPagination from '@/shared/NuqsPagination'
 
-export type GalleryProps = {
-  searchParams: Promise<{
-    page?: string
-  }>
-}
-
-export async function GalleryGrid({ searchParams }: GalleryProps) {
-  const params = await searchParams
-  const { items, totalPages, limit } = await getPaginatedImages(params.page)
+export async function GalleryGrid({ page }: { page?: string }) {
+  const { items, totalPages, limit } = await getPaginatedImages(page)
   const imageSlots = [...items, ...Array(Math.max(0, limit - items.length)).fill(null)]
   const supabaseS3Url = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 
@@ -29,8 +22,7 @@ export async function GalleryGrid({ searchParams }: GalleryProps) {
                     src={`${supabaseS3Url}/${photo.url}`}
                     fill
                     preload={index === 0}
-                    loading={index !== 0 && photo.url === 'Piercing/piercing-1.webp' ? 'eager' : undefined}
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(min-width: 1536px) 346px, (min-width: 1280px) 282px, (min-width: 1024px) 218px, (min-width: 768px) 348px, (min-width: 640px) 284px, calc(100vw - 32px)"
                     fetchPriority={index === 0 ? 'high' : undefined}
                     alt={photo.alt}
                   />

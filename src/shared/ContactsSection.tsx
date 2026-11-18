@@ -14,7 +14,7 @@ export const ContactsSection = () => {
           <p className="mx-auto max-w-2xl text-center text-white">{t('text')}</p>
         </FramerMotionContainer>
 
-        <FramerMotionContainer className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="bg-zinc-900">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="space-y-6">
@@ -109,7 +109,7 @@ export const ContactsSection = () => {
               </div>
             </div>
           </div>
-        </FramerMotionContainer>
+        </div>
       </div>
     </section>
   )

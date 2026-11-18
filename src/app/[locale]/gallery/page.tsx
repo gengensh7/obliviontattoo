@@ -4,11 +4,18 @@ import { Suspense } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { GalleryGrid, GalleryProps } from './ui/GalleryGrid'
+import { GalleryGrid } from './ui/GalleryGrid'
 
 export const generateMetadata = withSeo('metadata.galleryPageMetadata', '/gallery')
 
-export default async function Gallery({ searchParams }: GalleryProps) {
+type GallerySearchProps = Pick<PageProps<'/[locale]/gallery'>, 'searchParams'>
+
+async function RequestedGallery({ searchParams }: GallerySearchProps) {
+  const { page } = await searchParams
+  return <GalleryGrid page={typeof page === 'string' ? page : undefined} />
+}
+
+export default async function Gallery({ searchParams }: GallerySearchProps) {
   const t = await getTranslations('galleryPage')
 
   return (
@@ -25,13 +32,13 @@ export default async function Gallery({ searchParams }: GalleryProps) {
             <Suspense
               fallback={
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4" aria-hidden="true">
-                  {[...Array(8)].map((_, index) => (
+                  {Array.from({ length: 10 }, (_, index) => (
                     <Skeleton className="h-105 w-full bg-zinc-800" key={index} />
                   ))}
                 </div>
               }
             >
-              <GalleryGrid searchParams={searchParams} />
+              <RequestedGallery searchParams={searchParams} />
             </Suspense>
           </NuqsAdapter>
         </div>

@@ -5,10 +5,9 @@ import { useEffect, useRef, useState } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 import { cn } from '@/lib/utils'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 const Map = dynamic(() => import('./MapLibre'), {
-  loading: () => <Skeleton className="h-100 w-full rounded-none bg-zinc-800" aria-label="Loading map" />,
+  loading: () => <Skeleton className="h-[500px] w-full rounded-none bg-zinc-800" aria-label="Loading map" />,
   ssr: false
 })
 
@@ -49,21 +48,21 @@ export const LocationSection = ({ className, translations }: Props) => {
   return (
     <section className={cn('pt-20', className)}>
       <div className="container">
-        <FramerMotionContainer className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <h2 className="text-center text-4xl">{translations.title}</h2>
           <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-4 text-center">
             <p>{translations.text}</p>
             <p className="text-xl font-bold">{translations.appointment}</p>
             <p>{translations.description}</p>
           </div>
-        </FramerMotionContainer>
+        </div>
       </div>
 
-      <div ref={mapContainerRef} className="relative min-h-100 bg-zinc-800">
+      <div ref={mapContainerRef} className="relative min-h-[500px] bg-zinc-800">
         {isMapOpen ? (
           <Map />
         ) : (
-          <div className="relative flex min-h-100 items-center justify-center overflow-hidden bg-zinc-800 bg-[radial-gradient(circle_at_center,#3f4548_1px,transparent_1px)] bg-size-[24px_24px]">
+          <div className="relative flex min-h-[500px] items-center justify-center overflow-hidden bg-zinc-800 bg-[radial-gradient(circle_at_center,#3f4548_1px,transparent_1px)] bg-size-[24px_24px]">
             <div className="absolute inset-0 bg-zinc-900/35" aria-hidden="true" />
             <div className="relative z-10 flex flex-col items-center gap-4 text-center text-white">
               <div className="flex size-16 items-center justify-center rounded-full bg-red-500/90 shadow-lg shadow-black/30">

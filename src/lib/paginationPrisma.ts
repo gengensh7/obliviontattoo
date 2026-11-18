@@ -11,9 +11,9 @@ type PaginatedImages = {
 }
 
 export async function getPaginatedImages(pageParam?: string, limit = DEFAULT_PAGE_LIMIT): Promise<PaginatedImages> {
-  const page = Math.max(1, Number(pageParam ?? 1) || 1)
   const safeLimit = Math.max(1, limit)
-  const skip = (page - 1) * safeLimit
+  const requested = Number(pageParam ?? 1)
+  const page = Number.isSafeInteger(requested) && requested > 0 ? requested : 1
 
   const { items, total } = await getPaginatedImagesCached(page, safeLimit)
 
