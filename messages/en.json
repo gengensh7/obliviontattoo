@@ -225,25 +225,22 @@
       "offerEyes": "Permanent eyeliner / lash enhancement"
     },
     "heroSection": {
-      "title": "Permanent makeup in Chișinău",
-      "text": "Which feature do you usually emphasise with makeup? Choose an area to explore techniques, photos and prices.",
+      "title": "Permanent makeup <location>in Chișinău</location>",
+      "text": "Choose an area to explore techniques, photos and prices.",
       "button": "Book a consultation",
       "subtitles": [
         {
           "id": "brows",
-          "badge": "💎",
           "title": "Brows",
           "text": "Soft shading beneath the hairs"
         },
         {
           "id": "lips",
-          "badge": "👄",
           "title": "Lips",
           "text": "Colour and definition"
         },
         {
           "id": "eyelids",
-          "badge": "👁️",
           "title": "Eyelids",
           "text": "Lash definition or winged liner"
         }

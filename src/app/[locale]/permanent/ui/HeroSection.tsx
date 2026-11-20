@@ -1,55 +1,67 @@
+import { ArrowUpRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
+import brows from '../../../../../public/images/permanentPage/permanent-brovi-kishinev.webp'
+import eyelids from '../../../../../public/images/permanentPage/permanent-resniti-kishinev.webp'
+import lips from '../../../../../public/images/permanentPage/permanent-guby-kishinev.webp'
+import { HeroServices, type HeroService } from './HeroServices'
+import type { PermanentCardData } from './ProductCard'
+
+const serviceImages = { brows, lips, eyelids }
 
 export const HeroSection = () => {
-  const t = useTranslations('permanentPage.heroSection')
-
-  const cards = t.raw('subtitles') as {
-    id: string
-    badge: string
-    title: string
-    text: string
-  }[]
+  const t = useTranslations('permanentPage')
+  const summaries = t.raw('heroSection.subtitles') as (Pick<HeroService, 'title' | 'text'> & {
+    id: keyof typeof serviceImages
+  })[]
+  const details = t.raw('serviceSection.services') as PermanentCardData[]
+  const services = summaries.map(({ id, title, text }) => ({
+    id,
+    title,
+    text,
+    image: serviceImages[id],
+    alt: details.find((service) => service.id === id)?.alt ?? title
+  }))
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center bg-linear-to-br from-zinc-900 via-zinc-800 to-zinc-900 py-30 2xl:py-0">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-rose-500/30 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-rose-500/30 blur-3xl"></div>
-      </div>
-
-      <div className="relative z-2 container">
-        <div className="flex flex-col gap-12 text-white">
-          <div className="flex flex-col items-center gap-6 text-center">
-            <h1 className="bg-linear-to-r from-white via-rose-100 to-fuchsia-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl">
-              {t('title')}
-            </h1>
-            <p className="text-lg sm:text-xl">{t('text')}</p>
-            <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
-              <a
-                href={CONTACT_TELEGRAM}
-                data-gtm="telegram"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-auto w-fit rounded-full bg-linear-to-r from-rose-500 to-pink-500 px-4 py-3 text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 sm:px-8"
-              >
-                {t('button')}
-              </a>
-            </div>
-          </div>
-
-          <div className="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {cards.map((card, i) => (
-              <div key={i} className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm">
-                <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-amber-500/20">
-                  <span className="text-xl">{card.badge}</span>
-                </div>
-                <a href={`#${card.id}`} className="mx-auto text-lg font-semibold text-white underline decoration-rose-300/60 underline-offset-4">{card.title}</a>
-                <p className="text-sm text-zinc-400">{card.text}</p>
-              </div>
-            ))}
+    <section
+      aria-labelledby="permanent-hero-title"
+      className="bg-zinc-950 pt-28 pb-12 text-white selection:bg-rose-200 selection:text-zinc-950 lg:pt-30 lg:pb-16 xl:pt-36 xl:pb-20 2xl:pt-38 2xl:pb-24"
+    >
+      <div className="container grid gap-6 md:max-lg:max-w-2xl lg:grid-cols-2 lg:grid-rows-[1fr_auto] lg:items-start lg:gap-x-10 lg:gap-y-9 xl:gap-x-14 xl:gap-y-12">
+        <div className="grid gap-4 lg:col-start-1 lg:row-start-1 lg:gap-6 lg:pt-6 xl:pt-8">
+          <h1
+            id="permanent-hero-title"
+            className="text-3xl/none font-bold tracking-tight min-[360px]:max-sm:text-[40px]/none sm:text-6xl/none lg:text-5xl/none xl:text-[68px]/none 2xl:text-[82px]/none"
+          >
+            <span className="block overflow-clip py-1">
+              <span className="montserrat block motion-safe:animate-permanent-title">
+                {t.rich('heroSection.title', {
+                  location: (chunks) => (
+                    <span className="montserrat block pt-2 text-xl/none font-normal text-rose-200 min-[360px]:max-sm:text-2xl/none sm:text-3xl/none xl:text-4xl/none">
+                      {chunks}
+                    </span>
+                  )
+                })}
+              </span>
+            </span>
+          </h1>
+          <div className="grid justify-items-start gap-4 motion-safe:animate-permanent-intro lg:gap-6">
+            <p className="max-w-md leading-relaxed text-zinc-300 lg:text-lg/normal">{t('heroSection.text')}</p>
+            <a
+              href={CONTACT_TELEGRAM}
+              data-gtm="telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-13 items-center justify-between gap-3 rounded-lg bg-rose-200 px-3.5 py-2.5 text-sm/tight font-bold text-zinc-950 hover:bg-rose-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-200 motion-safe:transition-transform motion-safe:duration-120 motion-safe:ease-permanent motion-safe:active:scale-98 motion-safe:active:duration-160 sm:gap-4 sm:px-4 lg:text-base/tight"
+            >
+              {t('heroSection.button')}
+              <ArrowUpRight aria-hidden="true" className="shrink-0" size={19} strokeWidth={1.75} />
+            </a>
           </div>
         </div>
+
+        <HeroServices services={services} />
       </div>
     </section>
   )

@@ -120,6 +120,52 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --ease-permanent: cubic-bezier(0.23, 1, 0.32, 1);
+  --animate-permanent-title: permanent-title-reveal 540ms var(--ease-permanent) backwards;
+  --animate-permanent-intro: permanent-content-reveal 420ms 85ms var(--ease-permanent) backwards;
+  --animate-permanent-preview: permanent-photo-reveal 560ms 105ms var(--ease-permanent) backwards;
+
+  @keyframes permanent-title-reveal {
+    from {
+      clip-path: inset(0 0 36px);
+      transform: translateY(14px);
+    }
+    to {
+      clip-path: inset(-4px);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes permanent-content-reveal {
+    from {
+      opacity: 0.65;
+      transform: translateY(8px);
+    }
+  }
+
+  @keyframes permanent-photo-reveal {
+    from {
+      clip-path: inset(0 0 32% 0);
+    }
+    to {
+      clip-path: inset(0);
+    }
+  }
+}
+
+@utility animate-permanent-service {
+  animation: permanent-content-reveal 360ms 165ms var(--ease-permanent) backwards;
+
+  &:nth-child(2) {
+    animation-delay: 225ms;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 265ms;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

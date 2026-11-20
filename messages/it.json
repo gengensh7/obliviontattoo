@@ -225,25 +225,22 @@
       "offerEyes": "Trucco permanente occhi / infracigliare"
     },
     "heroSection": {
-      "title": "Trucco permanente a Chișinău",
-      "text": "Quale dettaglio valorizzi con il trucco di tutti i giorni? Scegli la zona per vedere tecniche, fotografie e prezzi.",
+      "title": "Trucco permanente <location>a Chișinău</location>",
+      "text": "Scegli la zona per vedere tecniche, fotografie e prezzi.",
       "button": "Prenota una consulenza",
       "subtitles": [
         {
           "id": "brows",
-          "badge": "💎",
           "title": "Sopracciglia",
           "text": "Una sfumatura sotto i peli"
         },
         {
           "id": "lips",
-          "badge": "👄",
           "title": "Labbra",
           "text": "Colore e contorno"
         },
         {
           "id": "eyelids",
-          "badge": "👁️",
           "title": "Palpebre",
           "text": "Rima ciliare o eyeliner"
         }

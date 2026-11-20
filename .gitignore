@@ -44,8 +44,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Markdown documentation and local agent context
-*.md
-
-
 /src/generated/prisma
