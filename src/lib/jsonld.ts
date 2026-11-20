@@ -87,10 +87,18 @@ export async function buildPiercingServiceJsonLd(locale: string) {
 
 export async function buildPermanentMakeupServiceJsonLd(locale: string) {
   const t = await getTranslations({ locale, namespace: 'permanentPage' })
-  return buildServiceJsonLd(locale, '/permanent', t('pm.serviceType'), t('descriptionSection.text'), {
-    price: 900,
-    priceCurrency: 'MDL'
-  })
+  const service = buildServiceJsonLd(locale, '/permanent', t('pm.serviceType'), t('descriptionSection.text'))
+  const items = t.raw('serviceSection.services') as { id: string; title: string }[]
+  return {
+    ...service,
+    offers: items.map(({ id, title }) => ({
+      '@type': 'Offer',
+      name: title,
+      price: 900,
+      priceCurrency: 'MDL',
+      url: `${service.url}#${id}`
+    }))
+  }
 }
 
 export async function buildCoursesJsonLd(locale: string) {

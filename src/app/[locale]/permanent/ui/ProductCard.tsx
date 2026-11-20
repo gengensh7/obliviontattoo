@@ -5,16 +5,10 @@ export type PermanentCardData = {
   badge: string
   title: string
   text: string
-  subtitle: string
-  list: string[]
+  id: string
+  alt: string
   priceTitle: string
   price: string
-  timeTitle: string
-  time: string
-  healTitle: string
-  heal: string
-  correctionTitle: string
-  correction: string
   button: string
 }
 
@@ -25,7 +19,7 @@ type Props = {
 
 export const ProductCard = ({ item, image }: Props) => {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
+    <article id={item.id} className="group scroll-mt-28 flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
       <div className="relative aspect-4/3 h-100 shrink-0">
         <div className="absolute top-4 left-4 z-2">
           <span className="flex items-center rounded-full bg-black/30 px-3 py-1 font-medium text-white backdrop-blur-sm">✨ {item.badge}</span>
@@ -36,7 +30,7 @@ export const ProductCard = ({ item, image }: Props) => {
           fill
           sizes="(min-width: 1536px) 461px, (min-width: 1280px) 376px, (min-width: 1024px) 466px, (min-width: 768px) 338px, (min-width: 640px) 608px, calc(100vw - 32px)"
           fetchPriority="low"
-          alt={item.title}
+          alt={item.alt}
         />
       </div>
 
@@ -46,37 +40,10 @@ export const ProductCard = ({ item, image }: Props) => {
           <p className="text-sm leading-relaxed text-zinc-300">{item.text}</p>
         </div>
 
-        <div className="flex grow flex-col gap-4">
-          <h4 className="text-sm font-semibold text-white">{item.subtitle}</h4>
-          <ul className="flex flex-col gap-1">
-            {item.list.map((text, i) => (
-              <li key={i} className="flex items-start gap-2 text-zinc-400">
-                <span className="mt-0.5 shrink-0 text-rose-300">•</span>
-                <span>{text}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="mt-auto grid grid-cols-2 items-center gap-3">
-          <div className="space-y-1">
-            <span className="block text-zinc-500">{item.priceTitle}</span>
-            <span className="text-lg font-bold text-rose-300">{item.price}</span>
-          </div>
-          <div className="space-y-1">
-            <span className="block text-zinc-500">{item.timeTitle}</span>
-            <span className="block font-medium text-white">{item.time}</span>
-          </div>
-
-          <div className="col-span-2 space-y-1">
-            <span className="block text-zinc-500">{item.healTitle}</span>
-            <span className="block font-medium text-zinc-300">{item.heal}</span>
-          </div>
-          <div className="col-span-2 space-y-1">
-            <span className="block text-zinc-500">{item.correctionTitle}</span>
-            <span className="block font-medium text-white">{item.correction}</span>
-          </div>
-        </div>
+        <p className="mt-auto text-zinc-300">
+          {item.priceTitle}{' '}
+          <strong className="text-lg text-rose-300">{item.price}</strong>
+        </p>
 
         <a
           href={CONTACT_TELEGRAM}

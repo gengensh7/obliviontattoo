@@ -5,6 +5,7 @@ export const HeroSection = () => {
   const t = useTranslations('permanentPage.heroSection')
 
   const cards = t.raw('subtitles') as {
+    id: string
     badge: string
     title: string
     text: string
@@ -22,7 +23,6 @@ export const HeroSection = () => {
           <div className="flex flex-col items-center gap-6 text-center">
             <h1 className="bg-linear-to-r from-white via-rose-100 to-fuchsia-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl">
               {t('title')}
-              <span className="block text-3xl sm:text-4xl lg:text-5xl">{t('titleExtend')}</span>
             </h1>
             <p className="text-lg sm:text-xl">{t('text')}</p>
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
@@ -44,7 +44,7 @@ export const HeroSection = () => {
                 <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-amber-500/20">
                   <span className="text-xl">{card.badge}</span>
                 </div>
-                <h2 className="mx-auto max-w-2xs text-lg font-semibold text-white">{card.title}</h2>
+                <a href={`#${card.id}`} className="mx-auto text-lg font-semibold text-white underline decoration-rose-300/60 underline-offset-4">{card.title}</a>
                 <p className="text-sm text-zinc-400">{card.text}</p>
               </div>
             ))}

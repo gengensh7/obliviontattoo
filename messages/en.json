@@ -9,12 +9,12 @@
       "twitterDescription": "Custom tattoos, piercing and permanent makeup in central Chișinău. Individual designs, sterile conditions and online booking."
     },
     "permanentPageMetadata": {
-      "title": "Lip Blush & Permanent Makeup in Chișinău | Oblivion Tattoo",
-      "description": "Lip blush and permanent makeup at Oblivion Tattoo in Chișinău. Eyebrows, lips and lash line enhancement with safe pigments, consultation and correction.",
-      "openGraphTitle": "Lip Blush & Permanent Makeup in Chișinău | Oblivion Tattoo",
-      "openGraphDescription": "Natural-looking lip blush, eyebrow and lash line permanent makeup at Oblivion Tattoo Studio in Chișinău.",
-      "twitterTitle": "Lip Blush & Permanent Makeup in Chișinău",
-      "twitterDescription": "Professional lip blush and permanent makeup at Oblivion Tattoo Studio. Safe pigments, consultation and correction."
+      "title": "Permanent Makeup in Chișinău — Brows, Lips & Eyeliner | Oblivion Tattoo",
+      "description": "Powder brows, lip blush and permanent eyeliner at Oblivion Tattoo in Chișinău. Each area costs 900 MDL. Browse the portfolio and book a consultation.",
+      "openGraphTitle": "Permanent Makeup in Chișinău — Brows, Lips & Eyeliner | Oblivion Tattoo",
+      "openGraphDescription": "Powder brows, lip blush and permanent eyeliner at Oblivion Tattoo in Chișinău. Each area costs 900 MDL. Browse the portfolio and book a consultation.",
+      "twitterTitle": "Permanent Makeup in Chișinău — Brows, Lips & Eyeliner | Oblivion Tattoo",
+      "twitterDescription": "Powder brows, lip blush and permanent eyeliner at Oblivion Tattoo in Chișinău. Each area costs 900 MDL. Browse the portfolio and book a consultation."
     },
     "tattooPageMetadata": {
       "title": "Tattoos in Chișinău | Oblivion Tattoo Studio",
@@ -228,117 +228,129 @@
     },
     "heroSection": {
       "title": "Permanent makeup in Chișinău",
-      "titleExtend": "by a top-class master",
-      "text": "Enhance your natural beauty with professional permanent makeup. We specialize in the most popular techniques: powder brows, watercolor lip tattoo and elegant lash line eyeliner.",
+      "text": "Which feature do you usually emphasise with makeup? Choose an area to explore techniques, photos and prices.",
       "button": "Book a consultation",
       "subtitles": [
         {
+          "id": "brows",
           "badge": "💎",
-          "title": "Permanent eyebrow makeup in Chișinău",
-          "text": "Modern powder shading with certified pigments. The natural result lasts up to 3 years. The best masters in Chișinău."
+          "title": "Brows",
+          "text": "Soft shading beneath the hairs"
         },
         {
+          "id": "lips",
           "badge": "👄",
-          "title": "Permanent lip makeup in Chișinău",
-          "text": "The watercolor technique provides an even tone and a beautiful contour without lipstick. Full sterility and European quality standards in our salon in Chișinău."
+          "title": "Lips",
+          "text": "Colour and definition"
         },
         {
+          "id": "eyelids",
           "badge": "👁️",
-          "title": "Permanent eye makeup and eyeliner in Chișinău",
-          "text": "Lash line filling and eyeliner effect emphasize the look and save time. Reliable masters in Chișinău (Moldova), long-lasting and safe result."
+          "title": "Eyelids",
+          "text": "Lash definition or winged liner"
         }
       ]
     },
     "descriptionSection": {
-      "title": "Permanent makeup in Chișinău - brows, lips and eyeliner",
-      "text": "Permanent makeup (tattooing) is a modern cosmetic procedure that creates long-lasting and natural-looking makeup for 1.5 to 3 years. Forget about the daily routine with pencils and lipsticks.",
-      "button": "Book a consultation",
-      "labels": [
-        { "badge": "✨", "text": "Wake up beautiful and save time every morning" },
-        { "badge": "🏊‍♀️", "text": "Confidence in any situation: sports, pool, beach" },
-        { "badge": "🎨", "text": "Perfect shape and shade for your appearance type" },
-        { "badge": "💯", "text": "We highlight natural features, not mask them" }
-      ],
-      "subtitle": "Permanent makeup and eyeliner tattoo in Chișinău",
-      "extraText": "Permanent makeup helps save time and look flawless every day. We offer transparent prices and guarantee quality work. Book a consultation online or by phone to find out which type of tattooing suits you best.",
-      "secondButton": "Book a consultation"
+      "title": "What is permanent makeup?",
+      "text": "Permanent makeup is cosmetic tattooing. Pigment is placed in the skin to define the brows, lips or lash line. The shade changes over time and how long it stays visible varies from person to person."
     },
     "serviceSection": {
-      "title": "Permanent makeup in Chișinău brows, lips and eyeliner at Oblivion Tattoo studio",
-      "text": "Our tattoo studio in Chișinău offers professional permanent makeup for women who want to always look well-groomed. We use modern techniques: powder brows, watercolor lips and lash line eyeliner. The procedure is painless, safe and provides a natural result for 1.5–3 years.",
+      "title": "Techniques and prices",
+      "text": "Prices are per area. Compare the finishes and consider which part of your everyday makeup you would like to recreate.",
       "services": [
         {
+          "id": "brows",
           "badge": "Brows",
-          "title": "Powder Brows",
-          "text": "Creating the effect of a soft shadow for perfect shape and density. A natural result that looks like professional makeup every day.",
-          "subtitle": "Advantages of professional permanent makeup:",
-          "list": [
-            "Natural shading effect without harsh lines",
-            "Visually increases brow density",
-            "Correction of shape and asymmetry",
-            "Long-lasting result for 1.5–3 years",
-            "Suitable for all skin types"
-          ],
-          "priceTitle": "Price:",
+          "title": "Permanent brows",
+          "text": "Powder shading creates a soft background within the brow shape. If you usually fill in just the tail, show the artist where you prefer lighter shading.",
+          "alt": "Dark arched brows with individual hairs visible near the nose",
+          "priceTitle": "Price per area",
           "price": "900 MDL",
-          "timeTitle": "Duration:",
-          "time": "40 min – 1 hour",
-          "healTitle": "Healing:",
-          "heal": "7–10 days",
-          "correctionTitle": "Correction:",
-          "correction": "after 3 weeks (same price and time)",
           "button": "Book an appointment"
         },
         {
+          "id": "lips",
           "badge": "Lips",
-          "title": "Lip Permanent Makeup",
-          "text": "Creating a soft watercolor effect or clear contour as desired. Options include: contour, contour with shading, full fill, or light powder effect. The result – natural, well-groomed, and expressive lips every day.",
-          "subtitle": "Advantages:",
-          "list": [
-            "Natural effect from soft to intense",
-            "Enhancement of shape and symmetry",
-            "Visual increase in volume",
-            "Long-lasting result for 1.5–3 years",
-            "Suitable for all skin types"
-          ],
-          "priceTitle": "Price:",
+          "title": "Permanent lip colour",
+          "text": "A watercolour lip blush adds a soft wash of colour. For a more defined edge, ask about a shaded outline. A photo of your favourite lipstick can help explain how much colour you want.",
+          "alt": "Matte pink lips with a defined outline",
+          "priceTitle": "Price per area",
           "price": "900 MDL",
-          "timeTitle": "Duration:",
-          "time": "40 min – 1 hour",
-          "healTitle": "Healing:",
-          "heal": "7–10 days",
-          "correctionTitle": "Correction:",
-          "correction": "after 3 weeks (same price and time)",
           "button": "Book an appointment"
         },
         {
-          "badge": "Eyes",
-          "title": "Permanent Eye Makeup",
-          "text": "Options: classic eyeliner, lash line enhancement, or eyeliner with soft shading. Accentuates the expressiveness of the eyes and creates the effect of neat daily makeup.",
-          "subtitle": "Advantages:",
-          "list": [
-            "Natural or expressive result",
-            "Visually increases lash density",
-            "Correction of eye shape",
-            "Long-lasting result for 2–5 years",
-            "Suitable for all skin types"
-          ],
-          "priceTitle": "Price:",
+          "id": "eyelids",
+          "badge": "Eyelids",
+          "title": "Permanent eyeliner",
+          "text": "Lash enhancement defines the roots of the upper lashes. A separate eyeliner wing can extend past the outer corner. Discuss the length of the flick and whether you prefer a crisp or shaded edge.",
+          "alt": "Black eyeliner with a sharply tapered wing at the outer corner",
+          "priceTitle": "Price per area",
           "price": "900 MDL",
-          "timeTitle": "Duration:",
-          "time": "20 min – 40 min",
-          "healTitle": "Healing:",
-          "heal": "7–10 days",
-          "correctionTitle": "Correction:",
-          "correction": "after 3 weeks (same price and time)",
           "button": "Book an appointment"
         }
       ]
     },
+    "guide": [
+      {
+        "title": "Preparation and recovery",
+        "text": "Tell the artist if you already have cosmetic tattooing in the area. Ask how to prepare and how much time to allow. Before leaving, ask for aftercare instructions and agree when to share a photo of the healed colour."
+      },
+      {
+        "title": "Touch-ups",
+        "text": "Once the area has healed, review the colour and shape. If you want a deeper shade or a small adjustment, discuss whether a touch-up would help, when to book and what it would cost."
+      }
+    ],
     "gallerySection": {
-      "title": "Permanent Makeup Gallery in Chișinău",
-      "text": "The gallery features real works by the artists of the Oblivion Tattoo studio: permanent makeup for eyebrows, lips, and lash lines. All procedures are performed with consideration for individual features, facial structure, and the desired result.",
-      "extraText": "We work in Chișinău, use modern permanent makeup techniques, and pay special attention to precision, natural results, and safety."
+      "title": "Examples of our work",
+      "text": "Compare lip outlines, brow shading and eyeliner styles. Open a photo for a closer look.",
+      "link": "View the full studio portfolio",
+      "photos": {
+        "permanent-1": "Matte pink lips with a defined outline",
+        "permanent-2": "Soft dark upper lash line with a fine flick",
+        "permanent-3": "Fine black line on the upper eyelid, shown close up",
+        "permanent-4": "Dark arched brows with individual hairs visible near the nose",
+        "permanent-5": "Black eyeliner with a sharply tapered wing at the outer corner"
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "How much does permanent makeup cost in Chișinău?",
+          "answer": "At Oblivion Tattoo, brows, lips and eyeliner each cost 900 MDL per area. Ask about the price of a possible touch-up separately."
+        },
+        {
+          "question": "Is cosmetic tattooing different from permanent makeup?",
+          "answer": "On this page both terms refer to the same service. The technique determines the finish: a lip tattoo can emphasise the outline or add a soft wash of colour."
+        },
+        {
+          "question": "Which brow techniques are there?",
+          "answer": "Powder shading adds colour beneath the hairs, while hair-stroke techniques imitate individual hairs. The studio lists powder brows on its menu."
+        },
+        {
+          "question": "When might I need a touch-up?",
+          "answer": "If a patch looks lighter once healed, or you would like more colour, show the artist. A photo taken immediately after the procedure is too early to judge the finish."
+        },
+        {
+          "question": "What happens during a consultation?",
+          "answer": "Tell the artist which area interests you and how you wear your makeup. Discuss shape, shade, previous cosmetic tattoos and appointment timing."
+        },
+        {
+          "question": "What should I know about recovery?",
+          "answer": "Follow the aftercare advice for your area. If you have an event coming up, mention the date before booking because recovery times vary."
+        },
+        {
+          "question": "How do I choose a procedure?",
+          "answer": "Start with the detail you draw most often: your brows, lip outline or lash line. Show the artist your usual makeup and a portfolio photo with a colour or shape you like."
+        }
+      ]
+    },
+    "booking": {
+      "title": "Consultations and booking",
+      "text": "Visits to the studio at 65 Tighina Street are by appointment. Message us on Telegram or call to discuss the procedure and arrange a time.",
+      "contacts": "Directions to the studio",
+      "home": "About Oblivion Tattoo"
     }
   },
   "tattooPage": {

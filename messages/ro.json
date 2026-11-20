@@ -9,12 +9,12 @@
       "twitterDescription": "Studio profesionist de tatuaje și machiaj permanent în centrul Chișinăului. Design personalizat, mediu steril și programare online. Transformăm ideile tale în artă."
     },
     "permanentPageMetadata": {
-      "title": "Machiaj permanent în Chișinău | Oblivion Tattoo",
-      "description": "Machiaj permanent profesional în studioul Oblivion Tattoo din Chișinău: sprâncene, buze și conturul ochilor. Pigmenți siguri, consultație și corecție.",
-      "openGraphTitle": "Machiaj permanent în Chișinău | Sprâncene, buze și ochi",
-      "openGraphDescription": "Machiaj permanent pentru sprâncene, buze și ochi la Oblivion Tattoo. Rezultate naturale, pigmenți siguri și consultație.",
-      "twitterTitle": "Machiaj permanent în Chișinău | Oblivion Tattoo",
-      "twitterDescription": "Sprâncene, buze și conturul ochilor cu pigmenți siguri, consultație și corecție."
+      "title": "Machiaj permanent în Chișinău — sprâncene, buze și pleoape | Oblivion Tattoo",
+      "description": "Sprâncene pudrate, micropigmentarea buzelor în tehnica acuarelă și conturul pleoapelor în Chișinău. Prețul este de 900 MDL pe zonă. Programează o consultație.",
+      "openGraphTitle": "Machiaj permanent în Chișinău — sprâncene, buze și pleoape | Oblivion Tattoo",
+      "openGraphDescription": "Sprâncene pudrate, micropigmentarea buzelor în tehnica acuarelă și conturul pleoapelor în Chișinău. Prețul este de 900 MDL pe zonă. Programează o consultație.",
+      "twitterTitle": "Machiaj permanent în Chișinău — sprâncene, buze și pleoape | Oblivion Tattoo",
+      "twitterDescription": "Sprâncene pudrate, micropigmentarea buzelor în tehnica acuarelă și conturul pleoapelor în Chișinău. Prețul este de 900 MDL pe zonă. Programează o consultație."
     },
     "tattooPageMetadata": {
       "title": "Tatuaje în Chișinău | Design personalizat | Oblivion Tattoo",
@@ -227,118 +227,130 @@
       "offerEyes": "Machiaj permanent pleoape / contur ochi / infraciliar"
     },
     "heroSection": {
-      "title": "Machiaj permanent la Chișinău",
-      "titleExtend": "realizat de un maestru de top",
-      "text": "Evidențiază-ți frumusețea naturală cu ajutorul machiajului permanent profesional. Suntem specializați în cele mai solicitate tehnici: sprâncene pudrate, tatuaj acuarelă pentru buze și eyeliner delicat între gene.",
+      "title": "Machiaj permanent în Chișinău",
+      "text": "Ce îți place să accentuezi când te machiezi? Alege zona pentru a vedea tehnicile, fotografiile și prețurile.",
       "button": "Programează o consultație",
       "subtitles": [
         {
+          "id": "brows",
           "badge": "💎",
-          "title": "Machiaj permanent sprâncene la Chișinău",
-          "text": "Tehnică modernă de pudrare cu pigmenți certificați. Rezultatul natural durează până la 3 ani. Cei mai buni maeștri din Chișinău."
+          "title": "Sprâncene",
+          "text": "Umbrire delicată sub fire"
         },
         {
+          "id": "lips",
           "badge": "👄",
-          "title": "Machiaj permanent buze la Chișinău",
-          "text": "Tehnica acuarelă oferă un ton uniform și un contur frumos fără ruj. Sterilitate completă și standarde europene de calitate în salonul nostru din Chișinău."
+          "title": "Buze",
+          "text": "Culoare și contur"
         },
         {
+          "id": "eyelids",
           "badge": "👁️",
-          "title": "Machiaj permanent ochi și eyeliner la Chișinău",
-          "text": "Umplerea liniei genelor și efectul de eyeliner evidențiază privirea și economisesc timp. Maeștri de încredere la Chișinău (Moldova), rezultat sigur și de lungă durată."
+          "title": "Pleoape",
+          "text": "Linia genelor sau efect de tuș"
         }
       ]
     },
     "descriptionSection": {
-      "title": "Machiaj permanent la Chișinău - sprâncene, buze și eyeliner",
-      "text": "Machiajul permanent (tatuajul) este o procedură cosmetică modernă care permite obținerea unui machiaj rezistent și natural timp de 1,5–3 ani. Uită de rutina zilnică cu creioane și rujuri.",
-      "button": "Programează o consultație",
-      "labels": [
-        { "badge": "✨", "text": "Trezește-te deja frumoasă și economisește timp în fiecare dimineață" },
-        { "badge": "🏊‍♀️", "text": "Încredere în orice situație: sport, piscină, plajă" },
-        { "badge": "🎨", "text": "Formă și nuanță perfectă pentru tipul tău de frumusețe" },
-        { "badge": "💯", "text": "Evidențiem trăsăturile naturale, nu le mascăm" }
-      ],
-      "subtitle": "Machiaj permanent și tatuaj pentru ochi la Chișinău",
-      "extraText": "Machiajul permanent te ajută să economisești timp și să arăți impecabil în fiecare zi. Oferim prețuri transparente și garantăm calitatea lucrării. Programează o consultație online sau telefonic și află ce tip de tatuaj ți se potrivește cel mai bine.",
-      "secondButton": "Programează o consultație"
+      "title": "Ce este machiajul permanent?",
+      "text": "Machiajul permanent presupune introducerea pigmentului în piele pentru a evidenția sprâncenele, buzele sau linia genelor. Nuanța se schimbă în timp, iar persistența culorii diferă de la o persoană la alta."
     },
     "serviceSection": {
-      "title": "Machiaj permanent la Chișinău sprâncene, buze și eyeliner la studioul Oblivion Tattoo",
-      "text": "Studioul nostru de tatuaje din Chișinău oferă machiaj permanent profesional pentru femeile care doresc să arate mereu îngrijite. Folosim tehnici moderne: sprâncene pudrate, buze acuarelă și eyeliner intercilial. Procedura este nedureroasă, sigură și oferă un rezultat natural timp de 1,5–3 ani.",
+      "title": "Tehnici și prețuri",
+      "text": "Prețul afișat este pentru o singură zonă. Compară efectele în funcție de detaliul pe care îl accentuezi de obicei când te machiezi.",
       "services": [
         {
+          "id": "brows",
           "badge": "Sprâncene",
-          "title": "Sprâncene pudrate",
-          "text": "Crearea unui efect de umbră delicată pentru o formă și densitate perfecte. Rezultat natural care arată ca un machiaj profesional zi de zi.",
-          "subtitle": "Avantajele machiajului permanent profesional:",
-          "list": [
-            "Efect de estompare natural fără linii dure",
-            "Crește vizual densitatea sprâncenelor",
-            "Corectarea formei și asimetriei",
-            "Rezultat de lungă durată 1,5–3 ani",
-            "Potrivit pentru toate tipurile de piele"
-          ],
-          "priceTitle": "Preț:",
+          "title": "Micropigmentarea sprâncenelor",
+          "text": "Tehnica pudrată creează o umbră în interiorul formei sprâncenei. Dacă de obicei accentuezi doar coada, arată-i specialistului unde preferi o umbrire discretă.",
+          "alt": "Sprâncene închise și arcuite, cu fire vizibile spre rădăcina nasului",
+          "priceTitle": "Preț pe zonă",
           "price": "900 MDL",
-          "timeTitle": "Durata:",
-          "time": "40 min – 1 oră",
-          "healTitle": "Vindecare:",
-          "heal": "7–10 zile",
-          "correctionTitle": "Corecție:",
-          "correction": "după 3 săptămâni (același preț și timp)",
           "button": "Programează-te"
         },
         {
+          "id": "lips",
           "badge": "Buze",
-          "title": "Machiaj permanent buze",
-          "text": "Crearea unui efect acvarelă delicat sau a unui contur definit, după dorință. Opțiuni: contur, contur cu estompare, umplere completă sau efect pudrat. Rezultat – buze naturale, îngrijite și expresive zi de zi.",
-          "subtitle": "Avantaje:",
-          "list": [
-            "Efect natural, de la delicat la intens",
-            "Evidențierea formei și simetriei",
-            "Creșterea vizuală a volumului",
-            "Rezultat de lungă durată 1,5–3 ani",
-            "Potrivit pentru toate tipurile de piele"
-          ],
-          "priceTitle": "Preț:",
+          "title": "Micropigmentarea buzelor",
+          "text": "Tehnica acuarelă adaugă o nuanță delicată. Pentru o margine mai definită, întreabă despre conturul estompat. O fotografie cu rujul tău preferat ajută la alegerea intensității.",
+          "alt": "Buze roz mat cu un contur bine definit",
+          "priceTitle": "Preț pe zonă",
           "price": "900 MDL",
-          "timeTitle": "Durata:",
-          "time": "40 min – 1 oră",
-          "healTitle": "Vindecare:",
-          "heal": "7–10 zile",
-          "correctionTitle": "Corecție:",
-          "correction": "după 3 săptămâni (același preț și timp)",
           "button": "Programează-te"
         },
         {
-          "badge": "Pleope",
-          "title": "Machiaj permanent ochi",
-          "text": "Opțiuni: linie clasică de tuș, spațiu între gene sau linie cu estompare ușoară. Evidențiază expresivitatea privirii și creează efectul de machiaj îngrijit în fiecare zi.",
-          "subtitle": "Avantaje:",
-          "list": [
-            "Rezultat natural sau expresiv",
-            "Crește vizual densitatea genelor",
-            "Corectarea formei ochilor",
-            "Rezultat de lungă durată 2–5 ani",
-            "Potrivit pentru toate tipurile de piele"
-          ],
-          "priceTitle": "Preț:",
+          "id": "eyelids",
+          "badge": "Pleoape",
+          "title": "Micropigmentarea pleoapelor",
+          "text": "Pigmentarea între gene accentuează baza genelor superioare. O linie de tuș se poate prelungi dincolo de colțul extern. Discută lungimea codiței și dacă preferi o linie precisă sau estompată.",
+          "alt": "Linie neagră de tuș cu vârf ascuțit la colțul extern al ochiului",
+          "priceTitle": "Preț pe zonă",
           "price": "900 MDL",
-          "timeTitle": "Durata:",
-          "time": "20 min – 40 min",
-          "healTitle": "Vindecare:",
-          "heal": "7–10 zile",
-          "correctionTitle": "Corecție:",
-          "correction": "după 3 săptămâni (același preț și timp)",
           "button": "Programează-te"
         }
       ]
     },
+    "guide": [
+      {
+        "title": "Pregătire și recuperare",
+        "text": "Spune-i specialistului dacă zona este deja pigmentată. Întreabă cum să te pregătești și cât timp să rezervi. La final, cere indicații de îngrijire și stabilește când să trimiți o fotografie pentru evaluarea culorii după vindecare."
+      },
+      {
+        "title": "Retușul",
+        "text": "După vindecare poți aprecia forma și uniformitatea culorii. Dacă dorești o nuanță mai intensă sau ajustarea unui detaliu, discută cu specialistul despre necesitatea, data și prețul retușului."
+      }
+    ],
     "gallerySection": {
-      "title": "Galerie de machiaj permanent în Chișinău",
-      "text": "Galeria prezintă lucrări reale realizate de artiștii studioului Oblivion Tattoo: machiaj permanent pentru sprâncene, buze și conturul genelor. Toate procedurile sunt efectuate ținând cont de trăsăturile individuale, structura feței și rezultatul dorit.",
-      "extraText": "Lucrăm în Chișinău, folosim tehnici moderne de machiaj permanent și acordăm o atenție deosebită preciziei, rezultatelor naturale și siguranței."
+      "title": "Exemple de lucrări",
+      "text": "Compară conturul buzelor, intensitatea sprâncenelor și formele liniilor de tuș. Deschide fotografia pentru detalii.",
+      "link": "Vezi întregul portofoliu al studioului",
+      "photos": {
+        "permanent-1": "Buze roz mat cu un contur bine definit",
+        "permanent-2": "Linie închisă, estompată, la baza genelor superioare, cu o codiță fină",
+        "permanent-3": "Prim-plan cu o linie neagră subțire pe pleoapa superioară",
+        "permanent-4": "Sprâncene închise și arcuite, cu fire vizibile spre rădăcina nasului",
+        "permanent-5": "Linie neagră de tuș cu vârf ascuțit la colțul extern al ochiului"
+      }
+    },
+    "faq": {
+      "title": "Întrebări frecvente",
+      "items": [
+        {
+          "question": "Cât costă machiajul permanent în Chișinău?",
+          "answer": "La Oblivion Tattoo, procedura pentru sprâncene, buze sau pleoape costă 900 MDL pentru o zonă. Întreabă separat despre costul unui eventual retuș."
+        },
+        {
+          "question": "Care este diferența dintre tatuajul cosmetic și machiajul permanent?",
+          "answer": "Pentru serviciile de pe această pagină, termenii descriu aceeași procedură. Contează tehnica: la buze poți alege între accentuarea conturului și o nuanțare delicată."
+        },
+        {
+          "question": "Ce tehnici există pentru sprâncene?",
+          "answer": "Tehnica pudrată umbrește pielea sub fire, iar tehnica fir cu fir imită firele individuale. În lista de prețuri a studioului găsești tehnica pudrată."
+        },
+        {
+          "question": "Când poate fi necesar un retuș?",
+          "answer": "Dacă după vindecare o porțiune pare mai deschisă sau îți dorești mai multă intensitate, arată-i zona specialistului. Aspectul imediat după procedură nu este suficient pentru a decide."
+        },
+        {
+          "question": "Cum decurge consultația?",
+          "answer": "Spune ce zonă te interesează și cum te machiezi de obicei. Poți discuta forma, nuanța, o pigmentare anterioară și ora programării."
+        },
+        {
+          "question": "Ce trebuie să știu despre recuperare?",
+          "answer": "Urmează indicațiile de îngrijire pentru zona aleasă. Dacă te pregătești pentru un eveniment, comunică data înainte de programare, fiindcă timpul de recuperare diferă."
+        },
+        {
+          "question": "Cum aleg procedura potrivită?",
+          "answer": "Pornește de la detaliul pe care îl conturezi cel mai des: sprâncenele, buzele sau linia genelor. Arată-i specialistului machiajul tău obișnuit și o lucrare care îți place."
+        }
+      ]
+    },
+    "booking": {
+      "title": "Consultații și programări",
+      "text": "Studioul de pe strada Tighina 65 primește clienți cu programare. Scrie-ne pe Telegram sau sună pentru a discuta procedura și a alege o oră.",
+      "contacts": "Cum ajungi la studio",
+      "home": "Despre Oblivion Tattoo"
     }
   },
   "tattooPage": {

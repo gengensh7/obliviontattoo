@@ -9,12 +9,12 @@
       "twitterDescription": "Studio professionale di tatuaggi e trucco permanente nel centro di Chișinău. Design personalizzati, ambiente sterile e prenotazione online. Trasformiamo le tue idee in arte."
     },
     "permanentPageMetadata": {
-      "title": "Trucco permanente (tatuaggio) a Chișinău | Oblivion Tattoo",
-      "description": "Trucco permanente da Oblivion Tattoo a Chișinău: sopracciglia, labbra e contorno occhi. Pigmenti sicuri, consulenza e ritocco.",
-      "openGraphTitle": "Trucco permanente a Chișinău | Oblivion Tattoo Studio",
-      "openGraphDescription": "Ottieni un trucco permanente perfetto per sopracciglia, labbra e palpebre nello studio professionale Oblivion Tattoo. Risultati naturali e tecnologie sicure.",
-      "twitterTitle": "Trucco permanente presso Oblivion Tattoo Chișinău",
-      "twitterDescription": "Trucco permanente impeccabile realizzato dai professionisti di Oblivion Tattoo. Sopracciglia, labbra ed eyeliner. Qualità e sterilità garantite."
+      "title": "Trucco permanente a Chișinău — sopracciglia, labbra e occhi | Oblivion Tattoo",
+      "description": "Sopracciglia sfumate, labbra effetto acquerello e eyeliner permanente a Chișinău. Il prezzo è di 900 MDL a zona. Guarda i lavori e prenota una consulenza.",
+      "openGraphTitle": "Trucco permanente a Chișinău — sopracciglia, labbra e occhi | Oblivion Tattoo",
+      "openGraphDescription": "Sopracciglia sfumate, labbra effetto acquerello e eyeliner permanente a Chișinău. Il prezzo è di 900 MDL a zona. Guarda i lavori e prenota una consulenza.",
+      "twitterTitle": "Trucco permanente a Chișinău — sopracciglia, labbra e occhi | Oblivion Tattoo",
+      "twitterDescription": "Sopracciglia sfumate, labbra effetto acquerello e eyeliner permanente a Chișinău. Il prezzo è di 900 MDL a zona. Guarda i lavori e prenota una consulenza."
     },
     "tattooPageMetadata": {
       "title": "Tatuaggi a Chișinău | Design personalizzati | Oblivion Tattoo",
@@ -228,117 +228,129 @@
     },
     "heroSection": {
       "title": "Trucco permanente a Chișinău",
-      "titleExtend": "da un maestro di classe extra",
-      "text": "Esalta la tua bellezza naturale con il trucco permanente professionale. Siamo specializzati nelle tecniche più richieste: sopracciglia in polvere, tatuaggio labbra acquerello ed elegante eyeliner infracigliare.",
+      "text": "Quale dettaglio valorizzi con il trucco di tutti i giorni? Scegli la zona per vedere tecniche, fotografie e prezzi.",
       "button": "Prenota una consulenza",
       "subtitles": [
         {
+          "id": "brows",
           "badge": "💎",
-          "title": "Trucco permanente sopracciglia a Chișinău",
-          "text": "Ombreggiatura in polvere moderna con pigmenti certificati. Risultato naturale che dura fino a 3 anni. I migliori maestri a Chișinău."
+          "title": "Sopracciglia",
+          "text": "Una sfumatura sotto i peli"
         },
         {
+          "id": "lips",
           "badge": "👄",
-          "title": "Trucco permanente labbra a Chișinău",
-          "text": "La tecnica acquerello garantisce un tono uniforme e un contorno perfetto senza rossetto. Massima sterilità e standard di qualità europei nel nostro salone a Chișinău."
+          "title": "Labbra",
+          "text": "Colore e contorno"
         },
         {
+          "id": "eyelids",
           "badge": "👁️",
-          "title": "Trucco permanente occhi ed eyeliner a Chișinău",
-          "text": "Riempimento infracigliare ed effetto eyeliner che esaltano lo sguardo e fanno risparmiare tempo. Maestri affidabili a Chișinău (Moldavia), risultato sicuro e duraturo."
+          "title": "Palpebre",
+          "text": "Rima ciliare o eyeliner"
         }
       ]
     },
     "descriptionSection": {
-      "title": "Trucco permanente a Chișinău - sopracciglia, labbra ed eyeliner",
-      "text": "Il trucco permanente (tatuaggio) è una procedura cosmetica moderna che permette di ottenere un make-up duraturo e naturale per 1,5–3 anni. Dimentica la routine quotidiana con matite e rossetti.",
-      "button": "Prenota una consulenza",
-      "labels": [
-        { "badge": "✨", "text": "Svegliati già bella e risparmia tempo ogni mattina" },
-        { "badge": "🏊‍♀️", "text": "Sicurezza in ogni situazione: sport, piscina, spiaggia" },
-        { "badge": "🎨", "text": "Forma e tonalità perfette per il tuo tipo di viso" },
-        { "badge": "💯", "text": "Esaltiamo i tratti naturali, non li mascheriamo" }
-      ],
-      "subtitle": "Trucco permanente ed eyeliner tattoo a Chișinău",
-      "extraText": "Il trucco permanente ti permette di risparmiare tempo e di apparire impeccabile ogni giorno. Offriamo prezzi trasparenti e garantiamo la qualità del lavoro. Prenota una consulenza online o per telefono e scopri quale tipo di tatuaggio è più adatto a te.",
-      "secondButton": "Prenota una consulenza"
+      "title": "Che cos’è il trucco permanente?",
+      "text": "Il trucco permanente è un tatuaggio cosmetico. Il pigmento viene inserito nella pelle per definire sopracciglia, labbra o rima ciliare. La tonalità cambia nel tempo e la durata del colore varia da persona a persona."
     },
     "serviceSection": {
-      "title": "Trucco permanente a Chișinău sopracciglia, labbra e eyeliner nello studio Oblivion Tattoo",
-      "text": "Il nostro studio di tatuaggi a Chișinău offre trucco permanente professionale per le donne che vogliono apparire sempre curate. Usiamo tecniche moderne: sopracciglia in polvere, labbra acquerello e eyeliner infracigliare. La procedura è indolore, sicura e offre un risultato naturale da 1,5 a 3 anni.",
+      "title": "Tecniche e prezzi",
+      "text": "Il prezzo si riferisce a una sola zona. Confronta gli effetti pensando al dettaglio del tuo trucco quotidiano che vorresti riprodurre.",
       "services": [
         {
+          "id": "brows",
           "badge": "Sopracciglia",
-          "title": "Sopracciglia effetto polvere",
-          "text": "Creazione di un effetto ombra leggero per una forma e densità perfette. Risultato naturale che sembra un trucco professionale ogni giorno.",
-          "subtitle": "Vantaggi del trucco permanente professionale:",
-          "list": [
-            "Effetto sfumato naturale senza linee marcate",
-            "Aumenta visivamente la densità delle sopracciglia",
-            "Correzione di forma e asimmetria",
-            "Risultato duraturo 1,5–3 anni",
-            "Adatto a tutti i tipi di pelle"
-          ],
-          "priceTitle": "Prezzo:",
+          "title": "Trucco permanente delle sopracciglia",
+          "text": "La tecnica effetto polvere crea una sfumatura all’interno del sopracciglio. Se di solito riempi solo la coda, indica dove preferisci lasciare il colore più leggero.",
+          "alt": "Sopracciglia scure e arcuate con peli visibili vicino al naso",
+          "priceTitle": "Prezzo per zona",
           "price": "900 MDL",
-          "timeTitle": "Durata:",
-          "time": "40 min – 1 ora",
-          "healTitle": "Guarigione:",
-          "heal": "7–10 giorni",
-          "correctionTitle": "Correzione:",
-          "correction": "dopo 3 settimane (stesso prezzo e tempo)",
           "button": "Prenota un appuntamento"
         },
         {
+          "id": "lips",
           "badge": "Labbra",
-          "title": "Trucco permanente labbra",
-          "text": "Creazione di un delicato effetto acquerello o di un contorno definito, a scelta. Opzioni: contorno, contorno sfumato, riempimento completo o leggero effetto polvere. Risultato – labbra naturali, curate ed espressive ogni giorno.",
-          "subtitle": "Vantaggi:",
-          "list": [
-            "Effetto naturale da delicato a intenso",
-            "Valorizzazione della forma e simmetria",
-            "Aumento visivo del volume",
-            "Risultato duraturo 1,5–3 anni",
-            "Adatto a tutti i tipi di pelle"
-          ],
-          "priceTitle": "Prezzo:",
+          "title": "Trucco permanente delle labbra",
+          "text": "La tecnica acquerello dona un velo di colore. Se preferisci un bordo più definito, chiedi del contorno sfumato. Una foto del tuo rossetto preferito aiuta a spiegare l’intensità che cerchi.",
+          "alt": "Labbra rosa opaco con contorno definito",
+          "priceTitle": "Prezzo per zona",
           "price": "900 MDL",
-          "timeTitle": "Durata:",
-          "time": "40 min – 1 ora",
-          "healTitle": "Guarigione:",
-          "heal": "7–10 giorni",
-          "correctionTitle": "Correzione:",
-          "correction": "dopo 3 settimane (stesso prezzo e tempo)",
           "button": "Prenota un appuntamento"
         },
         {
-          "badge": "Occhi",
-          "title": "Trucco permanente occhi",
-          "text": "Opzioni: eyeliner classico, infracigliare o eyeliner con sfumatura leggera. Sottolinea l’espressività dello sguardo e crea un effetto di trucco curato ogni giorno.",
-          "subtitle": "Vantaggi:",
-          "list": [
-            "Risultato naturale o intenso",
-            "Aumenta visivamente la densità delle ciglia",
-            "Correzione della forma degli occhi",
-            "Risultato duraturo 2–5 anni",
-            "Adatto a tutti i tipi di pelle"
-          ],
-          "priceTitle": "Prezzo:",
+          "id": "eyelids",
+          "badge": "Palpebre",
+          "title": "Trucco permanente delle palpebre",
+          "text": "La tecnica infracigliare definisce la base delle ciglia superiori. L’eyeliner può proseguire oltre l’angolo esterno. Durante la consulenza puoi scegliere la lunghezza della coda e discutere un tratto netto o sfumato.",
+          "alt": "Eyeliner nero con coda appuntita all’angolo esterno dell’occhio",
+          "priceTitle": "Prezzo per zona",
           "price": "900 MDL",
-          "timeTitle": "Durata:",
-          "time": "20 min – 40 min",
-          "healTitle": "Guarigione:",
-          "heal": "7–10 giorni",
-          "correctionTitle": "Correzione:",
-          "correction": "dopo 3 settimane (stesso prezzo e tempo)",
           "button": "Prenota un appuntamento"
         }
       ]
     },
+    "guide": [
+      {
+        "title": "Preparazione e recupero",
+        "text": "Segnala se hai già un tatuaggio cosmetico nella zona. Chiedi come prepararti e quanto tempo riservare alla seduta. Prima di andare via, chiedi le indicazioni per la cura e concorda quando inviare una foto del colore a guarigione avvenuta."
+      },
+      {
+        "title": "Ritocco",
+        "text": "Dopo la guarigione puoi valutare la forma e l’uniformità del colore. Per intensificare la tonalità o modificare un dettaglio, chiedi se occorre un ritocco, quando farlo e quanto costa."
+      }
+    ],
     "gallerySection": {
-      "title": "Galleria di Trucco Permanente a Chișinău",
-      "text": "La galleria presenta lavori reali dei professionisti dello studio Oblivion Tattoo: trucco permanente per sopracciglia, labbra e infracigliare. Tutte le procedure vengono eseguite tenendo conto delle caratteristiche individuali, della forma del viso e del risultato desiderato.",
-      "extraText": "Operiamo a Chișinău, utilizziamo tecniche moderne di trucco permanente e prestiamo particolare attenzione alla precisione, alla naturalezza e alla sicurezza."
+      "title": "Esempi dei nostri lavori",
+      "text": "Confronta i contorni delle labbra, le sfumature delle sopracciglia e i diversi tratti di eyeliner. Apri una foto per osservare i dettagli.",
+      "link": "Guarda il portfolio completo dello studio",
+      "photos": {
+        "permanent-1": "Labbra rosa opaco con contorno definito",
+        "permanent-2": "Tratto scuro sfumato alla base delle ciglia superiori con una coda sottile",
+        "permanent-3": "Primo piano di una linea nera sottile sulla palpebra superiore",
+        "permanent-4": "Sopracciglia scure e arcuate con peli visibili vicino al naso",
+        "permanent-5": "Eyeliner nero con coda appuntita all’angolo esterno dell’occhio"
+      }
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "items": [
+        {
+          "question": "Quanto costa il trucco permanente a Chișinău?",
+          "answer": "Da Oblivion Tattoo il trattamento di sopracciglia, labbra o palpebre costa 900 MDL per zona. Chiedi a parte il prezzo di un eventuale ritocco."
+        },
+        {
+          "question": "Che differenza c’è tra tatuaggio cosmetico e trucco permanente?",
+          "answer": "In questa pagina i termini indicano lo stesso servizio. È la tecnica a determinare l’effetto: sulle labbra si può accentuare il contorno o creare un velo di colore."
+        },
+        {
+          "question": "Quali tecniche esistono per le sopracciglia?",
+          "answer": "La tecnica effetto polvere sfuma il colore sotto i peli, mentre quella pelo a pelo riproduce singoli tratti. Nel listino dello studio trovi la tecnica effetto polvere."
+        },
+        {
+          "question": "Quando può servire un ritocco?",
+          "answer": "Se dopo la guarigione una parte appare più chiara o desideri un colore più intenso, mostrala a chi ha eseguito il lavoro. Una foto subito dopo la seduta è prematura per valutare il risultato."
+        },
+        {
+          "question": "Come si svolge la consulenza?",
+          "answer": "Scrivici quale zona vuoi valorizzare e come ti trucchi di solito. Potrai discutere forma, tonalità, eventuali tatuaggi cosmetici precedenti e orario della visita."
+        },
+        {
+          "question": "Che cosa devo sapere sul recupero?",
+          "answer": "Segui le indicazioni ricevute per la zona trattata. Se hai un evento in programma, comunica la data prima di prenotare perché i tempi di recupero variano."
+        },
+        {
+          "question": "Come scelgo il trattamento?",
+          "answer": "Pensa al dettaglio che disegni più spesso: sopracciglia, contorno delle labbra o rima ciliare. Mostraci il tuo trucco abituale e una foto del portfolio con un colore o una forma che ti piace."
+        }
+      ]
+    },
+    "booking": {
+      "title": "Consulenza e prenotazioni",
+      "text": "Lo studio in via Tighina 65 riceve su appuntamento. Scrivici su Telegram o chiamaci per parlare del trattamento e concordare un orario.",
+      "contacts": "Come raggiungere lo studio",
+      "home": "Lo studio Oblivion Tattoo"
     }
   },
   "tattooPage": {

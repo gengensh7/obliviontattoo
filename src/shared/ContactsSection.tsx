@@ -3,15 +3,15 @@ import { useTranslations } from 'next-intl'
 import { CONTACT_FACEBOOK, CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
-export const ContactsSection = () => {
+export const ContactsSection = ({ title, text, showNightSessions = true }: { title?: string; text?: string; showNightSessions?: boolean } = {}) => {
   const t = useTranslations('homePage.contactsSection')
 
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col items-center gap-20">
         <FramerMotionContainer className="flex flex-col gap-10">
-          <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{t('title')}</h2>
-          <p className="mx-auto max-w-2xl text-center text-white">{t('text')}</p>
+          <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{title ?? t('title')}</h2>
+          <p className="mx-auto max-w-2xl text-center text-white">{text ?? t('text')}</p>
         </FramerMotionContainer>
 
         <div className="flex flex-col gap-4">
@@ -32,7 +32,7 @@ export const ContactsSection = () => {
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('workingHours.title')}</p>
                     <p className="text-lg text-white">{t('workingHours.time')} 10:00 - 20:30</p>
-                    <p className="mt-1 text-sm text-zinc-400">{t('workingHours.text')}</p>
+                    {showNightSessions && <p className="mt-1 text-sm text-zinc-400">{t('workingHours.text')}</p>}
                   </div>
                 </div>
               </div>
