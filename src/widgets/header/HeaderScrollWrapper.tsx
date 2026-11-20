@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode, useEffect, useRef, useState } from 'react'
-import { cn } from '@/lib/utils'
+import GlassSurface from './GlassSurface'
 
 type Props = {
   children: ReactNode
@@ -21,11 +21,12 @@ export const HeaderScrollWrapper = ({ children }: Props) => {
 
   return (
     <>
-      <div ref={scrollMarker} aria-hidden="true" className="pointer-events-none absolute top-0 left-0 h-[10px] w-px" />
-      <header
-        className={cn('fixed top-0 z-50 w-full transition-all duration-300', isScrolled ? 'bg-zinc-900 shadow-md backdrop-blur' : 'bg-transparent')}
-      >
-        {children}
+      <div ref={scrollMarker} aria-hidden="true" className="pointer-events-none absolute top-0 left-0 h-2.5 w-px" />
+      <header className="group/header fixed top-0 z-50 w-full" data-scrolled={isScrolled ? '' : undefined}>
+        <div className="container relative mx-auto px-4 py-2">
+          <GlassSurface visible={isScrolled} />
+          <div className="relative flex items-center justify-between">{children}</div>
+        </div>
       </header>
     </>
   )

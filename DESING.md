@@ -27,8 +27,11 @@ The home page runs in this order.
 HeroSlider → Services → About the studio → Tattoo designs → Studio advantages → Portfolio → Contacts → Map
 
 `src/app/[locale]/page.tsx` defines the order. The header is fixed at the top.
-It starts transparent and darkens after scrolling. Navigation, the language switcher,
-and the mobile menu are in `src/widgets/header/`.
+At the top of the page, React Bits Glass Surface sits behind the desktop Gooey Nav
+and the language switcher. The language options open in a frosted dropdown.
+After scrolling, the glass covers the full header. It refracts the page behind it,
+with a frosted fallback. Gooey Nav uses white text on a red-600 active pill. Navigation, the
+language switcher, and the mobile menu are in `src/widgets/header/`.
 
 Use the existing container, section spacing, and responsive Tailwind classes.
 Service cards shift from a single column on phones to multiple columns on wider
@@ -39,8 +42,9 @@ work and a list of links to three services. The palette uses zinc tones with a r
 accent. On phones, the photo sits between the introductory text and the list.
 Hovering over a link or focusing it with the keyboard changes the photo. Each link
 leads to the corresponding service description and price.
-The heading leads the entrance, followed by the photo reveal and a short stagger
-through the service links. On pointer hover, a diagonal mask reveals the new
+React Bits Fade Content brings the hero into focus as a single block. Below the
+fold, the main sections come into focus once as they enter the viewport. On
+pointer hover, a diagonal mask reveals the new
 photo as it settles in scale. Keyboard focus and reduced-motion preferences switch
 photos without a reveal.
 

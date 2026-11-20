@@ -21,16 +21,12 @@ export default async function HeaderMenu({ locale }: { locale: string }) {
 
   return (
     <HeaderScrollWrapper>
-      <header>
-        <div className="container mx-auto flex items-center justify-between px-4 py-2">
-          <Logo locale={locale} alt={t('header.logoAlt')} />
-          <div className="flex items-center gap-6 md:gap-10">
-            <HeaderNavigation locale={locale} links={links} />
-            <MobileMenu currentYear={currentYear} locale={locale} links={links} labels={mobileLabels} />
-            <LangSwitcher locale={locale} ariaLabel={labels('translationButton')} />
-          </div>
-        </div>
-      </header>
+      <Logo locale={locale} alt={t('header.logoAlt')} />
+      <div className="flex items-center gap-6 md:gap-10">
+        <HeaderNavigation locale={locale} links={links} />
+        <MobileMenu currentYear={currentYear} locale={locale} links={links} labels={mobileLabels} />
+        <LangSwitcher locale={locale} ariaLabel={labels('translationButton')} />
+      </div>
     </HeaderScrollWrapper>
   )
 }

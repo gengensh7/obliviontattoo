@@ -4,9 +4,9 @@ import { getPathname } from '@/i18n/navigation'
 import { Expand } from 'lucide-react'
 import Image from 'next/image'
 import { getPermanentImages } from '@/lib/cachedPrisma'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import Lightbox from '@/shared/Lightbox'
 import { Skeleton } from '@/components/ui/skeleton'
+import FadeContent from '@/shared/FadeContent'
 
 const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 
@@ -19,7 +19,7 @@ export const GallerySection = async () => {
 
   return (
     <section className="bg-zinc-900 pb-20">
-      <div className="container flex flex-col gap-10">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container flex flex-col gap-10">
         <div className="mx-auto flex max-w-3xl flex-col gap-4 text-center">
           <h2 className="mb-2 text-2xl font-bold text-white 2xl:text-4xl">{t('title')}</h2>
           <p className="text-zinc-400">{t('text')}</p>
@@ -31,7 +31,7 @@ export const GallerySection = async () => {
             {images.map((photo) => {
               const alt = descriptions[photo.url.split('/').pop()?.replace(/\.webp$/, '') ?? ''] ?? photo.alt
               return (
-                <FramerMotionContainer key={photo.id}>
+                <div key={photo.id}>
                   <a className="relative block h-105 w-full overflow-hidden" href={`${SUPABASE_S3_URL}/${photo.url}`} data-gtm="permanent-gallery-image-open" data-pswp-width={1200} data-pswp-height={1600} aria-label={alt}>
                     <Image
                       className="rounded-md object-cover"
@@ -43,12 +43,12 @@ export const GallerySection = async () => {
                     />
                     <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />
                   </a>
-                </FramerMotionContainer>
+                </div>
               )
             })}
           </div>
         </Lightbox>
-      </div>
+      </FadeContent>
     </section>
   )
 }

@@ -120,52 +120,6 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@theme {
-  --ease-permanent: cubic-bezier(0.23, 1, 0.32, 1);
-  --animate-permanent-title: permanent-title-reveal 540ms var(--ease-permanent) backwards;
-  --animate-permanent-intro: permanent-content-reveal 420ms 85ms var(--ease-permanent) backwards;
-  --animate-permanent-preview: permanent-photo-reveal 560ms 105ms var(--ease-permanent) backwards;
-
-  @keyframes permanent-title-reveal {
-    from {
-      clip-path: inset(0 0 36px);
-      transform: translateY(14px);
-    }
-    to {
-      clip-path: inset(-4px);
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes permanent-content-reveal {
-    from {
-      opacity: 0.65;
-      transform: translateY(8px);
-    }
-  }
-
-  @keyframes permanent-photo-reveal {
-    from {
-      clip-path: inset(0 0 32% 0);
-    }
-    to {
-      clip-path: inset(0);
-    }
-  }
-}
-
-@utility animate-permanent-service {
-  animation: permanent-content-reveal 360ms 165ms var(--ease-permanent) backwards;
-
-  &:nth-child(2) {
-    animation-delay: 225ms;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 265ms;
-  }
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -197,41 +151,6 @@ button {
   @apply cursor-pointer focus:outline-none;
 }
 
-@keyframes hero-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes hero-content-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero-slide-enter {
-  animation: hero-fade-in 700ms ease-in-out both;
-}
-
-.hero-content-enter {
-  animation: hero-content-fade-in 500ms ease-out both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-slide-enter,
-  .hero-content-enter {
-    animation: none;
-  }
-}
-
 /* SCROLLBAR */
 
 * {
@@ -256,15 +175,4 @@ button {
 
 *::-webkit-scrollbar-thumb:hover {
   background: #52525b;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  [data-scroll-reveal='pending'] {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  [data-scroll-reveal='visible'] {
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
 }

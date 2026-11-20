@@ -41,9 +41,7 @@ export function HeroServices({ services }: { services: HeroService[] }) {
 
   return (
     <>
-      <figure
-        className={`relative isolate aspect-5/3 overflow-hidden rounded-lg bg-zinc-900 md:max-lg:aspect-video lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:aspect-auto lg:min-h-136 lg:self-stretch xl:min-h-150 2xl:min-h-172 ${input === 'initial' ? 'motion-safe:animate-permanent-preview' : ''}`}
-      >
+      <figure className="relative isolate aspect-5/3 overflow-hidden rounded-lg bg-zinc-900 md:max-lg:aspect-video lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:aspect-auto lg:min-h-136 lg:self-stretch xl:min-h-150 2xl:min-h-172">
         {/* Keep the lower photos uncovered so reversing a wipe always reveals a photo. */}
         {services.map((service, position) => (
           <motion.div
@@ -71,7 +69,7 @@ export function HeroServices({ services }: { services: HeroService[] }) {
       </figure>
 
       <ul
-        className="group/services border-t border-zinc-300/20 lg:col-start-1 lg:row-start-2"
+        className="border-t border-zinc-300/20 lg:col-start-1 lg:row-start-2"
         onPointerLeave={(event) => {
           if (event.pointerType === 'mouse' && input === 'pointer') select(0, 'pointer')
         }}
@@ -82,7 +80,7 @@ export function HeroServices({ services }: { services: HeroService[] }) {
         }}
       >
         {services.map((service, position) => (
-          <li key={service.id} className="motion-safe:animate-permanent-service group-focus-within/services:animate-none">
+          <li key={service.id}>
             <a
               href={`#${service.id}`}
               className="relative flex min-h-17 items-center gap-3 border-b border-zinc-300/20 py-2.5 ps-2 pe-1.5 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-rose-200 lg:gap-5"
@@ -97,10 +95,10 @@ export function HeroServices({ services }: { services: HeroService[] }) {
             >
               <span
                 aria-hidden="true"
-                className={`pointer-events-none absolute inset-y-2 start-0 w-0.5 origin-center bg-rose-200 ${position === index ? 'scale-y-100' : 'scale-y-0'} ${animate ? 'motion-safe:ease-permanent motion-safe:transition-transform motion-safe:duration-160' : 'transition-none'}`}
+                className={`pointer-events-none absolute inset-y-2 inset-s-0 w-0.5 origin-center bg-rose-200 ${position === index ? 'scale-y-100' : 'scale-y-0'} ${animate ? 'motion-safe:ease-permanent motion-safe:transition-transform motion-safe:duration-160' : 'transition-none'}`}
               />
               <span className="relative h-10 w-14.5 shrink-0 overflow-hidden rounded-sm bg-zinc-900">
-                <Image className="object-cover" src={service.image} alt="" fill sizes="58px" />
+                <Image className="object-cover" src={service.image} alt="" fill sizes="58px" loading={position === 0 ? 'eager' : 'lazy'} />
               </span>
               <span className="flex min-w-0 flex-1 flex-col gap-x-3.5 lg:flex-row lg:items-baseline">
                 <span

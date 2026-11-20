@@ -6,6 +6,7 @@ import { Suspense } from 'react'
 import { buildPermanentMakeupServiceJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
+import FadeContent from '@/shared/FadeContent'
 import { DescriptionSection } from './ui/DescriptionSection'
 import { GallerySection, GallerySectionFallback } from './ui/GallerySection'
 import { HeroSection } from './ui/HeroSection'
@@ -24,20 +25,20 @@ export default async function PermanentPage({ params }: { params: Promise<{ loca
       <DescriptionSection />
       <ServicesSection />
       <section className="bg-zinc-900 pb-20">
-        <div className="container grid gap-6 md:grid-cols-2">
+        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-6 md:grid-cols-2">
           {guide.map(({ title, text }) => (
             <div key={title} className="rounded-2xl bg-white/5 p-6">
               <h2 className="mb-4 text-2xl font-bold text-white">{title}</h2>
               <p className="leading-relaxed text-zinc-300">{text}</p>
             </div>
           ))}
-        </div>
+        </FadeContent>
       </section>
       <Suspense fallback={<GallerySectionFallback />}>
         <GallerySection />
       </Suspense>
       <section className="bg-zinc-900 pb-20">
-        <div className="container">
+        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container">
           <div className="mx-auto max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold text-white">{t('faq.title')}</h2>
             {faq.map(({ question, answer }) => (
@@ -47,9 +48,11 @@ export default async function PermanentPage({ params }: { params: Promise<{ loca
               </div>
             ))}
           </div>
-        </div>
+        </FadeContent>
       </section>
-      <ContactsSection title={t('booking.title')} text={t('booking.text')} showNightSessions={false} />
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="bg-zinc-900">
+        <ContactsSection title={t('booking.title')} text={t('booking.text')} showNightSessions={false} animateHeading={false} />
+      </FadeContent>
       <div className="flex flex-wrap justify-center gap-6 bg-zinc-900 px-4 pb-12 text-rose-200 underline underline-offset-4">
         <Link href={getPathname({ locale, href: '/contacts' })}>{t('booking.contacts')}</Link>
         <Link href={getPathname({ locale, href: '/' })}>{t('booking.home')}</Link>
