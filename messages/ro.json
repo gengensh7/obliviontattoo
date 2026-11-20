@@ -34,11 +34,11 @@
     },
     "coursePageMetadata": {
       "title": "Cursuri de tatuaj și machiaj permanent în Chișinău | Oblivion Tattoo",
-      "description": "Cursuri de tatuaj, machiaj permanent și piercing la Oblivion Tattoo în Chișinău. Instruire de la zero, practică pe modele și certificat inclus.",
+      "description": "Cursuri de tatuaj și machiaj permanent în Chișinău: 7 zile și 450 € fiecare. Piercing: 3 zile, 300 €. Practică pe modele și materiale incluse.",
       "openGraphTitle": "Cursuri pentru artiști tatuatori și specialiști în machiaj permanent | Oblivion Tattoo Academy",
-      "openGraphDescription": "Formare pentru profesiile viitorului. Programe personalizate, abordare individuală și tot ce ai nevoie pentru a începe o carieră. Înscriere la cursuri de tatuaj, piercing și machiaj permanent.",
+      "openGraphDescription": "Cursuri de tatuaj și machiaj permanent în Chișinău: 7 zile și 450 € fiecare. Piercing: 3 zile, 300 €. Practică pe modele și materiale incluse.",
       "twitterTitle": "Cursuri de tatuaj și machiaj permanent în Chișinău | Oblivion Tattoo",
-      "twitterDescription": "Devino un profesionist. Instruire în tatuaj, piercing și machiaj permanent cu practică, suport și certificat la final."
+      "twitterDescription": "Cursuri de tatuaj și machiaj permanent în Chișinău: 7 zile și 450 € fiecare. Piercing: 3 zile, 300 €. Practică pe modele și materiale incluse."
     },
     "galleryPageMetadata": {
       "title": "Galerie de tatuaje | Oblivion Tattoo Chișinău",
@@ -125,7 +125,7 @@
         "thirdCard": {
           "title": "Creștere și Învățare",
           "text": "TE ÎNVĂȚĂM TOTUL",
-          "description": "Vrei să devii artist? Instruirea la Oblivion Tattoo include practică pe modele reale, program flexibil, instructori cu experiență și diplomă recunoscută internațional. Obții nu doar cunoștințe, ci o profesie.",
+          "description": "La Oblivion Tattoo din Chișinău poți învăța de la zero să tatuezi, să realizezi machiaj permanent sau să faci piercinguri. Compară programele, timpul de practică și costurile înainte de a alege un curs.",
           "button": "Programează-te"
         }
       }
@@ -729,120 +729,85 @@
     "seoLine": "Studio de tatuaje în Chișinău, Moldova | Tatuaj artistic | Artiști profesioniști | Condiții sterile | Designuri personalizate | Acoperire tatuaje vechi | Consultații pentru îngrijire"
   },
   "coursesPage": {
-    "seo": {
-      "pageTitle": "Cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
-      "titleTattooPM": "Curs: Tatuaj / Machiaj permanent",
-      "descriptionTattooPM": "Formare intensivă la Chișinău: bază teoretică solidă și practică sigură pe modele reale, sub îndrumarea unui maestru. Condiții sterile, echipamente profesionale, certificare la final.",
-      "titlePiercing": "Curs: Piercing",
-      "descriptionPiercing": "Start rapid în profesie: tehnici de piercing, igienă, anatomie și practică pe modele. Siguranță, sterilitate și suport după formare."
-    },
     "hero": {
       "title": "Cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
-      "lead": "Dacă vrei să stăpânești o profesie creativă și căutată, înscrie-te la cursul de tatuaj din Chișinău, la formarea în machiaj permanent și la cursul de piercing din Chișinău. Toate cursurile sunt potrivite atât pentru începători, cât și pentru maeștri care doresc să-și perfecționeze abilitățile."
+      "lead": "La Oblivion Tattoo din Chișinău poți învăța de la zero să tatuezi, să realizezi machiaj permanent sau să faci piercinguri. Compară programele, timpul de practică și costurile înainte de a alege un curs."
     },
-    "overview": {
-      "title": "Prezentarea cursului",
-      "paragraphs": [
-        "Cursurile noastre oferă o pregătire complexă la Chișinău, oferindu-ți o bază teoretică solidă și abilități practice sigure.",
-        "Din prima zi lucrezi cu modele reale sub îndrumarea unui maestru experimentat. Instruirea are loc în salon, cu echipamente profesionale."
-      ]
-    },
-    "curriculum": {
-      "title": "Programul cursului",
-      "items": [
-        "Bazele sterilității și igienei",
-        "Tipuri de instrumente și utilizarea lor (ace, cartușe, mașini etc.)",
-        "Alegerea zonei și lucrul cu anatomia corpului",
-        "Construirea schiței sau a formelor (în funcție de direcție)",
-        "Lucrul cu culorile și alegerea nuanțelor",
-        "Practică pe modele încă din primele lecții",
-        "Îngrijire post-procedură și recomandări pentru vindecare",
-        "Greșeli frecvente și cum pot fi evitate",
-        "Comunicarea cu clienții și crearea unei atmosfere confortabile",
-        "Foto și video ale lucrărilor pentru portofoliu",
-        "Certificare la finalul cursului",
-        "Diplomă ce poate fi pregătită pentru recunoaștere în alte țări europene"
-      ]
-    },
-    "details": {
-      "title": "Detalii despre curs",
-      "tattooPM": {
-        "title": "Tatuaj / Machiaj permanent",
-        "bullets": [
-          "7 zile: 1 zi teorie, 6 zile practică pe modele",
-          "Program flexibil zilele și orele sunt alese de cursant",
-          "Toate materialele și echipamentele incluse",
-          "Diplomă în română și engleză; alte limbi la cerere"
-        ]
-      },
-      "piercing": {
-        "title": "Piercing",
-        "bullets": [
-          "3 zile: 1 zi teorie, 2 zile practică",
-          "Practică pe modele, program flexibil",
-          "Toate instrumentele și bijuteriile sunt asigurate de salon",
-          "Diplomă în două limbi; alte limbi disponibile la cerere"
-        ]
-      }
-    },
+    "fee": "{price} €",
+    "longSchedule": "7 zile · o zi de teorie și 6 zile de practică pe modele",
+    "shortSchedule": "3 zile · o zi de teorie și 2 zile de practică pe modele",
+    "materials": "Echipamentul și consumabilele sunt puse la dispoziție de studio și sunt incluse în preț.",
+    "jewellery": "Prețul include lecțiile, instrumentele și bijuteriile folosite la practică.",
+    "document": "La final primești o diplomă de absolvire a cursului de la Oblivion Tattoo.",
+    "booking": "Pentru înscriere, scrie-ne pe Telegram. Spune-ne ce curs ai ales și ce date preferi, ca să stabilim programul împreună.",
+    "cta": "Înscriere pe Telegram",
+    "gallery": "Vezi lucrările artiștilor în galerie",
+    "contactTitle": "Contact pentru înscrieri",
     "types": {
-      "title": "Tipuri de cursuri",
       "tattoo": {
-        "title": "Curs de tatuaj Chișinău",
-        "text": "Include teorie și practică pe modele: vei învăța contur, umbre, umplere și culoare, precum și sterilitate, echipamente și particularitățile pielii."
+        "title": "Curs de tatuaj",
+        "audience": "Pentru începători și pentru tatuatorii care vor să exerseze conturul și umbrele.",
+        "text": "La teorie studiezi pielea, igiena și alegerea acelor și cartușelor. Pe modele exersezi conturul, umbrirea și umplerea cu negru sau culoare sub îndrumarea unui tatuator.",
+        "link": "Tatuaje realizate în studio"
       },
       "permanent": {
         "title": "Curs de machiaj permanent",
-        "text": "Acoperă sprâncene, buze și eyeliner; alegerea formelor, teoria culorilor și lucrul cu anestezia."
+        "audience": "Pentru începători și pentru practicienii care vor să aprofundeze alegerea formei și a nuanței.",
+        "text": "Studiezi colorimetria, desenarea formei și igiena. Apoi exersezi pe modele tehnici pentru sprâncene, buze și conturul ochilor, sub îndrumarea instructorului.",
+        "link": "Machiaj permanent în studio"
       },
       "piercing": {
-        "title": "Curs de piercing Chișinău",
-        "text": "Formare intensivă în tehnica de perforare, igienă și practică pe modele sub supravegherea unui maestru experimentat."
+        "title": "Curs de piercing",
+        "audience": "Pentru începători și pentru cei care vor să învețe tehnica de perforare sub supraveghere.",
+        "text": "Studiezi anatomia zonei, sterilizarea instrumentelor și îngrijirea în perioada de vindecare. În partea practică exersezi perforarea pe modele, cu instructorul alături.",
+        "link": "Tipuri de piercing în studio"
       }
     },
     "certificateSection": {
       "certificates": {
-        "title": "Certificate și diplome",
+        "title": "Diploma de absolvire",
         "paragraphs": [
-          "La finalul cursului, fiecare student primește o diplomă și un certificat oficiale care atestă absolvirea.",
-          "Implicit, documentele sunt emise în două limbi română și engleză ceea ce permite utilizarea lor atât în Republica Moldova, cât și în afara țării.",
-          "La cerere, studentul poate solicita eliberarea unei diplome suplimentare într-o altă limbă de exemplu germană, italiană, franceză etc.",
-          "Diploma este codificată și recunoscută în majoritatea țărilor europene, ceea ce deschide oportunități suplimentare de lucru în străinătate."
+          "La final primești o diplomă de absolvire a cursului de la Oblivion Tattoo.",
+          "Diploma se eliberează în română și în engleză. Dacă ai nevoie de altă limbă, discută cu studioul la înscriere."
         ],
         "images": {
-          "alt1": "Sigla Oblivion Tattoo",
-          "alt2": "Sigla Oblivion Tattoo"
-        }
-      },
-      "pricing": {
-        "title": "Prețurile cursurilor de tatuaj în Chișinău",
-        "tattooPM": {
-          "title": "Tatuaj și machiaj permanent",
-          "priceLabel": "Preț",
-          "price": "€450 (fiecare curs)",
-          "bullets": [
-            "Teorie și practică de la zero",
-            "Lucru cu echipamente profesionale",
-            "Metode proprii și secretele meseriei",
-            "Suport după formare",
-            "Eliberarea certificatului"
-          ],
-          "cta": "Înscrie-te"
-        },
-        "piercing": {
-          "title": "Piercing",
-          "priceLabel": "Preț",
-          "price": "€300",
-          "bullets": [
-            "Instruire în tehnici de piercing sigure",
-            "Analiza particularităților anatomice",
-            "Igienă și sterilizarea instrumentelor",
-            "Practică pe modele",
-            "Consultații după curs"
-          ],
-          "cta": "Înscrie-te"
+          "alt1": "Înmânarea diplomelor de absolvire la Oblivion Tattoo",
+          "alt2": "Înmânarea diplomelor de absolvire la Oblivion Tattoo"
         }
       }
+    },
+    "faq": {
+      "title": "Întrebări frecvente despre cursuri",
+      "items": [
+        {
+          "question": "Pot începe fără experiență?",
+          "answer": "Da. Fiecare curs începe cu igiena și folosirea instrumentelor, înainte de practica îndrumată."
+        },
+        {
+          "question": "Cât costă cursul de tatuaj în Chișinău?",
+          "answer": "Cursul de tatuaj la Oblivion Tattoo costă 450 €. Cursul de machiaj permanent costă tot 450 €, iar cel de piercing 300 €."
+        },
+        {
+          "question": "Câte zile durează cursul?",
+          "answer": "Tatuajul și machiajul permanent se studiază câte 7 zile, iar piercingul 3 zile. Fiecare curs include o zi de teorie."
+        },
+        {
+          "question": "Materialele sunt incluse?",
+          "answer": "Da. Pentru tatuaj și machiaj permanent primești echipamentul și consumabilele, iar pentru piercing, instrumentele și bijuteriile de practică."
+        },
+        {
+          "question": "Se face practică?",
+          "answer": "Da, lucrezi pe modele sub îndrumarea instructorului."
+        },
+        {
+          "question": "Ce document primesc la final?",
+          "answer": "La final primești o diplomă de absolvire a cursului de la Oblivion Tattoo. Diploma se eliberează în română și în engleză. Dacă ai nevoie de altă limbă, discută cu studioul la înscriere."
+        },
+        {
+          "question": "Cum mă înscriu?",
+          "answer": "Pentru înscriere, scrie-ne pe Telegram. Spune-ne ce curs ai ales și ce date preferi, ca să stabilim programul împreună."
+        }
+      ]
     }
   }
 }

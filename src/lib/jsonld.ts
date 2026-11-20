@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { courses } from '@/lib/courses'
 import { routing } from '@/i18n/routing'
 import { CONTACT_INSTAGRAM, CONTACT_PHONE_NUMBER, CONTACT_TELEGRAM, LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
@@ -103,33 +104,21 @@ export async function buildPermanentMakeupServiceJsonLd(locale: string) {
 }
 
 export async function buildCoursesJsonLd(locale: string) {
-  const t = await getTranslations({ locale, namespace: 'coursesPage.seo' })
+  const t = await getTranslations({ locale, namespace: 'coursesPage.types' })
   const localePart = locale === routing.defaultLocale ? '' : `/${locale}`
-  const url = `${BASE_URL}${localePart}/course`
-  const provider = { '@id': businessId }
-
-  return [
-    {
+  return courses.map(({ key, price }) => {
+    const url = `${BASE_URL}${localePart}/course#${key}-course`
+    return {
       '@context': 'https://schema.org',
       '@type': 'Course',
-      '@id': `${url}#tattoo-permanent-course`,
-      name: t('titleTattooPM'),
-      description: t('descriptionTattooPM'),
-      inLanguage: locale,
-      provider,
-      offers: { '@type': 'Offer', price: 450, priceCurrency: 'EUR', url }
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Course',
-      '@id': `${url}#piercing-course`,
-      name: t('titlePiercing'),
-      description: t('descriptionPiercing'),
-      inLanguage: locale,
-      provider,
-      offers: { '@type': 'Offer', price: 300, priceCurrency: 'EUR', url }
+      '@id': url,
+      url,
+      name: t(`${key}.title`),
+      description: t(`${key}.text`),
+      provider: { '@id': businessId },
+      offers: { '@type': 'Offer', price, priceCurrency: 'EUR', url }
     }
-  ]
+  })
 }
 
 type BlogPostJsonLdProps = {

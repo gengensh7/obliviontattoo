@@ -34,11 +34,11 @@
     },
     "coursePageMetadata": {
       "title": "Tattoo & Permanent Makeup Courses in Chișinău | Oblivion Tattoo",
-      "description": "Tattoo, permanent makeup and piercing courses at Oblivion Tattoo in Chișinău. Training from scratch, practice with models and a certificate included.",
+      "description": "Study tattooing or permanent makeup in Chișinău in 7 days for €450 per course, or piercing in 3 days for €300. Supervised practice and materials included.",
       "openGraphTitle": "Courses for Tattoo Artists and Permanent Makeup Masters | Oblivion Tattoo Academy",
-      "openGraphDescription": "Training for future professions. Custom programs, individual approach and everything you need to start a career. Enroll in tattoo, piercing and permanent makeup courses.",
+      "openGraphDescription": "Study tattooing or permanent makeup in Chișinău in 7 days for €450 per course, or piercing in 3 days for €300. Supervised practice and materials included.",
       "twitterTitle": "Tattoo and Permanent Makeup Courses in Chișinău | Oblivion Tattoo",
-      "twitterDescription": "Become a professional artist. Tattoo, piercing and permanent makeup training with practice, support and a certificate upon completion."
+      "twitterDescription": "Study tattooing or permanent makeup in Chișinău in 7 days for €450 per course, or piercing in 3 days for €300. Supervised practice and materials included."
     },
     "galleryPageMetadata": {
       "title": "Tattoo Gallery | Portfolio of Oblivion Tattoo Artists in Chișinău",
@@ -125,7 +125,7 @@
         "thirdCard": {
           "title": "Growth and Learning",
           "text": "WE’LL TEACH YOU",
-          "description": "Want to become an artist? Training at Oblivion Tattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession.",
+          "description": "Learn tattooing, permanent makeup or piercing from scratch at Oblivion Tattoo in Chișinău. Compare what you’ll practise, how much time you’ll spend with an instructor and what each course costs.",
           "button": "Book Now"
         }
       }
@@ -729,120 +729,85 @@
     "seoLine": "Tattoo studio in Chișinău, Moldova | Artistic tattooing | Professional artists | Sterile conditions | Custom designs | Cover-ups | Aftercare consultations"
   },
   "coursesPage": {
-    "seo": {
-      "pageTitle": "Tattoo, Permanent Makeup, and Piercing Courses in Chișinău",
-      "titleTattooPM": "Course: Tattoo / Permanent Makeup",
-      "descriptionTattooPM": "Intensive training in Chișinău: a solid theoretical foundation and confident hands-on practice with real models under a master’s supervision. Sterile conditions, professional equipment, certification upon completion.",
-      "titlePiercing": "Course: Piercing",
-      "descriptionPiercing": "A fast start in the profession: piercing techniques, hygiene, anatomy, and hands-on practice with models. Safety, sterility, and post-training support."
-    },
     "hero": {
       "title": "Tattoo, permanent makeup and piercing courses in Chișinău",
-      "lead": "If you want to master a creative, in-demand profession, join our tattoo course in Chișinău, permanent makeup training, and the piercing course in Chișinău. All courses suit both beginners and practicing artists looking to upskill."
+      "lead": "Learn tattooing, permanent makeup or piercing from scratch at Oblivion Tattoo in Chișinău. Compare what you’ll practise, how much time you’ll spend with an instructor and what each course costs."
     },
-    "overview": {
-      "title": "Course overview",
-      "paragraphs": [
-        "Our courses provide comprehensive training in Chișinău, giving you a strong theoretical base and confident practical skills.",
-        "From day one you work with real models under an experienced master’s guidance. Training takes place in a salon with professional equipment."
-      ]
-    },
-    "curriculum": {
-      "title": "What’s included in the course",
-      "items": [
-        "Basics of sterility and hygiene",
-        "Types of tools and their purpose (needles, cartridges, machines, etc.)",
-        "Choosing the area and working with body anatomy",
-        "Sketch/form building (depending on the discipline)",
-        "Working with colors and shade selection",
-        "Practice on models from the first lessons",
-        "Aftercare and healing recommendations",
-        "Common mistakes and how to avoid them",
-        "Client communication and creating a comfortable atmosphere",
-        "Photo and video shooting of works for a portfolio",
-        "Certification upon course completion",
-        "Diploma that can be prepared for recognition in other European countries"
-      ]
-    },
-    "details": {
-      "title": "Course details",
-      "tattooPM": {
-        "title": "Tattoo / Permanent Makeup",
-        "bullets": [
-          "7 days: 1 day theory, 6 days practice on models",
-          "Flexible schedule the student chooses days and time",
-          "All materials and equipment included",
-          "Diploma in Romanian and English; other languages upon request"
-        ]
-      },
-      "piercing": {
-        "title": "Piercing",
-        "bullets": [
-          "3 days: 1 day theory, 2 days practice",
-          "Practice on models, flexible timetable",
-          "All instruments and jewelry provided by the studio",
-          "Diploma in two languages; other languages available on request"
-        ]
-      }
-    },
+    "fee": "€{price}",
+    "longSchedule": "7 days · 1 day of theory and 6 days of practice on models",
+    "shortSchedule": "3 days · 1 day of theory and 2 days of practice on models",
+    "materials": "The studio provides equipment and consumables as part of the course fee.",
+    "jewellery": "The fee covers tuition, tools and jewellery for practice.",
+    "document": "After the course, you receive a diploma of completion from Oblivion Tattoo.",
+    "booking": "To enrol, message the studio on Telegram with your course choice and preferred dates. The studio will arrange the schedule with you.",
+    "cta": "Book via Telegram",
+    "gallery": "See the artists’ work in the gallery",
+    "contactTitle": "Contact the studio about training",
     "types": {
-      "title": "Types of courses",
       "tattoo": {
-        "title": "Tattoo course in Chișinău",
-        "text": "Includes theory and practice on models: you’ll learn lining, shading, packing and color, as well as sterility, equipment, and skin specifics."
+        "title": "Tattoo artist course",
+        "audience": "For first-time tattooists and artists who want to practise linework or shading.",
+        "text": "Study skin, hygiene and how to choose needles and cartridges. Practise outlines, shading, solid fills and colour on models under a tattoo artist’s supervision.",
+        "link": "Explore tattooing at the studio"
       },
       "permanent": {
         "title": "Permanent makeup course",
-        "text": "Covers work on eyebrows, lips, and eyeliner; shape selection, color theory, and working with anesthesia."
+        "audience": "For beginners and practitioners who want guidance on shaping and shade selection.",
+        "text": "Study colour theory, mapping and hygiene. During supervised practice on models, apply these skills to brows, lips and eyeliner.",
+        "link": "Explore permanent makeup at the studio"
       },
       "piercing": {
-        "title": "Piercing course in Chișinău",
-        "text": "Intensive training in piercing technique, hygiene, and practice on models under the supervision of an experienced master."
+        "title": "Piercing course",
+        "audience": "For newcomers and practitioners who want to learn piercing techniques with a mentor.",
+        "text": "Study the anatomy of the piercing site, instrument sterilisation and aftercare. Practise piercing on models with your instructor.",
+        "link": "Explore piercing at the studio"
       }
     },
     "certificateSection": {
       "certificates": {
-        "title": "Certificates and Diplomas",
+        "title": "Your course diploma",
         "paragraphs": [
-          "Upon completion of the course, each student receives an official diploma and certificate confirming the training.",
-          "By default, the documents are issued in two languages—Romanian and English—which allows you to use them both in Moldova and abroad.",
-          "If desired, a student can request an additional diploma in another language—for example, German, Italian, French, etc.",
-          "The diploma is coded and recognized in most European countries, which opens up additional opportunities for working abroad."
+          "After the course, you receive a diploma of completion from Oblivion Tattoo.",
+          "The studio issues the diploma in Romanian and English. If you need another language, ask when booking."
         ],
         "images": {
-          "alt1": "Oblivion Tattoo logo",
-          "alt2": "Oblivion Tattoo logo"
-        }
-      },
-      "pricing": {
-        "title": "Tattoo course prices in Chișinău",
-        "tattooPM": {
-          "title": "Tattoo and Permanent Makeup",
-          "priceLabel": "Price",
-          "price": "€450 (each course)",
-          "bullets": [
-            "Theory and practice from scratch",
-            "Work with professional equipment",
-            "Proprietary techniques and master’s know-how",
-            "Post-training support",
-            "Certificate issuance"
-          ],
-          "cta": "Enroll"
-        },
-        "piercing": {
-          "title": "Piercing",
-          "priceLabel": "Price",
-          "price": "€300",
-          "bullets": [
-            "Training in safe piercing techniques",
-            "Study of anatomical features",
-            "Hygiene and sterilization of instruments",
-            "Practice on models",
-            "Post-course consultations"
-          ],
-          "cta": "Enroll"
+          "alt1": "Course completion documents being presented at Oblivion Tattoo",
+          "alt2": "Course completion documents being presented at Oblivion Tattoo"
         }
       }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Can I start without experience?",
+          "answer": "Yes. Each course starts with hygiene and tool use before you move on to supervised practice."
+        },
+        {
+          "question": "How much does tattoo training cost in Chișinău?",
+          "answer": "The tattoo course at Oblivion Tattoo costs €450. The separate permanent makeup course costs €450 and the piercing course costs €300."
+        },
+        {
+          "question": "How long is each course?",
+          "answer": "Tattooing and permanent makeup each take 7 days. Piercing takes 3 days. Each course includes one day of theory."
+        },
+        {
+          "question": "Are materials included?",
+          "answer": "Yes. The studio supplies equipment and consumables for tattooing and permanent makeup, and tools and jewellery for piercing practice."
+        },
+        {
+          "question": "Will I get hands-on practice?",
+          "answer": "Yes, you practise on models with an instructor."
+        },
+        {
+          "question": "What document will I receive?",
+          "answer": "After the course, you receive a diploma of completion from Oblivion Tattoo. The studio issues the diploma in Romanian and English. If you need another language, ask when booking."
+        },
+        {
+          "question": "How do I enrol?",
+          "answer": "To enrol, message the studio on Telegram with your course choice and preferred dates. The studio will arrange the schedule with you."
+        }
+      ]
     }
   }
 }

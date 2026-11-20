@@ -34,11 +34,11 @@
     },
     "coursePageMetadata": {
       "title": "Corsi di tatuaggio e trucco permanente a Chișinău | Oblivion Tattoo",
-      "description": "Corsi di tatuaggio, trucco permanente e piercing da Oblivion Tattoo a Chișinău. Formazione da zero, pratica su modelli e certificato incluso.",
+      "description": "A Chișinău, tatuaggio e trucco permanente durano 7 giorni e costano 450 € a corso. Piercing: 3 giorni, 300 €. Pratica su modelli e materiali inclusi.",
       "openGraphTitle": "Corsi per tatuatori e specialisti di trucco permanente | Oblivion Tattoo Academy",
-      "openGraphDescription": "Formazione per le professioni del futuro. Programmi personalizzati, approccio individuale e tutto il necessario per avviare una carriera. Iscriviti ai corsi di tatuaggio, piercing e trucco permanente.",
+      "openGraphDescription": "A Chișinău, tatuaggio e trucco permanente durano 7 giorni e costano 450 € a corso. Piercing: 3 giorni, 300 €. Pratica su modelli e materiali inclusi.",
       "twitterTitle": "Corsi di tatuaggio e trucco permanente a Chișinău | Oblivion Tattoo",
-      "twitterDescription": "Diventa un professionista. Formazione in tatuaggio, piercing e trucco permanente con pratica, supporto e certificato finale."
+      "twitterDescription": "A Chișinău, tatuaggio e trucco permanente durano 7 giorni e costano 450 € a corso. Piercing: 3 giorni, 300 €. Pratica su modelli e materiali inclusi."
     },
     "galleryPageMetadata": {
       "title": "Galleria tatuaggi | Portfolio Oblivion Tattoo a Chișinău",
@@ -125,7 +125,7 @@
         "thirdCard": {
           "title": "Crescita e Apprendimento",
           "text": "TI INSEGNEREMO",
-          "description": "Vuoi diventare un artista? La formazione presso Oblivion Tattoo include pratica su modelli reali, orario flessibile, istruttori esperti e un diploma riconosciuto a livello internazionale. Ottieni non solo conoscenza, ma una professione.",
+          "description": "Da Oblivion Tattoo a Chișinău puoi imparare da zero a tatuare, eseguire il trucco permanente o praticare piercing. Confronta programmi, giorni di pratica e costi per scegliere il tuo corso.",
           "button": "Prenota Ora"
         }
       }
@@ -729,120 +729,85 @@
     "seoLine": "Studio di tatuaggi a Chișinău, Moldavia | Tatuaggi artistici | Artisti professionisti | Condizioni sterili | Disegni personalizzati | Coperture di vecchi tatuaggi | Consulenze post-trattamento"
   },
   "coursesPage": {
-    "seo": {
-      "pageTitle": "Corsi di tatuaggi, trucco permanente e piercing a Chișinău",
-      "titleTattooPM": "Corso: Tatuaggio / Trucco permanente",
-      "descriptionTattooPM": "Formazione intensiva a Chișinău: solida base teorica e pratica sicura su modelli reali sotto la supervisione di un maestro. Condizioni sterili, attrezzatura professionale, certificazione al termine.",
-      "titlePiercing": "Corso: Piercing",
-      "descriptionPiercing": "Avvio rapido alla professione: tecniche di piercing, igiene, anatomia e pratica su modelli. Sicurezza, sterilità e supporto post-formazione."
-    },
     "hero": {
       "title": "Corsi di tatuaggio, trucco permanente e piercing a Chișinău",
-      "lead": "Se desideri apprendere una professione creativa e richiesta, iscriviti al nostro corso di tatuaggio a Chișinău, alla formazione in trucco permanente e al corso di piercing. Tutti i corsi sono adatti sia ai principianti sia ai professionisti che vogliono migliorarsi."
+      "lead": "Da Oblivion Tattoo a Chișinău puoi imparare da zero a tatuare, eseguire il trucco permanente o praticare piercing. Confronta programmi, giorni di pratica e costi per scegliere il tuo corso."
     },
-    "overview": {
-      "title": "Panoramica del corso",
-      "paragraphs": [
-        "I nostri corsi offrono una formazione completa a Chișinău, con una solida base teorica e competenze pratiche sicure.",
-        "Dal primo giorno lavori con modelli reali sotto la guida di un maestro esperto. La formazione si svolge in salone con attrezzature professionali."
-      ]
-    },
-    "curriculum": {
-      "title": "Programma del corso",
-      "items": [
-        "Basi di sterilità e igiene",
-        "Tipi di strumenti e il loro uso (aghi, cartucce, macchinette, ecc.)",
-        "Scelta dell’area e lavoro con l’anatomia del corpo",
-        "Realizzazione di bozzetti o forme (a seconda dell’indirizzo)",
-        "Lavoro con i colori e scelta delle tonalità",
-        "Pratica su modelli fin dalle prime lezioni",
-        "Cura post-trattamento e raccomandazioni per la guarigione",
-        "Errori comuni e come evitarli",
-        "Comunicazione con i clienti e creazione di un ambiente confortevole",
-        "Foto e video dei lavori per il portfolio",
-        "Certificazione al termine del corso",
-        "Diploma che può essere preparato per il riconoscimento in altri paesi europei"
-      ]
-    },
-    "details": {
-      "title": "Dettagli del corso",
-      "tattooPM": {
-        "title": "Tatuaggio / Trucco permanente",
-        "bullets": [
-          "7 giorni: 1 giorno di teoria, 6 giorni di pratica su modelli",
-          "Orari flessibili giorni e orari scelti dallo studente",
-          "Tutti i materiali e le attrezzature inclusi",
-          "Diploma in rumeno e inglese; altre lingue su richiesta"
-        ]
-      },
-      "piercing": {
-        "title": "Piercing",
-        "bullets": [
-          "3 giorni: 1 giorno di teoria, 2 giorni di pratica",
-          "Pratica su modelli, calendario flessibile",
-          "Tutti gli strumenti e i gioielli forniti dallo studio",
-          "Diploma in due lingue; altre lingue disponibili su richiesta"
-        ]
-      }
-    },
+    "fee": "{price} €",
+    "longSchedule": "7 giorni · 1 giorno di teoria e 6 di pratica su modelli",
+    "shortSchedule": "3 giorni · 1 giorno di teoria e 2 di pratica su modelli",
+    "materials": "Lo studio fornisce le attrezzature e i materiali di consumo, inclusi nel prezzo.",
+    "jewellery": "Il prezzo comprende lezioni, strumenti e gioielli per la pratica.",
+    "document": "Al termine ricevi un diploma di fine corso rilasciato da Oblivion Tattoo.",
+    "booking": "Per iscriverti, scrivici su Telegram indicando il corso scelto e le date che preferisci. Concorderemo insieme il calendario.",
+    "cta": "Iscriviti su Telegram",
+    "gallery": "Guarda i lavori degli artisti in galleria",
+    "contactTitle": "Contatti per le iscrizioni",
     "types": {
-      "title": "Tipi di corsi",
       "tattoo": {
-        "title": "Corso di tatuaggio a Chișinău",
-        "text": "Include teoria e pratica su modelli: imparerai linee, sfumature, riempimento e colore, oltre a sterilità, attrezzature e specificità della pelle."
+        "title": "Corso di tatuaggio",
+        "audience": "Per chi usa la macchinetta per la prima volta e per chi vuole esercitarsi su linee e sfumature.",
+        "text": "Studi la pelle, l’igiene e la scelta di aghi e cartucce. Con la guida di un tatuatore ti eserciti su modelli per tracciare linee, sfumare e realizzare campiture in nero e a colori.",
+        "link": "I tatuaggi dello studio"
       },
       "permanent": {
         "title": "Corso di trucco permanente",
-        "text": "Copre sopracciglia, labbra e eyeliner; scelta delle forme, teoria del colore e lavoro con l’anestesia."
+        "audience": "Per principianti e operatori che vogliono esercitarsi nella scelta della forma e della tonalità.",
+        "text": "Studi la teoria del colore, la progettazione della forma e l’igiene. Durante la pratica su modelli applichi queste conoscenze a sopracciglia, labbra ed eyeliner con la guida del docente.",
+        "link": "Il trucco permanente in studio"
       },
       "piercing": {
-        "title": "Corso di piercing a Chișinău",
-        "text": "Formazione intensiva sulla tecnica del piercing, igiene e pratica su modelli sotto la supervisione di un maestro esperto."
+        "title": "Corso di piercing",
+        "audience": "Per principianti e operatori che desiderano apprendere la tecnica di perforazione con un docente.",
+        "text": "Studi l’anatomia della zona, la sterilizzazione degli strumenti e le cure durante la guarigione. Nelle lezioni pratiche ti eserciti su modelli sotto la supervisione del docente.",
+        "link": "I tipi di piercing in studio"
       }
     },
     "certificateSection": {
       "certificates": {
-        "title": "Certificati e diplomi",
+        "title": "Il diploma di fine corso",
         "paragraphs": [
-          "Al termine del corso ogni studente riceve un diploma e un certificato ufficiali che attestano la formazione.",
-          "Di default i documenti sono rilasciati in due lingue rumeno e inglese il che consente di usarli sia in Moldavia sia all’estero.",
-          "Su richiesta lo studente può ottenere un diploma aggiuntivo in un’altra lingua ad esempio tedesco, italiano, francese ecc.",
-          "Il diploma è codificato ed è riconosciuto nella maggior parte dei paesi europei, offrendo ulteriori opportunità di lavoro all’estero."
+          "Al termine ricevi un diploma di fine corso rilasciato da Oblivion Tattoo.",
+          "Il diploma viene rilasciato in romeno e in inglese. Se ti serve in un’altra lingua, parlane con lo studio al momento dell’iscrizione."
         ],
         "images": {
-          "alt1": "Logo Oblivion Tattoo",
-          "alt2": "Logo Oblivion Tattoo"
-        }
-      },
-      "pricing": {
-        "title": "Prezzi dei corsi di tatuaggio a Chișinău",
-        "tattooPM": {
-          "title": "Tatuaggio e trucco permanente",
-          "priceLabel": "Prezzo",
-          "price": "€450 (per ogni corso)",
-          "bullets": [
-            "Teoria e pratica da zero",
-            "Lavoro con attrezzature professionali",
-            "Metodiche proprietarie e segreti del mestiere",
-            "Supporto dopo la formazione",
-            "Rilascio del certificato"
-          ],
-          "cta": "Iscriviti"
-        },
-        "piercing": {
-          "title": "Piercing",
-          "priceLabel": "Prezzo",
-          "price": "€300",
-          "bullets": [
-            "Formazione sulle tecniche di piercing sicure",
-            "Analisi delle caratteristiche anatomiche",
-            "Igiene e sterilizzazione degli strumenti",
-            "Pratica su modelli",
-            "Consulenze dopo il corso"
-          ],
-          "cta": "Iscriviti"
+          "alt1": "Consegna dei diplomi di fine corso da Oblivion Tattoo",
+          "alt2": "Consegna dei diplomi di fine corso da Oblivion Tattoo"
         }
       }
+    },
+    "faq": {
+      "title": "Domande frequenti sui corsi",
+      "items": [
+        {
+          "question": "Posso iniziare da zero?",
+          "answer": "Sì. Ogni corso parte dall’igiene e dall’uso degli strumenti prima di passare alla pratica guidata."
+        },
+        {
+          "question": "Quanto costa il corso di tatuaggio a Chișinău?",
+          "answer": "Il corso di tatuaggio da Oblivion Tattoo costa 450 €. Il corso separato di trucco permanente costa 450 € e quello di piercing 300 €."
+        },
+        {
+          "question": "Quanti giorni dura il corso?",
+          "answer": "Tatuaggio e trucco permanente durano 7 giorni ciascuno. Il piercing dura 3 giorni. Ogni corso comprende un giorno di teoria."
+        },
+        {
+          "question": "I materiali sono inclusi?",
+          "answer": "Sì. Lo studio fornisce attrezzature e materiali di consumo per tatuaggio e trucco permanente, strumenti e gioielli per il piercing."
+        },
+        {
+          "question": "È prevista una parte pratica?",
+          "answer": "Sì, ti eserciti su modelli con la guida del docente."
+        },
+        {
+          "question": "Quale documento ricevo alla fine?",
+          "answer": "Al termine ricevi un diploma di fine corso rilasciato da Oblivion Tattoo. Il diploma viene rilasciato in romeno e in inglese. Se ti serve in un’altra lingua, parlane con lo studio al momento dell’iscrizione."
+        },
+        {
+          "question": "Come posso iscrivermi?",
+          "answer": "Per iscriverti, scrivici su Telegram indicando il corso scelto e le date che preferisci. Concorderemo insieme il calendario."
+        }
+      ]
     }
   }
 }
