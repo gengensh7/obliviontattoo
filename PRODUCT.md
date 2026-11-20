@@ -52,8 +52,7 @@ a blog, and a contact page with a map.
 - Use the existing stack of Next.js App Router, React, TypeScript, Tailwind CSS,
   next-intl, Prisma with PostgreSQL, and Supabase Storage. Use pnpm for project commands.
   Add dependencies only when needed and use Server Components by default.
-- Implement and verify animations with the installed Framer Motion library.
-  Choose motion that helps users understand the interface or interact with it.
+- Choose motion that helps users understand the interface or interact with it.
   Consider transitions beyond the standard fade-in.
 - Protect secrets and preserve environment variables during design work.
   Follow the SEO and IndexNow constraints in `AGENTS.md`.

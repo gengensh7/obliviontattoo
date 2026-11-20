@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getPathname } from '@/i18n/navigation'
 import { getPortfolioImages } from '@/lib/cachedPrisma'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import Lightbox from '@/shared/Lightbox'
 
 const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
@@ -19,12 +18,12 @@ export const PortfolioSection = async () => {
   return (
     <section className="flex flex-col gap-10 bg-zinc-900">
       <div className="container py-20">
-        <FramerMotionContainer
+        <div
           className="mb-15 flex flex-col gap-10 text-white"
         >
           <h2 className="xl:3xl text-center text-2xl wrap-break-word 2xl:text-5xl">{t('title')}</h2>
           <p className="mx-auto max-w-3xl text-center">{t('text')}</p>
-        </FramerMotionContainer>
+        </div>
         <div className="flex flex-col items-center gap-10">
           <Lightbox gallery="home-portfolio">
             <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">

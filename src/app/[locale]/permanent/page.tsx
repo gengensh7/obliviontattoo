@@ -51,7 +51,7 @@ export default async function PermanentPage({ params }: { params: Promise<{ loca
         </FadeContent>
       </section>
       <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="bg-zinc-900">
-        <ContactsSection title={t('booking.title')} text={t('booking.text')} showNightSessions={false} animateHeading={false} />
+        <ContactsSection title={t('booking.title')} text={t('booking.text')} showNightSessions={false} />
       </FadeContent>
       <div className="flex flex-wrap justify-center gap-6 bg-zinc-900 px-4 pb-12 text-rose-200 underline underline-offset-4">
         <Link href={getPathname({ locale, href: '/contacts' })}>{t('booking.contacts')}</Link>

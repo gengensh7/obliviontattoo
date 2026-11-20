@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const CertificateSection = async () => {
   const t = await getTranslations('coursesPage.certificateSection')
@@ -9,7 +8,7 @@ export const CertificateSection = async () => {
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container">
-        <FramerMotionContainer className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <h2 className="text-3xl font-bold text-white">{t('certificates.title')}</h2>
           <div className="my-4 h-px w-full bg-gray-700" />
           <div className="flex flex-col gap-10">
@@ -39,7 +38,7 @@ export const CertificateSection = async () => {
               />
             </div>
           </div>
-        </FramerMotionContainer>
+        </div>
 
       </div>
     </section>

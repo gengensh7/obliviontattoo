@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const AboutSection = async () => {
   const t = await getTranslations('tattooPage.aboutSection')
@@ -9,7 +8,7 @@ export const AboutSection = async () => {
   return (
     <section className="bg-zinc-900">
       <div className="container pb-20">
-        <FramerMotionContainer
+        <div
           className="grid grid-cols-1 items-center gap-12 xl:grid-cols-2"
         >
           <div className="flex flex-col gap-6">
@@ -29,7 +28,7 @@ export const AboutSection = async () => {
               ))}
             </ul>
           </div>
-        </FramerMotionContainer>
+        </div>
       </div>
     </section>
   )

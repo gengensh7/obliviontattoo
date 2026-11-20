@@ -43,10 +43,8 @@ accent. On phones, the photo sits between the introductory text and the list.
 Hovering over a link or focusing it with the keyboard changes the photo. Each link
 leads to the corresponding service description and price.
 React Bits Fade Content brings the hero into focus as a single block. Below the
-fold, the main sections come into focus once as they enter the viewport. On
-pointer hover, a diagonal mask reveals the new
-photo as it settles in scale. Keyboard focus and reduced-motion preferences switch
-photos without a reveal.
+fold, the main sections come into focus once as they enter the viewport. The hero
+photo switches immediately on pointer hover or keyboard focus once the new image is loaded.
 
 ## Components and Interactivity
 
@@ -64,7 +62,7 @@ buttons, and correct image proportions on phones, tablets, and desktops.
 Account for the fixed header when laying out the hero.
 Preserve visible keyboard focus, ARIA labels, contrast, and semantic markup.
 Add motion only when useful and respect `prefers-reduced-motion`.
-Preserve existing hero transitions, `FramerMotionContainer`, and fallback components.
+Preserve existing hero transitions and fallback components.
 Keep limited interactivity in focused Client Components to preserve server rendering
 for the rest of the page.
 

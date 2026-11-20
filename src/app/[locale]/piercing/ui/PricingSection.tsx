@@ -1,7 +1,6 @@
 import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type Service = { name: string; price: number; hasBase?: boolean }
 type Category = { title: string; icon: string; services: Service[] }
@@ -15,7 +14,7 @@ export const PricingSection = async () => {
   return (
     <section id="pricing" className="relative scroll-mt-24 bg-zinc-900">
       <div className="container flex flex-col gap-10 sm:gap-15">
-        <FramerMotionContainer className="space-y-6 text-center">
+        <div className="space-y-6 text-center">
           <h2 className="text-4xl font-bold text-white">{t('title')}</h2>
           <p className="mx-auto max-w-3xl text-xl text-white">{t('description')}</p>
 
@@ -29,11 +28,11 @@ export const PricingSection = async () => {
               {t('badges.onlineBooking')}
             </div>
           </div>
-        </FramerMotionContainer>
+        </div>
 
         <div className="flex flex-col gap-10">
           {pricingCategories.map((category, categoryIndex) => (
-            <FramerMotionContainer
+            <div
               key={categoryIndex}
               className="rounded-xl bg-zinc-800 p-4 sm:p-6"
             >
@@ -73,11 +72,11 @@ export const PricingSection = async () => {
                   </div>
                 ))}
               </div>
-            </FramerMotionContainer>
+            </div>
           ))}
         </div>
 
-        <FramerMotionContainer
+        <div
           className="flex flex-col gap-6 rounded-xl bg-zinc-800 p-4 text-center text-white sm:p-6"
         >
           <h3 className="text-2xl font-bold">{t('includesTitle')}</h3>
@@ -91,7 +90,7 @@ export const PricingSection = async () => {
           </div>
 
           <p className="text-white">{t('includesNote')}</p>
-        </FramerMotionContainer>
+        </div>
       </div>
     </section>
   )

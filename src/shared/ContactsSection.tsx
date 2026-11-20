@@ -1,19 +1,17 @@
 import { Camera, Clock, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send, UsersRound } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { CONTACT_FACEBOOK, CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
-export const ContactsSection = ({ title, text, showNightSessions = true, animateHeading = true }: { title?: string; text?: string; showNightSessions?: boolean; animateHeading?: boolean } = {}) => {
+export const ContactsSection = ({ title, text, showNightSessions = true }: { title?: string; text?: string; showNightSessions?: boolean } = {}) => {
   const t = useTranslations('homePage.contactsSection')
-  const Heading = animateHeading ? FramerMotionContainer : 'div'
 
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col items-center gap-20">
-        <Heading className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10">
           <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{title ?? t('title')}</h2>
           <p className="mx-auto max-w-2xl text-center text-white">{text ?? t('text')}</p>
-        </Heading>
+        </div>
 
         <div className="flex flex-col gap-4">
           <div className="bg-zinc-900">

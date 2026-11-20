@@ -60,9 +60,20 @@ Leave generated files untouched and keep migrations within the scope of the task
 - Preserve existing functionality and SEO.
 - Keep components readable and maintainable.
 
+### Third-party UI components
+
+- shadcn/ui is the primary UI component system.
+- React Bits, Magic UI, Aceternity UI and other registries may be used as additional sources of components.
+- Install only the specific component required for the task.
+- Before installation, inspect dependencies, target file paths, and potential conflicts.
+- Never overwrite existing shadcn/ui components without explicit approval.
+- Never reinitialize shadcn/ui or replace the existing `components.json`.
+- Adapt third-party code to the existing Tailwind configuration and project conventions.
+- Avoid unnecessary dependencies and duplicate components.
+- After integration, run TypeScript, ESLint and production build checks.
+
 ### Animations
 
-- Use the existing Framer Motion library.
 - Follow the installed Emil Kowalski animation skills.
 - Avoid unnecessary animation libraries.
 - Respect `prefers-reduced-motion`.
@@ -77,7 +88,7 @@ Leave generated files untouched and keep migrations within the scope of the task
 
 - Prefer the simplest implementation that satisfies the requirements.
 - Avoid overengineering and unnecessary abstractions.
-- Prefer declarative React and Framer Motion APIs.
+- Prefer declarative React APIs.
 - Do not introduce additional state, effects, refs, or animation controllers without a clear need.
 - Prioritize maintainability and readability over clever solutions.
 - Animation complexity must be justified by visible UX improvements.

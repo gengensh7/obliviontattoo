@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type CatalogItem = { category: string; description: string }
 type ProcessItem = { step: string; title: string; description: string }
@@ -13,7 +12,7 @@ export const AboutSection = async () => {
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col gap-10 sm:gap-15">
-        <FramerMotionContainer className="space-y-8">
+        <div className="space-y-8">
           <h2 className="text-center text-3xl font-bold text-white">{t('catalogTitle')}</h2>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -24,9 +23,9 @@ export const AboutSection = async () => {
               </div>
             ))}
           </div>
-        </FramerMotionContainer>
+        </div>
 
-        <FramerMotionContainer
+        <div
           className="flex flex-col gap-8 rounded-xl p-8 text-white"
         >
           <h2 className="text-center text-3xl font-bold wrap-break-word">{t('processTitle')}</h2>
@@ -41,7 +40,7 @@ export const AboutSection = async () => {
               </div>
             ))}
           </div>
-        </FramerMotionContainer>
+        </div>
       </div>
     </section>
   )

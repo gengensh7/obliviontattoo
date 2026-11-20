@@ -2,7 +2,6 @@
 
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef } from 'react'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type VideoProps = {
   src: string
@@ -46,20 +45,20 @@ export const AdvantagesSection = ({ translations }: { translations: AdvantagesTr
     <section>
       <div className="container grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-6">
-          <FramerMotionContainer className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             <h2 className="text-4xl lg:text-6xl">{translations.text}</h2>
             <h3 className="text-lg font-semibold">{translations.title}</h3>
             <p>{translations.description}</p>
-          </FramerMotionContainer>
+          </div>
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayVideo
               title="gotovaya-tatu-posle-seansa"
               src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/gotovaya-tatu-posle-seansa_a8bcjg.mp4'}
             />
           </div>
-          <FramerMotionContainer>
+          <div>
             <p className="max-w-2xl text-left text-lg font-semibold sm:text-right">{translations.extra}</p>
-          </FramerMotionContainer>
+          </div>
         </div>
         <div className="flex flex-col gap-6">
           <div className="aspect-video overflow-hidden rounded-lg">
@@ -68,9 +67,9 @@ export const AdvantagesSection = ({ translations }: { translations: AdvantagesTr
               src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/process-nabivki-tatu-kishinev_ghvst5.mp4'}
             />
           </div>
-          <FramerMotionContainer>
+          <div>
             <p>{translations.more_text}</p>
-          </FramerMotionContainer>
+          </div>
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayVideo
               title="seans-tatu-ot-nachala-do-konca"
