@@ -17,12 +17,12 @@
       "twitterDescription": "Sopracciglia sfumate, labbra effetto acquerello e eyeliner permanente a Chișinău. Il prezzo è di 900 MDL a zona. Guarda i lavori e prenota una consulenza."
     },
     "tattooPageMetadata": {
-      "title": "Tatuaggi a Chișinău | Design personalizzati | Oblivion Tattoo",
-      "description": "Tatuaggi personalizzati da Oblivion Tattoo a Chișinău. Design individuali, tutti gli stili, consulenza, sterilità e materiali di alta qualità.",
-      "openGraphTitle": "Tatuaggi professionali nello studio Oblivion Tattoo, Chișinău",
-      "openGraphDescription": "Realizziamo la tua idea di tatuaggio dallo schizzo al risultato finale. Stile personalizzato, pulizia e attenzione ai dettagli nello studio Oblivion Tattoo.",
-      "twitterTitle": "Studio di tatuaggi Oblivion Tattoo a Chișinău | Lavori personalizzati",
-      "twitterDescription": "Ordina un tatuaggio unico da Oblivion Tattoo. Dall’idea alla realizzazione. Tutti gli stili: dal minimalismo al realismo."
+      "title": "Tatuaggi a Chișinău da 400 lei | Oblivion Tattoo",
+      "description": "Un tatuaggio di 5–10 cm costa 400–1300 lei in bianco e nero o 500–1500 lei a colori. Guarda i lavori dei tatuatori e richiedi un preventivo. Il disegno è gratuito.",
+      "openGraphTitle": "Tatuaggi a Chișinău da 400 lei | Oblivion Tattoo",
+      "openGraphDescription": "Un tatuaggio di 5–10 cm costa 400–1300 lei in bianco e nero o 500–1500 lei a colori. Guarda i lavori dei tatuatori e richiedi un preventivo. Il disegno è gratuito.",
+      "twitterTitle": "Tatuaggi a Chișinău da 400 lei | Oblivion Tattoo",
+      "twitterDescription": "Un tatuaggio di 5–10 cm costa 400–1300 lei in bianco e nero o 500–1500 lei a colori. Guarda i lavori dei tatuatori e richiedi un preventivo. Il disegno è gratuito."
     },
     "piercingPageMetadata": {
       "title": "Piercing a Chișinău — prezzi da 150 MDL | Oblivion Tattoo",
@@ -361,54 +361,42 @@
       "offerLarge": "Tatuaggio grande (da 20 cm in su)"
     },
     "heroSection": {
-      "title": "Tatuaggi a Chișinău: tatuaggi a colori e in bianco e nero, correzione, cover-up e design del tatuaggio",
-      "subtitle": "Studio di tatuaggi a Chișinău: artisti, prezzi e tatuaggi in Moldavia",
+      "title": "Tatuaggi a Chișinău",
+      "subtitle": "Tatuaggi in bianco e nero da 400 lei. Parla della tua idea con un tatuatore di Oblivion Tattoo prima di prenotare.",
       "heroCards": [
         {
-          "title": "Tatuaggi per uomini e donne",
-          "text": "Nel nostro studio di tatuaggi a Chișinău puoi realizzare tatuaggi artistici di qualsiasi stile e dimensione. Lavoriamo in condizioni sterili, usiamo solo materiali monouso e garantiamo un'elevata qualità del lavoro dei nostri artisti.",
+          "title": "Stili di tatuaggio",
+          "text": "Pensa a cosa ti colpisce di un disegno. Un fiore può prendere forma con poche linee oppure mostrare ogni petalo in chiaroscuro.",
           "list": [
-            "Ampia scelta di stili: realismo, minimalismo, grafica/linework, tatuaggi a colori e in bianco e nero",
-            "Bozze personalizzate in base alle tue idee",
-            "Sicurezza e sterilità: aghi monouso e inchiostri certificati",
-            "Tatuaggi per uomini e donne dai mini ai progetti grandi"
+            "Il minimalismo privilegia forme semplici e pochi dettagli.",
+            "Lo stile grafico e il linework valorizzano contorni e tratteggi.",
+            "Il realismo dà risalto ai volumi e alle superfici."
           ],
           "button": "Prenota un appuntamento"
         },
         {
-          "title": "Aggiornamento e correzione del tatuaggio",
-          "text": "Se il tuo tatuaggio ha perso brillantezza o necessita di correzioni, offriamo aggiornamenti professionali e cover-up di lavori vecchi. I nostri artisti sceglieranno la soluzione adatta e renderanno di nuovo il tatuaggio bello ed espressivo.",
+          "title": "Copertura e ritocco di vecchi tatuaggi",
+          "text": "Se il soggetto ti piace ancora, puoi chiedere di ravvivare il colore o riprendere i contorni. Per una copertura, il tatuatore progetta il disegno tenendo conto delle parti più scure.",
           "list": [
-            "Correzione di tatuaggi sbiaditi o di bassa qualità",
-            "Cover-up di lavori vecchi con bozze moderne",
-            "Aggiunta di dettagli e miglioramento dei colori",
-            "Approccio individuale a ogni caso"
+            "Invia una foto alla luce naturale che mostri tutto il tatuaggio.",
+            "Indica le misure e spiega cosa vuoi conservare o coprire."
           ],
           "button": "Richiedi un preventivo"
         },
         {
-          "title": "Design del tatuaggio",
-          "text": "Creiamo bozze uniche che riflettono il tuo carattere e il tuo stile. Ogni design è sviluppato individualmente dall'idea al disegno finale per rendere il tuo tatuaggio davvero speciale.",
+          "title": "Disegni personalizzati",
+          "text": "Puoi portare un disegno, raccogliere immagini di riferimento o raccontare la tua idea a parole. Il disegno personalizzato è gratuito anche per le coperture.",
           "list": [
-            "Bozze personalizzate dai tuoi riferimenti e idee",
-            "Sviluppo nei stili popolari: realismo, grafica/linework, minimalismo e altro",
-            "Scelta di forma e posizionamento in base alle caratteristiche del corpo",
-            "Collaborazione artista–cliente per un risultato perfetto"
+            "Spiega quali dettagli sono importanti per te.",
+            "Concorda con il tatuatore dimensioni e posizione."
           ],
           "button": "Discuti il design"
         }
       ]
     },
     "servicesSection": {
-      "title": "Servizi dello studio di tatuaggi a Chișinău tatuaggi artistici, correzioni/cover-up e design personalizzato",
-      "description": "Realizziamo tatuaggi a colori e black & grey nei principali stili: realismo, minimalismo, grafica/linework. Ti aiutiamo con l’idea e il design, rinfreschiamo e copriamo con cura i lavori vecchi. Lavoriamo in condizioni sterili con aghi monouso e inchiostri certificati.",
-      "usp": [
-        "Stili: realismo, minimalismo, grafica/linework, colore/black & grey",
-        "Bozze personalizzate dai tuoi riferimenti",
-        "Correzione e cover-up di tatuaggi vecchi",
-        "Sterilità: strumenti monouso, inchiostri affidabili",
-        "Consulenza prima della prenotazione e aftercare"
-      ],
+      "title": "Prezzi dei tatuaggi in bianco e nero e a colori",
+      "description": "Cerca la misura e la variante di colore nel listino. Le fasce indicate si riferiscono a tatuaggi da 5 a 20 cm. Per altre misure chiedi un preventivo.",
       "cta": "Prenota ora",
       "servicesCards": [
         {
@@ -462,25 +450,57 @@
       ]
     },
     "aboutSection": {
-      "title": "Studio di tatuaggi professionale a Chișinău",
+      "title": "Consulenza e prenotazione",
       "paragraphs": [
-        "Creiamo tatuaggi unici di qualsiasi complessità da oltre 10 anni. Il nostro team di artisti professionisti realizzerà con cura la tua idea.",
-        "Siamo specializzati in tatuaggi a colori e black & grey, nel rinnovo di lavori vecchi, nei cover-up di tatuaggi non riusciti e nello sviluppo di design personalizzati.",
-        "Lavoriamo in condizioni sterili: solo aghi monouso e inchiostri certificati, rispetto delle norme igieniche e indicazioni dettagliate per l’aftercare."
+        "Scrivici su Telegram e invia qualche immagine di riferimento o una breve descrizione.",
+        "Durante la consulenza gratuita parleremo del disegno e del prezzo. Per confermare la data è richiesto un acconto di 300 lei, incluso nel totale e non rimborsabile in caso di annullamento."
       ],
-      "advantagesTitle": "I nostri vantaggi:",
+      "advantagesTitle": "Cosa inviare per un preventivo",
       "advantages": [
-        "Artisti esperti con un portfolio di oltre 1.000 lavori",
-        "Materiali monouso sterili e inchiostri affidabili",
-        "Approccio individuale per ogni cliente",
-        "Consulenza gratuita e bozzetto di base",
-        "Garanzia sui lavori eseguiti"
+        "Dimensioni in centimetri e zona del corpo.",
+        "Preferenze di colore e un esempio del livello di dettaglio.",
+        "Una foto del tatuaggio da ritoccare o coprire."
       ]
     },
     "latestTattooSection": {
-      "title": "Portfolio di tatuaggi a Chișinău lavori recenti degli artisti",
-      "description": "Qui trovi i lavori recenti del nostro studio: dai piccoli bozzetti minimalisti ai progetti di grandi dimensioni. Tutti i tatuaggi sono realizzati con aghi monouso e inchiostri certificati. Clicca sulla foto per aprirla a schermo intero.",
+      "title": "I tatuaggi realizzati in studio",
+      "description": "Apri una foto per osservare da vicino le linee e le sfumature. Se un lavoro ti piace, mostralo al tatuatore durante la consulenza.",
       "cta": "Guarda tutte le foto"
+    },
+    "faq": {
+      "title": "Domande frequenti sui tatuaggi",
+      "items": [
+        {
+          "question": "Quanto costa un tatuaggio a Chișinău?",
+          "answer": "Per 5–10 cm il prezzo è di 400–1300 lei in bianco e nero e di 500–1500 lei a colori. Per 10–20 cm le fasce sono rispettivamente 900–3500 e 1000–4000 lei."
+        },
+        {
+          "question": "Come viene stabilito il prezzo?",
+          "answer": "Dimensioni e colore danno una prima indicazione. Il tatuatore considera la zona del corpo, i dettagli più minuti e la complessità del disegno per confermare il preventivo."
+        },
+        {
+          "question": "Posso portare un mio disegno?",
+          "answer": "Sì. Invialo prima della consulenza per discutere quali dettagli si vedranno bene nelle dimensioni che hai scelto."
+        },
+        {
+          "question": "Coprite anche vecchi tatuaggi?",
+          "answer": "Sì. Coperture e correzioni partono da 600 lei. Il tatuatore esamina una foto per valutare il colore e la densità del disegno esistente."
+        },
+        {
+          "question": "Come prenoto una consulenza?",
+          "answer": "Il pulsante di prenotazione apre Telegram. Descrivi la tua idea e proponi un orario. Puoi anche chiamare il numero nella sezione contatti."
+        },
+        {
+          "question": "Cosa devo considerare prima della seduta?",
+          "answer": "Chiedi quanto durerà la seduta. Scegli abiti che lascino accessibile la zona da tatuare e informati sulle cure successive."
+        }
+      ]
+    },
+    "booking": {
+      "title": "Prenota un tatuaggio",
+      "text": "Contattaci per discutere il disegno e concordare la data della visita.",
+      "contacts": "Contatti e indicazioni stradali",
+      "care": "Cura del tatuaggio"
     }
   },
   "piercingPage": {

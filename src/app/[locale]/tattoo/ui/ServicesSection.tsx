@@ -13,8 +13,6 @@ export const ServicesSection = async () => {
     button: string
   }[]
 
-  const usp = t.raw('usp') as string[]
-
   return (
     <section className="bg-zinc-900">
       <div className="container flex flex-col gap-12 py-20">
@@ -22,13 +20,6 @@ export const ServicesSection = async () => {
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-center text-3xl font-bold text-white">{t('title')}</h2>
             <p className="text-center text-lg text-zinc-400">{t('description')}</p>
-            <ul className="flex list-disc flex-col gap-2 pl-5 marker:text-red-500">
-              {usp.map((item, i) => (
-                <li key={i} className="text-white">
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
         </FramerMotionContainer>
 

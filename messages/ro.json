@@ -17,12 +17,12 @@
       "twitterDescription": "Sprâncene pudrate, micropigmentarea buzelor în tehnica acuarelă și conturul pleoapelor în Chișinău. Prețul este de 900 MDL pe zonă. Programează o consultație."
     },
     "tattooPageMetadata": {
-      "title": "Tatuaje în Chișinău | Design personalizat | Oblivion Tattoo",
-      "description": "Tatuaje personalizate la Oblivion Tattoo în Chișinău. Design individual, toate stilurile, consultație, sterilitate și materiale de calitate.",
-      "openGraphTitle": "Tatuaje profesionale în studioul Oblivion Tattoo, Chișinău",
-      "openGraphDescription": "Transformăm ideea ta de tatuaj din schiță în rezultat final. Stil personalizat, curățenie și atenție la detalii în studioul Oblivion Tattoo.",
-      "twitterTitle": "Studio de tatuaje Oblivion Tattoo în Chișinău | Lucrări personalizate",
-      "twitterDescription": "Comandă un tatuaj unic la Oblivion Tattoo. De la concept la realizare. Toate stilurile: de la minimalism la realism."
+      "title": "Tatuaje în Chișinău de la 400 de lei | Oblivion Tattoo",
+      "description": "Un tatuaj alb-negru de 5–10 cm costă 400–1300 de lei, iar unul color, 500–1500 de lei. Vezi lucrările artiștilor și trimite ideea ta pentru o estimare. Schița este gratuită.",
+      "openGraphTitle": "Tatuaje în Chișinău de la 400 de lei | Oblivion Tattoo",
+      "openGraphDescription": "Un tatuaj alb-negru de 5–10 cm costă 400–1300 de lei, iar unul color, 500–1500 de lei. Vezi lucrările artiștilor și trimite ideea ta pentru o estimare. Schița este gratuită.",
+      "twitterTitle": "Tatuaje în Chișinău de la 400 de lei | Oblivion Tattoo",
+      "twitterDescription": "Un tatuaj alb-negru de 5–10 cm costă 400–1300 de lei, iar unul color, 500–1500 de lei. Vezi lucrările artiștilor și trimite ideea ta pentru o estimare. Schița este gratuită."
     },
     "piercingPageMetadata": {
       "title": "Piercing în Chișinău — prețuri de la 150 MDL | Oblivion Tattoo",
@@ -361,54 +361,42 @@
       "offerLarge": "Tatuaj mare (de la 20 cm în sus)"
     },
     "heroSection": {
-      "title": "Tatuaje în Chișinău: tatuaje color și alb-negru, corecție, acoperire (cover-up) și design de tatuaje",
-      "subtitle": "Salon de tatuaje Chișinău: artiști, prețuri și tatuaje în Moldova",
+      "title": "Tatuaje în Chișinău",
+      "subtitle": "Tatuaje alb-negru de la 400 de lei. Discută desenul cu un artist Oblivion Tattoo înainte de programare.",
       "heroCards": [
         {
-          "title": "Tatuaje pentru bărbați și femei",
-          "text": "În studioul nostru de tatuaje din Chișinău poți realiza tatuaje artistice în orice stil și dimensiune. Lucrăm în condiții sterile, folosim doar materiale de unică folosință și garantăm măiestrie de înaltă calitate.",
+          "title": "Stiluri de tatuaje",
+          "text": "Gândește-te ce îți place la un desen. O floare poate fi redată prin câteva linii sau prin umbre care scot în evidență fiecare petală.",
           "list": [
-            "Gamă largă de stiluri: realism, minimalism, grafică/linework, tatuaje color și alb-negru",
-            "Schițe personalizate după ideile tale",
-            "Siguranță și sterilitate: ace de unică folosință și cerneluri certificate",
-            "Tatuaje pentru bărbați și femei de la mini până la proiecte mari"
+            "Minimalismul folosește forme simple și puține detalii.",
+            "Grafica și stilul linework pun accent pe contur și hașură.",
+            "Realismul redă volumul și textura."
           ],
           "button": "Programează-te"
         },
         {
-          "title": "Reîmprospătare și corecție de tatuaje",
-          "text": "Dacă tatuajul tău s-a estompat sau necesită corecții, oferim reîmprospătare profesională și cover-up al lucrărilor vechi. Artiștii noștri vor găsi soluția potrivită și vor reda frumusețea și expresivitatea tatuajului.",
+          "title": "Acoperirea și corectarea tatuajelor vechi",
+          "text": "Dacă îți place în continuare desenul, poți discuta cu artistul despre refacerea conturului sau a culorii. Pentru acoperire, noua compoziție ține cont de zonele întunecate ale tatuajului vechi.",
           "list": [
-            "Corecția tatuajelor estompate sau de calitate slabă",
-            "Cover-up al lucrărilor vechi cu schițe moderne",
-            "Adăugarea detaliilor și îmbunătățirea culorii",
-            "Abordare individuală pentru fiecare caz"
+            "Trimite o fotografie la lumină naturală, cu întregul desen.",
+            "Indică dimensiunea și ce ai vrea să păstrezi sau să acoperi."
           ],
           "button": "Cere o ofertă"
         },
         {
-          "title": "Design de tatuaje",
-          "text": "Creăm schițe unice care îți reflectă caracterul și stilul. Fiecare design este dezvoltat individual de la idee la desenul final pentru ca tatuajul tău să fie cu adevărat special.",
+          "title": "Schițe personalizate",
+          "text": "Poți aduce un desen, câteva imagini de referință sau ne poți povesti ideea. Schița este gratuită, inclusiv pentru acoperiri.",
           "list": [
-            "Schițe personalizate pe baza ideilor și referințelor tale",
-            "Dezvoltare în stiluri populare: realism, grafică/linework, minimalism și altele",
-            "Alegerea formei și a poziționării în funcție de corp",
-            "Colaborare artist–client pentru un rezultat perfect"
+            "Spune-i artistului ce detalii contează pentru tine.",
+            "Stabiliți împreună dimensiunea și amplasarea."
           ],
           "button": "Discută designul"
         }
       ]
     },
     "servicesSection": {
-      "title": "Serviciile salonului de tatuaje din Chișinău tatuaje artistice, corecții/cover-up și design de schițe",
-      "description": "Realizăm tatuaje color și black & grey în stiluri populare: realism, minimalism, grafică/linework. Te ajutăm cu ideea și designul, reîmprospătăm și acoperim cu grijă lucrările vechi. Lucrăm în condiții sterile, cu ace de unică folosință și cerneluri certificate.",
-      "usp": [
-        "Stiluri: realism, minimalism, grafică/linework, color/black & grey",
-        "Schițe personalizate după referințele tale",
-        "Corecție și cover-up pentru tatuaje vechi",
-        "Sterilitate: instrumente de unică folosință, cerneluri sigure",
-        "Consultație înainte de programare și îngrijire post-procedură"
-      ],
+      "title": "Prețuri pentru tatuaje alb-negru și color",
+      "description": "Alege dimensiunea și varianta de culoare din lista de mai jos. Intervalele sunt pentru tatuaje de 5–20 cm. Pentru alte dimensiuni, cere o estimare.",
       "cta": "Programează-te",
       "servicesCards": [
         {
@@ -462,25 +450,57 @@
       ]
     },
     "aboutSection": {
-      "title": "Studio de tatuaje profesionist în Chișinău",
+      "title": "Consultație și programare",
       "paragraphs": [
-        "Creăm tatuaje unice de orice complexitate de peste 10 ani. Echipa noastră de artiști profesioniști îți va aduce ideea la viață cu grijă.",
-        "Suntem specializați în tatuaje color și black & grey, reîmprospătarea lucrărilor vechi, cover-up pentru tatuaje nereușite și dezvoltarea designului personalizat.",
-        "Lucrăm în condiții sterile: doar ace de unică folosință și cerneluri certificate, respectarea normelor de igienă și îngrijire detaliată după procedură."
+        "Scrie-i artistului pe Telegram și trimite un exemplu de tatuaj sau descrie ideea în câteva cuvinte.",
+        "La consultația gratuită discutați schița și prețul. Programarea se confirmă cu un avans de 300 de lei, inclus în prețul final. În caz de anulare, avansul nu se restituie."
       ],
-      "advantagesTitle": "Avantajele noastre:",
+      "advantagesTitle": "Ce să trimiți pentru estimare",
       "advantages": [
-        "Artiști experimentați cu un portofoliu de 1000+ lucrări",
-        "Materiale sterile de unică folosință și cerneluri de încredere",
-        "Abordare individuală pentru fiecare client",
-        "Consultație gratuită și schiță de bază",
-        "Garanție pentru lucrările efectuate"
+        "Dimensiunea în centimetri și zona corpului.",
+        "Culorile preferate și o imagine care arată nivelul de detaliu dorit.",
+        "O fotografie a tatuajului existent pentru corectare sau acoperire."
       ]
     },
     "latestTattooSection": {
-      "title": "Portofoliu de tatuaje în Chișinău lucrări recente ale artiștilor",
-      "description": "Aici sunt adunate lucrările recente ale studioului nostru: de la schițe minimaliste mici până la proiecte mari. Toate tatuajele sunt realizate cu ace de unică folosință și cerneluri certificate. Apasă pe fotografie pentru a o mări.",
+      "title": "Tatuaje realizate de artiștii noștri",
+      "description": "Deschide fotografia pentru a vedea contururile și umbrele. Dacă îți place o lucrare, arat-o artistului la consultație.",
       "cta": "Vezi toate fotografiile"
+    },
+    "faq": {
+      "title": "Întrebări frecvente despre tatuaje",
+      "items": [
+        {
+          "question": "Cât costă un tatuaj în Chișinău?",
+          "answer": "La 5–10 cm, un tatuaj alb-negru costă 400–1300 de lei, iar unul color, 500–1500 de lei. La 10–20 cm, intervalele sunt de 900–3500 și, respectiv, 1000–4000 de lei."
+        },
+        {
+          "question": "Cum se stabilește prețul final?",
+          "answer": "Dimensiunea și culoarea oferă un prim reper. Artistul analizează detaliile schiței, complexitatea desenului și amplasarea pe corp."
+        },
+        {
+          "question": "Pot veni cu schița mea?",
+          "answer": "Da. Trimite desenul înainte de consultație pentru a discuta ce detalii se vor vedea bine la dimensiunea aleasă."
+        },
+        {
+          "question": "Acoperiți tatuaje vechi?",
+          "answer": "Da. Acoperirile și corectările pornesc de la 600 de lei. Artistul analizează fotografia pentru a vedea culorile și densitatea desenului vechi."
+        },
+        {
+          "question": "Cum mă programez la o consultație?",
+          "answer": "Butonul de programare deschide Telegram. Scrie-ne ce idee ai și când poți veni. Ne poți suna și la numărul din secțiunea de contact."
+        },
+        {
+          "question": "Ce să iau în calcul înainte de ședință?",
+          "answer": "Întreabă cât va dura ședința. Alege haine care lasă acces la zona de lucru și discută cu artistul despre îngrijirea tatuajului."
+        }
+      ]
+    },
+    "booking": {
+      "title": "Programare la tatuaj",
+      "text": "Contactează-ne pentru a discuta desenul și a stabili data vizitei.",
+      "contacts": "Contact și indicații de orientare",
+      "care": "Îngrijirea tatuajului"
     }
   },
   "piercingPage": {

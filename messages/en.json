@@ -17,12 +17,12 @@
       "twitterDescription": "Powder brows, lip blush and permanent eyeliner at Oblivion Tattoo in Chișinău. Each area costs 900 MDL. Browse the portfolio and book a consultation."
     },
     "tattooPageMetadata": {
-      "title": "Tattoos in Chișinău | Oblivion Tattoo Studio",
-      "description": "Custom tattoos in every style at Oblivion Tattoo Studio in Chișinău. Bring your idea for a consultation, individual sketch and professional, sterile execution.",
-      "openGraphTitle": "Tattoos in Chișinău | Oblivion Tattoo Studio",
-      "openGraphDescription": "Bring your tattoo idea from consultation and sketch to a professional result at Oblivion Tattoo Studio.",
-      "twitterTitle": "Tattoos in Chișinău | Oblivion Tattoo Studio",
-      "twitterDescription": "Custom tattoos in every style, with individual sketches and professional execution in a sterile studio."
+      "title": "Tattoos in Chișinău from 400 MDL | Oblivion Tattoo",
+      "description": "A 5–10 cm black and grey tattoo costs 400–1300 MDL, or 500–1500 MDL in colour. Browse our artists’ work and send your idea for an estimate. Custom designs are free.",
+      "openGraphTitle": "Tattoos in Chișinău from 400 MDL | Oblivion Tattoo",
+      "openGraphDescription": "A 5–10 cm black and grey tattoo costs 400–1300 MDL, or 500–1500 MDL in colour. Browse our artists’ work and send your idea for an estimate. Custom designs are free.",
+      "twitterTitle": "Tattoos in Chișinău from 400 MDL | Oblivion Tattoo",
+      "twitterDescription": "A 5–10 cm black and grey tattoo costs 400–1300 MDL, or 500–1500 MDL in colour. Browse our artists’ work and send your idea for an estimate. Custom designs are free."
     },
     "piercingPageMetadata": {
       "title": "Piercing in Chișinău — prices from 150 MDL | Oblivion Tattoo",
@@ -361,54 +361,42 @@
       "offerLarge": "Large tattoo (from 20 cm and above)"
     },
     "heroSection": {
-      "title": "Tattoos in Chisinau: color and black-and-white tattoos, correction, cover-ups and tattoo design",
-      "subtitle": "Tattoo salon in Chisinau: artists, prices and tattoos in Moldova",
+      "title": "Tattoos in Chișinău",
+      "subtitle": "Black and grey tattoos from 400 MDL. Discuss your idea with an Oblivion Tattoo artist before booking.",
       "heroCards": [
         {
-          "title": "Tattoos for men and women",
-          "text": "At our tattoo studio in Chisinau you can get artistic tattoos in any style and size. We work in sterile conditions, use only single-use materials and guarantee high-quality craftsmanship.",
+          "title": "Tattoo styles",
+          "text": "Think about what draws you to a picture. A flower can be a simple outline or a detailed study of light and shadow.",
           "list": [
-            "Wide range of styles: realism, minimalism, linework/graphic, color and black-and-white tattoos",
-            "Custom designs based on your ideas",
-            "Safety and sterility: single-use needles and certified inks",
-            "Tattoos for men and women from mini to large projects"
+            "Minimalism uses simple shapes and few details.",
+            "Graphic tattoos and linework emphasise contours and hatching.",
+            "Realism brings out texture and depth."
           ],
           "button": "Book an appointment"
         },
         {
-          "title": "Tattoo refresh and correction",
-          "text": "If your tattoo has faded or needs fixing, we offer professional refresh and cover-ups of old work. Our artists will find the right solution and make your tattoo beautiful and expressive again.",
+          "title": "Cover-ups and touch-ups",
+          "text": "If you still like your tattoo, ask about refreshing its lines or colour. For a cover-up, the artist plans the new design around the darkest areas of the old one.",
           "list": [
-            "Correction of faded or low-quality tattoos",
-            "Cover-ups of old pieces with modern designs",
-            "Adding details and improving color",
-            "Individual approach to every case"
+            "Send a photo in daylight showing the entire tattoo.",
+            "Include its size and explain what you want to keep or cover."
           ],
           "button": "Get a quote"
         },
         {
-          "title": "Tattoo design",
-          "text": "We create unique tattoo designs that reflect your character and style. Each design is developed individually from idea to final drawing so your tattoo is truly special.",
+          "title": "Custom tattoo designs",
+          "text": "Bring a drawing, share a few references or describe your idea. Custom designs, including cover-up designs, are free.",
           "list": [
-            "Personal designs based on your ideas and references",
-            "Design in popular styles: realism, linework/graphic, minimalism and more",
-            "Choosing placement and size to suit your body",
-            "Artist–client collaboration for the perfect result"
+            "Tell the artist which details matter to you.",
+            "Agree on the size and placement together."
           ],
           "button": "Discuss a design"
         }
       ]
     },
     "servicesSection": {
-      "title": "Tattoo studio services in Chisinau artistic tattoos, correction/cover-ups and custom design",
-      "description": "We create color and black & grey tattoos in popular styles: realism, minimalism, graphic/linework. We help with the idea and design, carefully refresh and cover up old pieces. We work in sterile conditions with single-use needles and certified inks.",
-      "usp": [
-        "Styles: realism, minimalism, graphic/linework, color/black & grey",
-        "Custom designs based on your references",
-        "Correction and cover-up of old tattoos",
-        "Sterility: single-use tools, trusted inks",
-        "Pre-booking consultation and aftercare"
-      ],
+      "title": "Black and grey and colour tattoo prices",
+      "description": "Find your size and colour option below. The ranges apply to tattoos measuring 5–20 cm. Ask the artist for an estimate for other sizes.",
       "cta": "Book now",
       "servicesCards": [
         {
@@ -462,25 +450,57 @@
       ]
     },
     "aboutSection": {
-      "title": "Professional tattoo studio in Chisinau",
+      "title": "Consultation and booking",
       "paragraphs": [
-        "We have been creating unique tattoos of any complexity for over 10 years. Our team of professional artists will carefully bring your idea to life.",
-        "We specialize in color and black & grey tattoos, refreshing old pieces, cover-ups of unsuccessful tattoos, and custom design development.",
-        "We work in sterile conditions: only single-use needles and certified inks, compliance with hygiene standards, and detailed aftercare."
+        "Message the artist on Telegram with a drawing or a description of your idea.",
+        "Discuss the design and price at a free consultation. A 300 MDL deposit secures the date, counts towards the total and is non-refundable if you cancel."
       ],
-      "advantagesTitle": "Our advantages:",
+      "advantagesTitle": "What to send for an estimate",
       "advantages": [
-        "Experienced artists with a portfolio of 1,000+ works",
-        "Sterile single-use materials and trusted inks",
-        "Individual approach to every client",
-        "Free consultation and basic sketch",
-        "Guarantee on all completed work"
+        "Approximate size in centimetres and placement.",
+        "Colour preferences and a reference showing the level of detail.",
+        "A photo of the existing tattoo for a touch-up or cover-up."
       ]
     },
     "latestTattooSection": {
-      "title": "Tattoo portfolio in Chisinau recent works by our artists",
-      "description": "Here you’ll find our studio’s recent works: from small minimalist sketches to large projects. All tattoos are done with single-use needles and certified inks. Click a photo to view it in full size.",
+      "title": "Tattoos by our artists",
+      "description": "Open a photo to see the linework and shading up close. Bring a favourite example to your consultation.",
       "cta": "View all photos"
+    },
+    "faq": {
+      "title": "Tattoo questions",
+      "items": [
+        {
+          "question": "How much does a tattoo cost in Chișinău?",
+          "answer": "At 5–10 cm, black and grey costs 400–1300 MDL and colour costs 500–1500 MDL. At 10–20 cm, the ranges are 900–3500 and 1000–4000 MDL respectively."
+        },
+        {
+          "question": "How is the final price set?",
+          "answer": "Size and colour give you a starting range. The artist looks at placement, fine details and the complexity of the design before confirming the price."
+        },
+        {
+          "question": "Can I bring my own design?",
+          "answer": "Yes. Send the drawing ahead of time so the artist can discuss which details will work at your chosen size."
+        },
+        {
+          "question": "Do you cover old tattoos?",
+          "answer": "Yes. Cover-ups and corrections start at 600 MDL. The artist reviews a photo to assess the colour and density of the existing work."
+        },
+        {
+          "question": "How do I book a consultation?",
+          "answer": "Use the booking button to open the studio’s Telegram, describe your idea and suggest a time. You can also call the number in our contact details."
+        },
+        {
+          "question": "What should I consider before my session?",
+          "answer": "Ask how long your session will take. Choose clothing that gives access to the area and discuss aftercare with the artist."
+        }
+      ]
+    },
+    "booking": {
+      "title": "Book a tattoo appointment",
+      "text": "Get in touch to discuss your tattoo and arrange a visit.",
+      "contacts": "Contact details and directions",
+      "care": "Tattoo aftercare"
     }
   },
   "piercingPage": {

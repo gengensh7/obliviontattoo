@@ -2,7 +2,6 @@ import { getLocale, getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import { getPathname } from '@/i18n/navigation'
 import { getLatestTattooImages } from '@/lib/cachedPrisma'
-import { ContactsSection } from '@/shared/ContactsSection'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import Lightbox from '@/shared/Lightbox'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -42,7 +41,6 @@ export const LatestTattoo = async () => {
         >
           {t('cta')}
         </Link>
-        <ContactsSection />
       </div>
     </section>
   )

@@ -26,7 +26,7 @@ export async function getLatestTattooImages() {
   cacheLife('hours')
   cacheTag('images')
 
-  return prisma.image.findMany({ orderBy: { order: 'asc' }, take: 8 })
+  return prisma.image.findMany({ where: { type: ImageType.PORTFOLIO }, orderBy: [{ order: 'asc' }, { id: 'asc' }], take: 8 })
 }
 
 export async function getPermanentImages() {
