@@ -37,14 +37,17 @@ Use the existing container, section spacing, and responsive Tailwind classes.
 Service cards shift from a single column on phones to multiple columns on wider
 screens. Match new sections to neighboring sections in spacing and scale.
 
-The `/permanent` hero pairs a Montserrat heading with a large photo of the studio's
-work and a list of links to three services. The palette uses zinc tones with a rose
-accent. On phones, the photo sits between the introductory text and the list.
-Hovering over a link or focusing it with the keyboard changes the photo. Each link
-leads to the corresponding service description and price.
+The `/permanent` hero fills at least the visible viewport height and uses the
+standard site container. A centered Montserrat heading with a white-to-rose
+gradient sits above the introduction, booking link, and three photo-led service
+cards. The middle card sits higher on wider screens. On phones, the cards stack
+in a single column. Each card links to the service description and price.
+Muted rose beams follow curved paths behind the content. Card 3D uses a 1000px
+perspective and separate depth layers for the photo, title, description, and arrow.
+The cards turn independently over a 10-second cycle. The loops pause outside
+the viewport, and reduced-motion mode presents the cards flat.
 React Bits Fade Content brings the hero into focus as a single block. Below the
-fold, the main sections come into focus once as they enter the viewport. The hero
-photo switches immediately on pointer hover or keyboard focus once the new image is loaded.
+fold, the main sections come into focus once as they enter the viewport.
 
 ## Components and Interactivity
 

@@ -21,7 +21,7 @@ Read `DESING.md` in the repository root before making UI changes.
 - Next.js 16.3 App Router, React 19, TypeScript, Tailwind CSS 4, pnpm.
 - next-intl, Prisma 7 with PostgreSQL, Supabase Storage for images, and Vercel.
 - `src/app/[locale]/` holds pages, with page-specific components in adjacent `ui/` directories.
-- `src/components/ui/` holds base UI components, and `src/shared/` holds shared sections.
+- `src/components/ui/` holds base UI components, and `src/shared/` holds reusable components and sections.
 - `src/widgets/` holds the header and footer. `src/lib/` holds server-side data, SEO, and contact information.
 - `messages/{ru,ro,uk,it,en}.json` holds translations, and `src/i18n/` holds routing configuration.
 - `prisma/` holds the schema and migrations. `src/generated/prisma/` is generated automatically.
@@ -58,6 +58,7 @@ Leave generated files untouched and keep migrations within the scope of the task
 
 - Follow the existing project architecture.
 - Reuse existing components where appropriate.
+- Put new cross-page components such as text animations in `src/shared/`. Keep base UI primitives in `src/components/ui/` and page-specific components in the route's `ui/` directory.
 - Preserve existing functionality and SEO.
 - Keep components readable and maintainable.
 

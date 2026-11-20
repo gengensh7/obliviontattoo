@@ -30,6 +30,7 @@ export const ProductCard = ({ item, image }: Props) => {
           src={image}
           fill
           sizes="(min-width: 1536px) 461px, (min-width: 1280px) 376px, (min-width: 1024px) 466px, (min-width: 768px) 338px, (min-width: 640px) 608px, calc(100vw - 32px)"
+          loading={item.id === 'brows' ? 'eager' : 'lazy'}
           fetchPriority="low"
           alt={item.alt}
         />
