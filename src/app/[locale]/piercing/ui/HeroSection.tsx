@@ -22,7 +22,9 @@ export const HeroSection = async () => {
               alt={t('imageAlt')}
               width={400}
               height={400}
-              preload
+              loading="eager"
+              fetchPriority="high"
+              sizes="(min-width: 1536px) 475px, (min-width: 1280px) 390px, (min-width: 1024px) 476px, (min-width: 768px) 736px, (min-width: 640px) 608px, calc(100vw - 32px)"
               className="col-span-1 h-full w-full rounded-lg"
             />
             <div className="flex flex-col justify-between gap-10 xl:col-span-2">

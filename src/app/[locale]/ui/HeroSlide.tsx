@@ -10,7 +10,7 @@ export const HeroSlide = ({ slide, card, preload = false }: {
   <div className="relative min-h-screen w-full">
     <Image
       src={slide.imageSrc}
-      alt={slide.imageAlt}
+      alt={card.imageAlt}
       fill
       draggable={false}
       preload={preload}

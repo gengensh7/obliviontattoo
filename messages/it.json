@@ -41,6 +41,7 @@
       "twitterDescription": "A Chișinău, tatuaggio e trucco permanente durano 7 giorni e costano 450 € a corso. Piercing: 3 giorni, 300 €. Pratica su modelli e materiali inclusi."
     },
     "galleryPageMetadata": {
+      "pageLabel": "Pagina {page}",
       "title": "Galleria tatuaggi | Portfolio Oblivion Tattoo a Chișinău",
       "description": "Portfolio di tatuaggi realizzati da Oblivion Tattoo a Chișinău. Foto di lavori reali, dal minimalismo al realismo. Idee e ispirazione.",
       "openGraphTitle": "Galleria dello studio di tatuaggi Oblivion Tattoo | Chișinău",
@@ -92,6 +93,7 @@
   },
   "homePage": {
     "header": {
+      "logoAlt": "Studio di tatuaggi Oblivion Tattoo a Chișinău",
       "links": [
         { "label": "Trucco Permanente", "href": "/permanent" },
         { "label": "Tatuaggio", "href": "/tattoo" },
@@ -111,18 +113,21 @@
     "heroSection": {
       "cards": {
         "firstCard": {
+          "imageAlt": "Tatuaggio con katana e carpe koi sull’avambraccio",
           "title": "Oblivion Tattoo",
           "text": "Tatuaggi, piercing e trucco permanente",
           "description": "Riceviamo su appuntamento in via Tighina 65. Guarda i lavori dei nostri artisti nella galleria e contattaci su Telegram o per telefono per prenotare.",
           "button": "Prenota Ora"
         },
         "secondCard": {
+          "imageAlt": "Tatuaggio con fiori e serpente sulla gamba",
           "title": "Esperienza e Comfort",
           "text": "SESSIONE PER TE",
           "description": "Lavoriamo tenendo conto delle tue preferenze: creiamo design personalizzati, selezioniamo forma e colore in base al tipo di pelle e all'anatomia. Comfort e sicurezza sono le nostre priorità in ogni fase, sia per tatuaggi, trucco permanente o piercing.",
           "button": "Prenota Ora"
         },
         "thirdCard": {
+          "imageAlt": "Tatuaggio con fiori e farfalle sulla spalla",
           "title": "Crescita e Apprendimento",
           "text": "TI INSEGNEREMO",
           "description": "Da Oblivion Tattoo a Chișinău puoi imparare da zero a tatuare, eseguire il trucco permanente o praticare piercing. Confronta programmi, giorni di pratica e costi per scegliere il tuo corso.",
@@ -159,6 +164,7 @@
       "galleryLink": "Guarda i nostri lavori"
     },
     "aboutSection": {
+      "imageAlt": "Tatuaggio di rondini sulla schiena",
       "title": "Qualche parola sul nostro studio di tatuaggi a Chisinau",
       "text": "Studio di tatuaggi a Chisinau con un team di professionisti esperti. Offriamo tatuaggi a Chisinau, piercing, copertura di tatuaggi e cicatrici, trucco permanente.",
       "description": "I nostri artisti con anni di esperienza creano disegni unici in base all'anatomia e alle preferenze del cliente. Lavoriamo in un ambiente sterile e sicuro.",
@@ -182,6 +188,7 @@
       "link": "Vedi tutte le foto"
     },
     "locationSection": {
+      "openMap": "Apri la mappa",
       "title": "Studio di tatuaggi a Chisinau sulla mappa",
       "text": "Il nostro studio di tatuaggi si trova nel centro di Chisinau. Nella mappa qui sotto puoi trovare facilmente la posizione dello studio e creare un percorso comodo.",
       "appointment": "Le visite si effettuano esclusivamente su appuntamento.",
@@ -690,6 +697,11 @@
     }
   },
   "galleryPage": {
+    "pagination": {
+      "label": "Pagine della galleria",
+      "previous": "Indietro",
+      "next": "Avanti"
+    },
     "seo": {
       "title": "Galleria di tatuaggi Oblivion Tattoo a Chisinau",
       "description": "Portfolio di tatuaggi professionali dello studio Oblivion Tattoo a Chisinau: minimalismo, realismo e altri stili. Guarda i lavori più recenti dei nostri artisti."

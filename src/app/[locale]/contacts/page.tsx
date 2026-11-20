@@ -74,6 +74,7 @@ export default async function Contacts() {
         translations={{
           title: location('title'),
           text: location('text'),
+          openMap: location('openMap'),
           appointment: location('appointment'),
           description: location('description')
         }}

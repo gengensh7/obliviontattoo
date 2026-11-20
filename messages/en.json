@@ -41,6 +41,7 @@
       "twitterDescription": "Study tattooing or permanent makeup in Chișinău in 7 days for €450 per course, or piercing in 3 days for €300. Supervised practice and materials included."
     },
     "galleryPageMetadata": {
+      "pageLabel": "Page {page}",
       "title": "Tattoo Gallery | Portfolio of Oblivion Tattoo Artists in Chișinău",
       "description": "Tattoo portfolio from Oblivion Tattoo in Chișinău. Photos of real work in various styles, from minimalism to realism. Find ideas and inspiration.",
       "openGraphTitle": "Tattoo Studio Gallery Oblivion Tattoo | Chișinău",
@@ -92,6 +93,7 @@
   },
   "homePage": {
     "header": {
+      "logoAlt": "Oblivion Tattoo studio in Chișinău",
       "links": [
         { "label": "Permanent Makeup", "href": "/permanent" },
         { "label": "Tattoo", "href": "/tattoo" },
@@ -111,18 +113,21 @@
     "heroSection": {
       "cards": {
         "firstCard": {
+          "imageAlt": "Katana and koi tattoo on the forearm",
           "title": "Oblivion Tattoo",
           "text": "Tattoos, piercing and permanent makeup",
           "description": "Visit us by appointment at 65 Tighina Street. Browse our artists’ work in the gallery, then message us on Telegram or call to book.",
           "button": "Book Now"
         },
         "secondCard": {
+          "imageAlt": "Flower and snake tattoo on the leg",
           "title": "Experience and Comfort",
           "text": "SESSION FOR YOU",
           "description": "We work with your preferences in mind: creating custom designs, selecting shape and color based on skin type and anatomy. Comfort and safety are our priorities at every stage, whether it's a tattoo, permanent makeup, or piercing.",
           "button": "Book Now"
         },
         "thirdCard": {
+          "imageAlt": "Flower and butterfly tattoo on the shoulder",
           "title": "Growth and Learning",
           "text": "WE’LL TEACH YOU",
           "description": "Learn tattooing, permanent makeup or piercing from scratch at Oblivion Tattoo in Chișinău. Compare what you’ll practise, how much time you’ll spend with an instructor and what each course costs.",
@@ -159,6 +164,7 @@
       "galleryLink": "Browse our work"
     },
     "aboutSection": {
+      "imageAlt": "Swallow tattoo on the back",
       "title": "A few words about our tattoo studio in Chisinau",
       "text": "Tattoo studio in Chisinau with an experienced team of professionals. We offer tattoos in Chisinau, piercings, tattoo and scar cover-ups, and permanent makeup.",
       "description": "Our artists with years of experience create unique designs tailored to the client’s anatomy and preferences. We work in a sterile and safe environment.",
@@ -182,6 +188,7 @@
       "link": "View all photos"
     },
     "locationSection": {
+      "openMap": "Open map",
       "title": "Tattoo studio in Chisinau on the map",
       "text": "Our tattoo studio is located in the center of Chisinau. On the map below you can easily find the studio's location and build a convenient route.",
       "appointment": "Visits are available strictly by appointment only.",
@@ -690,6 +697,11 @@
     }
   },
   "galleryPage": {
+    "pagination": {
+      "label": "Gallery pages",
+      "previous": "Previous",
+      "next": "Next"
+    },
     "seo": {
       "title": "Tattoo Gallery Oblivion Tattoo in Chisinau",
       "description": "Portfolio of professional tattoos from Oblivion Tattoo studio in Chisinau: minimalism, realism, and other styles. Check out the latest works of our artists."

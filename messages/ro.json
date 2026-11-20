@@ -41,6 +41,7 @@
       "twitterDescription": "Cursuri de tatuaj și machiaj permanent în Chișinău: 7 zile și 450 € fiecare. Piercing: 3 zile, 300 €. Practică pe modele și materiale incluse."
     },
     "galleryPageMetadata": {
+      "pageLabel": "Pagina {page}",
       "title": "Galerie de tatuaje | Oblivion Tattoo Chișinău",
       "description": "Portofoliul tatuajelor realizate de Oblivion Tattoo în Chișinău. Fotografii ale lucrărilor reale, de la minimalism la realism. Idei și inspirație.",
       "openGraphTitle": "Galeria studioului de tatuaje Oblivion Tattoo | Chișinău",
@@ -92,6 +93,7 @@
   },
   "homePage": {
     "header": {
+      "logoAlt": "Studio de tatuaje Oblivion Tattoo în Chișinău",
       "links": [
         { "label": "Machiaj Permanent", "href": "/permanent" },
         { "label": "Tatuaj", "href": "/tattoo" },
@@ -111,18 +113,21 @@
     "heroSection": {
       "cards": {
         "firstCard": {
+          "imageAlt": "Tatuaj cu o katana și pești koi pe antebraț",
           "title": "Oblivion Tattoo",
           "text": "Tatuaje, piercing și machiaj permanent",
           "description": "Ne găsești pe strada Tighina 65. Vezi lucrările artiștilor în galerie și scrie-ne pe Telegram sau sună pentru o programare.",
           "button": "Programează-te"
         },
         "secondCard": {
+          "imageAlt": "Tatuaj cu flori și un șarpe pe picior",
           "title": "Experiență și Confort",
           "text": "SESIUNE PENTRU TINE",
           "description": "Lucrăm ținând cont de preferințele tale: creăm designuri personalizate, alegem forma și culoarea în funcție de tipul de piele și anatomie. Confortul și siguranța sunt prioritățile noastre în fiecare etapă, fie că este vorba de tatuaje, machiaj permanent sau piercing.",
           "button": "Programează-te"
         },
         "thirdCard": {
+          "imageAlt": "Tatuaj cu flori și fluturi pe umăr",
           "title": "Creștere și Învățare",
           "text": "TE ÎNVĂȚĂM TOTUL",
           "description": "La Oblivion Tattoo din Chișinău poți învăța de la zero să tatuezi, să realizezi machiaj permanent sau să faci piercinguri. Compară programele, timpul de practică și costurile înainte de a alege un curs.",
@@ -159,6 +164,7 @@
       "galleryLink": "Vezi portofoliul"
     },
     "aboutSection": {
+      "imageAlt": "Tatuaj cu rândunele pe spate",
       "title": "Câteva cuvinte despre salonul nostru de tatuaje din Chișinău",
       "text": "Salon de tatuaje în Chișinău cu o echipă experimentată de profesioniști. Oferim tatuaje în Chișinău, piercing, acoperirea tatuajelor și a cicatricilor, machiaj permanent.",
       "description": "Artiștii noștri cu ani de experiență creează modele unice adaptate anatomiei și dorințelor clientului. Lucrăm steril și în siguranță.",
@@ -182,6 +188,7 @@
       "link": "Vezi toate fotografiile"
     },
     "locationSection": {
+      "openMap": "Deschide harta",
       "title": "Salon de tatuaje în Chișinău pe hartă",
       "text": "Salonul nostru de tatuaje se află în centrul Chișinăului. Pe harta de mai jos poți găsi ușor locația studioului și să îți creezi un traseu convenabil.",
       "appointment": "Programările se fac exclusiv în baza unei rezervări prealabile.",
@@ -690,6 +697,11 @@
     }
   },
   "galleryPage": {
+    "pagination": {
+      "label": "Paginile galeriei",
+      "previous": "Înapoi",
+      "next": "Înainte"
+    },
     "seo": {
       "title": "Galeria de tatuaje Oblivion Tattoo din Chișinău",
       "description": "Portofoliu de tatuaje profesionale al studioului Oblivion Tattoo din Chișinău: minimalism, realism și alte stiluri. Vezi cele mai noi lucrări ale maeștrilor noștri."

@@ -1,9 +1,5 @@
 import { MetadataRoute } from 'next'
-const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL?.replace(/\/$/, '')
-
-if (!BASE_URL) {
-  throw new Error('NEXT_PUBLIC_DOMAIN_URL is required')
-}
+import { siteOrigin } from '@/lib/siteUrl'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/'
     },
-    sitemap: `${BASE_URL}/sitemap.xml`
+    sitemap: `${siteOrigin}/sitemap.xml`
   }
 }

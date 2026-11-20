@@ -1,26 +1,16 @@
-import prisma from '@/lib/prisma'
-import { getPaginatedImagesCached } from '@/lib/cachedPrisma'
+import { notFound } from 'next/navigation'
+import { getGalleryPageCount, getPaginatedImagesCached } from '@/lib/cachedPrisma'
 
-const DEFAULT_PAGE_LIMIT = 10
+export async function resolveGalleryPage(value?: string | string[]) {
+  if (value === undefined || value === '1') return 1
+  if (typeof value !== 'string' || !/^[1-9]\d*$/.test(value)) notFound()
 
-type PaginatedImages = {
-  items: Awaited<ReturnType<typeof prisma.image.findMany>>
-  totalPages: number
-  page: number
-  limit: number
+  const page = Number(value)
+  if (!Number.isSafeInteger(page) || page > await getGalleryPageCount()) notFound()
+  return page
 }
 
-export async function getPaginatedImages(pageParam?: string, limit = DEFAULT_PAGE_LIMIT): Promise<PaginatedImages> {
-  const safeLimit = Math.max(1, limit)
-  const requested = Number(pageParam ?? 1)
-  const page = Number.isSafeInteger(requested) && requested > 0 ? requested : 1
-
-  const { items, total } = await getPaginatedImagesCached(page, safeLimit)
-
-  return {
-    items,
-    totalPages: Math.ceil(total / safeLimit),
-    page,
-    limit: safeLimit
-  }
+export async function getPaginatedImages(page: number) {
+  const [items, totalPages] = await Promise.all([getPaginatedImagesCached(page), getGalleryPageCount()])
+  return { items, totalPages }
 }

@@ -16,6 +16,7 @@ interface Props {
   translations: {
     title: string
     text: string
+    openMap: string
     appointment: string
     description: string
   }
@@ -76,7 +77,7 @@ export const LocationSection = ({ className, translations }: Props) => {
                 onClick={() => setIsMapOpen(true)}
                 className="rounded-md bg-white px-6 py-3 font-bold text-black transition-colors hover:text-red-500"
               >
-                Открыть карту
+                {translations.openMap}
               </button>
               <a
                 href={LOCATION_GOOGLE_MAPS}

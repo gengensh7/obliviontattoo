@@ -1,22 +1,28 @@
 'use client'
 
+import { galleryPath } from '@/lib/galleryPath'
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination'
 
+export type PaginationLabels = { nav: string; previous: string; next: string }
+
 type CustomPaginationProps = {
+  labels: PaginationLabels
   page: number
+  basePath: string
   totalPages: number
   onPageChange: (page: number) => void
 }
 
-export function CustomPagination({ page, totalPages, onPageChange }: CustomPaginationProps) {
+export function CustomPagination({ labels, basePath, page, totalPages, onPageChange }: CustomPaginationProps) {
   if (totalPages <= 1) return null
 
   return (
-    <Pagination>
+    <Pagination aria-label={labels.nav}>
       <PaginationContent className="gap-2">
         <PaginationItem>
           <PaginationPrevious
-            href="#"
+            aria-label={labels.previous}
+            href={page > 1 ? galleryPath(page - 1, basePath) : undefined}
             data-gtm="pagination-previous"
             className={`rounded-md bg-white text-black hover:bg-white hover:text-black ${page === 1 ? 'pointer-events-none opacity-50' : ''}`}
             aria-disabled={page === 1}
@@ -28,7 +34,9 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
                 onPageChange(page - 1)
               }
             }}
-          />
+          >
+            {labels.previous}
+          </PaginationPrevious>
         </PaginationItem>
 
         {Array.from({ length: totalPages }, (_, index) => {
@@ -37,7 +45,7 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
           return (
             <PaginationItem key={pageNumber}>
               <PaginationLink
-                href="#"
+                href={galleryPath(pageNumber, basePath)}
                 data-gtm="pagination-page"
                 data-gtm-page={pageNumber}
                 isActive={page === pageNumber}
@@ -55,7 +63,8 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
 
         <PaginationItem>
           <PaginationNext
-            href="#"
+            aria-label={labels.next}
+            href={page < totalPages ? galleryPath(page + 1, basePath) : undefined}
             data-gtm="pagination-next"
             className={`rounded-md bg-white text-black hover:bg-white hover:text-black ${page === totalPages ? 'pointer-events-none opacity-50' : ''}`}
             aria-disabled={page === totalPages}
@@ -67,7 +76,9 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
                 onPageChange(page + 1)
               }
             }}
-          />
+          >
+            {labels.next}
+          </PaginationNext>
         </PaginationItem>
       </PaginationContent>
     </Pagination>

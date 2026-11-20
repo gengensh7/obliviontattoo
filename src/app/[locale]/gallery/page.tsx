@@ -2,17 +2,23 @@ import { getTranslations } from 'next-intl/server'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { Suspense } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
-import { withSeo } from '@/lib/metadata'
+import { buildMetadata } from '@/lib/metadata'
+import { resolveGalleryPage } from '@/lib/paginationPrisma'
+import { galleryPath } from '@/lib/galleryPath'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { GalleryGrid } from './ui/GalleryGrid'
 
-export const generateMetadata = withSeo('metadata.galleryPageMetadata', '/gallery')
+export async function generateMetadata({ params, searchParams }: PageProps<'/[locale]/gallery'>) {
+  const [{ locale }, query] = await Promise.all([params, searchParams])
+  const page = await resolveGalleryPage(query.page)
+  return buildMetadata({ locale, namespace: 'metadata.galleryPageMetadata', path: galleryPath(page), pageNumber: page })
+}
 
 type GallerySearchProps = Pick<PageProps<'/[locale]/gallery'>, 'searchParams'>
 
 async function RequestedGallery({ searchParams }: GallerySearchProps) {
   const { page } = await searchParams
-  return <GalleryGrid page={typeof page === 'string' ? page : undefined} />
+  return <GalleryGrid page={await resolveGalleryPage(page)} />
 }
 
 export default async function Gallery({ searchParams }: GallerySearchProps) {

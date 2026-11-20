@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 
-export default function Logo({ locale }: { locale: string }) {
+export default function Logo({ locale, alt }: { locale: string; alt: string }) {
   const pathname = usePathname()
   const isPermanent = pathname?.split('/').filter(Boolean).at(-1) === 'permanent'
 
@@ -13,11 +13,10 @@ export default function Logo({ locale }: { locale: string }) {
     <Link href={locale === routing.defaultLocale ? '/' : `/${locale}`} data-gtm="nav-home-logo">
       <Image
         src={isPermanent ? '/logo-pickme.svg' : '/logo.png'}
-        alt={isPermanent ? 'PickMe Permanent Makeup' : 'Тату салон в Кишиневе Oblivion Tattoo'}
+        alt={isPermanent ? 'PickMe Permanent Makeup' : alt}
         width={64}
         height={91}
         loading="eager"
-        fetchPriority="high"
       />
     </Link>
   )

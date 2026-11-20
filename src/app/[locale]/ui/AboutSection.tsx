@@ -13,7 +13,7 @@ export const AboutSection = async () => {
         src="/images/homePage/about-section/about-1.webp"
         width={1920}
         height={1080}
-        alt="тату ласточки на спине"
+        alt={t('imageAlt')}
         sizes="100vw"
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover grayscale"
       />

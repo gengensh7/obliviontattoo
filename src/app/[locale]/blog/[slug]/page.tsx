@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
               createdAt: post.createdAt.toISOString(),
               updatedAt: post.updatedAt.toISOString()
             })
-          )
+          ).replace(/</g, '\\u003c')
         }}
       />
     </main>

@@ -1,10 +1,9 @@
 import { getTranslations } from 'next-intl/server'
 import { courses } from '@/lib/courses'
-import { routing } from '@/i18n/routing'
 import { CONTACT_INSTAGRAM, CONTACT_PHONE_NUMBER, CONTACT_TELEGRAM, LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
-const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
+import { localizedUrl, siteOrigin } from '@/lib/siteUrl'
 
-const businessId = `${BASE_URL}/#tattoo-parlor`
+const businessId = `${siteOrigin}/#tattoo-parlor`
 
 export function buildLocalBusinessJsonLd() {
   return {
@@ -12,9 +11,9 @@ export function buildLocalBusinessJsonLd() {
     '@type': ['LocalBusiness', 'TattooParlor'],
     '@id': businessId,
     name: 'Oblivion Tattoo',
-    image: `${BASE_URL}/og_image.png`,
-    logo: `${BASE_URL}/logo.png`,
-    url: BASE_URL,
+    image: `${siteOrigin}/og_image.png`,
+    logo: `${siteOrigin}/logo.png`,
+    url: siteOrigin,
     hasMap: LOCATION_GOOGLE_MAPS,
     telephone: CONTACT_PHONE_NUMBER,
     sameAs: [CONTACT_INSTAGRAM, CONTACT_TELEGRAM],
@@ -45,15 +44,13 @@ type ServiceOffer = {
 }
 
 function buildServiceJsonLd(locale: string, path: string, name: string, description: string, offer?: ServiceOffer) {
-  const localePart = locale === routing.defaultLocale ? '' : `/${locale}`
-  const url = `${BASE_URL}${localePart}${path}`
+  const url = localizedUrl(locale, path)
   const service = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${url}#service`,
     name,
     description,
-    inLanguage: locale,
     url,
     provider: { '@id': businessId },
     areaServed: { '@type': 'City', name: 'Chișinău' }
@@ -105,9 +102,8 @@ export async function buildPermanentMakeupServiceJsonLd(locale: string) {
 
 export async function buildCoursesJsonLd(locale: string) {
   const t = await getTranslations({ locale, namespace: 'coursesPage.types' })
-  const localePart = locale === routing.defaultLocale ? '' : `/${locale}`
   return courses.map(({ key, price }) => {
-    const url = `${BASE_URL}${localePart}/course#${key}-course`
+    const url = localizedUrl(locale, `/course#${key}-course`)
     return {
       '@context': 'https://schema.org',
       '@type': 'Course',
@@ -132,8 +128,7 @@ type BlogPostJsonLdProps = {
 }
 
 export function buildBlogPostJsonLd({ title, slug, locale, description, image, createdAt, updatedAt }: BlogPostJsonLdProps) {
-  const localePart = locale === routing.defaultLocale ? '' : `/${locale}`
-  const url = `${BASE_URL}${localePart}/blog/${slug}`
+  const url = localizedUrl(locale, `/blog/${slug}`)
 
   return {
     '@context': 'https://schema.org',

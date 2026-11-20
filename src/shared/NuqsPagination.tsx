@@ -1,13 +1,15 @@
 'use client'
 
 import { parseAsInteger, useQueryState } from 'nuqs'
-import { CustomPagination } from './CustomPagination'
+import { CustomPagination, type PaginationLabels } from './CustomPagination'
 
 type NuqsPaginationProps = {
+  labels: PaginationLabels
+  basePath: string
   totalPages: number
 }
 
-export default function NuqsPagination({ totalPages }: NuqsPaginationProps) {
+export default function NuqsPagination({ labels, basePath, totalPages }: NuqsPaginationProps) {
   const [page, setPage] = useQueryState(
     'page',
     parseAsInteger.withDefault(1).withOptions({
@@ -24,5 +26,5 @@ export default function NuqsPagination({ totalPages }: NuqsPaginationProps) {
     })
   }
 
-  return <CustomPagination page={page} totalPages={totalPages} onPageChange={handlePageChange} />
+  return <CustomPagination labels={labels} basePath={basePath} page={page} totalPages={totalPages} onPageChange={handlePageChange} />
 }
