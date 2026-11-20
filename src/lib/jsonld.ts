@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
-import { CONTACT_INSTAGRAM, CONTACT_PHONE_NUMBER, CONTACT_TELEGRAM } from '@/lib/contactLinks'
+import { CONTACT_INSTAGRAM, CONTACT_PHONE_NUMBER, CONTACT_TELEGRAM, LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
 
 const businessId = `${BASE_URL}/#tattoo-parlor`
@@ -14,6 +14,7 @@ export function buildLocalBusinessJsonLd() {
     image: `${BASE_URL}/og_image.png`,
     logo: `${BASE_URL}/logo.png`,
     url: BASE_URL,
+    hasMap: LOCATION_GOOGLE_MAPS,
     telephone: CONTACT_PHONE_NUMBER,
     sameAs: [CONTACT_INSTAGRAM, CONTACT_TELEGRAM],
     openingHoursSpecification: [

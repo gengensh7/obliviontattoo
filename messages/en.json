@@ -1,12 +1,12 @@
 {
   "metadata": {
     "homePageMetadata": {
-      "title": "Oblivion Tattoo Chișinău | Tattoos, Piercing & Permanent Makeup",
-      "description": "Oblivion Tattoo in central Chișinău: custom tattoos, professional piercing and permanent makeup. Individual designs, sterile conditions and online booking.",
-      "openGraphTitle": "Oblivion Tattoo Studio in Chișinău | Tattoos, Piercing & Permanent Makeup",
-      "openGraphDescription": "Custom tattoos, professional piercing and permanent makeup in central Chișinău, with individual designs and online booking.",
-      "twitterTitle": "Oblivion Tattoo Studio in Chișinău",
-      "twitterDescription": "Custom tattoos, piercing and permanent makeup in central Chișinău. Individual designs, sterile conditions and online booking."
+      "title": "Oblivion Tattoo studio in Chișinău",
+      "description": "Tattoos, piercing and permanent makeup at 65 Tighina Street in central Chișinău. Browse our work and book an appointment by phone or on Telegram.",
+      "openGraphTitle": "Oblivion Tattoo studio in Chișinău",
+      "openGraphDescription": "Tattoos, piercing and permanent makeup at 65 Tighina Street in central Chișinău. Browse our work and book an appointment by phone or on Telegram.",
+      "twitterTitle": "Oblivion Tattoo studio in Chișinău",
+      "twitterDescription": "Tattoos, piercing and permanent makeup at 65 Tighina Street in central Chișinău. Browse our work and book an appointment by phone or on Telegram."
     },
     "permanentPageMetadata": {
       "title": "Permanent Makeup in Chișinău — Brows, Lips & Eyeliner | Oblivion Tattoo",
@@ -106,14 +106,14 @@
       "description": "Navigate through the menu to explore our services.",
       "home": "Home",
       "appointment": "Tattoo services are available by appointment only.",
-      "workingHours": "Opening Hours: Mn-Sun: 10 am-8 pm"
+      "workingHours": "Daily from 10:00 to 20:30"
     },
     "heroSection": {
       "cards": {
         "firstCard": {
-          "title": "Comprehensive Approach",
-          "text": "WE DO EVERYTHING",
-          "description": "We work with your preferences in mind: creating custom designs, selecting shape and color based on skin type and anatomy. Comfort and safety are our priorities at every stage, whether it's a tattoo, permanent makeup, or piercing.",
+          "title": "Oblivion Tattoo",
+          "text": "Tattoos, piercing and permanent makeup",
+          "description": "Visit us by appointment at 65 Tighina Street. Browse our artists’ work in the gallery, then message us on Telegram or call to book.",
           "button": "Book Now"
         },
         "secondCard": {
@@ -131,41 +131,32 @@
       }
     },
     "ourServicesSection": {
-      "mainTitle": "Tattoo Studio in Chisinau Oblivion Tattoo: Professional Tattoos, Piercing, and Permanent Makeup.",
-      "title": "Our Tattoo Services in Chisinau",
-      "description": "Our tattoo studio in Chisinau offers a wide range of services from tattoos and piercings to cover-ups and permanent makeup. Experienced tattoo artists in Chisinau guarantee quality, sterility, and a personalized approach.",
+      "mainTitle": "Oblivion Tattoo studio in Chișinău",
+      "title": "Studio services and courses",
+      "description": "Our artists offer tattoos, piercing and permanent makeup at 65 Tighina Street. Explore their work and book a visit by phone or on Telegram.",
       "cards": [
         {
-          "title": "Tattoos in Chisinau",
-          "description": "High-quality tattoos of any complexity in our Chisinau tattoo studio.",
+          "title": "Tattoos",
+          "description": "Browse colour and black-and-grey tattoos and see how size and detail affect the price of a session.",
           "href": "/tattoo"
         },
         {
-          "title": "Piercing in Chisinau",
-          "description": "Needle piercing with full sterility and jewelry selection in Chisinau.",
+          "title": "Piercing",
+          "description": "Compare placements and prices, including basic jewellery, and find answers to questions about aftercare.",
           "href": "/piercing"
         },
         {
-          "title": "Tattoo and Scar Cover-Up",
-          "description": "Professional cover-up of old tattoos and scars in our tattoo studio.",
-          "href": "/tattoo"
-        },
-        {
-          "title": "Tattoo Design",
-          "description": "Custom sketches tailored to each client's anatomy.",
-          "href": "/tattoo"
-        },
-        {
-          "title": "Permanent Makeup in Chisinau",
-          "description": "Long-lasting makeup by certified artists in our Chisinau tattoo studio.",
+          "title": "Permanent makeup",
+          "description": "Explore techniques for brows, lips and eyelids, with photos of finished work and prices for each area.",
           "href": "/permanent"
         },
         {
-          "title": "Tattoo Correction",
-          "description": "We refresh the color and shape of tattoos in our Chisinau studio.",
-          "href": "/tattoo"
+          "title": "Studio courses",
+          "description": "Explore tattooing, piercing and permanent makeup courses and see how students practise on models.",
+          "href": "/course"
         }
-      ]
+      ],
+      "galleryLink": "Browse our work"
     },
     "aboutSection": {
       "title": "A few words about our tattoo studio in Chisinau",

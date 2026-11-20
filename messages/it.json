@@ -1,12 +1,12 @@
 {
   "metadata": {
     "homePageMetadata": {
-      "title": "Oblivion Tattoo Chișinău | Tatuaggi, trucco permanente, piercing",
-      "description": "Oblivion Tattoo nel centro di Chișinău: tatuaggi personalizzati, trucco permanente e piercing. Ambiente sterile e prenotazione online.",
-      "openGraphTitle": "Oblivion Tattoo tatuaggi e trucco permanente a Chișinău | Servizio professionale",
-      "openGraphDescription": "Studio di tatuaggi premium a Chișinău. Artisti con formazione artistica, approccio personalizzato e procedure sicure. Prenotazione online per tatuaggi, piercing o trucco permanente.",
-      "twitterTitle": "Oblivion Tattoo tatuaggi, piercing e trucco permanente a Chișinău",
-      "twitterDescription": "Studio professionale di tatuaggi e trucco permanente nel centro di Chișinău. Design personalizzati, ambiente sterile e prenotazione online. Trasformiamo le tue idee in arte."
+      "title": "Oblivion Tattoo, studio di tatuaggi a Chișinău",
+      "description": "Tatuaggi, piercing e trucco permanente in via Tighina 65, nel centro di Chișinău. Guarda i lavori dello studio e prenota su Telegram o per telefono.",
+      "openGraphTitle": "Oblivion Tattoo, studio di tatuaggi a Chișinău",
+      "openGraphDescription": "Tatuaggi, piercing e trucco permanente in via Tighina 65, nel centro di Chișinău. Guarda i lavori dello studio e prenota su Telegram o per telefono.",
+      "twitterTitle": "Oblivion Tattoo, studio di tatuaggi a Chișinău",
+      "twitterDescription": "Tatuaggi, piercing e trucco permanente in via Tighina 65, nel centro di Chișinău. Guarda i lavori dello studio e prenota su Telegram o per telefono."
     },
     "permanentPageMetadata": {
       "title": "Trucco permanente a Chișinău — sopracciglia, labbra e occhi | Oblivion Tattoo",
@@ -106,14 +106,14 @@
       "description": "Naviga nel menu per scoprire i nostri servizi.",
       "home": "Home",
       "appointment": "I tatuaggi sono disponibili solo su appuntamento",
-      "workingHours": "Orari di apertura: Lun-Dom: 10:00–20:00"
+      "workingHours": "Tutti i giorni dalle 10:00 alle 20:30"
     },
     "heroSection": {
       "cards": {
         "firstCard": {
-          "title": "Approccio Completo",
-          "text": "FACCIAMO TUTTO",
-          "description": "Lavoriamo tenendo conto delle tue preferenze: creiamo design personalizzati, selezioniamo forma e colore in base al tipo di pelle e all'anatomia. Comfort e sicurezza sono le nostre priorità in ogni fase, sia per tatuaggi, trucco permanente o piercing.",
+          "title": "Oblivion Tattoo",
+          "text": "Tatuaggi, piercing e trucco permanente",
+          "description": "Riceviamo su appuntamento in via Tighina 65. Guarda i lavori dei nostri artisti nella galleria e contattaci su Telegram o per telefono per prenotare.",
           "button": "Prenota Ora"
         },
         "secondCard": {
@@ -131,41 +131,32 @@
       }
     },
     "ourServicesSection": {
-      "mainTitle": "Studio di tatuaggi a Chisinau Oblivion Tattoo: Tatuaggi professionali, piercing e trucco permanente.",
-      "title": "I nostri servizi di tatuaggi a Chişinău",
-      "description": "Il nostro studio di tatuaggi a Chişinău offre una vasta gamma di servizi dai tatuaggi e piercing alla copertura di vecchi tatuaggi e trucco permanente. I nostri tatuatori esperti garantiscono qualità, sterilità e un approccio personalizzato.",
+      "mainTitle": "Oblivion Tattoo, studio di tatuaggi a Chișinău",
+      "title": "Servizi e corsi in studio",
+      "description": "In via Tighina 65 realizziamo tatuaggi, piercing e trucco permanente. Guarda i nostri lavori e prenota una visita per telefono o su Telegram.",
       "cards": [
         {
-          "title": "Tatuaggi a Chişinău",
-          "description": "Tatuaggi di alta qualità di qualsiasi complessità nel nostro studio di tatuaggi a Chişinău.",
+          "title": "Tatuaggi",
+          "description": "Guarda i tatuaggi a colori e in bianco e nero e scopri come le dimensioni e i dettagli del disegno incidono sul prezzo.",
           "href": "/tattoo"
         },
         {
-          "title": "Piercing a Chişinău",
-          "description": "Piercing con ago eseguito in condizioni sterili e selezione dei gioielli a Chişinău.",
+          "title": "Piercing",
+          "description": "Confronta i tipi di piercing e i prezzi con gioiello di base incluso. Trovi anche le risposte alle domande sulla cura del piercing.",
           "href": "/piercing"
         },
         {
-          "title": "Copertura di tatuaggi e cicatrici",
-          "description": "Copriamo professionalmente vecchi tatuaggi e cicatrici nel nostro studio.",
-          "href": "/tattoo"
-        },
-        {
-          "title": "Design di tatuaggi",
-          "description": "Creazione di bozzetti personalizzati in base alle caratteristiche anatomiche del cliente.",
-          "href": "/tattoo"
-        },
-        {
-          "title": "Trucco permanente a Chişinău",
-          "description": "Trucco duraturo eseguito da artisti certificati nel nostro studio di tatuaggi.",
+          "title": "Trucco permanente",
+          "description": "Scopri le tecniche per sopracciglia, labbra e palpebre, con foto dei lavori e prezzi per ogni zona.",
           "href": "/permanent"
         },
         {
-          "title": "Correzione tatuaggi",
-          "description": "Rinfreschiamo il colore e la forma dei tatuaggi nel nostro studio a Chişinău.",
-          "href": "/tattoo"
+          "title": "Corsi in studio",
+          "description": "Esplora i corsi di tatuaggio, piercing e trucco permanente e scopri come si svolge la pratica su modelli.",
+          "href": "/course"
         }
-      ]
+      ],
+      "galleryLink": "Guarda i nostri lavori"
     },
     "aboutSection": {
       "title": "Qualche parola sul nostro studio di tatuaggi a Chisinau",

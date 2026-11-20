@@ -1,12 +1,12 @@
 {
   "metadata": {
     "homePageMetadata": {
-      "title": "Oblivion Tattoo Chișinău | Tatuaje, machiaj permanent, piercing",
-      "description": "Oblivion Tattoo în centrul Chișinăului: tatuaje personalizate, machiaj permanent și piercing. Design individual, condiții sterile și programare online.",
-      "openGraphTitle": "Oblivion Tattoo tatuaje și machiaj permanent în Chișinău | Servicii profesionale",
-      "openGraphDescription": "Studio de tatuaje premium în Chișinău. Artiști cu pregătire artistică, abordare personalizată și proceduri sigure. Programare online pentru tatuaje, piercing sau machiaj permanent.",
-      "twitterTitle": "Oblivion Tattoo tatuaje, piercing și machiaj permanent în Chișinău",
-      "twitterDescription": "Studio profesionist de tatuaje și machiaj permanent în centrul Chișinăului. Design personalizat, mediu steril și programare online. Transformăm ideile tale în artă."
+      "title": "Studio de tatuaje Oblivion Tattoo în Chișinău",
+      "description": "Tatuaje, piercing și machiaj permanent pe strada Tighina 65, în centrul Chișinăului. Vezi portofoliul și programează o vizită prin Telegram sau telefon.",
+      "openGraphTitle": "Studio de tatuaje Oblivion Tattoo în Chișinău",
+      "openGraphDescription": "Tatuaje, piercing și machiaj permanent pe strada Tighina 65, în centrul Chișinăului. Vezi portofoliul și programează o vizită prin Telegram sau telefon.",
+      "twitterTitle": "Studio de tatuaje Oblivion Tattoo în Chișinău",
+      "twitterDescription": "Tatuaje, piercing și machiaj permanent pe strada Tighina 65, în centrul Chișinăului. Vezi portofoliul și programează o vizită prin Telegram sau telefon."
     },
     "permanentPageMetadata": {
       "title": "Machiaj permanent în Chișinău — sprâncene, buze și pleoape | Oblivion Tattoo",
@@ -106,14 +106,14 @@
       "description": "Navighează prin meniu pentru a explora serviciile noastre.",
       "home": "Acasă",
       "appointment": "Tatuajele se efectuează doar pe bază de programare.",
-      "workingHours": "Program: L-D: 10:00 - 20:00"
+      "workingHours": "Zilnic între 10:00 și 20:30"
     },
     "heroSection": {
       "cards": {
         "firstCard": {
-          "title": "Abordare Completă",
-          "text": "FACEM TOTUL",
-          "description": "Lucrăm ținând cont de preferințele tale: creăm designuri personalizate, alegem forma și culoarea în funcție de tipul de piele și anatomie. Confortul și siguranța sunt prioritățile noastre în fiecare etapă, fie că este vorba de tatuaje, machiaj permanent sau piercing.",
+          "title": "Oblivion Tattoo",
+          "text": "Tatuaje, piercing și machiaj permanent",
+          "description": "Ne găsești pe strada Tighina 65. Vezi lucrările artiștilor în galerie și scrie-ne pe Telegram sau sună pentru o programare.",
           "button": "Programează-te"
         },
         "secondCard": {
@@ -131,41 +131,32 @@
       }
     },
     "ourServicesSection": {
-      "mainTitle": "Salon de tatuaje în Chișinău Oblivion Tattoo: Tatuaje profesionale, piercing și machiaj permanent.",
-      "title": "Serviciile noastre de tatuaje în Chișinău",
-      "description": "Salonul nostru de tatuaje din Chișinău oferă o gamă largă de servicii de la tatuaje și piercing până la acoperirea tatuajelor vechi și machiaj permanent. Tatuatorii noștri experimentați din Chișinău garantează calitate, sterilitate și o abordare individuală.",
+      "mainTitle": "Studio de tatuaje Oblivion Tattoo în Chișinău",
+      "title": "Servicii și cursuri",
+      "description": "Facem tatuaje, piercing și machiaj permanent pe strada Tighina 65. Vezi lucrările artiștilor noștri și contactează-ne prin telefon sau Telegram pentru o programare.",
       "cards": [
         {
-          "title": "Tatuaje în Chișinău",
-          "description": "Tatuaje de înaltă calitate, de orice complexitate, în salonul nostru din Chișinău.",
+          "title": "Tatuaje",
+          "description": "Vezi lucrări color și alb-negru și află cum dimensiunea și detaliile desenului influențează prețul.",
           "href": "/tattoo"
         },
         {
-          "title": "Piercing în Chișinău",
-          "description": "Piercing cu ac în condiții sterile și selecția bijuteriilor în Chișinău.",
+          "title": "Piercing",
+          "description": "Compară tipurile de piercing și prețurile cu bijuteria de bază inclusă. Citește recomandările de îngrijire.",
           "href": "/piercing"
         },
         {
-          "title": "Acoperire tatuaje și cicatrici",
-          "description": "Acoperim profesionist tatuaje vechi și cicatrici în salonul nostru de tatuaje.",
-          "href": "/tattoo"
-        },
-        {
-          "title": "Design de tatuaje",
-          "description": "Crearea de schițe individuale ținând cont de anatomia clientului.",
-          "href": "/tattoo"
-        },
-        {
-          "title": "Machiaj permanent în Chișinău",
-          "description": "Machiaj de lungă durată realizat de artiști certificați în salonul nostru din Chișinău.",
+          "title": "Machiaj permanent",
+          "description": "Descoperă tehnicile pentru sprâncene, buze și pleoape. Vezi lucrări și prețuri pentru fiecare zonă.",
           "href": "/permanent"
         },
         {
-          "title": "Corectarea tatuajelor",
-          "description": "Împrospătăm culoarea și forma tatuajelor în salonul nostru din Chișinău.",
-          "href": "/tattoo"
+          "title": "Cursuri în studio",
+          "description": "Explorează programele de tatuaj, piercing și machiaj permanent și află cum se desfășoară practica pe modele.",
+          "href": "/course"
         }
-      ]
+      ],
+      "galleryLink": "Vezi portofoliul"
     },
     "aboutSection": {
       "title": "Câteva cuvinte despre salonul nostru de tatuaje din Chișinău",

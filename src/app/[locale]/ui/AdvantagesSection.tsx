@@ -47,7 +47,7 @@ export const AdvantagesSection = ({ translations }: { translations: AdvantagesTr
       <div className="container grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-6">
           <FramerMotionContainer className="flex flex-col gap-4">
-            <p className="text-4xl lg:text-6xl">{translations.text}</p>
+            <h2 className="text-4xl lg:text-6xl">{translations.text}</h2>
             <h3 className="text-lg font-semibold">{translations.title}</h3>
             <p>{translations.description}</p>
           </FramerMotionContainer>

@@ -17,7 +17,11 @@ export async function getPortfolioImages() {
   cacheLife('hours')
   cacheTag('images')
 
-  return prisma.image.findMany({ orderBy: { order: 'asc' }, take: 6 })
+  return prisma.image.findMany({
+    where: { type: { not: ImageType.SKETCH } },
+    orderBy: [{ order: 'asc' }, { id: 'asc' }],
+    take: 6
+  })
 }
 
 export async function getLatestTattooImages() {

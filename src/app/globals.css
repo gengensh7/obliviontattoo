@@ -211,3 +211,14 @@ button {
 *::-webkit-scrollbar-thumb:hover {
   background: #52525b;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-scroll-reveal='pending'] {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  [data-scroll-reveal='visible'] {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+}
