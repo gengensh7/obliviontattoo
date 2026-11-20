@@ -9,24 +9,7 @@ export const LatestPiercingSection = async () => {
   const locale = await getLocale()
   const t = await getTranslations('piercingPage.latestPiercingSection')
 
-  const images = [
-    {
-      src: '/images/piercingPage/piercing-price-1.webp',
-      alt: 'Схема пирсинга уха с видами проколов и ценами'
-    },
-    {
-      src: '/images/piercingPage/piercing-price-2.webp',
-      alt: 'Схема пирсинга лица с видами проколов и ценами'
-    },
-    {
-      src: '/images/piercingPage/piercing-price-3.webp',
-      alt: 'Схема пирсинга губ с видами проколов и ценами'
-    },
-    {
-      src: '/images/piercingPage/piercing-price-4.webp',
-      alt: 'Схема других видов пирсинга с ценами'
-    }
-  ]
+  const alts = t.raw('imageAlts') as string[]
 
   return (
     <section className="bg-zinc-900">
@@ -40,12 +23,12 @@ export const LatestPiercingSection = async () => {
 
         <Lightbox gallery="piercing-portfolio">
           <div id="piercing-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {images.map((photo, i) => (
+            {alts.map((alt, i) => (
               <FramerMotionContainer
                 key={i}
                 className="flex flex-col gap-12"
               >
-                <LatestPiercingCard src={photo.src} alt={photo.alt} />
+                <LatestPiercingCard src={`/images/piercingPage/piercing-price-${i + 1}.webp`} alt={alt} />
               </FramerMotionContainer>
             ))}
           </div>

@@ -26,11 +26,11 @@
     },
     "piercingPageMetadata": {
       "title": "Piercing în Chișinău — prețuri de la 150 MDL | Oblivion Tattoo",
-      "description": "Piercing în Chișinău la Oblivion Tattoo: instrumente sterile de unică folosință și bijuterii de calitate. De la 150 MDL. Programează-te online.",
-      "openGraphTitle": "Piercing la studioul Oblivion Tattoo (Chișinău) — sigur și profesional",
-      "openGraphDescription": "Fă-ți piercingul la specialiști cu experiență. Folosim doar materiale certificate și ace de unică folosință. Instrucțiuni complete pentru vindecare. Programare online.",
+      "description": "Piercing în Chișinău la Oblivion Tattoo. Lobul urechii 150 MDL, nară sau limbă 250 MDL, buric 300 MDL. Bijuteria de bază este inclusă. Programări online.",
+      "openGraphTitle": "Piercing în Chișinău — prețuri de la 150 MDL | Oblivion Tattoo",
+      "openGraphDescription": "Piercing în Chișinău la Oblivion Tattoo. Lobul urechii 150 MDL, nară sau limbă 250 MDL, buric 300 MDL. Bijuteria de bază este inclusă. Programări online.",
       "twitterTitle": "Piercing în Chișinău | Studioul Oblivion Tattoo",
-      "twitterDescription": "Piercing profesional și sigur în centrul Chișinăului. Condiții sterile, bijuterii de calitate și instrucțiuni detaliate de îngrijire."
+      "twitterDescription": "Piercing în Chișinău la Oblivion Tattoo. Lobul urechii 150 MDL, nară sau limbă 250 MDL, buric 300 MDL. Bijuteria de bază este inclusă. Programări online."
     },
     "coursePageMetadata": {
       "title": "Cursuri de tatuaj și machiaj permanent în Chișinău | Oblivion Tattoo",
@@ -514,72 +514,76 @@
     },
     "heroSection": {
       "title": "Piercing profesional în Chișinău – Studio Oblivion Tattoo",
-      "text": "Perforări sigure, instrumente sterile și bijuterii de calitate. Peste 8 ani de experiență în body-modification. Abordare individuală pentru fiecare client în centrul Chișinăului.",
+      "text": "La studioul de pe strada Tighina 65 poți alege un piercing în ureche, nas, buză, limbă sau buric. Prețul fiecărei proceduri include bijuteria de bază.",
       "firstCard": {
-        "title": "Diferite tipuri de piercing – de la clasice la cele mai populare",
-        "text": "Piercing pentru urechi, nas, buze, limbă și buric. Folosim bijuterii din metal chirurgical de cea mai bună calitate. Ace sterile de unică folosință și echipamente profesionale."
+        "title": "Alegerea locului",
+        "text": "Adu o fotografie cu un piercing care îți place pentru a discuta cu specialistul poziția exactă."
       },
       "secondCard": {
-        "title": "Siguranța și sterilitatea – prioritatea noastră în Chișinău",
-        "text": "Respectăm toate normele sanitare și sterilizăm instrumentele în autoclav. Consultație detaliată privind îngrijirea. Garanție a calității și siguranței procedurii."
+        "title": "Alegerea bijuteriei",
+        "text": "Specialistul te ajută să alegi forma și dimensiunea potrivite. Spune-i dacă ai avut reacții la anumite metale."
       },
       "thirdCard": {
-        "title": "Pierceri cu experiență în centrul Chișinăului",
-        "text": "Selecție individuală a bijuteriei în funcție de anatomie și tipul de piercing. După vindecarea completă, schimb gratuit cu bijuteria ta realizat de specialist."
-      }
+        "title": "Programarea la studio",
+        "text": "Alege piercingul din lista de prețuri și apasă butonul de programare. Dacă eziți între mai multe variante, scrie-ne înainte de vizită."
+      },
+      "experience": "Facem piercing de {years, plural, one {# an} few {# ani} other {# de ani}}.",
+      "priceLink": "Vezi prețurile",
+      "imageAlt": "Variante de piercing în ureche, nas și limbă"
     },
     "aboutSection": {
-      "title": "Despre studioul de piercing Oblivion Tattoo din Chișinău",
-      "lead": "De peste 10 ani suntem un studio de top în body modification din Republica Moldova. Echipa noastră de pierceri certificați a realizat mii de proceduri, de la perforarea simplă a urechilor până la proiecte anatomice complexe. Suntem mândri de reputația noastră de cel mai sigur și profesionist studio de piercing din Chișinău.",
-      "whyTitle": "De ce suntem aleși pentru piercing în Chișinău?",
-      "why": [
-        {
-          "icon": "shield",
-          "title": "Sterilitate 100%",
-          "text": "Folosim autoclava de clasă B, ace de unică folosință și respectăm toate protocoalele medicale. Fiecare instrument trece printr-un ciclu complet de sterilizare."
-        },
-        {
-          "icon": "award",
-          "title": "Pierceri certificați",
-          "text": "Piercerii noștri au certificări internaționale și se perfecționează constant în tehnici noi și practici de siguranță."
-        },
-        {
-          "icon": "sparkles",
-          "title": "Fără costuri ascunse",
-          "text": "Bijuteria este inclusă în prețul piercingului și este montată direct în timpul procedurii. Plătești pentru rezultatul final, nu pentru poziții separate din listă."
-        }
-      ],
-      "catalogTitle": "Toate tipurile de piercing într-un singur studio",
+      "catalogTitle": "Tipuri de piercing",
       "catalog": [
         {
-          "category": "Piercing urechi",
-          "description": "De la perforări clasice la compoziții complexe",
-          "services": ["Lob", "Helix", "Tragus", "Conch", "Industrial", "Daith"]
+          "category": "Piercing în ureche",
+          "description": "Lobul este partea moale a urechii. Helixul se face pe marginea cartilajului, iar tragusul în fața canalului auditiv. Mai poți alege conch, daith sau industrial."
         },
         {
-          "category": "Piercing facial",
-          "description": "Evidențiem individualitatea în siguranță",
-          "services": ["Nas", "Septum", "Buze", "Limbă", "Sprânceană"]
+          "category": "Piercing în nas",
+          "description": "Piercingul nostril se face în aripa nasului, iar septumul între nări. Fiecare costă 250 MDL."
         },
         {
-          "category": "Piercing corporal",
-          "description": "Zone intime tratate cu deosebită delicatețe",
-          "services": ["Buric", "Sâni"]
+          "category": "Piercing în buză și limbă",
+          "description": "Un labret simplu costă 200 MDL, unul vertical 250 MDL, iar piercingul în limbă 250 MDL. Pentru variantele pereche, lista indică numărul de perforări."
+        },
+        {
+          "category": "Piercing în buric",
+          "description": "Procedura costă 300 MDL. Discută poziția bijuteriei cu specialistul, mai ales dacă betelia hainelor atinge buricul."
+        },
+        {
+          "category": "Alte piercinguri disponibile",
+          "description": "Piercingul în sprânceană costă 250 MDL, iar cel de tip bridge, la rădăcina nasului, 300 MDL. Prețul de 600 MDL pentru mameloane acoperă două perforări."
         }
       ],
-      "processTitle": "Procesul nostru: siguranța pe primul loc",
+      "processTitle": "Procedură și siguranță",
       "process": [
-        { "step": "1", "title": "Consultație", "description": "Discutăm anatomia și alegem poziționarea și bijuteriile optime." },
-        { "step": "2", "title": "Pregătire", "description": "Sterilizarea postului de lucru și desigilarea instrumentelor noi." },
-        { "step": "3", "title": "Perforare", "description": "Rapid și precis, cu ace profesionale." },
-        { "step": "4", "title": "Îngrijire", "description": "Instrucțiuni detaliate de aftercare și consultații gratuite ulterior." }
+        {
+          "step": "1",
+          "title": "Consultație",
+          "description": "Discută despre locul ales, forma bijuteriei și eventualele sensibilități la metale."
+        },
+        {
+          "step": "2",
+          "title": "Pregătire",
+          "description": "Întreabă cum sunt pregătite instrumentele și cere să vezi ambalajul sigilat al acului de unică folosință."
+        },
+        {
+          "step": "3",
+          "title": "Perforare",
+          "description": "Verifică marcajul în oglindă. Poți cere ajustarea lui înainte de perforare."
+        },
+        {
+          "step": "4",
+          "title": "Îngrijire",
+          "description": "Întreabă cum se curăță zona și când poți schimba bijuteria. Spală-te pe mâini înainte să atingi piercingul."
+        }
       ]
     },
     "pricingSection": {
       "title": "Prețuri pentru piercing în Chișinău",
-      "description": "Prețuri transparente, materiale de calitate și lucru profesionist. Prețul include perforarea și o bijuterie de bază din oțel chirurgical.",
+      "description": "Prețul depinde de zonă și de numărul de perforări. Pentru modelele cu mai multe perforări, numărul este indicat lângă denumire.",
       "badges": {
-        "quality": "Garanție de calitate",
+        "quality": "Bijuterie de bază",
         "onlineBooking": "Programare online"
       },
       "categories": [
@@ -590,7 +594,7 @@
             { "name": "Lob (lobul urechii)", "price": 150 },
             { "name": "Flat", "price": 200 },
             { "name": "Helix (cartilaj superior)", "price": 200 },
-            { "name": "Forward Helix", "price": 200 },
+            { "name": "Forward Helix", "price": 250 },
             { "name": "Tragus", "price": 250 },
             { "name": "Anti-Tragus", "price": 250 },
             { "name": "Conch", "price": 200 },
@@ -641,11 +645,10 @@
       "includesTitle": "Ce este inclus în prețul piercingului?",
       "includes": [
         "Consultație cu specialistul",
-        "Instrumente sterile de unică folosință",
         "Bijuterie de bază",
         "Instrucțiuni detaliate de îngrijire"
       ],
-      "includesNote": "* Bijuteria din oțel medical este inclusă în preț. Schimbarea bijuteriei după vindecarea completă este gratuită.",
+      "includesNote": "Dacă preferi altă bijuterie sau dorești să o schimbi după vindecare, întreabă din timp despre material, disponibilitate și cost.",
       "buttons": {
         "book": "Programează-te"
       },
@@ -654,10 +657,45 @@
         "includesBaseJewelry": "Include bijuterie de bază"
       }
     },
+    "faq": {
+      "title": "Întrebări despre piercing și programări",
+      "items": [
+        {
+          "question": "Cât costă un piercing în Chișinău?",
+          "answer": "La Oblivion Tattoo, prețurile pornesc de la 150 MDL pentru lobul urechii. Un helix costă 200 MDL, iar piercingul în sprânceană sau limbă costă 250 MDL."
+        },
+        {
+          "question": "Bijuteria este inclusă în preț?",
+          "answer": "Da, prețul include perforarea și bijuteria de bază. Pentru alt model, întreabă prețul înainte de programare."
+        },
+        {
+          "question": "Cât costă un piercing în nas sau în buric?",
+          "answer": "Un piercing în aripa nasului sau în sept costă 250 MDL. Piercingul în buric costă 300 MDL cu bijuteria de bază inclusă."
+        },
+        {
+          "question": "Cum aleg bijuteria?",
+          "answer": "Arată-i specialistului ce model îți place. Întreabă ce dimensiune se potrivește unui piercing nou și din ce material este bijuteria."
+        },
+        {
+          "question": "Ce să iau în calcul înainte de procedură?",
+          "answer": "Gândește-te dacă ochelarii, căștile sau hainele vor apăsa pe zonă. Dacă ai o afecțiune sau iei medicamente care pot influența vindecarea, discută în prealabil cu medicul."
+        },
+        {
+          "question": "Când contactez specialistul și când merg la medic?",
+          "answer": "Dacă bijuteria se agață sau te strânge, contactează specialistul. Dacă durerea și umflătura se accentuează, pielea este fierbinte, apare puroi sau ai febră, solicită urgent ajutor medical."
+        }
+      ]
+    },
     "latestPiercingSection": {
-      "title": "Lucrări recente de piercing în Chișinău Oblivion Tattoo",
+      "title": "Scheme de piercing cu prețuri",
       "contactsLink": "Contact și programare",
-      "description": "Aici publicăm fotografii recente ale lucrărilor noastre: piercing urechi (lob, helix, tragus, conch, daith), nas (nostril, sept), buze (labret, medusa, monroe), limbă și buric. Toate perforațiile sunt realizate în condiții sterile, cu ace de unică folosință și bijuterii din titan/oțel chirurgical. Atinge imaginea pentru a o mări."
+      "description": "Deschide schema pentru a vedea poziția piercingului. Mai jos găsești lista completă de prețuri și butoanele de programare.",
+      "imageAlts": [
+        "Piercinguri în ureche și prețuri",
+        "Piercinguri faciale și prețuri",
+        "Piercinguri în buză și prețuri",
+        "Alte piercinguri și prețuri"
+      ]
     }
   },
   "galleryPage": {

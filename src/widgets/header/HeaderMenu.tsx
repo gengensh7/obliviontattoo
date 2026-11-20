@@ -1,18 +1,10 @@
-import { cacheLife } from 'next/cache'
+import { getCurrentYear } from '@/lib/getCurrentYear'
 import { getTranslations } from 'next-intl/server'
 import HeaderNavigation from './HeaderNavigation'
 import { HeaderScrollWrapper } from './HeaderScrollWrapper'
 import { LangSwitcher } from './LangSwitcher'
 import Logo from './Logo'
 import MobileMenu from './MobileMenu'
-
-async function getCurrentYear() {
-  'use cache'
-
-  cacheLife('days')
-
-  return new Date().getFullYear()
-}
 
 export default async function HeaderMenu({ locale }: { locale: string }) {
   const currentYear = await getCurrentYear()

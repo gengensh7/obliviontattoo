@@ -26,11 +26,11 @@
     },
     "piercingPageMetadata": {
       "title": "Piercing in Chișinău — prices from 150 MDL | Oblivion Tattoo",
-      "description": "Piercing in Chișinău at Oblivion Tattoo: different types of piercing, sterile single-use tools and quality jewelry. Prices from 150 MDL. Book online.",
-      "openGraphTitle": "Piercing at Oblivion Tattoo Studio (Chișinău) — safe and professional",
-      "openGraphDescription": "Get pierced by experienced professionals. We use only certified materials and single-use needles. Full healing guidance provided. Online booking available.",
+      "description": "Piercing in Chișinău at Oblivion Tattoo. Earlobe 150 MDL, nostril or tongue 250 MDL, navel 300 MDL. Basic jewelry included. Book online.",
+      "openGraphTitle": "Piercing in Chișinău — prices from 150 MDL | Oblivion Tattoo",
+      "openGraphDescription": "Piercing in Chișinău at Oblivion Tattoo. Earlobe 150 MDL, nostril or tongue 250 MDL, navel 300 MDL. Basic jewelry included. Book online.",
       "twitterTitle": "Piercing in Chișinău | Oblivion Tattoo Studio",
-      "twitterDescription": "Professional and safe piercing in the center of Chișinău. Sterile conditions, quality jewelry and detailed aftercare instructions."
+      "twitterDescription": "Piercing in Chișinău at Oblivion Tattoo. Earlobe 150 MDL, nostril or tongue 250 MDL, navel 300 MDL. Basic jewelry included. Book online."
     },
     "coursePageMetadata": {
       "title": "Tattoo & Permanent Makeup Courses in Chișinău | Oblivion Tattoo",
@@ -514,72 +514,76 @@
     },
     "heroSection": {
       "title": "Professional Piercing in Chisinau – Oblivion Tattoo Studio",
-      "text": "Safe piercings, sterile instruments and quality jewelry. 8+ years of experience in body modification. Individual approach for every client in central Chisinau.",
+      "text": "At our studio at 65 Tighina Street, you can book ear, nose, lip, tongue and navel piercings. Each price includes basic jewelry.",
       "firstCard": {
-        "title": "Different types of piercing – from classic to popular styles",
-        "text": "Ear, nose, lip, tongue, and navel piercings. We use high-quality surgical metal jewelry. Sterile single-use needles and professional equipment."
+        "title": "Choosing a placement",
+        "text": "Bring a photo of a piercing you like so you can discuss the exact placement with your piercer."
       },
       "secondCard": {
-        "title": "Safety and sterility – our priority in Chisinau",
-        "text": "We follow all sanitary standards and use an autoclave for instrument sterilization. Detailed aftercare consultation. Guaranteed quality and safety of the procedure."
+        "title": "Choosing jewelry",
+        "text": "Your piercer can help you choose a shape and size for the placement. Mention any previous reactions to metals."
       },
       "thirdCard": {
-        "title": "Experienced piercers in the center of Chișinău",
-        "text": "Individual jewelry selection based on anatomy and piercing type. After complete healing, free replacement with your own jewelry by the piercer."
-      }
+        "title": "Booking a visit",
+        "text": "Choose a piercing from the price list and use its booking button. If you are deciding between placements, contact the studio before your visit."
+      },
+      "experience": "We’ve been piercing for {years, plural, one {# year} other {# years}}.",
+      "priceLink": "View prices",
+      "imageAlt": "Ear, nose and tongue piercing options"
     },
     "aboutSection": {
-      "title": "About the Oblivion Tattoo piercing studio in Chisinau",
-      "lead": "For over 10 years, we’ve been a leading body-modification studio in Moldova. Our team of certified piercers has performed thousands of procedures, from simple ear piercings to complex anatomical projects. We are proud of our reputation as the safest and most professional piercing studio in Chisinau.",
-      "whyTitle": "Why clients choose us for piercing in Chisinau?",
-      "why": [
-        {
-          "icon": "shield",
-          "title": "100% sterility",
-          "text": "We use a Class B autoclave, single-use needles, and follow all medical protocols. Every instrument undergoes a full sterilization cycle."
-        },
-        {
-          "icon": "award",
-          "title": "Certified piercers",
-          "text": "Our piercers hold international certifications and regularly train in new techniques and safety practices."
-        },
-        {
-          "icon": "sparkles",
-          "title": "No hidden fees",
-          "text": "The jewelry is included in the piercing price and is installed during the procedure. You pay for the final result, not for separate items on the price list."
-        }
-      ],
-      "catalogTitle": "All types of piercing in one studio",
+      "catalogTitle": "Types of piercing",
       "catalog": [
         {
           "category": "Ear piercing",
-          "description": "From classic piercings to complex compositions",
-          "services": ["Earlobe", "Helix", "Tragus", "Conch", "Industrial", "Daith"]
+          "description": "A lobe piercing sits in the soft part of the ear. A helix follows the outer cartilage rim, while a tragus sits in front of the ear canal. Other options include conch, daith and industrial."
         },
         {
-          "category": "Facial piercing",
-          "description": "Safely accentuating individuality",
-          "services": ["Nose", "Septum", "Lips", "Tongue", "Eyebrow"]
+          "category": "Nose piercing",
+          "description": "A nostril piercing sits on one side of the nose. A septum piercing sits centrally between the nostrils. Each costs 250 MDL."
         },
         {
-          "category": "Body piercing",
-          "description": "Intimate areas handled with special care",
-          "services": ["Navel", "Nipples"]
+          "category": "Lip and tongue piercing",
+          "description": "A single labret costs 200 MDL, a vertical labret 250 MDL and a tongue piercing 250 MDL. The list specifies how many piercings each paired style includes."
+        },
+        {
+          "category": "Navel piercing",
+          "description": "A navel piercing costs 300 MDL. Discuss placement with your piercer, especially if your waistband sits across your navel."
+        },
+        {
+          "category": "Other piercings",
+          "description": "An eyebrow piercing costs 250 MDL and a bridge piercing costs 300 MDL. The nipple piercing price of 600 MDL covers two piercings."
         }
       ],
-      "processTitle": "Our process: safety first",
+      "processTitle": "Procedure and safety",
       "process": [
-        { "step": "1", "title": "Consultation", "description": "We discuss anatomy and choose optimal placement and jewelry." },
-        { "step": "2", "title": "Preparation", "description": "Sterilizing the workstation and unsealing new instruments." },
-        { "step": "3", "title": "Piercing", "description": "Fast and precise using professional needles." },
-        { "step": "4", "title": "Aftercare", "description": "Detailed aftercare instructions and free follow-up consultations." }
+        {
+          "step": "1",
+          "title": "Consultation",
+          "description": "Discuss placement, jewelry shape and any sensitivity to metals."
+        },
+        {
+          "step": "2",
+          "title": "Preparation",
+          "description": "Ask how the instruments are processed and ask to see the sealed single-use needle before the procedure."
+        },
+        {
+          "step": "3",
+          "title": "Piercing",
+          "description": "Check the marked position in a mirror. Ask for it to be adjusted if needed."
+        },
+        {
+          "step": "4",
+          "title": "Aftercare",
+          "description": "Ask how to clean the piercing and when you can change the jewelry. Wash your hands before touching the area."
+        }
       ]
     },
     "pricingSection": {
       "title": "Piercing Prices in Chisinau",
-      "description": "Transparent pricing, quality materials, and professional work. The price includes the piercing and a basic surgical steel jewelry piece.",
+      "description": "Prices depend on placement and the number of piercings. The list specifies the number for paired and multi-piercing styles.",
       "badges": {
-        "quality": "Quality guarantee",
+        "quality": "Basic jewelry",
         "onlineBooking": "Online booking"
       },
       "categories": [
@@ -639,8 +643,12 @@
         }
       ],
       "includesTitle": "What’s included in the piercing price?",
-      "includes": ["Consultation with the piercer", "Sterile single-use instruments", "Basic jewelry", "Detailed aftercare instructions"],
-      "includesNote": "* Jewelry made of medical-grade steel is included in the price. Jewelry replacement after full healing is free of charge.",
+      "includes": [
+        "Consultation with the piercer",
+        "Basic jewelry",
+        "Detailed aftercare instructions"
+      ],
+      "includesNote": "If you want a different piece or a jewelry change after healing, ask about the material, availability and cost in advance.",
       "buttons": {
         "book": "Book"
       },
@@ -649,10 +657,45 @@
         "includesBaseJewelry": "Includes basic jewelry"
       }
     },
+    "faq": {
+      "title": "Piercing questions and booking",
+      "items": [
+        {
+          "question": "How much does a piercing cost in Chișinău?",
+          "answer": "Prices at Oblivion Tattoo start at 150 MDL for an earlobe. A helix costs 200 MDL and an eyebrow or tongue piercing costs 250 MDL."
+        },
+        {
+          "question": "Is jewelry included?",
+          "answer": "Yes. The price covers the piercing and basic jewelry. Ask about the cost of other designs when booking."
+        },
+        {
+          "question": "How much is a nose or navel piercing?",
+          "answer": "A nostril or septum piercing costs 250 MDL. A navel piercing costs 300 MDL with basic jewelry."
+        },
+        {
+          "question": "How do I choose jewelry?",
+          "answer": "Show your piercer the look you have in mind. Ask which size suits a fresh piercing and what the piece is made of."
+        },
+        {
+          "question": "What should I consider before a piercing?",
+          "answer": "Consider whether headphones, glasses or clothing will press on the area. If a health condition or medication could affect healing, speak to your doctor beforehand."
+        },
+        {
+          "question": "When should I contact the piercer or seek medical help?",
+          "answer": "Contact your piercer if the jewelry catches or feels tight. Seek urgent medical care if pain and swelling increase, the skin feels hot, you notice pus or you develop a fever."
+        }
+      ]
+    },
     "latestPiercingSection": {
-      "title": "Latest Piercing Works in Chisinau Oblivion Tattoo",
+      "title": "Piercing placement and price charts",
       "contactsLink": "Contact us and book",
-      "description": "Here we publish recent photos of our artists’ work: ear piercings (lobe, helix, tragus, conch, daith), nose (nostril, septum), lips (labret, medusa, monroe), tongue, and navel. All piercings are performed under sterile conditions with single-use needles and titanium/surgical steel jewelry. Tap an image to view it in full size."
+      "description": "Open a chart to see the placement in detail. The full price list below has a booking button for each option.",
+      "imageAlts": [
+        "Ear piercing price chart",
+        "Facial piercing price chart",
+        "Lip piercing price chart",
+        "Price chart for other piercings"
+      ]
     }
   },
   "galleryPage": {

@@ -1,22 +1,25 @@
+import { getCurrentYear } from '@/lib/getCurrentYear'
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 
 export const HeroSection = async () => {
   const t = await getTranslations('piercingPage.heroSection')
 
+  const years = (await getCurrentYear()) - 2018
+
   return (
     <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30 2xl:py-0">
       <div className="container flex flex-col items-center gap-10">
         <div className="flex flex-col gap-10">
-          <h1 className="text-center text-3xl font-bold break-all text-white sm:text-4xl">{t('title')}</h1>
-          <p className="mx-auto max-w-5xl text-center text-xl break-all text-gray-200">{t('text')}</p>
+          <h1 className="text-center text-3xl font-bold break-words text-white sm:text-4xl">{t('title')}</h1>
+          <p className="mx-auto max-w-5xl text-center text-xl break-words text-gray-200">{t('experience', { years })} {t('text')}</p>
         </div>
 
         <div className="flex flex-col gap-10">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
             <Image
               src="/images/piercingPage/piercing.webp"
-              alt="виды пирсинга - прокол уха, прокол носа, прокол языка"
+              alt={t('imageAlt')}
               width={400}
               height={400}
               preload
@@ -42,6 +45,7 @@ export const HeroSection = async () => {
                 <div className="flex flex-col gap-6 text-white">
                   <h2 className="text-center text-lg font-bold sm:text-left">{t('thirdCard.title')}</h2>
                   <p className="text-center sm:text-left">{t('thirdCard.text')}</p>
+                  <a href="#pricing" className="text-center underline underline-offset-4 hover:text-red-400 sm:text-left">{t('priceLink')}</a>
                 </div>
               </div>
             </div>

@@ -13,7 +13,7 @@ export const PricingSection = async () => {
   const includes = t.raw('includes') as string[]
 
   return (
-    <section className="relative bg-zinc-900">
+    <section id="pricing" className="relative scroll-mt-24 bg-zinc-900">
       <div className="container flex flex-col gap-10 sm:gap-15">
         <FramerMotionContainer className="space-y-6 text-center">
           <h2 className="text-4xl font-bold text-white">{t('title')}</h2>

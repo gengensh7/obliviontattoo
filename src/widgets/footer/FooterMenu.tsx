@@ -1,14 +1,6 @@
 import Image from 'next/image'
-import { cacheLife } from 'next/cache'
+import { getCurrentYear } from '@/lib/getCurrentYear'
 import { getTranslations } from 'next-intl/server'
-
-async function getCurrentYear() {
-  'use cache'
-
-  cacheLife('days')
-
-  return new Date().getFullYear()
-}
 
 export default async function FooterMenu() {
   const date = await getCurrentYear()

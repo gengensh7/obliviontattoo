@@ -26,11 +26,11 @@
     },
     "piercingPageMetadata": {
       "title": "Piercing a Chișinău — prezzi da 150 MDL | Oblivion Tattoo",
-      "description": "Piercing a Chișinău nello studio Oblivion Tattoo: diversi tipi di piercing, strumenti sterili monouso e gioielli di qualità. Prezzi da 150 MDL. Prenota online.",
-      "openGraphTitle": "Piercing nello studio Oblivion Tattoo (Chișinău) — sicuro e professionale",
-      "openGraphDescription": "Esegui il tuo piercing con professionisti esperti. Utilizziamo solo materiali certificati e aghi monouso. Istruzioni complete per la guarigione. Prenotazione online.",
+      "description": "Piercing a Chișinău da Oblivion Tattoo. Lobo 150 MDL, narice o lingua 250 MDL, ombelico 300 MDL. Gioiello base incluso nel prezzo. Prenota online.",
+      "openGraphTitle": "Piercing a Chișinău — prezzi da 150 MDL | Oblivion Tattoo",
+      "openGraphDescription": "Piercing a Chișinău da Oblivion Tattoo. Lobo 150 MDL, narice o lingua 250 MDL, ombelico 300 MDL. Gioiello base incluso nel prezzo. Prenota online.",
       "twitterTitle": "Piercing a Chișinău | Studio Oblivion Tattoo",
-      "twitterDescription": "Piercing professionale e sicuro nel centro di Chișinău. Ambiente sterile, gioielli di qualità e istruzioni dettagliate per la cura."
+      "twitterDescription": "Piercing a Chișinău da Oblivion Tattoo. Lobo 150 MDL, narice o lingua 250 MDL, ombelico 300 MDL. Gioiello base incluso nel prezzo. Prenota online."
     },
     "coursePageMetadata": {
       "title": "Corsi di tatuaggio e trucco permanente a Chișinău | Oblivion Tattoo",
@@ -514,72 +514,76 @@
     },
     "heroSection": {
       "title": "Piercing professionale a Chișinău – Studio Oblivion Tattoo",
-      "text": "Fori sicuri, strumenti sterili e gioielli di qualità. Oltre 8 anni di esperienza nelle body modification. Approccio individuale per ogni cliente nel centro di Chișinău.",
+      "text": "Nello studio in via Tighina 65 puoi fare un piercing all’orecchio, al naso, al labbro, alla lingua o all’ombelico. I prezzi includono il gioiello base.",
       "firstCard": {
-        "title": "Diversi tipi di piercing – dai classici ai più popolari",
-        "text": "Piercing a orecchie, naso, labbra, lingua e ombelico. Utilizziamo gioielli in metallo chirurgico di alta qualità. Aghi sterili monouso e attrezzature professionali."
+        "title": "Scelta del punto",
+        "text": "Porta una foto di un piercing che ti piace per discutere con il piercer il punto preciso in cui vorresti il gioiello."
       },
       "secondCard": {
-        "title": "Sicurezza e sterilità – la nostra priorità a Chișinău",
-        "text": "Rispettiamo tutte le norme igienico-sanitarie e sterilizziamo gli strumenti in autoclave. Consulenza dettagliata per la cura post-procedura. Garanzia di qualità e sicurezza."
+        "title": "Scelta del gioiello",
+        "text": "Il piercer ti aiuta a scegliere forma e misura in base alla zona. Segnala eventuali reazioni avute al contatto con i metalli."
       },
       "thirdCard": {
-        "title": "Piercer esperti nel centro di Chișinău",
-        "text": "Selezione personalizzata dei gioielli in base all’anatomia e al tipo di piercing. Dopo la completa guarigione, sostituzione gratuita con il tuo gioiello da parte del piercer."
-      }
+        "title": "Prenotazione in studio",
+        "text": "Scegli il piercing dal listino e premi il pulsante per prenotare. Se hai dubbi tra più opzioni, scrivici prima della visita."
+      },
+      "experience": "Eseguiamo piercing da {years, plural, one {# anno} other {# anni}}.",
+      "priceLink": "Vedi i prezzi",
+      "imageAlt": "Tipi di piercing all’orecchio, al naso e alla lingua"
     },
     "aboutSection": {
-      "title": "Sul nostro studio di piercing Oblivion Tattoo a Chișinău",
-      "lead": "Da oltre 10 anni siamo uno dei principali studi di body modification in Moldavia. Il nostro team di piercer certificati ha eseguito migliaia di procedure, dai semplici fori alle orecchie fino a progetti anatomici complessi. Siamo orgogliosi della nostra reputazione di studio di piercing più sicuro e professionale a Chișinău.",
-      "whyTitle": "Perché sceglierci per il piercing a Chișinău?",
-      "why": [
-        {
-          "icon": "shield",
-          "title": "Sterilità al 100%",
-          "text": "Usiamo un’autoclave di classe B, aghi monouso e rispettiamo tutti i protocolli medici. Ogni strumento passa un ciclo completo di sterilizzazione."
-        },
-        {
-          "icon": "award",
-          "title": "Piercer certificati",
-          "text": "I nostri piercer hanno certificazioni internazionali e si aggiornano regolarmente su nuove tecniche e pratiche di sicurezza."
-        },
-        {
-          "icon": "sparkles",
-          "title": "Nessun costo nascosto",
-          "text": "Il gioiello è incluso nel prezzo del piercing e viene applicato direttamente durante la procedura. Paghi per il risultato finale, non per singole voci del listino."
-        }
-      ],
-      "catalogTitle": "Tutti i tipi di piercing in un unico studio",
+      "catalogTitle": "Tipi di piercing",
       "catalog": [
         {
           "category": "Piercing all’orecchio",
-          "description": "Dai fori classici alle composizioni complesse",
-          "services": ["Lobo", "Helix", "Trago", "Conch", "Industrial", "Daith"]
+          "description": "Il lobo è la parte morbida dell’orecchio. L’helix si trova sul bordo della cartilagine, il trago davanti al condotto uditivo. Il listino comprende anche conch, daith e industrial."
         },
         {
-          "category": "Piercing del viso",
-          "description": "Valorizziamo l’individualità in sicurezza",
-          "services": ["Naso", "Septum", "Labbra", "Lingua", "Sopracciglio"]
+          "category": "Piercing al naso",
+          "description": "Il nostril si fa sul lato della narice, il septum al centro tra le narici. Entrambi costano 250 MDL."
         },
         {
-          "category": "Piercing del corpo",
-          "description": "Zone intime trattate con particolare delicatezza",
-          "services": ["Ombelico", "Capezzoli"]
+          "category": "Piercing al labbro e alla lingua",
+          "description": "Un labret singolo costa 200 MDL, un labret verticale 250 MDL e il piercing alla lingua 250 MDL. Per le combinazioni il listino indica il numero di fori."
+        },
+        {
+          "category": "Piercing all’ombelico",
+          "description": "Costa 300 MDL. Parla con il piercer della posizione del gioiello, soprattutto se il bordo dei pantaloni sfrega sull’ombelico."
+        },
+        {
+          "category": "Altri piercing disponibili",
+          "description": "Il piercing al sopracciglio costa 250 MDL, il bridge alla radice del naso 300 MDL. Per i capezzoli il prezzo di 600 MDL comprende due fori."
         }
       ],
-      "processTitle": "Il nostro processo: la sicurezza prima di tutto",
+      "processTitle": "Procedura e sicurezza",
       "process": [
-        { "step": "1", "title": "Consultazione", "description": "Analizziamo l’anatomia e scegliamo posizionamento e gioielli ottimali." },
-        { "step": "2", "title": "Preparazione", "description": "Sterilizzazione della postazione e apertura di strumenti nuovi." },
-        { "step": "3", "title": "Perforazione", "description": "Rapida e precisa con aghi professionali." },
-        { "step": "4", "title": "Cura", "description": "Istruzioni dettagliate per l’aftercare e consulenze gratuite." }
+        {
+          "step": "1",
+          "title": "Consultazione",
+          "description": "Discuti con il piercer la posizione, la forma del gioiello ed eventuali sensibilità ai metalli."
+        },
+        {
+          "step": "2",
+          "title": "Preparazione",
+          "description": "Chiedi come vengono trattati gli strumenti e chiedi di vedere la confezione sigillata dell’ago monouso."
+        },
+        {
+          "step": "3",
+          "title": "Perforazione",
+          "description": "Controlla allo specchio il punto segnato. Se lo desideri, chiedi di spostarlo prima del foro."
+        },
+        {
+          "step": "4",
+          "title": "Cura",
+          "description": "Chiedi come pulire la zona e quando cambiare il gioiello. Lavati le mani prima di toccare il piercing."
+        }
       ]
     },
     "pricingSection": {
       "title": "Prezzi per il piercing a Chișinău",
-      "description": "Prezzi trasparenti, materiali di qualità e lavoro professionale. Il prezzo include il foro e un gioiello base in acciaio chirurgico.",
+      "description": "Il costo dipende dalla zona e dal numero di fori. Per le combinazioni il numero è indicato accanto al nome.",
       "badges": {
-        "quality": "Garanzia di qualità",
+        "quality": "Gioiello base",
         "onlineBooking": "Prenotazione online"
       },
       "categories": [
@@ -639,8 +643,12 @@
         }
       ],
       "includesTitle": "Cosa è incluso nel prezzo del piercing?",
-      "includes": ["Consulenza con il piercer", "Strumenti sterili monouso", "Gioiello base", "Istruzioni dettagliate per la cura"],
-      "includesNote": "* Il gioiello in acciaio medicale è incluso nel prezzo. La sostituzione del gioiello dopo la completa guarigione è gratuita.",
+      "includes": [
+        "Consulenza con il piercer",
+        "Gioiello base",
+        "Istruzioni dettagliate per la cura"
+      ],
+      "includesNote": "Se desideri un altro modello o un cambio dopo la guarigione, chiedi in anticipo materiale, disponibilità e costo.",
       "buttons": {
         "book": "Prenota"
       },
@@ -649,10 +657,45 @@
         "includesBaseJewelry": "Include gioiello base"
       }
     },
+    "faq": {
+      "title": "Domande sui piercing e prenotazioni",
+      "items": [
+        {
+          "question": "Quanto costa un piercing a Chișinău?",
+          "answer": "Da Oblivion Tattoo si parte da 150 MDL per il lobo. L’helix costa 200 MDL e il piercing al sopracciglio o alla lingua 250 MDL."
+        },
+        {
+          "question": "Il gioiello è incluso nel prezzo?",
+          "answer": "Sì, il prezzo comprende il foro e il gioiello base. Per un altro modello puoi chiedere il costo prima di prenotare."
+        },
+        {
+          "question": "Quanto costa un piercing al naso o all’ombelico?",
+          "answer": "Il nostril e il septum costano 250 MDL ciascuno. Il piercing all’ombelico costa 300 MDL con il gioiello base incluso."
+        },
+        {
+          "question": "Come scelgo il gioiello?",
+          "answer": "Mostra al piercer il risultato che desideri. Chiedi quale misura si adatta a un foro appena fatto e di che materiale è il gioiello."
+        },
+        {
+          "question": "Di cosa devo tenere conto prima del piercing?",
+          "answer": "Valuta se cuffie, occhiali o vestiti premono sulla zona. Se hai una patologia o prendi farmaci che potrebbero influire sulla guarigione, parlane prima con il medico."
+        },
+        {
+          "question": "Quando contattare il piercer e quando rivolgersi al medico?",
+          "answer": "Contatta il piercer se il gioiello si impiglia o sembra stretto. Se il dolore e il gonfiore aumentano, la pelle è calda al tatto, compare pus o hai la febbre, rivolgiti subito a un medico."
+        }
+      ]
+    },
     "latestPiercingSection": {
-      "title": "Ultimi lavori di piercing a Chișinău Oblivion Tattoo",
+      "title": "Schemi dei piercing con prezzi",
       "contactsLink": "Contatti e prenotazione",
-      "description": "Qui pubblichiamo le foto recenti dei lavori dei nostri artisti: piercing all’orecchio (lobo, helix, tragus, conch, daith), naso (nostril, septum), labbra (labret, medusa, monroe), lingua e ombelico. Tutti i piercing vengono eseguiti in condizioni sterili con aghi monouso e gioielli in titanio/acciaio chirurgico. Tocca l’immagine per aprirla a schermo intero."
+      "description": "Apri uno schema per vedere la posizione del foro. Più sotto trovi il listino completo con la prenotazione per ciascun piercing.",
+      "imageAlts": [
+        "Schema dei piercing all’orecchio con prezzi",
+        "Schema dei piercing al viso con prezzi",
+        "Schema dei piercing al labbro con prezzi",
+        "Schema di altri piercing con prezzi"
+      ]
     }
   },
   "galleryPage": {
