@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { withSeo } from '@/lib/metadata'
@@ -43,22 +43,22 @@ export default async function Contacts() {
             <div className="flex w-full flex-col gap-6 text-center">
               <p className="text-zinc-300">{t('cta.lead')}</p>
               <div className="mx-auto flex w-full max-w-112.5 flex-col gap-4">
-                <a
+                <CtaLink
                   href={CONTACT_TELEGRAM}
                   data-gtm="telegram"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+                  className="w-full"
                 >
                   {t('cta.appointment')}
-                </a>
-                <Link
+                </CtaLink>
+                <CtaLink
                   href={getPathname({ locale, href: '/gallery' })}
                   data-gtm="contact-view-portfolio"
-                  className="w-full rounded-md border border-gray-500 bg-transparent px-6 py-4 font-bold text-white transition-colors duration-200 hover:text-red-500"
+                  className="w-full"
                 >
                   {t('cta.portfolio')}
-                </Link>
+                </CtaLink>
               </div>
             </div>
 

@@ -1,5 +1,5 @@
-import { ArrowUpRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import FadeContent from '@/shared/FadeContent'
 import brows from '../../../../../public/images/permanentPage/permanent-brovi-kishinev.webp'
@@ -49,16 +49,14 @@ export const HeroSection = () => {
           </h1>
           <div className="grid justify-items-start gap-4 lg:gap-6">
             <p className="max-w-md leading-relaxed text-zinc-300 lg:text-lg/normal">{t('heroSection.text')}</p>
-            <a
+            <CtaLink
               href={CONTACT_TELEGRAM}
               data-gtm="telegram"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-13 items-center justify-between gap-3 rounded-lg bg-rose-200 px-3.5 py-2.5 text-sm/tight font-bold text-zinc-950 hover:bg-rose-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-200 motion-safe:transition-transform motion-safe:duration-120 motion-safe:ease-permanent motion-safe:active:scale-98 motion-safe:active:duration-160 sm:gap-4 sm:px-4 lg:text-base/tight"
             >
               {t('heroSection.button')}
-              <ArrowUpRight aria-hidden="true" className="shrink-0" size={19} strokeWidth={1.75} />
-            </a>
+            </CtaLink>
           </div>
         </div>
 

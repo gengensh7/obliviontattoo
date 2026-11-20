@@ -1,5 +1,6 @@
-import { Camera, Clock, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send, UsersRound } from 'lucide-react'
+import { Clock, MapPin, Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_FACEBOOK, CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
 
 export const ContactsSection = ({ title, text, showNightSessions = true }: { title?: string; text?: string; showNightSessions?: boolean } = {}) => {
@@ -54,57 +55,51 @@ export const ContactsSection = ({ title, text, showNightSessions = true }: { tit
               <p className="mb-4 text-xl font-semibold text-white">{t('social')}</p>
 
               <div className="flex flex-col flex-wrap gap-6 sm:flex-row">
-                <a
+                <CtaLink
                   href={CONTACT_INSTAGRAM}
                   data-gtm="instagram"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="w-fit"
                 >
-                  <Camera className="size-5 shrink-0" />
-                  <span>Instagram</span>
-                </a>
-                <a
+                  Instagram
+                </CtaLink>
+                <CtaLink
                   href={CONTACT_FACEBOOK}
                   data-gtm="facebook"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="w-fit"
                 >
-                  <UsersRound className="size-5 shrink-0" />
-
-                  <span>Facebook</span>
-                </a>
-                <a
+                  Facebook
+                </CtaLink>
+                <CtaLink
                   href={CONTACT_TELEGRAM}
                   data-gtm="telegram"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="w-fit"
                 >
-                  <Send className="size-5 shrink-0" />
-                  <span>Telegram</span>
-                </a>
-                <a
+                  Telegram
+                </CtaLink>
+                <CtaLink
                   href={CONTACT_WHATSAPP}
                   data-gtm="whatsapp"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="w-fit"
                 >
-                  <MessageCircleMore className="size-5 shrink-0" />
-                  <span>WhatsApp</span>
-                </a>
-                <a
+                  WhatsApp
+                </CtaLink>
+                <CtaLink
                   href={CONTACT_VIBER}
                   data-gtm="viber"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600 md:hidden"
+                  className="w-fit md:hidden"
                 >
-                  <MessageCircleHeart className="size-5 shrink-0" />
-                  <span>Viber</span>
-                </a>
+                  Viber
+                </CtaLink>
               </div>
             </div>
           </div>

@@ -1,8 +1,9 @@
 'use client'
 
-import { Camera, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
+import { Menu, PhoneOutgoing } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { CtaLink } from '@/components/ui/cta-link'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
 import { cn } from '@/lib/utils'
@@ -106,49 +107,42 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
               </div>
 
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                <a
+                <CtaLink
                   href={CONTACT_INSTAGRAM}
                   data-gtm="instagram"
                   target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-red-50 hover:text-red-500"
                   rel="noopener noreferrer"
                 >
-                  <Camera className="size-5 shrink-0" />
-                  <span className="text-sm">Instagram</span>
-                </a>
+                  Instagram
+                </CtaLink>
 
-                <a
+                <CtaLink
                   href={CONTACT_TELEGRAM}
                   data-gtm="telegram"
                   target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-blue-50 hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
-                  <Send className="size-5 shrink-0" />
-                  <span className="text-sm">Telegram</span>
-                </a>
+                  Telegram
+                </CtaLink>
 
-                <a
+                <CtaLink
                   href={CONTACT_WHATSAPP}
                   data-gtm="whatsapp"
                   target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-green-50 hover:text-green-500"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircleMore className="size-5 shrink-0" />
-                  <span className="text-sm">WhatsApp</span>
-                </a>
+                  WhatsApp
+                </CtaLink>
 
-                <a
+                <CtaLink
                   href={CONTACT_VIBER}
                   data-gtm="viber"
                   target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-purple-50 hover:text-purple-500 md:hidden"
+                  className="md:hidden"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircleHeart className="size-5 shrink-0" />
-                  <span className="text-sm">Viber</span>
-                </a>
+                  Viber
+                </CtaLink>
               </div>
 
               <p className="text-center text-xs text-gray-500">Oblivion Tattoo Studio © {currentYear}</p>

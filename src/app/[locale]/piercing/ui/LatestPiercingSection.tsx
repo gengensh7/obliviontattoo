@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import Lightbox from '@/shared/Lightbox'
 import { LatestPiercingCard } from './LatestPiercingCard'
@@ -32,13 +32,13 @@ export const LatestPiercingSection = async () => {
             ))}
           </div>
         </Lightbox>
-        <Link
+        <CtaLink
           href={getPathname({ locale, href: '/contacts' })}
           data-gtm="piercing-contacts"
-          className="mx-auto w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+          className="mx-auto w-fit"
         >
           {t('contactsLink')}
-        </Link>
+        </CtaLink>
       </div>
     </section>
   )

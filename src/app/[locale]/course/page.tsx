@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { buildCoursesJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
@@ -28,9 +28,11 @@ export default async function Course({ params }: { params: Promise<{ locale: str
           </details>
         ))}
       </section>
-      <Link href={getPathname({ locale, href: '/contacts' })} data-gtm="course-contacts" className="mx-auto mb-20 rounded-md bg-white px-6 py-4 font-bold text-black hover:text-red-500">
-        {contacts('title')}
-      </Link>
+      <div className="flex justify-center px-4 pb-20">
+        <CtaLink href={getPathname({ locale, href: '/contacts' })} data-gtm="course-contacts">
+          {contacts('title')}
+        </CtaLink>
+      </div>
       <ContactsSection title={t('contactTitle')} text={t('booking')} showNightSessions={false} />
 
       <script

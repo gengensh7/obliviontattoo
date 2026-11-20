@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import type { slides, HeroSliderProps } from './heroSlides'
 
@@ -29,16 +30,16 @@ export const HeroSlide = ({ slide, card, preload = false }: {
 
         <p className="max-w-3xl text-lg">{card.description}</p>
 
-        <a
+        <CtaLink
           href={CONTACT_TELEGRAM}
           data-gtm="telegram"
           data-gtm-slide={slide.key}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+          className="w-fit"
         >
           {card.button}
-        </a>
+        </CtaLink>
       </div>
     </div>
   </div>

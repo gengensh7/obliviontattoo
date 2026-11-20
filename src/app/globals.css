@@ -176,3 +176,22 @@ button {
 *::-webkit-scrollbar-thumb:hover {
   background: #52525b;
 }
+
+/* Sweep a narrow highlight behind the CTA label once every two seconds. */
+@media (prefers-reduced-motion: no-preference) {
+  .cta-link::before {
+    @apply pointer-events-none absolute inset-0 -z-10;
+    content: '';
+    background: linear-gradient(110deg, transparent calc(50% - 14px), rgb(255 255 255 / 18%) 50%, transparent calc(50% + 14px));
+    animation: cta-light-sweep 2s linear infinite;
+  }
+}
+
+@keyframes cta-light-sweep {
+  from {
+    transform: translateX(-100%);
+  }
+  50%, to {
+    transform: translateX(100%);
+  }
+}

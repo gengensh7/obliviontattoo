@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { getLatestTattooImages } from '@/lib/cachedPrisma'
 import Lightbox from '@/shared/Lightbox'
@@ -33,13 +33,13 @@ export const LatestTattoo = async () => {
             ))}
           </div>
         </Lightbox>
-        <Link
+        <CtaLink
           href={getPathname({ locale, href: '/gallery' })}
           data-gtm="tattoo-view-gallery"
-          className="mx-auto block w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+          className="mx-auto w-fit"
         >
           {t('cta')}
-        </Link>
+        </CtaLink>
       </div>
     </section>
   )

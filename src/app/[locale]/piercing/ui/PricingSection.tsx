@@ -1,5 +1,6 @@
 import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 
 type Service = { name: string; price: number; hasBase?: boolean }
@@ -58,16 +59,16 @@ export const PricingSection = async () => {
                         <span className="text-white">{t('labels.currency')}</span>
                       </div>
 
-                      <a
+                      <CtaLink
                         href={CONTACT_TELEGRAM}
                         data-gtm="telegram"
                         data-gtm-service={service.name}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"
+                        className="w-full sm:w-fit"
                       >
                         {t('buttons.book')}
-                      </a>
+                      </CtaLink>
                     </div>
                   </div>
                 ))}

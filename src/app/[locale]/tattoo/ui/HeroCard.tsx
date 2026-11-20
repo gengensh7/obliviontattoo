@@ -1,4 +1,5 @@
 import { LucideIcon } from 'lucide-react'
+import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 
 export type HeroCardData = {
@@ -30,9 +31,9 @@ export const HeroCard = ({ item, Icon }: Props) => {
             ))}
           </ul>
         </div>
-        <a href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
+        <CtaLink href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer" className="w-full">
           {item.button}
-        </a>
+        </CtaLink>
       </div>
     </div>
   )

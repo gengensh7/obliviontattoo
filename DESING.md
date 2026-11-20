@@ -52,6 +52,12 @@ Reuse components from `src/components/ui/`, shared sections, and existing galler
 Use `next/image` with appropriate `alt` text, `sizes`, and image dimensions.
 Preserve the quality of the portfolio photos and use authentic studio photography.
 Booking and contact buttons use centralized links from `contactLinks.ts`.
+Use `CtaLink` from `src/components/ui/cta-link.tsx` for button-style links with
+a dark fill and a simple border. Use text labels for site CTAs. All CTA links
+share a 48px minimum height and the same spacing, border,
+typography, and interaction states. Pass layout classes for width and alignment.
+Use localized paths for internal routes and standard URLs for external destinations
+and same-page anchors.
 Preserve `data-gtm` attributes when editing existing actions.
 Keep the current social media account names regardless of the website name.
 

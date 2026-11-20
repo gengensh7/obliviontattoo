@@ -1,7 +1,7 @@
 import { Expand } from 'lucide-react'
 import { getLocale, getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { getPortfolioImages } from '@/lib/cachedPrisma'
 import Lightbox from '@/shared/Lightbox'
@@ -54,13 +54,13 @@ export const PortfolioSection = async () => {
               })}
             </div>
           </Lightbox>
-          <Link
+          <CtaLink
             href={getPathname({ locale, href: '/gallery' })}
             data-gtm="portfolio-view-gallery"
-            className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+            className="w-fit"
           >
             {t('link')}
-          </Link>
+          </CtaLink>
         </div>
       </div>
     </section>

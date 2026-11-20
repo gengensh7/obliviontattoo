@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 
 export async function FaqSection() {
@@ -17,9 +17,9 @@ export async function FaqSection() {
             <p>{answer}</p>
           </div>
         ))}
-        <Link href={getPathname({ locale, href: '/contacts' })} data-gtm="piercing-contacts" className="mx-auto rounded-md bg-white px-6 py-4 font-bold text-black hover:text-red-500">
+        <CtaLink href={getPathname({ locale, href: '/contacts' })} data-gtm="piercing-contacts" className="mx-auto">
           {t('latestPiercingSection.contactsLink')}
-        </Link>
+        </CtaLink>
       </div>
     </section>
   )

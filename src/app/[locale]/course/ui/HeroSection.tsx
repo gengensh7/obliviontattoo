@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { courses } from '@/lib/courses'
@@ -26,10 +27,10 @@ export const HeroSection = async ({ locale }: { locale: string }) => {
               <p>{t('document')}</p>
               <Link href={getPathname({ locale, href: service })} className="mt-auto underline underline-offset-4 hover:text-red-400">{t(`types.${key}.link`)}</Link>
               <p>{t('booking')}</p>
-              <a href={CONTACT_TELEGRAM} data-gtm="telegram" data-gtm-course={tracking} target="_blank" rel="noopener noreferrer"
-                className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black hover:text-red-500 sm:w-fit">
+              <CtaLink href={CONTACT_TELEGRAM} data-gtm="telegram" data-gtm-course={tracking} target="_blank" rel="noopener noreferrer"
+                className="w-full sm:w-fit">
                 {t('cta')}
-              </a>
+              </CtaLink>
             </section>
           ))}
         </div>

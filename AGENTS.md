@@ -50,6 +50,7 @@ Leave generated files untouched and keep migrations within the scope of the task
 - Do not use Tailwind margin utilities `mt-*`, `mb-*`, or `my-*`.
 - Use `gap-*`, padding utilities, Flexbox, and Grid for spacing.
 - Prefer existing Tailwind utilities over custom CSS.
+- Append new style blocks to the end of `src/app/globals.css` and place a short comment above each block explaining its purpose.
 - Use standard Tailwind responsive breakpoints.
 - Do not introduce new styling libraries.
 

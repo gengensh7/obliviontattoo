@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import { Calendar } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { CtaLink } from '@/components/ui/cta-link'
 import { getBlogPosts } from '@/lib/cachedPrisma'
 import { postExcerpt } from '@/lib/postExcerpt'
 
@@ -19,9 +19,9 @@ export async function BlogPosts() {
             <Calendar className="size-5 shrink-0 text-red-500" />
             <span className="text-white">{dayjs(post.createdAt).format('DD.MM.YYYY')}</span>
           </div>
-          <Link target="_blank" href={`/blog/${post.slug}`} data-gtm="blog-read-more" className="w-full rounded-md bg-red-600 px-6 py-3 text-center font-bold text-white hover:text-white">
+          <CtaLink target="_blank" href={`/blog/${post.slug}`} data-gtm="blog-read-more" className="w-full">
             Читать далее
-          </Link>
+          </CtaLink>
         </article>
       ))}
     </div>
