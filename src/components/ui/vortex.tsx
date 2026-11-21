@@ -178,7 +178,7 @@ export function Vortex({
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const media = matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference) and (forced-colors: none)')
+    const media = matchMedia('(prefers-reduced-motion: no-preference) and (forced-colors: none)')
     let unmount: (() => void) | undefined
 
     const syncPreference = () => {
@@ -202,7 +202,7 @@ export function Vortex({
       ref={canvasRef}
       aria-hidden="true"
       className={cn(
-        'pointer-events-none absolute inset-0 hidden size-full md:motion-safe:block md:motion-safe:forced-colors:hidden',
+        'pointer-events-none absolute inset-0 hidden size-full motion-safe:block motion-safe:forced-colors:hidden',
         className
       )}
     />

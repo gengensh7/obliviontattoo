@@ -1,98 +1,85 @@
-import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
+import { cn } from '@/lib/utils'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
+import { groupPiercingPrices, type PriceCategory } from '../piercing-prices'
+import { PricingTabs } from './PricingTabs'
 
-type Service = { name: string; price: number; hasBase?: boolean }
-type Category = { title: string; icon: string; services: Service[] }
-
-export const PricingSection = async () => {
+export async function PricingSection() {
   const t = await getTranslations('piercingPage.pricingSection')
-
-  const pricingCategories = t.raw('categories') as Category[]
-  const includes = t.raw('includes') as string[]
+  const groups = groupPiercingPrices(t.raw('categories') as PriceCategory[])
+  const currency = t('labels.currency')
+  const book = t('buttons.book')
+  const tabs = groups.map(({ group, services }) => ({
+    title: t(`tabs.${group}`),
+    value: group,
+    preview: services[0] && (
+      <div className="flex items-baseline justify-between gap-3 text-sm">
+        <span className="shrink-0 font-semibold text-white">{t(`tabs.${group}`)}</span>
+        <span className="truncate text-zinc-300">{services[0].name}</span>
+      </div>
+    ),
+    content: (
+      <ul
+        role="list"
+        className={cn(
+          'grid gap-px overflow-hidden rounded-xl border border-zinc-800 bg-zinc-800',
+          services.length > 6 && 'lg:grid-cols-2'
+        )}
+      >
+        {services.map(({ name, price, hasBase }) => (
+          <li
+            key={name}
+            className="flex flex-wrap items-baseline gap-x-4 gap-y-3 bg-zinc-900 px-4 py-3.5 sm:px-6 md:flex-nowrap md:items-center md:gap-x-5 md:py-2"
+          >
+            <div className="grid min-w-0 flex-1 gap-1">
+              <span className="wrap-break-word leading-snug font-medium text-zinc-100 sm:text-lg">{name}</span>
+              {hasBase && <p className="text-sm text-zinc-400">{t('labels.includesBaseJewelry')}</p>}
+            </div>
+            <div className="contents md:flex md:shrink-0 md:items-center md:gap-4">
+              <span className="shrink-0 text-lg font-bold whitespace-nowrap text-white tabular-nums sm:text-xl">
+                {price} <span className="text-sm font-normal text-zinc-400">{currency}</span>
+              </span>
+              <div className="flex w-full md:w-auto">
+                <CtaLink
+                  href={CONTACT_TELEGRAM}
+                  data-gtm="telegram"
+                  data-gtm-service={name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t('buttons.bookService', { service: name.trim() })}
+                  className="px-4 whitespace-nowrap md:px-3"
+                >
+                  {book}
+                </CtaLink>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )
+  }))
 
   return (
-    <section id="pricing" className="relative scroll-mt-24 bg-zinc-900">
-      <div className="container flex flex-col gap-10 sm:gap-15">
-        <div className="space-y-6 text-center">
-          <h2 className="text-4xl font-bold text-white">{t('title')}</h2>
-          <p className="mx-auto max-w-3xl text-xl text-white">{t('description')}</p>
-
-          <div className="flex items-center justify-center space-x-6 text-sm text-white">
-            <div className="flex items-center gap-2">
-              <Star className="size-4 text-yellow-500" />
-              {t('badges.quality')}
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="size-4 text-red-500" />
-              {t('badges.onlineBooking')}
-            </div>
-          </div>
+    <section
+      id="pricing"
+      aria-labelledby="piercing-pricing-title"
+      tabIndex={-1}
+      className="scroll-mt-24 border-t border-zinc-800 bg-zinc-950 py-12 text-white sm:py-16 lg:py-20"
+    >
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-7 sm:gap-9">
+        <div className="grid gap-4 lg:grid-cols-2 lg:items-end lg:gap-12">
+          <h2 id="piercing-pricing-title" className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl">
+            <FoldText text={t('title')} />
+          </h2>
+          <p className="text-base/relaxed text-zinc-300 sm:text-lg/relaxed">{t('description')}</p>
         </div>
-
-        <div className="flex flex-col gap-10">
-          {pricingCategories.map((category, categoryIndex) => (
-            <div
-              key={categoryIndex}
-              className="rounded-xl bg-zinc-800 p-4 sm:p-6"
-            >
-              <div className="mb-6 flex items-center gap-4">
-                <span className="text-3xl">{category.icon}</span>
-                <h3 className="text-2xl font-bold text-white">{category.title}</h3>
-              </div>
-
-              <div className="rounded-lg bg-zinc-700">
-                {category.services.map((service, i) => (
-                  <div
-                    key={`${service.name}-${i}`}
-                    className={`flex flex-col items-center justify-between gap-6 p-4 sm:flex-row sm:gap-0 ${i !== category.services.length - 1 ? 'border-b border-gray-100' : ''}`}
-                  >
-                    <div className="flex-1">
-                      <h4 className="text-center text-lg font-semibold text-white sm:text-left">{service.name}</h4>
-                      {service.hasBase && <p className="mt-1 text-sm text-white">{t('labels.includesBaseJewelry')}</p>}
-                    </div>
-
-                    <div className="flex w-full flex-col items-center gap-6 sm:w-fit sm:flex-row">
-                      <div className="flex items-center gap-2 text-right">
-                        <span className="text-2xl font-bold text-red-600">{service.price}</span>
-                        <span className="text-white">{t('labels.currency')}</span>
-                      </div>
-
-                      <CtaLink
-                        href={CONTACT_TELEGRAM}
-                        data-gtm="telegram"
-                        data-gtm-service={service.name}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full sm:w-fit"
-                      >
-                        {t('buttons.book')}
-                      </CtaLink>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="grid gap-4">
+          <PricingTabs tabs={tabs} labelledBy="piercing-pricing-title" />
         </div>
-
-        <div
-          className="flex flex-col gap-6 rounded-xl bg-zinc-800 p-4 text-center text-white sm:p-6"
-        >
-          <h3 className="text-2xl font-bold">{t('includesTitle')}</h3>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {includes.map((item, i) => (
-              <div className="flex items-center justify-center gap-2" key={i}>
-                <div className="rounded-full bg-red-500 p-1"></div>
-                <p>{item}</p>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-white">{t('includesNote')}</p>
-        </div>
-      </div>
+      </FadeContent>
     </section>
   )
 }

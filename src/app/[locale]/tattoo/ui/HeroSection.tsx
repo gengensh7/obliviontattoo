@@ -39,7 +39,7 @@ export const HeroSection = async () => {
         <div className="flex flex-col items-start gap-5">
           <h1
             id="tattoo-hero-title"
-            className="text-5xl/tight font-extrabold tracking-tight text-balance sm:text-6xl/tight lg:text-7xl/tight xl:text-8xl/tight"
+            className="service-hero-title font-extrabold tracking-tight text-balance"
           >
             <FoldText text={t('title')} />
           </h1>

@@ -525,75 +525,100 @@
       "offerNavel": "Piercing buric"
     },
     "heroSection": {
-      "title": "Piercing profesional în Chișinău – Studio Oblivion Tattoo",
+      "title": "Piercing în Chișinău",
+      "subtitle": "Piercing în ureche, nas, buză, limbă și buric. Alegem bijuteria împreună înainte de procedură.",
       "text": "La studioul de pe strada Tighina 65 poți alege un piercing în ureche, nas, buză, limbă sau buric. Prețul fiecărei proceduri include bijuteria de bază.",
-      "firstCard": {
-        "title": "Alegerea locului",
-        "text": "Adu o fotografie cu un piercing care îți place pentru a discuta cu specialistul poziția exactă."
-      },
-      "secondCard": {
-        "title": "Alegerea bijuteriei",
-        "text": "Specialistul te ajută să alegi forma și dimensiunea potrivite. Spune-i dacă ai avut reacții la anumite metale."
-      },
-      "thirdCard": {
-        "title": "Programarea la studio",
-        "text": "Alege piercingul din lista de prețuri și apasă butonul de programare. Dacă eziți între mai multe variante, scrie-ne înainte de vizită."
-      },
-      "experience": "Facem piercing de {years, plural, one {# an} few {# ani} other {# de ani}}.",
+      "experience": "{years, plural, one {# an} few {# ani} other {# de ani}} de experiență",
+      "address": "Str. Tighina 65",
+      "jewelry": "Bijuterie de bază inclusă",
       "priceLink": "Vezi prețurile",
-      "imageAlt": "Variante de piercing în ureche, nas și limbă"
+      "photos": {
+        "nostril": {
+          "label": "Aripa nasului",
+          "alt": "Detaliu cu un cristal transparent montat în aripa nasului"
+        },
+        "eyebrow": {
+          "label": "Sprânceană",
+          "alt": "Piercing în sprânceană cu două bile negre"
+        },
+        "septum": {
+          "label": "Septum",
+          "alt": "Inel metalic cu capete conice în septul nazal"
+        }
+      }
     },
-    "aboutSection": {
-      "catalogTitle": "Tipuri de piercing",
-      "catalog": [
-        {
+    "timeline": {
+      "title": "Piercing: de la alegere la îngrijire",
+      "catalog": {
+        "title": "Tipuri de piercing",
+        "ears": {
           "category": "Piercing în ureche",
           "description": "Lobul este partea moale a urechii. Helixul se face pe marginea cartilajului, iar tragusul în fața canalului auditiv. Mai poți alege conch, daith sau industrial."
         },
-        {
+        "nose": {
           "category": "Piercing în nas",
-          "description": "Piercingul nostril se face în aripa nasului, iar septumul între nări. Fiecare costă 250 MDL."
+          "description": "Piercingul nostril se face în aripa nasului, iar septumul între nări. Piercingul de tip bridge se face la rădăcina nasului."
         },
-        {
+        "lipsAndTongue": {
           "category": "Piercing în buză și limbă",
-          "description": "Un labret simplu costă 200 MDL, unul vertical 250 MDL, iar piercingul în limbă 250 MDL. Pentru variantele pereche, lista indică numărul de perforări."
+          "description": "Poți alege un labret simplu sau vertical, un piercing în limbă ori alte variante. Pentru variantele pereche, lista indică numărul de perforări."
         },
-        {
+        "navel": {
           "category": "Piercing în buric",
-          "description": "Procedura costă 300 MDL. Discută poziția bijuteriei cu specialistul, mai ales dacă betelia hainelor atinge buricul."
+          "description": "Discută poziția bijuteriei cu specialistul, mai ales dacă betelia hainelor atinge buricul."
         },
-        {
+        "other": {
           "category": "Alte piercinguri disponibile",
-          "description": "Piercingul în sprânceană costă 250 MDL, iar cel de tip bridge, la rădăcina nasului, 300 MDL. Prețul de 600 MDL pentru mameloane acoperă două perforări."
+          "description": "Prețul pentru piercingul în mameloane acoperă două perforări."
         }
-      ],
-      "processTitle": "Procedură și siguranță",
-      "process": [
-        {
-          "step": "1",
+      },
+      "selection": {
+        "title": "Alegerea piercingului și a bijuteriei",
+        "placement": {
+          "title": "Alegerea locului",
+          "text": "Adu o fotografie cu un piercing care îți place pentru a discuta cu specialistul poziția exactă."
+        },
+        "jewelry": {
+          "title": "Alegerea bijuteriei",
+          "text": "Specialistul te ajută să alegi forma și dimensiunea potrivite. Spune-i dacă ai avut reacții la anumite metale."
+        }
+      },
+      "booking": {
+        "title": "Programarea la studio",
+        "text": "Alege piercingul din lista de prețuri și apasă butonul de programare. Dacă eziți între mai multe variante, scrie-ne înainte de vizită.",
+        "prices": "Vezi prețurile"
+      },
+      "preparation": {
+        "title": "Consultația și pregătirea",
+        "consultation": {
           "title": "Consultație",
           "description": "Discută despre locul ales, forma bijuteriei și eventualele sensibilități la metale."
         },
-        {
-          "step": "2",
+        "sterility": {
           "title": "Pregătire",
           "description": "Întreabă cum sunt pregătite instrumentele și cere să vezi ambalajul sigilat al acului de unică folosință."
-        },
-        {
-          "step": "3",
-          "title": "Perforare",
-          "description": "Verifică marcajul în oglindă. Poți cere ajustarea lui înainte de perforare."
-        },
-        {
-          "step": "4",
-          "title": "Îngrijire",
-          "description": "Întreabă cum se curăță zona și când poți schimba bijuteria. Spală-te pe mâini înainte să atingi piercingul."
         }
-      ]
+      },
+      "procedure": {
+        "title": "Procedura de piercing",
+        "description": "Verifică marcajul în oglindă. Poți cere ajustarea lui înainte de perforare."
+      },
+      "aftercare": {
+        "title": "Îngrijirea după piercing",
+        "description": "Întreabă cum se curăță zona și când poți schimba bijuteria. Spală-te pe mâini înainte să atingi piercingul. Urmează recomandările specialistului pentru îngrijire.",
+        "book": "Programează-te pentru piercing"
+      }
     },
     "pricingSection": {
       "title": "Prețuri pentru piercing în Chișinău",
       "description": "Prețul depinde de zonă și de numărul de perforări. Pentru modelele cu mai multe perforări, numărul este indicat lângă denumire.",
+      "tabs": {
+        "ears": "Urechi",
+        "nose": "Nas",
+        "lipsAndTongue": "Buze și limbă",
+        "navel": "Buric",
+        "other": "Alte piercinguri"
+      },
       "badges": {
         "quality": "Bijuterie de bază",
         "onlineBooking": "Programare online"
@@ -602,6 +627,7 @@
         {
           "title": "Piercing urechi",
           "icon": "👂",
+          "catalogGroup": "ears",
           "services": [
             { "name": "Lob (lobul urechii)", "price": 150 },
             { "name": "Flat", "price": 200 },
@@ -621,15 +647,16 @@
           "title": "Piercing facial",
           "icon": "👃",
           "services": [
-            { "name": "Sprânceană", "price": 250 },
-            { "name": "Bridge", "price": 300 },
-            { "name": "Nostril (aripa nasului)", "price": 250 },
-            { "name": "Septum", "price": 250 }
+            { "name": "Sprânceană", "price": 250, "catalogGroup": "other" },
+            { "name": "Bridge", "price": 300, "catalogGroup": "nose" },
+            { "name": "Nostril (aripa nasului)", "price": 250, "catalogGroup": "nose" },
+            { "name": "Septum", "price": 250, "catalogGroup": "nose" }
           ]
         },
         {
           "title": "Piercing buze",
           "icon": "👄",
+          "catalogGroup": "lipsAndTongue",
           "services": [
             { "name": "Labret (1 perforație)", "price": 200 },
             { "name": "Smiley", "price": 250 },
@@ -648,21 +675,15 @@
           "title": "Alte tipuri de piercing",
           "icon": "✨",
           "services": [
-            { "name": "Limbă", "price": 250 },
-            { "name": "Buric", "price": 300 },
-            { "name": "Piercing mameloane (2 buc.)", "price": 600 }
+            { "name": "Limbă", "price": 250, "catalogGroup": "lipsAndTongue" },
+            { "name": "Buric", "price": 300, "catalogGroup": "navel" },
+            { "name": "Piercing mameloane (2 buc.)", "price": 600, "catalogGroup": "other" }
           ]
         }
       ],
-      "includesTitle": "Ce este inclus în prețul piercingului?",
-      "includes": [
-        "Consultație cu specialistul",
-        "Bijuterie de bază",
-        "Instrucțiuni detaliate de îngrijire"
-      ],
-      "includesNote": "Dacă preferi altă bijuterie sau dorești să o schimbi după vindecare, întreabă din timp despre material, disponibilitate și cost.",
       "buttons": {
-        "book": "Programează-te"
+        "book": "Programează-te",
+        "bookService": "Programează-te pentru {service}"
       },
       "labels": {
         "currency": "lei",
@@ -673,12 +694,12 @@
       "title": "Întrebări despre piercing și programări",
       "items": [
         {
-          "question": "Cât costă un piercing în Chișinău?",
-          "answer": "La Oblivion Tattoo, prețurile pornesc de la 150 MDL pentru lobul urechii. Un helix costă 200 MDL, iar piercingul în sprânceană sau limbă costă 250 MDL."
+          "question": "Ce este inclus în prețul piercingului?",
+          "answer": "Prețul include consultația cu specialistul, perforarea, bijuteria de bază și instrucțiuni detaliate de îngrijire. Dacă preferi altă bijuterie sau dorești să o schimbi după vindecare, întreabă specialistul din timp despre material, disponibilitate și cost."
         },
         {
-          "question": "Bijuteria este inclusă în preț?",
-          "answer": "Da, prețul include perforarea și bijuteria de bază. Pentru alt model, întreabă prețul înainte de programare."
+          "question": "Cât costă un piercing în Chișinău?",
+          "answer": "La Oblivion Tattoo, prețurile pornesc de la 150 MDL pentru lobul urechii. Un helix costă 200 MDL, iar piercingul în sprânceană sau limbă costă 250 MDL."
         },
         {
           "question": "Cât costă un piercing în nas sau în buric?",
@@ -699,9 +720,17 @@
       ]
     },
     "latestPiercingSection": {
+      "cardTitles": {
+        "ears": "Piercing în urechi",
+        "nose": "Piercing în nas",
+        "other": "Alte piercinguri",
+        "lips": "Piercing în buze"
+      },
+      "previous": "Schema anterioară",
+      "next": "Schema următoare",
       "title": "Scheme de piercing cu prețuri",
       "contactsLink": "Contact și programare",
-      "description": "Deschide schema pentru a vedea poziția piercingului. Mai jos găsești lista completă de prețuri și butoanele de programare.",
+      "description": "Schemele arată unde se face fiecare piercing. Mai jos găsești lista completă de prețuri și opțiunile de programare.",
       "imageAlts": [
         "Piercinguri în ureche și prețuri",
         "Piercinguri faciale și prețuri",

@@ -42,7 +42,7 @@ export const HeroSection = () => {
         <div className="grid min-w-0 justify-items-start gap-5 sm:gap-8 lg:col-span-5">
           <h1
             id="permanent-hero-title"
-            className="permanent-hero-title max-w-full font-semibold tracking-tight sm:max-w-lg"
+            className="service-hero-title max-w-full font-semibold tracking-tight sm:max-w-lg"
           >
             {t.rich('heroSection.title', {
               treatment: (chunks) => (

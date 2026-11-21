@@ -525,75 +525,100 @@
       "offerNavel": "Navel (belly button) piercing"
     },
     "heroSection": {
-      "title": "Professional Piercing in Chisinau – Oblivion Tattoo Studio",
+      "title": "Piercing in Chișinău",
+      "subtitle": "Ear, nose, lip, tongue and navel piercings. We’ll help you choose jewelry before your piercing.",
       "text": "At our studio at 65 Tighina Street, you can book ear, nose, lip, tongue and navel piercings. Each price includes basic jewelry.",
-      "firstCard": {
-        "title": "Choosing a placement",
-        "text": "Bring a photo of a piercing you like so you can discuss the exact placement with your piercer."
-      },
-      "secondCard": {
-        "title": "Choosing jewelry",
-        "text": "Your piercer can help you choose a shape and size for the placement. Mention any previous reactions to metals."
-      },
-      "thirdCard": {
-        "title": "Booking a visit",
-        "text": "Choose a piercing from the price list and use its booking button. If you are deciding between placements, contact the studio before your visit."
-      },
-      "experience": "We’ve been piercing for {years, plural, one {# year} other {# years}}.",
+      "experience": "{years, plural, one {# year} other {# years}} of experience",
+      "address": "65 Tighina Street",
+      "jewelry": "Basic jewelry included",
       "priceLink": "View prices",
-      "imageAlt": "Ear, nose and tongue piercing options"
+      "photos": {
+        "nostril": {
+          "label": "Nostril",
+          "alt": "Close-up of a nostril piercing with a clear crystal stud"
+        },
+        "eyebrow": {
+          "label": "Eyebrow",
+          "alt": "Eyebrow piercing with two black beads"
+        },
+        "septum": {
+          "label": "Septum",
+          "alt": "Metal septum ring with cone-shaped ends"
+        }
+      }
     },
-    "aboutSection": {
-      "catalogTitle": "Types of piercing",
-      "catalog": [
-        {
+    "timeline": {
+      "title": "Piercing: from choice to aftercare",
+      "catalog": {
+        "title": "Types of piercing",
+        "ears": {
           "category": "Ear piercing",
           "description": "A lobe piercing sits in the soft part of the ear. A helix follows the outer cartilage rim, while a tragus sits in front of the ear canal. Other options include conch, daith and industrial."
         },
-        {
+        "nose": {
           "category": "Nose piercing",
-          "description": "A nostril piercing sits on one side of the nose. A septum piercing sits centrally between the nostrils. Each costs 250 MDL."
+          "description": "A nostril piercing sits on one side of the nose. A septum piercing sits centrally between the nostrils. A bridge piercing sits across the bridge of the nose."
         },
-        {
+        "lipsAndTongue": {
           "category": "Lip and tongue piercing",
-          "description": "A single labret costs 200 MDL, a vertical labret 250 MDL and a tongue piercing 250 MDL. The list specifies how many piercings each paired style includes."
+          "description": "Options include a single or vertical labret, a tongue piercing, and paired styles. The list specifies how many piercings each paired style includes."
         },
-        {
+        "navel": {
           "category": "Navel piercing",
-          "description": "A navel piercing costs 300 MDL. Discuss placement with your piercer, especially if your waistband sits across your navel."
+          "description": "Discuss placement with your piercer, especially if your waistband sits across your navel."
         },
-        {
+        "other": {
           "category": "Other piercings",
-          "description": "An eyebrow piercing costs 250 MDL and a bridge piercing costs 300 MDL. The nipple piercing price of 600 MDL covers two piercings."
+          "description": "The nipple piercing price covers two piercings."
         }
-      ],
-      "processTitle": "Procedure and safety",
-      "process": [
-        {
-          "step": "1",
+      },
+      "selection": {
+        "title": "Choosing a piercing and jewelry",
+        "placement": {
+          "title": "Choosing a placement",
+          "text": "Bring a photo of a piercing you like so you can discuss the exact placement with your piercer."
+        },
+        "jewelry": {
+          "title": "Choosing jewelry",
+          "text": "Your piercer can help you choose a shape and size for the placement. Mention any previous reactions to metals."
+        }
+      },
+      "booking": {
+        "title": "Booking a visit",
+        "text": "Choose a piercing from the price list and use its booking button. If you are deciding between placements, contact the studio before your visit.",
+        "prices": "View prices"
+      },
+      "preparation": {
+        "title": "Consultation and preparation",
+        "consultation": {
           "title": "Consultation",
           "description": "Discuss placement, jewelry shape and any sensitivity to metals."
         },
-        {
-          "step": "2",
+        "sterility": {
           "title": "Preparation",
           "description": "Ask how the instruments are processed and ask to see the sealed single-use needle before the procedure."
-        },
-        {
-          "step": "3",
-          "title": "Piercing",
-          "description": "Check the marked position in a mirror. Ask for it to be adjusted if needed."
-        },
-        {
-          "step": "4",
-          "title": "Aftercare",
-          "description": "Ask how to clean the piercing and when you can change the jewelry. Wash your hands before touching the area."
         }
-      ]
+      },
+      "procedure": {
+        "title": "The piercing procedure",
+        "description": "Check the marked position in a mirror. Ask for it to be adjusted if needed."
+      },
+      "aftercare": {
+        "title": "Looking after your piercing",
+        "description": "Ask how to clean the piercing and when you can change the jewelry. Wash your hands before touching the area. Follow your piercer’s aftercare instructions.",
+        "book": "Book a piercing"
+      }
     },
     "pricingSection": {
       "title": "Piercing Prices in Chisinau",
       "description": "Prices depend on placement and the number of piercings. The list specifies the number for paired and multi-piercing styles.",
+      "tabs": {
+        "ears": "Ears",
+        "nose": "Nose",
+        "lipsAndTongue": "Lips and tongue",
+        "navel": "Navel",
+        "other": "Other piercings"
+      },
       "badges": {
         "quality": "Basic jewelry",
         "onlineBooking": "Online booking"
@@ -602,6 +627,7 @@
         {
           "title": "Ear piercing",
           "icon": "👂",
+          "catalogGroup": "ears",
           "services": [
             { "name": "Earlobe (Lobe)", "price": 150 },
             { "name": "Flat", "price": 200 },
@@ -621,15 +647,16 @@
           "title": "Facial piercing",
           "icon": "👃",
           "services": [
-            { "name": "Eyebrow", "price": 250 },
-            { "name": "Bridge", "price": 300 },
-            { "name": "Nostril (side of nose)", "price": 250 },
-            { "name": "Septum", "price": 250 }
+            { "name": "Eyebrow", "price": 250, "catalogGroup": "other" },
+            { "name": "Bridge", "price": 300, "catalogGroup": "nose" },
+            { "name": "Nostril (side of nose)", "price": 250, "catalogGroup": "nose" },
+            { "name": "Septum", "price": 250, "catalogGroup": "nose" }
           ]
         },
         {
           "title": "Lip piercing",
           "icon": "👄",
+          "catalogGroup": "lipsAndTongue",
           "services": [
             { "name": "Labret (single)", "price": 200 },
             { "name": "Smiley", "price": 250 },
@@ -648,21 +675,15 @@
           "title": "Other types of piercing",
           "icon": "✨",
           "services": [
-            { "name": "Tongue", "price": 250 },
-            { "name": "Navel", "price": 300 },
-            { "name": "Nipple Piercing (Pair)", "price": 600 }
+            { "name": "Tongue", "price": 250, "catalogGroup": "lipsAndTongue" },
+            { "name": "Navel", "price": 300, "catalogGroup": "navel" },
+            { "name": "Nipple Piercing (Pair)", "price": 600, "catalogGroup": "other" }
           ]
         }
       ],
-      "includesTitle": "What’s included in the piercing price?",
-      "includes": [
-        "Consultation with the piercer",
-        "Basic jewelry",
-        "Detailed aftercare instructions"
-      ],
-      "includesNote": "If you want a different piece or a jewelry change after healing, ask about the material, availability and cost in advance.",
       "buttons": {
-        "book": "Book"
+        "book": "Book",
+        "bookService": "Book {service}"
       },
       "labels": {
         "currency": "lei",
@@ -673,12 +694,12 @@
       "title": "Piercing questions and booking",
       "items": [
         {
-          "question": "How much does a piercing cost in Chișinău?",
-          "answer": "Prices at Oblivion Tattoo start at 150 MDL for an earlobe. A helix costs 200 MDL and an eyebrow or tongue piercing costs 250 MDL."
+          "question": "What’s included in the piercing price?",
+          "answer": "The price covers a consultation with the piercer, the piercing itself, basic jewelry, and detailed aftercare instructions. If you want a different piece or plan to change your jewelry after healing, ask your piercer about the material, availability, and cost in advance."
         },
         {
-          "question": "Is jewelry included?",
-          "answer": "Yes. The price covers the piercing and basic jewelry. Ask about the cost of other designs when booking."
+          "question": "How much does a piercing cost in Chișinău?",
+          "answer": "Prices at Oblivion Tattoo start at 150 MDL for an earlobe. A helix costs 200 MDL and an eyebrow or tongue piercing costs 250 MDL."
         },
         {
           "question": "How much is a nose or navel piercing?",
@@ -699,9 +720,17 @@
       ]
     },
     "latestPiercingSection": {
+      "cardTitles": {
+        "ears": "Ear piercings",
+        "nose": "Nose piercings",
+        "other": "Other piercings",
+        "lips": "Lip piercings"
+      },
+      "previous": "Previous chart",
+      "next": "Next chart",
       "title": "Piercing placement and price charts",
       "contactsLink": "Contact us and book",
-      "description": "Open a chart to see the placement in detail. The full price list below has a booking button for each option.",
+      "description": "The charts show where each piercing is placed. The full price list and booking options are below.",
       "imageAlts": [
         "Ear piercing price chart",
         "Facial piercing price chart",

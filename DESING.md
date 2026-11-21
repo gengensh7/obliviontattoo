@@ -63,8 +63,8 @@ Montserrat headline, standard red CTA links for booking and the gallery, and
 the starting price. The styles card pairs a studio
 photograph with a dark glass surface and spans two rows beside the cover-up and
 custom-design cards. All three cards stack on phones. A muted burgundy Aceternity
-Vortex sits behind the composition and pauses offscreen. Phones and visitors
-with reduced motion see the static burgundy background.
+Vortex sits behind the composition at all viewport widths and pauses offscreen.
+Visitors with reduced motion see the static burgundy background.
 As on `/permanent`, Fade Content brings the hero into focus on mount and reveals
 the remaining sections once on scroll. Fold Text opens headings, including the
 card titles. Reduced motion shows the content immediately.
@@ -89,6 +89,33 @@ Photographs open at their original proportions in the shared PhotoSwipe lightbox
 When WebGL is unavailable, the photos remain accessible in a native snap-scrolling
 row. The sections share a zinc-950 base which gradually returns to zinc-900
 toward the FAQ.
+
+The `/piercing` hero pairs a left-aligned headline and red CTA links with three
+studio photographs from the Supabase gallery. A nostril piercing leads, with
+smaller eyebrow and septum photographs staggered alongside it. Below the
+desktop breakpoint, the copy and actions appear above the collage. Aceternity
+Background Beams With Collision uses muted red trails and small bursts at all
+viewport widths while the hero is visible. The dark burgundy background also works
+without motion. The price CTA links to the pricing section using its native
+anchor. An Aceternity
+Timeline brings the piercing catalog, booking, procedure, and aftercare into six
+stages. It pairs sticky headings with compact service lists and copy, stacks
+the text alongside the left rail on phones, and shows a static rail for reduced
+motion. The catalog reads the localized services and prices from the price list.
+
+The piercing price list uses Aceternity Tabs for five anatomical categories.
+The red indicator springs between tabs and the list changes height as one
+category fades into the next. On hover, two category previews peek out from
+behind the active list. Keyboard navigation and reduced motion switch immediately.
+Tabs wrap on phones and support arrow keys. Below the medium breakpoint, each
+price row pairs the service name with its price and places the red Telegram
+booking link below. From medium widths, all three share a row. Longer lists
+use two columns on desktop.
+
+The piercing charts use the Aceternity Apple Cards Carousel across the standard
+container. Category titles sit above the uncropped previews. The next card
+peeks into view on the right, and the row supports touch, mouse drag, and arrow
+buttons. The contact link follows the chart row.
 
 The `/permanent` hero pairs a Montserrat headline, introduction, and the standard
 red booking link with an asymmetric composition of the studio's work. The eyebrow
@@ -131,8 +158,7 @@ Booking and contact buttons use centralized links from `contactLinks.ts`.
 Use `CtaLink` from `src/components/ui/cta-link.tsx` for button-style links with
 a brand-red fill and white text. The Tailwind `brand-red` color matches `red-600`
 and also applies to red link and icon accents. Use text labels for site CTAs. All CTA links
-share a 48px minimum height and the same spacing, border,
-typography, and interaction states. Pass layout classes for width and alignment.
+share a 48px minimum height. Pass layout classes for width and alignment.
 Use localized paths for internal routes and standard URLs for external destinations
 and same-page anchors.
 Preserve `data-gtm` attributes when editing existing actions.

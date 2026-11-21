@@ -1,9 +1,9 @@
 import { buildPiercingServiceJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
-import { AboutSection } from './ui/AboutSection'
 import { FaqSection } from './ui/FaqSection'
 import { HeroSection } from './ui/HeroSection'
 import { LatestPiercingSection } from './ui/LatestPiercingSection'
+import { PiercingTimelineSection } from './ui/PiercingTimelineSection'
 import { PricingSection } from './ui/PricingSection'
 
 export const generateMetadata = withSeo('metadata.piercingPageMetadata', '/piercing')
@@ -13,7 +13,7 @@ export default async function PiercingPage({ params }: { params: Promise<{ local
   return (
     <main className="flex flex-col">
       <HeroSection />
-      <AboutSection />
+      <PiercingTimelineSection />
       <LatestPiercingSection />
       <PricingSection />
       <FaqSection />

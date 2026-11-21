@@ -525,75 +525,100 @@
       "offerNavel": "Piercing all'ombelico"
     },
     "heroSection": {
-      "title": "Piercing professionale a Chișinău – Studio Oblivion Tattoo",
+      "title": "Piercing a Chișinău",
+      "subtitle": "Piercing all’orecchio, al naso, al labbro, alla lingua e all’ombelico. Scegliamo insieme il gioiello prima del piercing.",
       "text": "Nello studio in via Tighina 65 puoi fare un piercing all’orecchio, al naso, al labbro, alla lingua o all’ombelico. I prezzi includono il gioiello base.",
-      "firstCard": {
-        "title": "Scelta del punto",
-        "text": "Porta una foto di un piercing che ti piace per discutere con il piercer il punto preciso in cui vorresti il gioiello."
-      },
-      "secondCard": {
-        "title": "Scelta del gioiello",
-        "text": "Il piercer ti aiuta a scegliere forma e misura in base alla zona. Segnala eventuali reazioni avute al contatto con i metalli."
-      },
-      "thirdCard": {
-        "title": "Prenotazione in studio",
-        "text": "Scegli il piercing dal listino e premi il pulsante per prenotare. Se hai dubbi tra più opzioni, scrivici prima della visita."
-      },
-      "experience": "Eseguiamo piercing da {years, plural, one {# anno} other {# anni}}.",
+      "experience": "{years, plural, one {# anno} other {# anni}} di esperienza",
+      "address": "Via Tighina 65",
+      "jewelry": "Gioiello di base incluso",
       "priceLink": "Vedi i prezzi",
-      "imageAlt": "Tipi di piercing all’orecchio, al naso e alla lingua"
+      "photos": {
+        "nostril": {
+          "label": "Narice",
+          "alt": "Primo piano di un piercing alla narice con un cristallo trasparente"
+        },
+        "eyebrow": {
+          "label": "Sopracciglio",
+          "alt": "Piercing al sopracciglio con due sfere nere"
+        },
+        "septum": {
+          "label": "Septum",
+          "alt": "Anello metallico con punte coniche nel setto nasale"
+        }
+      }
     },
-    "aboutSection": {
-      "catalogTitle": "Tipi di piercing",
-      "catalog": [
-        {
+    "timeline": {
+      "title": "Piercing: dalla scelta alla cura",
+      "catalog": {
+        "title": "Tipi di piercing",
+        "ears": {
           "category": "Piercing all’orecchio",
           "description": "Il lobo è la parte morbida dell’orecchio. L’helix si trova sul bordo della cartilagine, il trago davanti al condotto uditivo. Il listino comprende anche conch, daith e industrial."
         },
-        {
+        "nose": {
           "category": "Piercing al naso",
-          "description": "Il nostril si fa sul lato della narice, il septum al centro tra le narici. Entrambi costano 250 MDL."
+          "description": "Il nostril si fa sul lato della narice, il septum al centro tra le narici. Il bridge si trova alla radice del naso."
         },
-        {
+        "lipsAndTongue": {
           "category": "Piercing al labbro e alla lingua",
-          "description": "Un labret singolo costa 200 MDL, un labret verticale 250 MDL e il piercing alla lingua 250 MDL. Per le combinazioni il listino indica il numero di fori."
+          "description": "Puoi scegliere un labret singolo o verticale, un piercing alla lingua o altre opzioni. Per le combinazioni il listino indica il numero di fori."
         },
-        {
+        "navel": {
           "category": "Piercing all’ombelico",
-          "description": "Costa 300 MDL. Parla con il piercer della posizione del gioiello, soprattutto se il bordo dei pantaloni sfrega sull’ombelico."
+          "description": "Parla con il piercer della posizione del gioiello, soprattutto se il bordo dei pantaloni sfrega sull’ombelico."
         },
-        {
+        "other": {
           "category": "Altri piercing disponibili",
-          "description": "Il piercing al sopracciglio costa 250 MDL, il bridge alla radice del naso 300 MDL. Per i capezzoli il prezzo di 600 MDL comprende due fori."
+          "description": "Il prezzo del piercing ai capezzoli comprende due fori."
         }
-      ],
-      "processTitle": "Procedura e sicurezza",
-      "process": [
-        {
-          "step": "1",
+      },
+      "selection": {
+        "title": "Scelta del piercing e del gioiello",
+        "placement": {
+          "title": "Scelta del punto",
+          "text": "Porta una foto di un piercing che ti piace per discutere con il piercer il punto preciso in cui vorresti il gioiello."
+        },
+        "jewelry": {
+          "title": "Scelta del gioiello",
+          "text": "Il piercer ti aiuta a scegliere forma e misura in base alla zona. Segnala eventuali reazioni avute al contatto con i metalli."
+        }
+      },
+      "booking": {
+        "title": "Prenotazione in studio",
+        "text": "Scegli il piercing dal listino e premi il pulsante per prenotare. Se hai dubbi tra più opzioni, scrivici prima della visita.",
+        "prices": "Vedi i prezzi"
+      },
+      "preparation": {
+        "title": "Consulenza e preparazione",
+        "consultation": {
           "title": "Consultazione",
           "description": "Discuti con il piercer la posizione, la forma del gioiello ed eventuali sensibilità ai metalli."
         },
-        {
-          "step": "2",
+        "sterility": {
           "title": "Preparazione",
           "description": "Chiedi come vengono trattati gli strumenti e chiedi di vedere la confezione sigillata dell’ago monouso."
-        },
-        {
-          "step": "3",
-          "title": "Perforazione",
-          "description": "Controlla allo specchio il punto segnato. Se lo desideri, chiedi di spostarlo prima del foro."
-        },
-        {
-          "step": "4",
-          "title": "Cura",
-          "description": "Chiedi come pulire la zona e quando cambiare il gioiello. Lavati le mani prima di toccare il piercing."
         }
-      ]
+      },
+      "procedure": {
+        "title": "La procedura del piercing",
+        "description": "Controlla allo specchio il punto segnato. Se lo desideri, chiedi di spostarlo prima del foro."
+      },
+      "aftercare": {
+        "title": "Cura dopo il piercing",
+        "description": "Chiedi come pulire la zona e quando cambiare il gioiello. Lavati le mani prima di toccare il piercing. Segui le indicazioni del piercer sulla cura del piercing.",
+        "book": "Prenota un piercing"
+      }
     },
     "pricingSection": {
       "title": "Prezzi per il piercing a Chișinău",
       "description": "Il costo dipende dalla zona e dal numero di fori. Per le combinazioni il numero è indicato accanto al nome.",
+      "tabs": {
+        "ears": "Orecchie",
+        "nose": "Naso",
+        "lipsAndTongue": "Labbra e lingua",
+        "navel": "Ombelico",
+        "other": "Altri piercing"
+      },
       "badges": {
         "quality": "Gioiello base",
         "onlineBooking": "Prenotazione online"
@@ -602,6 +627,7 @@
         {
           "title": "Piercing all’orecchio",
           "icon": "👂",
+          "catalogGroup": "ears",
           "services": [
             { "name": "Lobo (earlobe)", "price": 150 },
             { "name": "Flat", "price": 200 },
@@ -621,15 +647,16 @@
           "title": "Piercing del viso",
           "icon": "👃",
           "services": [
-            { "name": "Sopracciglio", "price": 250 },
-            { "name": "Bridge", "price": 300 },
-            { "name": "Nostril (ala del naso)", "price": 250 },
-            { "name": "Septum", "price": 250 }
+            { "name": "Sopracciglio", "price": 250, "catalogGroup": "other" },
+            { "name": "Bridge", "price": 300, "catalogGroup": "nose" },
+            { "name": "Nostril (ala del naso)", "price": 250, "catalogGroup": "nose" },
+            { "name": "Septum", "price": 250, "catalogGroup": "nose" }
           ]
         },
         {
           "title": "Piercing alle labbra",
           "icon": "👄",
+          "catalogGroup": "lipsAndTongue",
           "services": [
             { "name": "Labret (1 foro)", "price": 200 },
             { "name": "Smiley", "price": 250 },
@@ -648,21 +675,15 @@
           "title": "Altri tipi di piercing",
           "icon": "✨",
           "services": [
-            { "name": "Lingua", "price": 250 },
-            { "name": "Ombelico", "price": 300 },
-            { "name": "Piercing ai capezzoli (coppia)", "price": 600 }
+            { "name": "Lingua", "price": 250, "catalogGroup": "lipsAndTongue" },
+            { "name": "Ombelico", "price": 300, "catalogGroup": "navel" },
+            { "name": "Piercing ai capezzoli (coppia)", "price": 600, "catalogGroup": "other" }
           ]
         }
       ],
-      "includesTitle": "Cosa è incluso nel prezzo del piercing?",
-      "includes": [
-        "Consulenza con il piercer",
-        "Gioiello base",
-        "Istruzioni dettagliate per la cura"
-      ],
-      "includesNote": "Se desideri un altro modello o un cambio dopo la guarigione, chiedi in anticipo materiale, disponibilità e costo.",
       "buttons": {
-        "book": "Prenota"
+        "book": "Prenota",
+        "bookService": "Prenota «{service}»"
       },
       "labels": {
         "currency": "lei",
@@ -673,12 +694,12 @@
       "title": "Domande sui piercing e prenotazioni",
       "items": [
         {
-          "question": "Quanto costa un piercing a Chișinău?",
-          "answer": "Da Oblivion Tattoo si parte da 150 MDL per il lobo. L’helix costa 200 MDL e il piercing al sopracciglio o alla lingua 250 MDL."
+          "question": "Cosa è incluso nel prezzo del piercing?",
+          "answer": "Il prezzo include la consulenza con il piercer, la foratura, il gioiello base e istruzioni dettagliate per la cura. Se desideri un altro modello o vuoi cambiare il gioiello dopo la guarigione, chiedi in anticipo al piercer informazioni su materiale, disponibilità e costo."
         },
         {
-          "question": "Il gioiello è incluso nel prezzo?",
-          "answer": "Sì, il prezzo comprende il foro e il gioiello base. Per un altro modello puoi chiedere il costo prima di prenotare."
+          "question": "Quanto costa un piercing a Chișinău?",
+          "answer": "Da Oblivion Tattoo si parte da 150 MDL per il lobo. L’helix costa 200 MDL e il piercing al sopracciglio o alla lingua 250 MDL."
         },
         {
           "question": "Quanto costa un piercing al naso o all’ombelico?",
@@ -699,9 +720,17 @@
       ]
     },
     "latestPiercingSection": {
+      "cardTitles": {
+        "ears": "Piercing alle orecchie",
+        "nose": "Piercing al naso",
+        "other": "Altri piercing",
+        "lips": "Piercing alle labbra"
+      },
+      "previous": "Schema precedente",
+      "next": "Schema successivo",
       "title": "Schemi dei piercing con prezzi",
       "contactsLink": "Contatti e prenotazione",
-      "description": "Apri uno schema per vedere la posizione del foro. Più sotto trovi il listino completo con la prenotazione per ciascun piercing.",
+      "description": "Gli schemi mostrano la posizione di ogni piercing. Più sotto trovi il listino completo e le opzioni di prenotazione.",
       "imageAlts": [
         "Schema dei piercing all’orecchio con prezzi",
         "Schema dei piercing al viso con prezzi",
