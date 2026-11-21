@@ -397,3 +397,90 @@ button {
     transition-duration: 200ms !important;
   }
 }
+
+/* Center the first and last sketch while keeping the unscaled snap positions fixed. */
+.sketches-track {
+  --sketch-width: 75cqw;
+
+  padding-inline: calc((100% - var(--sketch-width)) / 2);
+  scrollbar-width: none;
+
+  @variant sm {
+    --sketch-width: 60cqw;
+  }
+
+  @variant md {
+    --sketch-width: 50cqw;
+  }
+
+  @variant lg {
+    --sketch-width: 40cqw;
+  }
+}
+
+.sketches-slide {
+  flex-basis: var(--sketch-width);
+}
+
+/* Shared red for CTA fills, link accents, and icons. */
+@theme inline {
+  --color-brand-red: var(--color-red-600);
+}
+
+/* Reserve the React Bits masonry layout before hydration at each container width. */
+.portfolio-masonry {
+  --portfolio-columns: 1;
+  --portfolio-height: var(--portfolio-mobile-height);
+  --portfolio-width: var(--portfolio-mobile-width);
+
+  aspect-ratio: var(--portfolio-layout-width) / var(--portfolio-height);
+
+  @variant sm {
+    --portfolio-columns: 2;
+    --portfolio-height: var(--portfolio-tablet-height);
+    --portfolio-width: var(--portfolio-tablet-width);
+  }
+
+  @variant lg {
+    --portfolio-columns: 3;
+    --portfolio-height: var(--portfolio-desktop-height);
+    --portfolio-width: var(--portfolio-desktop-width);
+  }
+}
+
+.portfolio-masonry-tile {
+  width: var(--portfolio-width);
+  left: var(--portfolio-mobile-left);
+  top: var(--portfolio-mobile-top);
+
+  @variant sm {
+    left: var(--portfolio-tablet-left);
+    top: var(--portfolio-tablet-top);
+  }
+
+  @variant lg {
+    left: var(--portfolio-desktop-left);
+    top: var(--portfolio-desktop-top);
+  }
+}
+
+/* Keep touch navigation visible below the main swipe area. */
+.portfolio-lightbox.pswp--touch .pswp__button--arrow {
+  @apply visible size-11 rounded-full bg-zinc-950/75;
+
+  top: auto;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  margin-top: 0;
+}
+
+.portfolio-lightbox.pswp--touch .pswp__button--arrow--prev {
+  left: 12px;
+}
+
+.portfolio-lightbox.pswp--touch .pswp__button--arrow--next {
+  right: 12px;
+}
+
+.portfolio-lightbox.pswp--touch .pswp__button--arrow .pswp__icn {
+  @apply inset-0 m-auto size-10;
+}

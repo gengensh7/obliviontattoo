@@ -43,6 +43,8 @@ Leave generated files untouched and keep migrations within the scope of the task
 - Use Tailwind CSS for all component styling.
 - Do not use CSS Modules or create `.module.css` files.
 - Use standard Tailwind utility classes.
+- Use the shared `brand-red` Tailwind color for link and icon accents. It matches the `red-600` fill of `CtaLink`. Keep text white on a red CTA.
+- Use the full width of the standard `container` for sections and galleries. Do not add `max-w-*` utilities to narrow their layouts.
 - Do not use arbitrary values with square brackets such as `w-[500px]`, `max-w-[49ch]`, or `text-[18px]`.
 - Do not use `clamp()` for responsive sizing.
 - Do not write explicit `rem`, `em`, or `ch` units.
@@ -136,6 +138,7 @@ Use the existing navigation and metadata helpers.
 Prisma is server-only and is accessed through `src/lib/prisma.ts` and `src/lib/cachedPrisma.ts`.
 The models are `Image` and `BlogPost`. Caching uses `use cache`, `cacheLife`, and `cacheTag`.
 Preserve Supabase URLs and image paths, and account for `next.config.ts`.
+Import `SUPABASE_S3_URL` from `src/lib/config.ts` when constructing public Supabase image URLs. Read `NEXT_PUBLIC_SUPABASE_URL_S3` in that config file.
 Keep the contents of `.env*`, passwords, tokens, `DATABASE_URL`, and service-role keys private.
 Do not overwrite existing environment variables.
 Contact links are stored in `src/lib/contactLinks.ts`. Keep the existing Instagram and Telegram account names regardless of the project name.
@@ -157,6 +160,7 @@ See `scripts/INDEXNOW.md` for details.
 ## Verification and Completion
 
 Use pnpm. The main commands are `pnpm dev`, `pnpm exec tsc --noEmit`, and `pnpm lint`.
+Use a clean browser session for hydration checks. `impeccable shot` changes lazy images to eager when taking screenshots, which can cause a hydration warning if it runs before React hydrates.
 Run the build with IndexNow in dry-run mode when changes affect production compilation.
 If a built sitemap is available for offline verification, run `pnpm indexnow --dry-run --local`.
 Leave unrelated errors out of scope and report which checks you were able to run.

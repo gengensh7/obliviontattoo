@@ -36,6 +36,27 @@ language switcher, and the mobile menu are in `src/widgets/header/`.
 Use the existing container, section spacing, and responsive Tailwind classes.
 Service cards shift from a single column on phones to multiple columns on wider
 screens. Match new sections to neighboring sections in spacing and scale.
+Home headings use the same Fold Text reveal as `/permanent`. Section content
+comes into focus once, with the hero starting on mount and the remaining sections
+revealing as they enter the viewport.
+
+The home page tattoo sketches span the standard container, with a centered
+portrait and partial views of neighboring photographs. The carousel uses
+native scroll snapping. As each photograph moves toward the center, it grows
+to full size and regains opacity, saturation, and contrast. The active title
+sits under the gallery with its position and controls on the right. Visitors
+can pause autoplay and browse in a continuous loop by swipe, drag, arrows, or
+keyboard. With reduced motion enabled, the gallery starts paused, controls
+advance immediately, and neighboring photographs use static dimming.
+Photographs open in the shared lightbox.
+
+The home portfolio uses the React Bits Masonry layout across the standard
+container. It shows one column on phones, two from the small breakpoint, and
+three from the large breakpoint. Taller photographs enter the layout first so
+the shorter ones can balance the column ends. Photographs keep their original
+proportions and open in the shared PhotoSwipe lightbox. The gallery link sits
+with the section introduction. Reduced motion skips the scroll and reflow
+animations.
 
 The `/permanent` hero pairs a Montserrat headline, introduction, and the standard
 red booking link with an asymmetric composition of the studio's work. The eyebrow
@@ -76,7 +97,8 @@ Use `next/image` with appropriate `alt` text, `sizes`, and image dimensions.
 Preserve the quality of the portfolio photos and use authentic studio photography.
 Booking and contact buttons use centralized links from `contactLinks.ts`.
 Use `CtaLink` from `src/components/ui/cta-link.tsx` for button-style links with
-a dark fill and a simple border. Use text labels for site CTAs. All CTA links
+a brand-red fill and white text. The Tailwind `brand-red` color matches `red-600`
+and also applies to red link and icon accents. Use text labels for site CTAs. All CTA links
 share a 48px minimum height and the same spacing, border,
 typography, and interaction states. Pass layout classes for width and alignment.
 Use localized paths for internal routes and standard URLs for external destinations
@@ -87,8 +109,13 @@ Keep the current social media account names regardless of the website name.
 The shared contact section pairs its heading and red Telegram CTA with rows for
 the phone, studio address, and opening hours. The two columns stack below the
 desktop breakpoint. Social links sit below a thin rule and wrap on narrow
-screens. The booking CTA uses a solid fill with a hover transition. The phone
+screens. The booking CTA keeps the same red fill on hover. The phone
 number takes on the CTA red on hover.
+
+The directions section on the home and contacts pages aligns its headline, description, three graphite
+information cards, and MapLibre map within the standard container. The cards share
+one row from the tablet breakpoint and stack on phones. A route link remains
+available below the map while the map loads.
 
 ## Responsive Design, Accessibility, and Performance
 

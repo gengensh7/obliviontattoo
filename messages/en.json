@@ -172,7 +172,11 @@
     },
     "sketchesSection": {
       "title": "Tattoo Sketches in Chisinau",
-      "description": "We create custom tattoo sketches in Chisinau, tailored to your ideas and body features. In our gallery, you can see examples of our artists' work and get inspired for your future tattoo."
+      "description": "We create custom tattoo sketches in Chisinau, tailored to your ideas and body features. In our gallery, you can see examples of our artists' work and get inspired for your future tattoo.",
+      "previous": "Previous sketch",
+      "next": "Next sketch",
+      "openImage": "Enlarge photo",
+      "position": "{title}. Work {current} of {total}."
     },
     "advantagesSection": {
       "text": "Our Advantages",
@@ -182,10 +186,15 @@
       "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage."
     },
     "portfolioSection": {
-      "title": "Portfolio of tattoo artists in Chisinau - Oblivion Tattoo",
-      "text": "Here you can see real works by our artists. Tattoos, piercings, cover-ups, and sketches all created with attention to detail and in sterile conditions. We are proud of the quality of each work.",
+      "title": "Oblivion Tattoo portfolio",
+      "text": "Tattoos, piercings and permanent makeup by our studio artists. Open a photo for a closer look.",
       "linkLabel": "View larger photo",
-      "link": "View all photos"
+      "link": "View the full gallery",
+      "close": "Close photo",
+      "previous": "Previous photo",
+      "next": "Next photo",
+      "zoom": "Toggle zoom",
+      "error": "The photo could not be loaded."
     },
     "locationSection": {
       "openMap": "Open map",

@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
+import FadeContent from '@/shared/FadeContent'
 import { HeroSlide } from './HeroSlide'
 import { slides, type HeroSliderProps } from './heroSlides'
 
@@ -41,7 +42,11 @@ const HeroSlider = ({ cards, labels }: HeroSliderProps) => {
         if (event.target.matches(':focus-visible') && event.target.dataset.gtm !== 'hero-slider-autoplay') setPaused(true)
       }}
     >
-      <div
+      <FadeContent
+        effect="focus"
+        trigger="mount"
+        duration={0.52}
+        initialOpacity={0.8}
         className="grid min-h-screen touch-pan-y"
         onPointerEnter={(event) => { if (event.pointerType === 'mouse') setHovered(true) }}
         onPointerLeave={() => setHovered(false)}
@@ -67,10 +72,10 @@ const HeroSlider = ({ cards, labels }: HeroSliderProps) => {
             aria-hidden={index !== activeSlide}
             className={`col-start-1 row-start-1 min-w-0 transition-opacity duration-700 ease-out ${index === activeSlide ? 'z-10 opacity-100' : 'pointer-events-none opacity-0'}`}
           >
-            <HeroSlide slide={slide} card={cards[slide.key]} preload={index === 0} />
+            <HeroSlide slide={slide} card={cards[slide.key]} preload={index === 0} active={index === activeSlide} />
           </div>
         ))}
-      </div>
+      </FadeContent>
 
       <div className="absolute inset-x-0 bottom-16 z-30 container sm:bottom-4">
         <div className="flex items-center gap-6">

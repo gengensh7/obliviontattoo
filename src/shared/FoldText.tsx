@@ -8,27 +8,27 @@ import { useEffect, useRef } from 'react'
 export default function FoldText({
   text,
   className,
-  subtle = false
-}: { text: string; className?: string; subtle?: boolean }) {
+  subtle = false,
+  active = true
+}: { text: string; className?: string; subtle?: boolean; active?: boolean }) {
   const root = useRef<HTMLSpanElement>(null)
+  const playedText = useRef<string | null>(null)
 
   useEffect(() => {
     const element = root.current
-    if (!element) return
+    if (!element || !active || playedText.current === text) return
     const pieces = element.querySelectorAll('.fold-text-piece')
     if (!pieces.length) return
 
     const motion = gsap.matchMedia()
-    let played = false
-
     motion.add('(prefers-reduced-motion: no-preference)', () => {
-      if (played) return
+      if (playedText.current === text) return
 
       let tween: gsap.core.Tween | undefined
       const observer = new IntersectionObserver(([entry]) => {
         if (entry.intersectionRatio < 0.2) return
         observer.disconnect()
-        played = true
+        playedText.current = text
         tween = gsap.fromTo(
           pieces,
           { opacity: subtle ? 0.9 : 0, rotateX: subtle ? -35 : -92, '--fold-crease': subtle ? 0.15 : 0.55, force3D: true },
@@ -52,7 +52,7 @@ export default function FoldText({
     })
 
     return () => motion.revert()
-  }, [text, subtle])
+  }, [active, text, subtle])
 
   return (
     <span ref={root} className={className ? `fold-text ${className}` : 'fold-text'}>

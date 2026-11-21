@@ -28,7 +28,7 @@ export const GallerySection = async () => {
             </h2>
             <p className="leading-relaxed text-zinc-300">{t('text')}</p>
           </div>
-          <CtaLink href={getPathname({ locale, href: '/gallery' })} className="before:hidden hover:bg-red-700 md:shrink-0">
+          <CtaLink href={getPathname({ locale, href: '/gallery' })} className="before:hidden md:shrink-0">
             {t('link')}
           </CtaLink>
         </header>

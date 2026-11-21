@@ -3,12 +3,22 @@
 import type PhotoSwipe from 'photoswipe'
 import { useEffect, useRef } from 'react'
 
+export type LightboxLabels = {
+  close: string
+  previous: string
+  next: string
+  zoom: string
+  error: string
+}
+
 type Props = {
   children: React.ReactNode
   gallery?: string
+  labels?: LightboxLabels
+  mainClass?: string
 }
 
-const Lightbox = ({ gallery, children }: Props) => {
+const Lightbox = ({ gallery, labels, mainClass, children }: Props) => {
   const viewer = useRef<PhotoSwipe | null>(null)
 
   useEffect(() => () => viewer.current?.destroy(), [])
@@ -26,10 +36,23 @@ const Lightbox = ({ gallery, children }: Props) => {
       const [{ default: PhotoSwipe }] = await Promise.all([import('photoswipe'), import('photoswipe/style.css')])
       if (!container.contains(link) || !link.isConnected || viewer.current) return
 
+      const items = Array.from(container.querySelectorAll('a'))
+      if (link.dataset.pswpOrder !== undefined) {
+        items.sort((first, second) => Number(first.dataset.pswpOrder) - Number(second.dataset.pswpOrder))
+      }
+
       const instance = new PhotoSwipe({
-        dataSource: { gallery: container },
+        dataSource: { gallery: container, items },
         children: 'a',
-        index: Array.from(container.querySelectorAll('a')).indexOf(link)
+        index: items.indexOf(link),
+        mainClass,
+        ...(labels && {
+          closeTitle: labels.close,
+          arrowPrevTitle: labels.previous,
+          arrowNextTitle: labels.next,
+          zoomTitle: labels.zoom,
+          errorMsg: labels.error
+        })
       })
       viewer.current = instance
       instance.on('destroy', () => {

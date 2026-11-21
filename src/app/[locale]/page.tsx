@@ -3,6 +3,8 @@ import { Suspense } from 'react'
 
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
 import { AboutSection } from './ui/AboutSection'
 import { AdvantagesSection } from './ui/AdvantagesSection'
 import HeroSlider from './ui/HeroSlider'
@@ -37,8 +39,10 @@ export default async function Home() {
       <SketchesSection />
       <AdvantagesSection translations={t.raw('advantagesSection')} />
       <PortfolioSection />
-      <ContactsSection />
-      <LocationSection translations={t.raw('locationSection')} />
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="bg-zinc-900">
+        <ContactsSection title={<FoldText text={t('contactsSection.title')} />} />
+      </FadeContent>
+      <LocationSection animate />
     </main>
   )
 }

@@ -1,68 +1,76 @@
-import { Expand } from 'lucide-react'
 import { getLocale, getTranslations } from 'next-intl/server'
-import Image from 'next/image'
 import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { getPortfolioImages } from '@/lib/cachedPrisma'
-import Lightbox from '@/shared/Lightbox'
+import { SUPABASE_S3_URL } from '@/lib/config'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
+import PortfolioMasonry, { type PortfolioPhoto } from './PortfolioMasonry'
 
-const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
+// Keep the dimensions and small blur previews of the current Supabase originals together.
+const portfolioPreviews: Record<string, Pick<PortfolioPhoto, 'dimensions' | 'blurDataURL'>> = {
+  'Permanent/permanent-1.webp': {
+    dimensions: { width: 1240, height: 1754 },
+    blurDataURL: 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoGAAgAAwBUJZACdADcYrOkEADeGxETJcXB4aAvrTl7S797jCmGsIpFFiqHvSy3DOyNaGUicwAAAA=='
+  },
+  'Piercing/piercing-1.webp': {
+    dimensions: { width: 1024, height: 1024 },
+    blurDataURL: 'data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoIAAgAAwBUJbACdAD0mjJw+kAAAPw8fctqWVR4uT4JuvEsN1WfFJYm+lp6SLSrSbdWvtd9d996S+erdg6YAAAA'
+  },
+  'Portfolio/IMG_20250914_133848.webp': {
+    dimensions: { width: 960, height: 1280 },
+    blurDataURL: 'data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoGAAgAAwBUJZACdAEXfq87uYAA/soxstSWizR32r/h2zZV39906WtKCzaNxndJdLqWYqLgXJJ3EnW7hgAAAA=='
+  },
+  'Permanent/permanent-2.webp': {
+    dimensions: { width: 1024, height: 1162 },
+    blurDataURL: 'data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoHAAgAAwBUJQBOgCPQTUi2LEQA/OAcJOcSrhRwvkk7enE2EBbfSCOJ7Je5aKQ5aiSUAAAA'
+  },
+  'Piercing/piercing-2.webp': {
+    dimensions: { width: 1024, height: 1024 },
+    blurDataURL: 'data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoIAAgAAwBUJaACdAD0rWYSdYAA/pUFYrlEQ+NQU5JuyhtyF4jbiaTXDFo3xKKYVnXrS2mSZ7UyCel9jcQAAA=='
+  },
+  'Portfolio/IMG_20250914_133923.webp': {
+    dimensions: { width: 960, height: 1280 },
+    blurDataURL: 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoGAAgAAwBUJQBOgCLv0GE3IAD81qvzm9gg05MIddKgm143WJtJBEpLocgi4VxTtBW7vzzNsoAAAA=='
+  }
+}
 
 export const PortfolioSection = async () => {
-  const locale = await getLocale()
-  const images = await getPortfolioImages()
-
-  const t = await getTranslations('homePage.portfolioSection')
-
+  const [locale, images, t] = await Promise.all([getLocale(), getPortfolioImages(), getTranslations('homePage.portfolioSection')])
 
   return (
-    <section className="flex flex-col gap-10 bg-zinc-900">
-      <div className="container py-20">
-        <div
-          className="mb-15 flex flex-col gap-10 text-white"
-        >
-          <h2 className="xl:3xl text-center text-2xl wrap-break-word 2xl:text-5xl">{t('title')}</h2>
-          <p className="mx-auto max-w-3xl text-center">{t('text')}</p>
-        </div>
-        <div className="flex flex-col items-center gap-10">
-          <Lightbox gallery="home-portfolio">
-            <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-              {images.map((image) => {
-                const full = `${SUPABASE_S3_URL}/${image.url}`
-
-                return (
-                  <a
-                    key={image.id}
-                    className="relative"
-                    href={full}
-                    data-gtm="portfolio-image-open"
-                    data-pswp-width={1200}
-                    data-pswp-height={1600}
-                    aria-label={`${t('linkLabel')} ${image.alt}`}
-                  >
-                    <Image
-                      className="h-full w-full rounded-md object-cover"
-                      src={full}
-                      width={450}
-                      height={400}
-                      sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      alt={image.alt}
-                    />
-                    <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />
-                  </a>
-                )
-              })}
-            </div>
-          </Lightbox>
-          <CtaLink
-            href={getPathname({ locale, href: '/gallery' })}
-            data-gtm="portfolio-view-gallery"
-            className="w-fit"
-          >
+    <section aria-labelledby="portfolio-title" className="bg-zinc-900 text-white">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container flex flex-col gap-8 py-16 lg:gap-10 lg:py-20">
+        <div className="flex flex-col items-start gap-5 md:flex-row md:items-end md:justify-between md:gap-10">
+          <div className="flex flex-col gap-3 md:basis-2/3 lg:basis-1/2">
+            <h2 id="portfolio-title" className="text-2xl font-semibold text-balance sm:text-3xl lg:text-4xl 2xl:text-5xl">
+              <FoldText text={t('title')} />
+            </h2>
+            <p className="text-pretty text-zinc-300">{t('text')}</p>
+          </div>
+          <CtaLink href={getPathname({ locale, href: '/gallery' })} data-gtm="portfolio-view-gallery" className="shrink-0">
             {t('link')}
           </CtaLink>
         </div>
-      </div>
+        {images.length > 0 && (
+          <PortfolioMasonry
+            photos={images.map(({ id, url, alt }) => ({
+              id,
+              alt,
+              src: `${SUPABASE_S3_URL}/${url}`,
+              ...portfolioPreviews[url]
+            }))}
+            openLabel={t('linkLabel')}
+            lightboxLabels={{
+              close: t('close'),
+              previous: t('previous'),
+              next: t('next'),
+              zoom: t('zoom'),
+              error: t('error')
+            }}
+          />
+        )}
+      </FadeContent>
     </section>
   )
 }

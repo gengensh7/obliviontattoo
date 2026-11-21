@@ -2,6 +2,8 @@
 
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef } from 'react'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
 
 type VideoProps = {
   src: string
@@ -43,11 +45,11 @@ type AdvantagesTranslations = {
 export const AdvantagesSection = ({ translations }: { translations: AdvantagesTranslations }) => {
   return (
     <section>
-      <div className="container grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">
-            <h2 className="text-4xl lg:text-6xl">{translations.text}</h2>
-            <h3 className="text-lg font-semibold">{translations.title}</h3>
+            <h2 className="text-4xl lg:text-6xl"><FoldText text={translations.text} /></h2>
+            <h3 className="text-lg font-semibold"><FoldText text={translations.title} subtle /></h3>
             <p>{translations.description}</p>
           </div>
           <div className="aspect-video overflow-hidden rounded-lg">
@@ -77,7 +79,7 @@ export const AdvantagesSection = ({ translations }: { translations: AdvantagesTr
             />
           </div>
         </div>
-      </div>
+      </FadeContent>
     </section>
   )
 }

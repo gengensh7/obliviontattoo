@@ -1,23 +1,53 @@
-import { getTranslations } from 'next-intl/server'
+import { hasLocale } from 'next-intl'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { type AppLocale, routing } from '@/i18n/routing'
 import { getSketchImages } from '@/lib/cachedPrisma'
-import { LazySketchesSwiper } from './LazySketchesSwiper'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
+import { LazySketchesCarousel } from './LazySketchesCarousel'
 
 export const SketchesSection = async () => {
-  const images = await getSketchImages()
-  const t = await getTranslations('homePage.sketchesSection')
+  const [images, requestedLocale, t, playbackLabels] = await Promise.all([
+    getSketchImages(),
+    getLocale(),
+    getTranslations('homePage.sketchesSection'),
+    getTranslations('pageSpeedLabel.homeSlider')
+  ])
+  const locale = hasLocale(routing.locales, requestedLocale) ? requestedLocale : routing.defaultLocale
+  const slides = images.map(({ url, alt, altRo, altUk, altIt, altEn, title }, index) => {
+    const altByLocale = { ru: alt, ro: altRo, uk: altUk, it: altIt, en: altEn } satisfies Record<AppLocale, string | null>
+
+    return {
+      url,
+      alt: altByLocale[locale]?.trim() || alt,
+      title,
+      position: t('position', { current: index + 1, total: images.length, title })
+    }
+  })
 
   return (
-    <section className="bg-zinc-900">
-      <div className="container flex flex-col items-center gap-10 py-20 text-center">
-        <div className="flex flex-col gap-10">
-          <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{t('title')}</h2>
-          <p className="max-w-2xl text-white">{t('description')}</p>
-        </div>
+    <section aria-labelledby="sketches-title" className="bg-zinc-900">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-6 py-16 sm:gap-8 lg:py-20">
+        <header className="grid gap-3">
+          <h2 id="sketches-title" className="text-3xl leading-tight font-bold text-white lg:text-4xl">
+            <FoldText text={t('title')} />
+          </h2>
+          <p className="leading-relaxed text-zinc-300">{t('description')}</p>
+        </header>
 
-        <div className="w-full min-w-0 max-w-full">
-          <LazySketchesSwiper images={images} />
-        </div>
-      </div>
+        {slides.length > 0 && (
+          <LazySketchesCarousel
+            images={slides}
+            labels={{
+              previous: t('previous'),
+              next: t('next'),
+              openImage: t('openImage'),
+              pause: playbackLabels('pause'),
+              play: playbackLabels('play')
+            }}
+          />
+        )}
+      </FadeContent>
     </section>
   )
 }

@@ -19,6 +19,10 @@ model Image {
   title String
   url   String    @unique
   alt   String
+  altRo String?
+  altUk String?
+  altIt String?
+  altEn String?
   type  ImageType
 
   order Int @default(0)

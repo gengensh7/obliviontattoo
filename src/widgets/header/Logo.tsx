@@ -16,7 +16,7 @@ export default function Logo({ locale, alt }: { locale: string; alt: string }) {
         alt={alt}
         width={256}
         height={362}
-        className="h-auto w-12 lg:w-16"
+        className="h-auto w-12"
         loading="eager"
         unoptimized
       />

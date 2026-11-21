@@ -172,7 +172,11 @@
     },
     "sketchesSection": {
       "title": "Bozze di Tatuaggi a Chisinau",
-      "description": "Creiamo bozze di tatuaggi personalizzate a Chisinau, basate sulle tue idee e caratteristiche fisiche. Nella nostra galleria puoi vedere esempi dei lavori dei nostri artisti e trovare ispirazione per il tuo futuro tatuaggio."
+      "description": "Creiamo bozze di tatuaggi personalizzate a Chisinau, basate sulle tue idee e caratteristiche fisiche. Nella nostra galleria puoi vedere esempi dei lavori dei nostri artisti e trovare ispirazione per il tuo futuro tatuaggio.",
+      "previous": "Bozza precedente",
+      "next": "Bozza successiva",
+      "openImage": "Ingrandisci la foto",
+      "position": "{title}. Opera {current} di {total}."
     },
     "advantagesSection": {
       "text": "I nostri vantaggi",
@@ -182,10 +186,15 @@
       "more_text": "Offriamo condizioni trasparenti, prezzi onesti e una sincera attenzione ai dettagli. Prima di iniziare, discutiamo sempre il disegno, le fasi del lavoro e la cura successiva, così da farti sentire sicuro in ogni momento."
     },
     "portfolioSection": {
-      "title": "Portfolio dei tatuatori a Chisinau - Oblivion Tattoo",
-      "text": "Qui puoi vedere i veri lavori dei nostri artisti. Tatuaggi, piercing, coperture e schizzi tutto realizzato con attenzione ai dettagli e in condizioni sterili. Siamo orgogliosi della qualità di ogni lavoro.",
+      "title": "Portfolio Oblivion Tattoo",
+      "text": "Tatuaggi, piercing e trucco permanente realizzati nel nostro studio. Apri una foto per osservare i dettagli.",
       "linkLabel": "Apri la foto in grande",
-      "link": "Vedi tutte le foto"
+      "link": "Sfoglia tutta la galleria",
+      "close": "Chiudi la foto",
+      "previous": "Foto precedente",
+      "next": "Foto successiva",
+      "zoom": "Cambia lo zoom",
+      "error": "Impossibile caricare la foto."
     },
     "locationSection": {
       "openMap": "Apri la mappa",

@@ -40,10 +40,8 @@ export const ContactsSection = ({
                 data-gtm="telegram"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="before:hidden hover:border-red-700 hover:bg-red-700 motion-safe:transition-colors motion-safe:duration-150"
               >
                 {t('bookingCta')}
-                <ArrowUpRight aria-hidden="true" className="size-4 shrink-0" />
               </CtaLink>
               {studioLinks && (
                 <ul className="flex max-w-full flex-wrap items-center gap-x-6">

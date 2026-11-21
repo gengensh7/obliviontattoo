@@ -69,6 +69,7 @@ export default function Map3D() {
 
       const el = document.createElement('a')
       el.href = LOCATION_GOOGLE_MAPS
+      el.setAttribute('aria-label', 'Oblivion Tattoo — Google Maps')
       el.dataset.gtm = 'google-maps-marker'
       el.target = '_blank'
       el.rel = 'noopener noreferrer'
@@ -102,9 +103,9 @@ export default function Map3D() {
   }, [])
 
   return (
-    <div className="relative h-[500px] w-full">
+    <div className="relative h-full w-full">
       <div ref={ref} className="h-full w-full" />
-      {isLoading && <Skeleton aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-none bg-zinc-800" />}
+      {isLoading && <Skeleton aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-none bg-zinc-800 motion-reduce:animate-none" />}
     </div>
   )
 }

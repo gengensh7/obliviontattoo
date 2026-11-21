@@ -172,7 +172,11 @@
     },
     "sketchesSection": {
       "title": "Schițe de Tatuaje în Chișinău",
-      "description": "Creăm schițe de tatuaje personalizate în Chișinău, adaptate ideilor tale și trăsăturilor corpului tău. În galeria noastră poți vedea exemple de lucrări ale artiștilor noștri și să te inspiri pentru viitorul tău tatuaj."
+      "description": "Creăm schițe de tatuaje personalizate în Chișinău, adaptate ideilor tale și trăsăturilor corpului tău. În galeria noastră poți vedea exemple de lucrări ale artiștilor noștri și să te inspiri pentru viitorul tău tatuaj.",
+      "previous": "Schița anterioară",
+      "next": "Schița următoare",
+      "openImage": "Mărește fotografia",
+      "position": "{title}. Lucrarea {current} din {total}."
     },
     "advantagesSection": {
       "text": "Avantajele noastre",
@@ -182,10 +186,15 @@
       "more_text": "Oferim condiții transparente, prețuri corecte și atenție sinceră la detalii. Înainte de a începe lucrul, discutăm întotdeauna schița, etapele și îngrijirea ulterioară, pentru ca tu să te simți încrezător în fiecare pas."
     },
     "portfolioSection": {
-      "title": "Portofoliul artiștilor tatuatori din Chișinău - Oblivion Tattoo",
-      "text": "Aici puteți vedea lucrările reale ale artiștilor noștri. Tatuaje, piercinguri, acoperiri și schițe toate realizate cu atenție la detalii și în condiții sterile. Suntem mândri de calitatea fiecărei lucrări.",
+      "title": "Portofoliul Oblivion Tattoo",
+      "text": "Tatuaje, piercinguri și machiaj permanent realizate în studioul nostru. Deschide o fotografie pentru a vedea detaliile.",
       "linkLabel": "Deschide fotografia mărită",
-      "link": "Vezi toate fotografiile"
+      "link": "Vezi toată galeria",
+      "close": "Închide fotografia",
+      "previous": "Fotografia anterioară",
+      "next": "Fotografia următoare",
+      "zoom": "Schimbă nivelul de zoom",
+      "error": "Fotografia nu a putut fi încărcată."
     },
     "locationSection": {
       "openMap": "Deschide harta",

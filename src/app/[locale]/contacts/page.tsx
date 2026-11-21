@@ -11,7 +11,6 @@ export const generateMetadata = withSeo('metadata.contactsPageMetadata', '/conta
 export default async function Contacts() {
   const locale = await getLocale()
   const t = await getTranslations('contactsPage')
-  const location = await getTranslations('homePage.locationSection')
   const raw = t.raw('hero.paragraphs') as string[]
   const features = t.raw('features') as { title: string; text: string }[]
 
@@ -69,16 +68,7 @@ export default async function Contacts() {
         </div>
       </section>
       <ContactsSection />
-      <LocationSection
-        className="bg-zinc-900 pt-0 text-white"
-        translations={{
-          title: location('title'),
-          text: location('text'),
-          openMap: location('openMap'),
-          appointment: location('appointment'),
-          description: location('description')
-        }}
-      />
+      <LocationSection />
     </main>
   )
 }
