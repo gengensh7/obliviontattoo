@@ -367,105 +367,112 @@
     },
     "heroSection": {
       "title": "Tatuaggi a Chișinău",
-      "subtitle": "Tatuaggi in bianco e nero da 400 lei. Parla della tua idea con un tatuatore di Oblivion Tattoo prima di prenotare.",
+      "subtitle": "Tatuaggi originali, coperture di vecchi lavori e disegni personalizzati.",
+      "book": "Prenota",
+      "gallery": "Guarda i lavori",
+      "startingPrice": "Tatuaggi in bianco e nero — <price>da 400 lei</price>.",
       "heroCards": [
         {
           "title": "Stili di tatuaggio",
-          "text": "Pensa a cosa ti colpisce di un disegno. Un fiore può prendere forma con poche linee oppure mostrare ogni petalo in chiaroscuro.",
-          "list": [
-            "Il minimalismo privilegia forme semplici e pochi dettagli.",
-            "Lo stile grafico e il linework valorizzano contorni e tratteggi.",
-            "Il realismo dà risalto ai volumi e alle superfici."
-          ],
+          "text": "Dal minimalismo e dal linework alla grafica espressiva e al realismo ricco di dettagli.",
           "button": "Prenota un appuntamento"
         },
         {
           "title": "Copertura e ritocco di vecchi tatuaggi",
-          "text": "Se il soggetto ti piace ancora, puoi chiedere di ravvivare il colore o riprendere i contorni. Per una copertura, il tatuatore progetta il disegno tenendo conto delle parti più scure.",
-          "list": [
-            "Invia una foto alla luce naturale che mostri tutto il tatuaggio.",
-            "Indica le misure e spiega cosa vuoi conservare o coprire."
-          ],
+          "text": "Riprendiamo i contorni o il colore. Per valutare una copertura, invia una foto alla luce naturale e indica le dimensioni del tatuaggio.",
           "button": "Richiedi un preventivo"
         },
         {
           "title": "Disegni personalizzati",
-          "text": "Puoi portare un disegno, raccogliere immagini di riferimento o raccontare la tua idea a parole. Il disegno personalizzato è gratuito anche per le coperture.",
-          "list": [
-            "Spiega quali dettagli sono importanti per te.",
-            "Concorda con il tatuatore dimensioni e posizione."
-          ],
+          "text": "Mandaci delle immagini di riferimento o raccontaci la tua idea. Il tatuatore ti aiuta a scegliere dimensioni e posizione. Il disegno è gratuito anche per le coperture.",
           "button": "Discuti il design"
         }
       ]
     },
     "servicesSection": {
       "title": "Prezzi dei tatuaggi in bianco e nero e a colori",
-      "description": "Cerca la misura e la variante di colore nel listino. Le fasce indicate si riferiscono a tatuaggi da 5 a 20 cm. Per altre misure chiedi un preventivo.",
+      "description": "I prezzi si riferiscono a tatuaggi da 5 a 20 cm. Per altre misure chiedi un preventivo al tatuatore.",
       "cta": "Prenota ora",
-      "servicesCards": [
-        {
-          "title": "Tatuaggio black & grey",
-          "size": "5–10 cm",
-          "price": "400–1300 lei",
-          "button": "Prenota ora"
+      "currency": "lei",
+      "comparison": {
+        "size": "Misura",
+        "monochrome": "Bianco e nero",
+        "colour": "A colori",
+        "small": "5–10 cm",
+        "medium": "10–20 cm"
+      },
+      "coverUp": {
+        "title": "Cover-up e correzione",
+        "price": "da 600 lei",
+        "description": "Correggiamo tatuaggi sbiaditi o non riusciti. Valutiamo da foto e in consulenza."
+      },
+      "deposit": {
+        "title": "Acconto obbligatorio alla prenotazione",
+        "price": "300 lei",
+        "description": "Conferma la prenotazione ed è incluso nel prezzo del tatuaggio. Non è rimborsabile in caso di cancellazione."
+      },
+      "sketches": {
+        "title": "Bozzetti",
+        "price": "Gratuiti",
+        "custom": {
+          "title": "Bozzetto personalizzato",
+          "description": "Stile, composizione e posizionamento in base alle tue idee e ai tuoi riferimenti."
         },
-        {
-          "title": "Tatuaggio a colori",
-          "size": "5–10 cm",
-          "price": "500–1500 lei",
-          "button": "Prenota ora"
-        },
-        {
-          "title": "Tatuaggio black & grey",
-          "size": "10–20 cm",
-          "price": "900–3500 lei",
-          "button": "Prenota ora"
-        },
-        {
-          "title": "Tatuaggio a colori",
-          "size": "10–20 cm",
-          "price": "1000–4000 lei",
-          "button": "Prenota ora"
-        },
-        {
-          "title": "Design del bozzetto",
-          "text": "Bozzetto personalizzato in base alle tue idee e ai tuoi riferimenti: stile, composizione e posizionamento.",
-          "price": "gratuito",
-          "button": "Prenota ora"
-        },
-        {
-          "title": "Acconto obbligatorio",
-          "text": "L’acconto è incluso nel prezzo del tatuaggio e conferma la prenotazione. In caso di cancellazione non è rimborsabile.",
-          "price": "300 lei",
-          "button": "Prenota ora"
-        },
-        {
-          "title": "Cover-up / correzione del tatuaggio",
-          "text": "Cover-up professionali e correzioni di tatuaggi sbiaditi o non riusciti. Valutazione da foto e in consulenza.",
-          "price": "da 600 lei",
-          "button": "Prenota ora"
-        },
-        {
+        "coverUp": {
           "title": "Bozzetto per cover-up",
-          "text": "Bozzetto su misura per il cover-up: consideriamo il tatuaggio esistente, densità, contrasto e dimensioni.",
-          "price": "gratuito",
-          "button": "Prenota ora"
+          "description": "Consideriamo il tatuaggio esistente, la densità, il contrasto e le dimensioni."
         }
-      ]
+      }
     },
     "aboutSection": {
       "title": "Consulenza e prenotazione",
-      "paragraphs": [
-        "Scrivici su Telegram e invia qualche immagine di riferimento o una breve descrizione.",
-        "Durante la consulenza gratuita parleremo del disegno e del prezzo. Per confermare la data è richiesto un acconto di 300 lei, incluso nel totale e non rimborsabile in caso di annullamento."
-      ],
-      "advantagesTitle": "Cosa inviare per un preventivo",
-      "advantages": [
-        "Dimensioni in centimetri e zona del corpo.",
-        "Preferenze di colore e un esempio del livello di dettaglio.",
-        "Una foto del tatuaggio da ritoccare o coprire."
-      ]
+      "steps": {
+        "idea": {
+          "title": "Inviaci la tua idea",
+          "description": "Scrivi al tatuatore su Telegram, invia immagini di riferimento o descrivi il tatuaggio che desideri."
+        },
+        "consultation": {
+          "title": "Consulenza gratuita",
+          "description": "Concorda dimensioni, posizione, bozzetto e costo del tatuaggio."
+        },
+        "booking": {
+          "title": "Conferma la prenotazione",
+          "description": "Scegli una data e versa un acconto di 300 lei, incluso nel prezzo del tatuaggio. In caso di annullamento, l’acconto non è rimborsabile."
+        }
+      },
+      "panels": {
+        "idea": {
+          "title": "Cosa inviare per un preventivo",
+          "intro": "Il tatuatore valuta il lavoro in base a questi dettagli.",
+          "items": [
+            "Le dimensioni approssimative del disegno in centimetri.",
+            "La zona del corpo in cui vuoi il tatuaggio.",
+            "Le preferenze di colore e il livello di dettaglio.",
+            "Una foto del tatuaggio esistente per un ritocco o una copertura."
+          ]
+        },
+        "consultation": {
+          "title": "Di cosa parliamo in consulenza",
+          "intro": "Chiariamo i dettagli e concordiamo il prezzo.",
+          "items": [
+            "Dimensioni e leggibilità dei dettagli fini.",
+            "Posizione del disegno sul corpo.",
+            "Bozzetto, composizione e dettagli a cui tieni.",
+            "Prezzo del tatuaggio in base al bozzetto."
+          ]
+        },
+        "booking": {
+          "title": "Come confermare la prenotazione",
+          "intro": "Un acconto di <amount>300 lei</amount> riserva la data scelta.",
+          "items": [
+            "Scegli la data con il tatuatore.",
+            "Versa l’acconto per confermare la prenotazione.",
+            "L’acconto viene scalato dal prezzo totale del tatuaggio."
+          ],
+          "note": "In caso di annullamento, l’acconto non è rimborsabile."
+        }
+      },
+      "telegram": "Scrivici su Telegram"
     },
     "latestTattooSection": {
       "title": "I tatuaggi realizzati in studio",

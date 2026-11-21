@@ -484,3 +484,42 @@ button {
 .portfolio-lightbox.pswp--touch .pswp__button--arrow .pswp__icn {
   @apply inset-0 m-auto size-10;
 }
+
+/* Keep the Tattoo hero legible over the burgundy Vortex and provide a static backdrop. */
+.tattoo-hero {
+  background-image: radial-gradient(ellipse at 82% 23%, #431520 0%, #2b1920 28%, transparent 67%);
+}
+
+.tattoo-hero-vortex {
+  mask-image: radial-gradient(ellipse at 79% 42%, black 18%, transparent 76%);
+}
+
+/* Keep the Magic Bento lighting subtle and reveal its cards once on hover-capable devices. */
+.magic-bento {
+  --mb-glow-alpha: 0.67;
+  --mb-spot-alpha: 0.12;
+}
+
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .magic-bento[data-intro] > .magic-bento__cell {
+    animation: magic-bento-enter 320ms cubic-bezier(0.23, 1, 0.32, 1) var(--mb-delay, 0ms) both;
+  }
+}
+
+@keyframes magic-bento-enter {
+  from {
+    opacity: 0.85;
+    transform: translateY(6px);
+  }
+}
+
+/* Keep both consultation columns readable beneath the fixed header. */
+@custom-variant sticky-scroll (@media (min-height: 600px) and (prefers-reduced-motion: no-preference));
+
+.sticky-scroll-step {
+  top: max(112px, calc(50svh - 76px));
+}
+
+.sticky-scroll-panel {
+  top: max(104px, calc(50svh - 172px));
+}

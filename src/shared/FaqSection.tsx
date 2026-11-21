@@ -1,23 +1,28 @@
 import { Minus, Plus } from 'lucide-react'
-import { useTranslations } from 'next-intl'
+import type { ReactNode } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import FoldText from '@/shared/FoldText'
+import FoldText from './FoldText'
 
-export const FaqSection = () => {
-  const t = useTranslations('permanentPage.faq')
-  const faq = t.raw('items') as { question: string; answer: string }[]
+type FaqSectionProps = {
+  titleId: string
+  title: string
+  items: { question: string; answer: string }[]
+  className?: string
+  children?: ReactNode
+}
 
+export function FaqSection({ titleId, title, items, className = 'pb-20', children }: FaqSectionProps) {
   return (
-    <section aria-labelledby="permanent-faq-title" className="bg-zinc-900 pb-20">
+    <section aria-labelledby={titleId} className={`bg-zinc-900 ${className}`}>
       <div className="container grid items-start gap-6 text-left lg:grid-cols-12 lg:gap-x-10">
         <h2
-          id="permanent-faq-title"
+          id={titleId}
           className="text-3xl leading-tight font-bold tracking-tight text-balance text-white lg:col-span-4 lg:max-w-xs lg:pt-3 lg:text-4xl"
         >
-          <FoldText text={t('title')} />
+          <FoldText text={title} />
         </h2>
         <Accordion type="single" collapsible defaultValue="item-1" className="border-t border-zinc-700 lg:col-span-8">
-          {faq.map(({ question, answer }, index) => (
+          {items.map(({ question, answer }, index) => (
             <AccordionItem key={question} value={`item-${index + 1}`} className="border-zinc-700">
               <AccordionTrigger className="text-base font-semibold text-white hover:text-zinc-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-solid! focus-visible:outline-rose-200 sm:text-lg">
                 <FoldText text={question} subtle />
@@ -30,6 +35,7 @@ export const FaqSection = () => {
             </AccordionItem>
           ))}
         </Accordion>
+        {children && <div className="lg:col-span-8 lg:col-start-5">{children}</div>}
       </div>
     </section>
   )

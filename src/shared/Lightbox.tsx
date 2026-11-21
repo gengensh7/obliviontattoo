@@ -1,6 +1,7 @@
 'use client'
 
 import type PhotoSwipe from 'photoswipe'
+import type { PhotoSwipeEventsMap } from 'photoswipe'
 import { useEffect, useRef } from 'react'
 
 export type LightboxLabels = {
@@ -16,9 +17,10 @@ type Props = {
   gallery?: string
   labels?: LightboxLabels
   mainClass?: string
+  fitOriginal?: boolean
 }
 
-const Lightbox = ({ gallery, labels, mainClass, children }: Props) => {
+const Lightbox = ({ gallery, labels, mainClass, fitOriginal, children }: Props) => {
   const viewer = useRef<PhotoSwipe | null>(null)
 
   useEffect(() => () => viewer.current?.destroy(), [])
@@ -46,6 +48,7 @@ const Lightbox = ({ gallery, labels, mainClass, children }: Props) => {
         children: 'a',
         index: items.indexOf(link),
         mainClass,
+        ...(fitOriginal && { showHideAnimationType: 'fade' }),
         ...(labels && {
           closeTitle: labels.close,
           arrowPrevTitle: labels.previous,
@@ -54,6 +57,23 @@ const Lightbox = ({ gallery, labels, mainClass, children }: Props) => {
           errorMsg: labels.error
         })
       })
+      if (fitOriginal) {
+        // Remote originals can have different proportions from their thumbnails.
+        const resizeToOriginal = ({ content }: PhotoSwipeEventsMap['contentAppend']) => {
+          const { element, slide } = content
+          if (!(element instanceof HTMLImageElement) || !element.naturalWidth || !slide) return
+
+          const { naturalWidth, naturalHeight } = element
+          if (slide.width === naturalWidth && slide.height === naturalHeight) return
+
+          content.width = slide.width = naturalWidth
+          content.height = slide.height = naturalHeight
+          slide.resize()
+        }
+
+        instance.on('loadComplete', resizeToOriginal)
+        instance.on('contentAppend', resizeToOriginal)
+      }
       viewer.current = instance
       instance.on('destroy', () => {
         viewer.current = null

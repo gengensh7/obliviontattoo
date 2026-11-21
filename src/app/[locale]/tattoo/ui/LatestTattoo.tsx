@@ -1,59 +1,94 @@
+import Image, { getImageProps } from 'next/image'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { CtaLink } from '@/components/ui/cta-link'
+import { Skeleton } from '@/components/ui/skeleton'
 import { getPathname } from '@/i18n/navigation'
 import { getLatestTattooImages } from '@/lib/cachedPrisma'
-import Lightbox from '@/shared/Lightbox'
-import { Skeleton } from '@/components/ui/skeleton'
-import { LatestTattooCard } from './LatestTattooCard'
+import { SUPABASE_S3_URL } from '@/lib/config'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
+import { TattooCircularGallery } from './TattooCircularGallery'
+
+const titleId = 'tattoo-portfolio-title'
 
 export const LatestTattoo = async () => {
-  const locale = await getLocale()
-  const t = await getTranslations('tattooPage.latestTattooSection')
+  const [locale, t, common, images] = await Promise.all([
+    getLocale(),
+    getTranslations('tattooPage.latestTattooSection'),
+    getTranslations('homePage.portfolioSection'),
+    getLatestTattooImages()
+  ])
 
-  const images = await getLatestTattooImages()
+  const photos = images.map(({ id, url, alt }) => ({ id, src: `${SUPABASE_S3_URL}/${url}`, alt }))
 
   return (
-    <section className="bg-zinc-900">
-      <div className="container flex flex-col gap-12">
-        <div
-          className="flex flex-col items-center gap-4 text-center"
-        >
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">{t('title')}</h2>
-          <p className="max-w-3xl text-zinc-300">{t('description')}</p>
-        </div>
-        <Lightbox gallery="home-portfolio">
-          <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-            {images.map((photo) => (
-              <div
-                key={photo.id}
-                className="flex flex-col gap-12"
-              >
-                <LatestTattooCard src={photo.url} alt={photo.alt} />
-              </div>
-            ))}
+    <section aria-labelledby={titleId} className="bg-linear-to-b from-zinc-950 to-zinc-900 text-white">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container flex flex-col gap-7 pt-16 pb-12 lg:gap-10 lg:pt-20">
+        <div className="flex flex-col items-start gap-5 md:flex-row md:items-end md:justify-between md:gap-10">
+          <div className="flex flex-col gap-3 lg:basis-3/5">
+            <h2 id={titleId} className="text-3xl font-bold tracking-tight sm:text-4xl xl:text-5xl">
+              <FoldText text={t('title')} />
+            </h2>
+            <p className="text-pretty text-zinc-300">{t('description')}</p>
           </div>
-        </Lightbox>
-        <CtaLink
-          href={getPathname({ locale, href: '/gallery' })}
-          data-gtm="tattoo-view-gallery"
-          className="mx-auto w-fit"
-        >
-          {t('cta')}
-        </CtaLink>
-      </div>
+          <CtaLink href={getPathname({ locale, href: '/gallery' })} data-gtm="tattoo-view-gallery" className="shrink-0">
+            {t('cta')}
+          </CtaLink>
+        </div>
+        {photos.length > 0 && (
+          <TattooCircularGallery
+            items={photos.map(({ src, alt }) => ({
+              image: getImageProps({ src, alt, width: 320, height: 427, quality: 70 }).props.src,
+              alt
+            }))}
+            titleId={titleId}
+            labels={{
+              close: common('close'),
+              previous: common('previous'),
+              next: common('next'),
+              zoom: common('zoom'),
+              error: common('error')
+            }}
+          >
+            {photos.map(({ id, src, alt }) => (
+              <a
+                key={id}
+                href={src}
+                aria-label={alt}
+                data-gtm="tattoo-image-open"
+                data-pswp-width={1200}
+                data-pswp-height={1600}
+                className="relative block h-4/5 w-56 shrink-0 snap-center overflow-hidden rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red sm:w-64 lg:w-80"
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  sizes="(min-width: 1024px) 320px, (min-width: 640px) 256px, 224px"
+                  quality={70}
+                  fetchPriority="low"
+                  className="object-cover"
+                />
+              </a>
+            ))}
+          </TattooCircularGallery>
+        )}
+      </FadeContent>
     </section>
   )
 }
 
 export const LatestTattooFallback = () => (
-  <section className="bg-zinc-900" aria-hidden="true">
-    <div className="container flex flex-col gap-12">
-      <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-4">
-        <Skeleton className="h-10 w-72 bg-zinc-800" />
-        <Skeleton className="h-5 w-full max-w-xl bg-zinc-800" />
+  <section className="bg-linear-to-b from-zinc-950 to-zinc-900" aria-hidden="true">
+    <div className="container flex flex-col gap-7 pt-16 pb-12 lg:gap-10 lg:pt-20">
+      <div className="flex flex-col gap-3">
+        <Skeleton className="h-10 w-4/5 bg-zinc-800 md:w-1/2" />
+        <Skeleton className="h-6 w-full bg-zinc-800 md:w-3/5" />
       </div>
-      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-        {[...Array(8)].map((_, i) => <Skeleton className="h-125 w-full bg-zinc-800" key={i} />)}
+      <div className="flex h-96 items-center justify-center gap-5 overflow-hidden sm:h-112 lg:h-134 xl:h-148">
+        <Skeleton className="hidden h-4/5 w-64 shrink-0 rounded-xl bg-zinc-800 sm:block lg:w-80" />
+        <Skeleton className="h-4/5 w-56 shrink-0 rounded-xl bg-zinc-800 sm:w-64 lg:w-80" />
+        <Skeleton className="hidden h-4/5 w-64 shrink-0 rounded-xl bg-zinc-800 sm:block lg:w-80" />
       </div>
     </div>
   </section>

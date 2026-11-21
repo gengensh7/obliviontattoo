@@ -367,105 +367,112 @@
     },
     "heroSection": {
       "title": "Tatuaje în Chișinău",
-      "subtitle": "Tatuaje alb-negru de la 400 de lei. Discută desenul cu un artist Oblivion Tattoo înainte de programare.",
+      "subtitle": "Tatuaje originale, acoperirea lucrărilor vechi și schițe personalizate.",
+      "book": "Programează-te",
+      "gallery": "Vezi lucrările",
+      "startingPrice": "Tatuaje alb-negru — <price>de la 400 de lei</price>.",
       "heroCards": [
         {
           "title": "Stiluri de tatuaje",
-          "text": "Gândește-te ce îți place la un desen. O floare poate fi redată prin câteva linii sau prin umbre care scot în evidență fiecare petală.",
-          "list": [
-            "Minimalismul folosește forme simple și puține detalii.",
-            "Grafica și stilul linework pun accent pe contur și hașură.",
-            "Realismul redă volumul și textura."
-          ],
+          "text": "De la minimalism și linework la grafică expresivă și realism în detaliu.",
           "button": "Programează-te"
         },
         {
           "title": "Acoperirea și corectarea tatuajelor vechi",
-          "text": "Dacă îți place în continuare desenul, poți discuta cu artistul despre refacerea conturului sau a culorii. Pentru acoperire, noua compoziție ține cont de zonele întunecate ale tatuajului vechi.",
-          "list": [
-            "Trimite o fotografie la lumină naturală, cu întregul desen.",
-            "Indică dimensiunea și ce ai vrea să păstrezi sau să acoperi."
-          ],
+          "text": "Refacem conturul sau culoarea. Pentru a evalua o acoperire, trimite o fotografie la lumină naturală și dimensiunile tatuajului.",
           "button": "Cere o ofertă"
         },
         {
           "title": "Schițe personalizate",
-          "text": "Poți aduce un desen, câteva imagini de referință sau ne poți povesti ideea. Schița este gratuită, inclusiv pentru acoperiri.",
-          "list": [
-            "Spune-i artistului ce detalii contează pentru tine.",
-            "Stabiliți împreună dimensiunea și amplasarea."
-          ],
+          "text": "Trimite imagini de referință sau povestește-ne ideea. Artistul te ajută să alegi dimensiunea și amplasarea. Schița e gratuită, inclusiv pentru acoperiri.",
           "button": "Discută designul"
         }
       ]
     },
     "servicesSection": {
       "title": "Prețuri pentru tatuaje alb-negru și color",
-      "description": "Alege dimensiunea și varianta de culoare din lista de mai jos. Intervalele sunt pentru tatuaje de 5–20 cm. Pentru alte dimensiuni, cere o estimare.",
+      "description": "Prețurile sunt pentru tatuaje de 5–20 cm. Pentru alte dimensiuni, cere o estimare de la artist.",
       "cta": "Programează-te",
-      "servicesCards": [
-        {
-          "title": "Tatuaj black & grey",
-          "size": "5–10 cm",
-          "price": "400–1300 lei",
-          "button": "Programează-te"
+      "currency": "lei",
+      "comparison": {
+        "size": "Mărime",
+        "monochrome": "Alb-negru",
+        "colour": "Color",
+        "small": "5–10 cm",
+        "medium": "10–20 cm"
+      },
+      "coverUp": {
+        "title": "Cover-up și corecție",
+        "price": "de la 600 lei",
+        "description": "Corectăm tatuaje decolorate sau nereușite. Evaluăm după fotografii și la consultație."
+      },
+      "deposit": {
+        "title": "Avans obligatoriu la programare",
+        "price": "300 lei",
+        "description": "Confirmă programarea și este inclus în prețul tatuajului. Nu se rambursează în caz de anulare."
+      },
+      "sketches": {
+        "title": "Schițe",
+        "price": "Gratuite",
+        "custom": {
+          "title": "Schiță personalizată",
+          "description": "Stil, compoziție și amplasare în funcție de ideile și referințele tale."
         },
-        {
-          "title": "Tatuaj color",
-          "size": "5–10 cm",
-          "price": "500–1500 lei",
-          "button": "Programează-te"
-        },
-        {
-          "title": "Tatuaj black & grey",
-          "size": "10–20 cm",
-          "price": "900–3500 lei",
-          "button": "Programează-te"
-        },
-        {
-          "title": "Tatuaj color",
-          "size": "10–20 cm",
-          "price": "1000–4000 lei",
-          "button": "Programează-te"
-        },
-        {
-          "title": "Design de schiță",
-          "text": "Schiță personalizată după ideile și referințele tale: stil, compoziție și amplasare.",
-          "price": "gratuit",
-          "button": "Programează-te"
-        },
-        {
-          "title": "Avans obligatoriu la comandă",
-          "text": "Avansul este inclus în prețul tatuajului și confirmă programarea. În caz de anulare, nu se rambursează.",
-          "price": "300 lei",
-          "button": "Programează-te"
-        },
-        {
-          "title": "Cover-up / corecție tatuaj",
-          "text": "Cover-up profesional și corectarea tatuajelor decolorate sau nereușite. Evaluare după foto și la consultație.",
-          "price": "de la 600 lei",
-          "button": "Programează-te"
-        },
-        {
+        "coverUp": {
           "title": "Schiță pentru cover-up",
-          "text": "Schiță adaptată pentru cover-up: ținem cont de tatuajul vechi, densitate, contrast și dimensiune.",
-          "price": "gratuit",
-          "button": "Programează-te"
+          "description": "Ținem cont de tatuajul vechi, densitate, contrast și dimensiune."
         }
-      ]
+      }
     },
     "aboutSection": {
       "title": "Consultație și programare",
-      "paragraphs": [
-        "Scrie-i artistului pe Telegram și trimite un exemplu de tatuaj sau descrie ideea în câteva cuvinte.",
-        "La consultația gratuită discutați schița și prețul. Programarea se confirmă cu un avans de 300 de lei, inclus în prețul final. În caz de anulare, avansul nu se restituie."
-      ],
-      "advantagesTitle": "Ce să trimiți pentru estimare",
-      "advantages": [
-        "Dimensiunea în centimetri și zona corpului.",
-        "Culorile preferate și o imagine care arată nivelul de detaliu dorit.",
-        "O fotografie a tatuajului existent pentru corectare sau acoperire."
-      ]
+      "steps": {
+        "idea": {
+          "title": "Trimite-ne ideea",
+          "description": "Scrie-i artistului pe Telegram, trimite imagini de referință sau descrie tatuajul dorit."
+        },
+        "consultation": {
+          "title": "Consultație gratuită",
+          "description": "Discută despre dimensiune, amplasare, schiță și costul tatuajului."
+        },
+        "booking": {
+          "title": "Confirmă programarea",
+          "description": "Alege o dată și achită un avans de 300 de lei, inclus în prețul tatuajului. În caz de anulare, avansul nu se restituie."
+        }
+      },
+      "panels": {
+        "idea": {
+          "title": "Ce să trimiți pentru o estimare",
+          "intro": "Artistul estimează lucrarea pe baza acestor detalii.",
+          "items": [
+            "Dimensiunea aproximativă a desenului, în centimetri.",
+            "Zona în care vrei să faci tatuajul.",
+            "Preferințele de culoare și nivelul de detaliu dorit.",
+            "O fotografie a tatuajului existent, pentru corectare sau acoperire."
+          ]
+        },
+        "consultation": {
+          "title": "Ce discutăm la consultație",
+          "intro": "Stabilim împreună detaliile și prețul.",
+          "items": [
+            "Dimensiunea și vizibilitatea detaliilor fine.",
+            "Amplasarea desenului pe corp.",
+            "Schița, compoziția și detaliile care contează pentru tine.",
+            "Prețul tatuajului în funcție de schiță."
+          ]
+        },
+        "booking": {
+          "title": "Cum confirmi programarea",
+          "intro": "Un avans de <amount>300 de lei</amount> rezervă data aleasă.",
+          "items": [
+            "Alege data cu artistul.",
+            "Achită avansul pentru a confirma programarea.",
+            "Avansul se scade din prețul total al tatuajului."
+          ],
+          "note": "În caz de anulare, avansul nu se restituie."
+        }
+      },
+      "telegram": "Scrie-ne pe Telegram"
     },
     "latestTattooSection": {
       "title": "Tatuaje realizate de artiștii noștri",

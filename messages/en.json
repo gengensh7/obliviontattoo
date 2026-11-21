@@ -367,105 +367,112 @@
     },
     "heroSection": {
       "title": "Tattoos in Chișinău",
-      "subtitle": "Black and grey tattoos from 400 MDL. Discuss your idea with an Oblivion Tattoo artist before booking.",
+      "subtitle": "Original tattoos, cover-ups for older work and custom designs.",
+      "book": "Book now",
+      "gallery": "View our work",
+      "startingPrice": "Black and grey tattoos — <price>from 400 MDL</price>.",
       "heroCards": [
         {
           "title": "Tattoo styles",
-          "text": "Think about what draws you to a picture. A flower can be a simple outline or a detailed study of light and shadow.",
-          "list": [
-            "Minimalism uses simple shapes and few details.",
-            "Graphic tattoos and linework emphasise contours and hatching.",
-            "Realism brings out texture and depth."
-          ],
+          "text": "From understated minimalism and linework to expressive graphic tattoos and detailed realism.",
           "button": "Book an appointment"
         },
         {
           "title": "Cover-ups and touch-ups",
-          "text": "If you still like your tattoo, ask about refreshing its lines or colour. For a cover-up, the artist plans the new design around the darkest areas of the old one.",
-          "list": [
-            "Send a photo in daylight showing the entire tattoo.",
-            "Include its size and explain what you want to keep or cover."
-          ],
+          "text": "Refresh the outlines or colour. For a cover-up assessment, send a daylight photo and include the size of your tattoo.",
           "button": "Get a quote"
         },
         {
           "title": "Custom tattoo designs",
-          "text": "Bring a drawing, share a few references or describe your idea. Custom designs, including cover-up designs, are free.",
-          "list": [
-            "Tell the artist which details matter to you.",
-            "Agree on the size and placement together."
-          ],
+          "text": "Send references or tell us your idea. Your artist will help you choose the size and placement. Custom designs are free, including for cover-ups.",
           "button": "Discuss a design"
         }
       ]
     },
     "servicesSection": {
       "title": "Black and grey and colour tattoo prices",
-      "description": "Find your size and colour option below. The ranges apply to tattoos measuring 5–20 cm. Ask the artist for an estimate for other sizes.",
+      "description": "Prices apply to tattoos measuring 5–20 cm. Ask the artist for an estimate for other sizes.",
       "cta": "Book now",
-      "servicesCards": [
-        {
-          "title": "Black & grey tattoo",
-          "size": "5–10 cm",
-          "price": "400–1300 lei",
-          "button": "Book now"
+      "currency": "lei",
+      "comparison": {
+        "size": "Size",
+        "monochrome": "Black & grey",
+        "colour": "Colour",
+        "small": "5–10 cm",
+        "medium": "10–20 cm"
+      },
+      "coverUp": {
+        "title": "Cover-up and correction",
+        "price": "from 600 lei",
+        "description": "We correct faded or poorly executed tattoos. We assess them from photos and during a consultation."
+      },
+      "deposit": {
+        "title": "Required booking deposit",
+        "price": "300 lei",
+        "description": "Confirms your appointment and goes towards the tattoo price. Non-refundable if you cancel."
+      },
+      "sketches": {
+        "title": "Sketches",
+        "price": "Free",
+        "custom": {
+          "title": "Custom sketch",
+          "description": "Style, composition and placement based on your ideas and references."
         },
-        {
-          "title": "Color tattoo",
-          "size": "5–10 cm",
-          "price": "500–1500 lei",
-          "button": "Book now"
-        },
-        {
-          "title": "Black & grey tattoo",
-          "size": "10–20 cm",
-          "price": "900–3500 lei",
-          "button": "Book now"
-        },
-        {
-          "title": "Color tattoo",
-          "size": "10–20 cm",
-          "price": "1000–4000 lei",
-          "button": "Book now"
-        },
-        {
-          "title": "Design sketch",
-          "text": "A custom sketch based on your ideas and references: style, composition and placement.",
-          "price": "free",
-          "button": "Book now"
-        },
-        {
-          "title": "Mandatory deposit",
-          "text": "The deposit is part of the tattoo price and confirms your booking. In case of cancellation, it is non-refundable.",
-          "price": "300 lei",
-          "button": "Book now"
-        },
-        {
-          "title": "Cover-up / tattoo correction",
-          "text": "Professional cover-ups and correction of faded or unsuccessful tattoos. Assessment by photo and during consultation.",
-          "price": "from 600 lei",
-          "button": "Book now"
-        },
-        {
-          "title": "Cover-up design sketch",
-          "text": "A sketch tailored to the specific cover-up: we consider the old tattoo, density, contrast and size.",
-          "price": "free",
-          "button": "Book now"
+        "coverUp": {
+          "title": "Cover-up sketch",
+          "description": "We consider the existing tattoo, density, contrast and size."
         }
-      ]
+      }
     },
     "aboutSection": {
       "title": "Consultation and booking",
-      "paragraphs": [
-        "Message the artist on Telegram with a drawing or a description of your idea.",
-        "Discuss the design and price at a free consultation. A 300 MDL deposit secures the date, counts towards the total and is non-refundable if you cancel."
-      ],
-      "advantagesTitle": "What to send for an estimate",
-      "advantages": [
-        "Approximate size in centimetres and placement.",
-        "Colour preferences and a reference showing the level of detail.",
-        "A photo of the existing tattoo for a touch-up or cover-up."
-      ]
+      "steps": {
+        "idea": {
+          "title": "Send your idea",
+          "description": "Message the artist on Telegram with reference images or a description of the tattoo you want."
+        },
+        "consultation": {
+          "title": "Free consultation",
+          "description": "Discuss the size, placement, design and price of your tattoo."
+        },
+        "booking": {
+          "title": "Confirm your booking",
+          "description": "Choose a date and pay a 300 MDL deposit, which goes towards the cost of your tattoo. The deposit is non-refundable if you cancel."
+        }
+      },
+      "panels": {
+        "idea": {
+          "title": "What to send for an estimate",
+          "intro": "Your artist uses these details to estimate the work.",
+          "items": [
+            "The approximate size of the design in centimetres.",
+            "Where you want the tattoo on your body.",
+            "Your preferences for colour and level of detail.",
+            "A photo of the existing tattoo for a touch-up or cover-up."
+          ]
+        },
+        "consultation": {
+          "title": "What we discuss at the consultation",
+          "intro": "We’ll work through the details and agree on the price.",
+          "items": [
+            "Size and clarity of fine details.",
+            "Where the design sits on your body.",
+            "Design, composition and details that matter to you.",
+            "Price based on the agreed design."
+          ]
+        },
+        "booking": {
+          "title": "How to confirm your booking",
+          "intro": "A <amount>300 MDL</amount> deposit secures your chosen date.",
+          "items": [
+            "Choose a date with your artist.",
+            "Pay the deposit to confirm your booking.",
+            "The deposit counts towards the tattoo price."
+          ],
+          "note": "The deposit is non-refundable if you cancel."
+        }
+      },
+      "telegram": "Message us on Telegram"
     },
     "latestTattooSection": {
       "title": "Tattoos by our artists",

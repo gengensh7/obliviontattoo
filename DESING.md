@@ -58,6 +58,38 @@ proportions and open in the shared PhotoSwipe lightbox. The gallery link sits
 with the section introduction. Reduced motion skips the scroll and reflow
 animations.
 
+The `/tattoo` hero fills at least the viewport height and leads with a large
+Montserrat headline, standard red CTA links for booking and the gallery, and
+the starting price. The styles card pairs a studio
+photograph with a dark glass surface and spans two rows beside the cover-up and
+custom-design cards. All three cards stack on phones. A muted burgundy Aceternity
+Vortex sits behind the composition and pauses offscreen. Phones and visitors
+with reduced motion see the static burgundy background.
+As on `/permanent`, Fade Content brings the hero into focus on mount and reveals
+the remaining sections once on scroll. Fold Text opens headings, including the
+card titles. Reduced motion shows the content immediately.
+
+The `/tattoo` price section uses a graphite React Bits Magic Bento grid. A table
+compares the four prices by size and colour. Cover-up and booking deposit cards
+sit beside it on desktop, with both free sketch options grouped below. The main
+booking link follows the grid. Below the medium breakpoint, the cards stack and
+each size groups its two labelled prices side by side. Red pointer lighting
+runs only on devices with a fine pointer and when reduced motion is off.
+
+The `/tattoo` consultation uses Aceternity Sticky Scroll Reveal. Each numbered
+step holds its copy in view within its own scroll interval. The right panel
+updates its step count, heading and details while the Telegram link stays in its
+footer. On narrow or short screens and with reduced motion, the steps and
+Telegram link follow in normal reading order.
+
+The `/tattoo` portfolio uses React Bits Circular Gallery with a shallow arc
+and optimized previews of the eight portfolio photographs. Visitors can drag,
+swipe, use a horizontal wheel gesture, or browse with the arrow controls.
+Photographs open at their original proportions in the shared PhotoSwipe lightbox.
+When WebGL is unavailable, the photos remain accessible in a native snap-scrolling
+row. The sections share a zinc-950 base which gradually returns to zinc-900
+toward the FAQ.
+
 The `/permanent` hero pairs a Montserrat headline, introduction, and the standard
 red booking link with an asymmetric composition of the studio's work. The eyebrow
 portrait leads, with a narrower lip crop above and a wider eyelid crop overlapping
