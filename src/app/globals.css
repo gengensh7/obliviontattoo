@@ -196,101 +196,13 @@ button {
   }
 }
 
-/* The permanent hero backdrop keeps the light concentrated away from the copy. */
-.permanent-hero-backdrop {
-  background: radial-gradient(ellipse at 50% 66%, rgb(102 43 54 / 34%), transparent 68%);
-}
-
-.permanent-hero-beams {
-  mask-image: linear-gradient(165deg, transparent 15%, rgb(0 0 0 / 68%) 48%, black 73%, transparent 100%);
-}
-
-.permanent-hero .cta-link::before {
-  @apply hidden;
-}
-
-/* Permanent hero light travels along the curved background paths. */
-@media (prefers-reduced-motion: no-preference) {
-  .permanent-hero-beam {
-    @apply visible;
-    stroke-dasharray: 8 112;
-    animation: permanent-hero-beam-travel 18s linear -3s infinite paused;
-  }
-
-  .permanent-hero-beams g:nth-child(3) .permanent-hero-beam {
-    animation-delay: -9s;
-  }
-
-  .permanent-hero-beams g:nth-child(5) .permanent-hero-beam {
-    animation-delay: -14s;
-  }
-
-  .permanent-hero[data-motion-visible] .permanent-hero-beam {
-    animation-play-state: running;
-  }
-}
-
-@keyframes permanent-hero-beam-travel {
-  from {
-    stroke-dashoffset: 8;
-  }
-  to {
-    stroke-dashoffset: -112;
-  }
-}
-
-/* Card 3D keeps the reference camera distance and composes two offset tilt axes. */
+/* Card 3D keeps the reference camera distance. */
 .card-3d {
   perspective: 1000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .permanent-hero-services > li:nth-child(2) {
-    --permanent-card-phase: -3.3s;
-  }
-
-  .permanent-hero-services > li:nth-child(3) {
-    --permanent-card-phase: -6.6s;
-  }
-
-  .permanent-hero-card {
-    animation: permanent-card-tilt-x 10s ease-in-out infinite paused,
-      permanent-card-tilt-y 10s ease-in-out infinite paused;
-    animation-delay: var(--permanent-card-phase, 0s), calc(var(--permanent-card-phase, 0s) - 2.5s);
-    animation-composition: replace, add;
-  }
-
-  .permanent-hero[data-motion-visible] .permanent-hero-card {
-    animation-play-state: running;
-  }
-}
-
-@keyframes permanent-card-tilt-x {
-  0%, 100% {
-    transform: rotateX(-3deg);
-  }
-
-  50% {
-    transform: rotateX(3deg);
-  }
-}
-
-@keyframes permanent-card-tilt-y {
-  0%, 100% {
-    transform: rotateY(-5deg);
-  }
-
-  50% {
-    transform: rotateY(5deg);
-  }
-}
-
-/* Keep the full lip contour in the landscape crop of the portrait photo. */
-.permanent-hero-services [data-service='lips'] img {
-  object-position: center 33%;
-}
-
 /* Fold Text shades each word along its top hinge as it opens. */
+.fold-text,
 .fold-text-segment,
 .fold-text-piece {
   font-family: inherit;
@@ -311,7 +223,8 @@ button {
 /* Gradient Text clips its animated color to the text. */
 @supports (background-clip: text) {
   @media (forced-colors: none) {
-    .gradient-text {
+    .gradient-text:not(:has(.fold-text-piece)),
+    .gradient-text .fold-text-piece {
       @apply bg-clip-text text-transparent;
       background-image: var(--gt-gradient);
     }
@@ -326,7 +239,161 @@ button {
     }
   }
 
-  body:has(> div[hidden] > main > .permanent-hero) > main:has(> .container [data-slot='skeleton']) {
+  body:has(> div[hidden] > main > .permanent-hero) > main[aria-busy='true'] {
     @apply hidden;
+  }
+}
+
+/* Keep the lip contour in the tighter service photo crop. */
+.permanent-service-card#lips .permanent-service-photo {
+  object-position: center 36%;
+}
+
+/* Reserve decorative motion in the service cards for the 3D layers. */
+.permanent-service-card .cta-link::before {
+  content: none;
+}
+
+/* Offset the two tilt axes and each card's phase for a continuous, shallow turn. */
+@media (prefers-reduced-motion: no-preference) {
+  .permanent-service-card:nth-child(2) {
+    --permanent-service-phase: -3.3s;
+  }
+
+  .permanent-service-card:nth-child(3) {
+    --permanent-service-phase: -6.6s;
+  }
+
+  .permanent-service-card-body {
+    animation: permanent-service-tilt-x 10s ease-in-out infinite,
+      permanent-service-tilt-y 10s ease-in-out infinite;
+    animation-delay: var(--permanent-service-phase, 0s), calc(var(--permanent-service-phase, 0s) - 2.5s);
+    animation-composition: replace, add;
+  }
+
+  .permanent-service-card:has(:focus-visible) .permanent-service-card-body {
+    animation-play-state: paused;
+  }
+}
+
+/* Alternate each axis around zero without shifting the card's layout. */
+@keyframes permanent-service-tilt-x {
+  0%, 100% {
+    transform: rotateX(-2deg);
+  }
+
+  50% {
+    transform: rotateX(2deg);
+  }
+}
+
+@keyframes permanent-service-tilt-y {
+  0%, 100% {
+    transform: rotateY(-2.5deg);
+  }
+
+  50% {
+    transform: rotateY(2.5deg);
+  }
+}
+
+/* Share the permanent hero's composition with its loading state. */
+.permanent-hero-shell {
+  @apply grid min-h-svh items-center bg-zinc-950 pt-28 pb-10 lg:pt-32 lg:pb-14;
+}
+
+.permanent-hero-layout {
+  @apply grid items-center gap-7 sm:gap-9 lg:grid-cols-12 lg:gap-6 xl:gap-8;
+}
+
+.permanent-hero-title {
+  font-size: min(9.4vw, 40px);
+  line-height: 1.06;
+
+  @variant sm {
+    @apply text-5xl/none;
+  }
+
+  @variant xl {
+    @apply text-6xl/none;
+  }
+}
+
+/* Stagger the two detail photos around the main portrait. */
+.permanent-hero-services {
+  @apply isolate grid min-w-0 grid-cols-12 gap-2 sm:h-104 sm:grid-rows-12 sm:gap-3 md:h-112 lg:col-span-7 lg:h-128 xl:h-148 2xl:h-160;
+}
+
+.permanent-hero-services > li {
+  @apply relative grid min-w-0;
+}
+
+.permanent-hero-services > [data-service='brows'] {
+  @apply col-span-12 aspect-16/10 sm:col-start-1 sm:col-end-9 sm:row-start-2 sm:row-end-11 sm:aspect-auto;
+}
+
+.permanent-hero-services > [data-service='lips'] {
+  @apply col-span-6 min-h-44 sm:col-start-9 sm:col-end-13 sm:row-start-1 sm:row-end-7 sm:min-h-0;
+}
+
+.permanent-hero-services > [data-service='eyelids'] {
+  @apply col-span-6 min-h-40 self-end sm:col-start-8 sm:col-end-13 sm:row-start-7 sm:row-end-13 sm:min-h-0 sm:self-stretch;
+}
+
+/* Keep the featured details above the captions in short phone crops. */
+.permanent-hero-services [data-service='brows'] img,
+.permanent-hero-services [data-service='eyelids'] img {
+  object-position: center 75%;
+
+  @variant sm {
+    object-position: center;
+  }
+}
+
+.permanent-hero-services [data-service='lips'] img {
+  object-position: center 30%;
+}
+
+.permanent-hero-services [data-service='brows'] .permanent-hero-caption {
+  @apply sm:pr-16 lg:pr-20 xl:pr-24;
+}
+
+@media (forced-colors: active) {
+  .permanent-hero-caption {
+    background: Canvas;
+  }
+}
+
+/* Use the browser's anchor navigation and the service cards' scroll margin. */
+@media (prefers-reduced-motion: no-preference) {
+  html:has(.permanent-service-card:target) {
+    @apply scroll-smooth;
+  }
+}
+
+/* Keep the muted rose light behind the hero photographs. */
+.permanent-hero-backdrop {
+  background: radial-gradient(ellipse at 71% 63%, rgb(109 46 65 / 38%), transparent 64%);
+}
+
+.permanent-hero .cta-link::before {
+  @apply hidden;
+}
+
+/* Collapse accordion panels while keeping their content in the server HTML. */
+[data-slot='accordion-content'] {
+  grid-template-rows: 1fr;
+}
+
+[data-slot='accordion-content'][data-state='closed'] {
+  grid-template-rows: 0fr;
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-slot='accordion-content'] {
+    transition: grid-template-rows cubic-bezier(0.23, 1, 0.32, 1), visibility;
+    /* Radix temporarily resets the inline duration while measuring the panel. */
+    transition-duration: 200ms !important;
   }
 }

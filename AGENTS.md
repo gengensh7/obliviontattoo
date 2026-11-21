@@ -86,6 +86,18 @@ Leave generated files untouched and keep migrations within the scope of the task
 - Use Impeccable when improving visual design.
 - Maintain consistency with the OblivionTattoo design system.
 
+### Typography & Editorial Layout
+
+Judge the rendered composition as a whole. Text alignment is one design decision within the layout.
+
+- Left-align body copy by default. Choose heading alignment and text placement to suit the composition. Use centering deliberately when it improves balance, hierarchy, or the reading order.
+- Give each section a clear focal point and a deliberate hierarchy. Balance the visual weight of text, imagery, and negative space, and give generous open areas a compositional purpose.
+- Use asymmetric grids, split layouts, editorial compositions, and unconventional image placement where they support the content and reading order.
+- Shape typography with heading scale, column width, line breaks, and visual rhythm. Check real copy and long translations at desktop and mobile widths.
+- Vary section structure according to the content. Repeated layouts work best for content with comparable roles and visual weight.
+- Recompose split layouts for smaller screens and preserve their hierarchy and focal points as elements reflow.
+- When a layout feels weak, address its structure, proportions, and relationship between text and imagery. Alignment, padding, and gap adjustments alone are insufficient.
+
 ### Code simplicity
 
 - Prefer the simplest implementation that satisfies the requirements.
@@ -94,6 +106,22 @@ Leave generated files untouched and keep migrations within the scope of the task
 - Do not introduce additional state, effects, refs, or animation controllers without a clear need.
 - Prioritize maintainability and readability over clever solutions.
 - Animation complexity must be justified by visible UX improvements.
+
+## Third-party component integration
+
+When integrating components from React Bits, 21st.dev, Magic UI, Aceternity UI or other UI libraries:
+
+- Inspect the original source code, dependencies and demo before implementation.
+- Preserve the original visual effects and animation behavior unless explicitly requested otherwise.
+- Adapt components to the existing Next.js, TypeScript and Tailwind architecture.
+- Follow all project conventions defined in AGENTS.md.
+- Never overwrite existing components without checking their usage.
+- Install only necessary dependencies.
+- Avoid overengineering and unnecessary React state.
+- Preserve accessibility, responsive behavior and reduced-motion support.
+- Do not modify unrelated sections or components.
+- Verify the result in a browser, not just through TypeScript or build checks.
+- If the component is incompatible with the project, explain the issue instead of silently replacing it with a simplified imitation.
 
 ## Localization and Routing
 

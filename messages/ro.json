@@ -211,7 +211,8 @@
         "title": "Contacte",
         "text": "Disponibili pe Telegram, WhatsApp și Viber pentru consultații și programări."
       },
-      "social": "Vizitează paginile noastre"
+      "social": "Vizitează paginile noastre",
+      "bookingCta": "Scrie-ne pe Telegram"
     },
     "footer": {
       "terms": "Termeni și condiții"
@@ -343,7 +344,7 @@
     },
     "booking": {
       "title": "Consultații și programări",
-      "text": "Studioul de pe strada Tighina 65 primește clienți cu programare. Scrie-ne pe Telegram sau sună pentru a discuta procedura și a alege o oră.",
+      "text": "Studioul de pe strada Tighina 65 primește clienți <emphasis>cu programare</emphasis>. Scrie-ne pe Telegram sau sună pentru a discuta procedura și a alege o oră.",
       "contacts": "Cum ajungi la studio",
       "home": "Despre Oblivion Tattoo"
     }

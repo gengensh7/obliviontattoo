@@ -211,7 +211,8 @@
         "title": "Contatti",
         "text": "Disponibili su Telegram, WhatsApp e Viber per consulenze e prenotazioni."
       },
-      "social": "Visita le nostre pagine"
+      "social": "Visita le nostre pagine",
+      "bookingCta": "Scrivici su Telegram"
     },
     "footer": {
       "terms": "Termini e condizioni"
@@ -343,7 +344,7 @@
     },
     "booking": {
       "title": "Consulenza e prenotazioni",
-      "text": "Lo studio in via Tighina 65 riceve su appuntamento. Scrivici su Telegram o chiamaci per parlare del trattamento e concordare un orario.",
+      "text": "Lo studio in via Tighina 65 riceve <emphasis>su appuntamento</emphasis>. Scrivici su Telegram o chiamaci per parlare del trattamento e concordare un orario.",
       "contacts": "Come raggiungere lo studio",
       "home": "Lo studio Oblivion Tattoo"
     }

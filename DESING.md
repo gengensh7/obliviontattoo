@@ -37,17 +37,37 @@ Use the existing container, section spacing, and responsive Tailwind classes.
 Service cards shift from a single column on phones to multiple columns on wider
 screens. Match new sections to neighboring sections in spacing and scale.
 
-The `/permanent` hero fills at least the visible viewport height and uses the
-standard site container. A centered Montserrat heading with a white-to-rose
-gradient sits above the introduction, booking link, and three photo-led service
-cards. The middle card sits higher on wider screens. On phones, the cards stack
-in a single column. Each card links to the service description and price.
-Muted rose beams follow curved paths behind the content. Card 3D uses a 1000px
-perspective and separate depth layers for the photo, title, description, and arrow.
-The cards turn independently over a 10-second cycle. The loops pause outside
-the viewport, and reduced-motion mode presents the cards flat.
-React Bits Fade Content brings the hero into focus as a single block. Below the
-fold, the main sections come into focus once as they enter the viewport.
+The `/permanent` hero pairs a Montserrat headline, introduction, and the standard
+red booking link with an asymmetric composition of the studio's work. The eyebrow
+portrait leads, with a narrower lip crop above and a wider eyelid crop overlapping
+the portrait at the lower right. Titles and descriptions sit on shaded areas of
+the photographs, and each photograph links to its service description and price.
+On phones, the headline and booking link lead into a wide eyebrow portrait and
+two smaller, staggered crops. The loading state follows the same composition.
+Muted rose light and slow rose-purple Morphic Background particles add depth behind
+the copy and photography. The particles pause offscreen and in hidden tabs.
+The treatment heading retains Gradient Text. Fold Text opens each heading once when it enters
+the viewport, including the service cards and FAQ questions.
+React Bits Fade Content brings the hero into focus as a single block. Reduced
+motion shows the full composition immediately. Below the fold, the main sections
+come into focus once as they enter the viewport.
+
+Section headings and descriptions on `/permanent` follow the left edge of the
+standard container. The definition pairs a heading on the left with a description
+on the right from the tablet breakpoint, then stacks them on phones.
+
+The `/permanent` gallery leads with a large lip photograph alongside four detail
+photographs in two rows of alternating widths. The description sits beneath the
+heading, and the portfolio CTA aligns to the right on wider screens. On phones,
+the CTA follows the description, the lead photograph spans the full width, and
+the detail photographs appear in pairs. All five photographs open in the
+existing lightbox.
+
+The `/permanent` price cards use graphite surfaces, thin borders and soft black
+shadows. A raised photo and its caption sit in front of the card, with the service
+copy and price close to the surface. The cards turn slightly on two axes over
+10 seconds at different phases. Motion pauses while a booking link has visible
+keyboard focus. Reduced motion presents a static layout.
 
 ## Components and Interactivity
 
@@ -63,6 +83,12 @@ Use localized paths for internal routes and standard URLs for external destinati
 and same-page anchors.
 Preserve `data-gtm` attributes when editing existing actions.
 Keep the current social media account names regardless of the website name.
+
+The shared contact section pairs its heading and red Telegram CTA with rows for
+the phone, studio address, and opening hours. The two columns stack below the
+desktop breakpoint. Social links sit below a thin rule and wrap on narrow
+screens. The booking CTA uses a solid fill with a hover transition. The phone
+number takes on the CTA red on hover.
 
 ## Responsive Design, Accessibility, and Performance
 

@@ -1,13 +1,13 @@
 import type { AppLocale } from '@/i18n/routing'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
 import { getPathname } from '@/i18n/navigation'
 import { Suspense } from 'react'
 import { buildPermanentMakeupServiceJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
 import FadeContent from '@/shared/FadeContent'
-import { DescriptionSection } from './ui/DescriptionSection'
+import FoldText from '@/shared/FoldText'
+import { FaqSection } from './ui/FaqSection'
 import { GallerySection, GallerySectionFallback } from './ui/GallerySection'
 import { HeroSection } from './ui/HeroSection'
 import { ServicesSection } from './ui/ServicesSection'
@@ -17,45 +17,28 @@ export const generateMetadata = withSeo('metadata.permanentPageMetadata', '/perm
 export default async function PermanentPage({ params }: { params: Promise<{ locale: AppLocale }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'permanentPage' })
-  const guide = t.raw('guide') as { title: string; text: string }[]
-  const faq = t.raw('faq.items') as { question: string; answer: string }[]
   return (
     <main className="flex flex-col">
       <HeroSection />
-      <DescriptionSection />
-      <ServicesSection />
-      <section className="bg-zinc-900 pb-20">
-        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-6 md:grid-cols-2">
-          {guide.map(({ title, text }) => (
-            <div key={title} className="rounded-2xl bg-white/5 p-6">
-              <h2 className="mb-4 text-2xl font-bold text-white">{title}</h2>
-              <p className="leading-relaxed text-zinc-300">{text}</p>
-            </div>
-          ))}
-        </FadeContent>
-      </section>
       <Suspense fallback={<GallerySectionFallback />}>
         <GallerySection />
       </Suspense>
-      <section className="bg-zinc-900 pb-20">
-        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container">
-          <div className="mx-auto max-w-3xl space-y-6">
-            <h2 className="text-2xl font-bold text-white">{t('faq.title')}</h2>
-            {faq.map(({ question, answer }) => (
-              <div key={question} className="border-b border-zinc-700 pb-5">
-                <h3 className="mb-2 text-lg font-semibold text-white">{question}</h3>
-                <p className="leading-relaxed text-zinc-300">{answer}</p>
-              </div>
-            ))}
-          </div>
+      <ServicesSection />
+      <FaqSection />
+      <div className="bg-zinc-900">
+        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3}>
+          <ContactsSection
+            title={<FoldText text={t('booking.title')} />}
+            text={t.rich('booking.text', {
+              emphasis: (chunks) => <strong className="text-xl/none font-bold text-red-600">{chunks}</strong>
+            })}
+            studioLinks={{
+              contacts: { label: t('booking.contacts'), href: getPathname({ locale, href: '/contacts' }) },
+              home: { label: t('booking.home'), href: getPathname({ locale, href: '/' }) }
+            }}
+            showNightSessions={false}
+          />
         </FadeContent>
-      </section>
-      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="bg-zinc-900">
-        <ContactsSection title={t('booking.title')} text={t('booking.text')} showNightSessions={false} />
-      </FadeContent>
-      <div className="flex flex-wrap justify-center gap-6 bg-zinc-900 px-4 pb-12 text-rose-200 underline underline-offset-4">
-        <Link href={getPathname({ locale, href: '/contacts' })}>{t('booking.contacts')}</Link>
-        <Link href={getPathname({ locale, href: '/' })}>{t('booking.home')}</Link>
       </div>
 
       <script
