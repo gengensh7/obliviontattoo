@@ -7,6 +7,8 @@ import { getPathname } from '@/i18n/navigation'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { courses } from '@/lib/courses'
 import { cn } from '@/lib/utils'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
 import { CompareCoursesLink } from './CompareCoursesLink'
 import { CourseSparkles } from './CourseSparkles'
 
@@ -27,10 +29,16 @@ export async function HeroSection({ locale }: { locale: string }) {
       <section aria-labelledby="course-hero-title" className="course-hero relative isolate flex h-dvh flex-col overflow-clip pt-25 sm:pt-28 lg:pt-30">
         <CourseSparkles />
         <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
-          <div className="course-hero-intro container flex grow flex-col justify-center gap-4 py-5 sm:gap-5 sm:py-8">
+          <FadeContent
+            effect="focus"
+            trigger="mount"
+            duration={0.52}
+            initialOpacity={0.8}
+            className="container flex grow flex-col justify-center gap-4 py-5 sm:gap-5 sm:py-8"
+          >
             <div className="grid w-full gap-4 lg:grid-cols-12 lg:gap-x-6">
               <h1 id="course-hero-title" className="service-hero-title font-bold tracking-tight text-balance lg:col-span-11 xl:col-span-10">
-                {t('hero.title')}
+                <FoldText text={t('hero.title')} />
               </h1>
               <p className="text-base/relaxed text-zinc-300 sm:text-lg/relaxed lg:col-span-8 xl:col-span-6">
                 {t('hero.lead')}
@@ -52,12 +60,12 @@ export async function HeroSection({ locale }: { locale: string }) {
                 ))}
               </ul>
             </div>
-          </div>
+          </FadeContent>
         </div>
       </section>
 
-      <div className="container flex flex-col gap-3 pb-16 lg:pb-20">
-        <div id={comparisonId} role="region" aria-label={t('hero.compare')} tabIndex={-1} className="course-hero-cards grid scroll-mt-26 grid-cols-1 gap-3.5 rounded-2xl outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:grid-cols-2 lg:grid-cols-12 lg:gap-4">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container flex flex-col gap-3 pb-16 lg:pb-20">
+        <div id={comparisonId} role="region" aria-label={t('hero.compare')} tabIndex={-1} className="grid scroll-mt-26 grid-cols-1 gap-3.5 rounded-2xl outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:grid-cols-2 lg:grid-cols-12 lg:gap-4">
           {courses.map(({ key, price, service, tracking }) => {
             const featured = key === 'tattoo'
             const short = key === 'piercing'
@@ -79,7 +87,7 @@ export async function HeroSection({ locale }: { locale: string }) {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-start justify-between gap-3 sm:gap-5">
                     <h2 id={titleId} className={cn('min-w-0 text-xl/tight font-bold tracking-tight wrap-break-word', featured ? 'sm:text-3xl lg:text-4xl' : 'sm:text-2xl/tight')}>
-                      {title}
+                      <FoldText text={title} subtle />
                     </h2>
                     <p className={cn('shrink-0 font-bold tracking-tight whitespace-nowrap text-brand-red tabular-nums', featured ? 'text-3xl/none lg:text-5xl/none' : 'text-2xl/none')}>
                       {t('fee', { price })}
@@ -140,7 +148,7 @@ export async function HeroSection({ locale }: { locale: string }) {
           {t('gallery')}
           <ArrowRight aria-hidden="true" className="size-4 shrink-0 text-brand-red" />
         </Link>
-      </div>
+      </FadeContent>
     </div>
   )
 }

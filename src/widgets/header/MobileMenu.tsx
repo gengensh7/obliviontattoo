@@ -64,7 +64,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
                   data-gtm="nav-home"
                   className={cn(
                     'transition-colors duration-300',
-                    pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-red-500'
+                    pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-brand-red'
                   )}
                 >
                   {labels.home}
@@ -79,7 +79,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
                     data-gtm-destination={link.href}
                     className={cn(
                       'transition-colors duration-300',
-                      isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-red-500'
+                      isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-brand-red'
                     )}
                   >
                     {link.label}
@@ -93,7 +93,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
             <div className="space-y-4">
               <div className="space-y-2">
                 <a
-                  className="flex items-center justify-center gap-2 text-lg font-medium text-black hover:text-red-500 motion-safe:transition-colors motion-safe:duration-200"
+                  className="flex items-center justify-center gap-2 text-lg font-medium text-black hover:text-brand-red motion-safe:transition-colors motion-safe:duration-200"
                   href={CONTACT_PHONE}
                   data-gtm="phone"
                   rel="noopener noreferrer"

@@ -2,6 +2,8 @@ import { Maximize2 } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
+import FadeContent from '@/shared/FadeContent'
+import FoldText from '@/shared/FoldText'
 import Lightbox from '@/shared/Lightbox'
 
 const photos = [
@@ -17,11 +19,11 @@ export const CertificateSection = async () => {
 
   return (
     <section aria-labelledby="course-diploma-title" className="bg-zinc-900 py-12 text-white sm:py-16 lg:py-18">
-      <div className="container grid items-center gap-8 lg:grid-cols-5 lg:gap-10 xl:gap-14">
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid items-center gap-8 lg:grid-cols-5 lg:gap-10 xl:gap-14">
         <div className="flex min-w-0 flex-col items-start gap-6 lg:col-span-2">
           <div className="flex flex-col gap-4">
             <h2 id="course-diploma-title" className="text-2xl leading-tight font-semibold text-balance sm:text-3xl lg:text-4xl 2xl:text-5xl">
-              {t('title')}
+              <FoldText text={t('title')} />
             </h2>
             <p className="text-base text-pretty text-zinc-300 sm:text-lg">{t('description')}</p>
           </div>
@@ -83,7 +85,7 @@ export const CertificateSection = async () => {
             })}
           </div>
         </Lightbox>
-      </div>
+      </FadeContent>
     </section>
   )
 }

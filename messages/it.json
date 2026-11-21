@@ -756,32 +756,25 @@
   "contactsPage": {
     "hero": {
       "title": "Contatti dello studio di tatuaggi a Chișinău",
-      "subtitle": "Tatuaggi professionali nel cuore della Moldavia",
-      "paragraphs": [
-        "Benvenuti nel nostro studio di tatuaggi a Chișinău! Siamo nel cuore della capitale della Moldavia e offriamo servizi di tatuaggio professionali e di alta qualità.",
-        "I nostri artisti esperti realizzano opere uniche sulla pelle utilizzando solo materiali certificati e rispettando rigorosamente tutte le norme igienico-sanitarie."
-      ]
+      "lead": "Nel nostro studio nel centro di Chișinău puoi prenotare un tatuaggio, un piercing, una seduta di trucco permanente o un corso."
     },
-    "features": [
-      {
-        "title": "Posizione comoda",
-        "text": "Facile da raggiungere con i mezzi pubblici, vicino al centro di Chișinău"
-      },
-      {
-        "title": "Orari flessibili",
-        "text": "Aperti 7 giorni su 7; appuntamenti su prenotazione"
-      },
-      {
-        "title": "Approccio individuale",
-        "text": "Ogni tatuaggio è creato tenendo conto dei tuoi desideri e delle tue caratteristiche"
-      }
-    ],
+    "benefits": {
+      "location": "In centro città",
+      "schedule": "Orari flessibili",
+      "approach": "Approccio personalizzato"
+    },
     "cta": {
-      "lead": "Cerchi il miglior studio di tatuaggi a Chișinău? Contattaci subito!",
       "appointment": "Prenota una consulenza",
-      "portfolio": "Guarda il portfolio"
+      "portfolio": "Guarda il portfolio",
+      "directions": "Ottieni indicazioni"
     },
-    "seoLine": "Studio di tatuaggi a Chișinău, Moldavia | Tatuaggi artistici | Artisti professionisti | Condizioni sterili | Disegni personalizzati | Coperture di vecchi tatuaggi | Consulenze post-trattamento"
+    "panel": {
+      "title": "Contatta lo studio",
+      "consultation": "Scrivi all’artista per parlare della tua idea o fare domande prima della visita.",
+      "address": "Via Tighina 65, Chișinău",
+      "byAppointment": "Su appuntamento",
+      "phone": "Telefono"
+    }
   },
   "coursesPage": {
     "hero": {

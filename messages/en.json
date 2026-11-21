@@ -756,32 +756,25 @@
   "contactsPage": {
     "hero": {
       "title": "Tattoo studio contacts in Chișinău",
-      "subtitle": "Professional tattooing in the heart of Moldova",
-      "paragraphs": [
-        "Welcome to our tattoo studio in Chișinău! We are located in the very heart of Moldova’s capital and offer professional, top-quality tattoo services.",
-        "Our experienced artists create unique works of skin art using only certified materials and strictly following all sanitary standards."
-      ]
+      "lead": "Book a tattoo, piercing, permanent makeup session or course at our studio in central Chișinău."
     },
-    "features": [
-      {
-        "title": "Convenient location",
-        "text": "Easy to reach by public transport, close to the city center of Chișinău"
-      },
-      {
-        "title": "Flexible schedule",
-        "text": "Open 7 days a week; appointments by prior arrangement"
-      },
-      {
-        "title": "Individual approach",
-        "text": "Every tattoo is created with your wishes and specifics in mind"
-      }
-    ],
+    "benefits": {
+      "location": "City-centre location",
+      "schedule": "Flexible scheduling",
+      "approach": "Personal approach"
+    },
     "cta": {
-      "lead": "Looking for the best tattoo studio in Chișinău? Contact us right now!",
       "appointment": "Book a consultation",
-      "portfolio": "View portfolio"
+      "portfolio": "View portfolio",
+      "directions": "Get directions"
     },
-    "seoLine": "Tattoo studio in Chișinău, Moldova | Artistic tattooing | Professional artists | Sterile conditions | Custom designs | Cover-ups | Aftercare consultations"
+    "panel": {
+      "title": "Contact the studio",
+      "consultation": "Message an artist to discuss your idea or ask questions before you visit.",
+      "address": "65 Tighina Street, Chișinău",
+      "byAppointment": "By appointment",
+      "phone": "Phone"
+    }
   },
   "coursesPage": {
     "hero": {

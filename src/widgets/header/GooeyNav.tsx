@@ -717,7 +717,7 @@ export default function GooeyNav({ items, activeIndex }: { items: GooeyNavItem[]
                 className={`${linkClass} text-white focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   index === activeIndex
                     ? 'bg-red-600 motion-safe:group-data-gooey/gooey:bg-transparent'
-                    : 'hover:text-red-300 motion-safe:transition-colors'
+                    : 'hover:text-brand-red motion-safe:transition-colors'
                 }`}
               >
                 {label}

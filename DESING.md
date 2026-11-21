@@ -156,8 +156,10 @@ black-and-white studio photograph. It spans two rows beside the
 permanent makeup and piercing courses on desktop. On tablets, the tattoo course
 spans both columns. On phones, the three courses stack in reading order. Muted
 pink Aceternity Sparkles sit behind the content on a dark burgundy background.
-Reduced motion keeps the static background and presents the copy and cards
-immediately.
+As on `/permanent`, Fade Content brings the hero into focus on mount. The
+comparison, diplomas, FAQ, and contacts come into focus once on scroll. Fold Text
+opens the page and section headings, course names, and FAQ questions. Reduced
+motion keeps the static background and presents the content immediately.
 
 The `/course` diploma section pairs its heading and language details with two
 staggered graduation portraits on a zinc-900 surface. The copy moves above the
@@ -186,6 +188,17 @@ the phone, studio address, and opening hours. The two columns stack below the
 desktop breakpoint. Social links sit below a thin rule and wrap on narrow
 screens. The booking CTA keeps the same red fill on hover. The phone
 number takes on the CTA red on hover.
+
+The `/contacts` hero pairs the introduction, Telegram booking, portfolio link,
+and three compact benefits with a translucent graphite contact panel. The panel
+includes the address and directions, hours, phone, and social links. On smaller
+screens it follows the introduction. Muted Aceternity Wavy Background ribbons
+run behind both columns. They pause offscreen and in hidden tabs, and remain
+still with reduced motion. The map and directions section follows the hero.
+As on `/permanent`, Fade Content brings the introduction into focus on mount.
+The contact panel and directions come into focus once on scroll. Fold Text
+opens the main heading, the panel and directions headings, and the direction
+card titles. Reduced motion presents the content immediately.
 
 The directions section on the home and contacts pages aligns its headline, description, three graphite
 information cards, and MapLibre map within the standard container. The cards share

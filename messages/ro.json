@@ -756,32 +756,25 @@
   "contactsPage": {
     "hero": {
       "title": "Contacte studio de tatuaje în Chișinău",
-      "subtitle": "Tatuaje profesionale în inima Moldovei",
-      "paragraphs": [
-        "Bine ați venit la studioul nostru de tatuaje din Chișinău! Ne aflăm chiar în inima capitalei Moldovei și oferim servicii profesionale de tatuaj la cea mai înaltă calitate.",
-        "Artiștii noștri experimentați creează lucrări unice pe piele, folosind doar materiale certificate și respectând toate normele sanitare."
-      ]
+      "lead": "La studioul din centrul Chișinăului te poți programa pentru un tatuaj, piercing, machiaj permanent sau cursuri."
     },
-    "features": [
-      {
-        "title": "Amplasare convenabilă",
-        "text": "Ușor de ajuns cu transportul public, aproape de centrul Chișinăului"
-      },
-      {
-        "title": "Program flexibil",
-        "text": "Deschiși 7 zile din 7; programări în prealabil"
-      },
-      {
-        "title": "Abordare individuală",
-        "text": "Fiecare tatuaj este creat ținând cont de dorințele și particularitățile tale"
-      }
-    ],
+    "benefits": {
+      "location": "În centrul orașului",
+      "schedule": "Program flexibil",
+      "approach": "Abordare personalizată"
+    },
     "cta": {
-      "lead": "Cauți cel mai bun studio de tatuaje în Chișinău? Contactează-ne chiar acum!",
       "appointment": "Programează o consultație",
-      "portfolio": "Vezi portofoliul"
+      "portfolio": "Vezi portofoliul",
+      "directions": "Vezi traseul"
     },
-    "seoLine": "Studio de tatuaje în Chișinău, Moldova | Tatuaj artistic | Artiști profesioniști | Condiții sterile | Designuri personalizate | Acoperire tatuaje vechi | Consultații pentru îngrijire"
+    "panel": {
+      "title": "Cum ne contactezi",
+      "consultation": "Scrie-i artistului ca să discuți ideea ta sau să pui întrebări înainte de vizită.",
+      "address": "Str. Tighina 65, Chișinău",
+      "byAppointment": "Cu programare prealabilă",
+      "phone": "Telefon"
+    }
   },
   "coursesPage": {
     "hero": {
