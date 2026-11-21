@@ -71,6 +71,8 @@ Leave generated files untouched and keep migrations within the scope of the task
 - Install only the specific component required for the task.
 - Before installation, inspect dependencies, target file paths, and potential conflicts.
 - Never overwrite existing shadcn/ui components without explicit approval.
+- Keep shadcn/ui registry component files, such as `src/components/ui/button.tsx`, free of project-specific styles, variants, and behavior.
+  Apply customizations through `className` at the call site or in a project-owned wrapper so registry updates can replace the component safely.
 - Never reinitialize shadcn/ui or replace the existing `components.json`.
 - Adapt third-party code to the existing Tailwind configuration and project conventions.
 - Avoid unnecessary dependencies and duplicate components.

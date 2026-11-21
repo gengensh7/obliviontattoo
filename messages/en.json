@@ -786,14 +786,22 @@
   "coursesPage": {
     "hero": {
       "title": "Tattoo, permanent makeup and piercing courses in Chișinău",
-      "lead": "Learn tattooing, permanent makeup or piercing from scratch at Oblivion Tattoo in Chișinău. Compare what you’ll practise, how much time you’ll spend with an instructor and what each course costs."
+      "lead": "Learn tattooing, permanent makeup or piercing from scratch at Oblivion Tattoo. Compare the programmes and choose the course that suits you.",
+      "compare": "Compare courses",
+      "cardCta": "Book a place",
+      "benefits": {
+        "practice": "Practice on models",
+        "materials": "Materials included",
+        "diploma": "Studio diploma"
+      }
     },
     "fee": "€{price}",
-    "longSchedule": "7 days · 1 day of theory and 6 days of practice on models",
-    "shortSchedule": "3 days · 1 day of theory and 2 days of practice on models",
-    "materials": "The studio provides equipment and consumables as part of the course fee.",
-    "jewellery": "The fee covers tuition, tools and jewellery for practice.",
-    "document": "After the course, you receive a diploma of completion from Oblivion Tattoo.",
+    "longDuration": "7 days",
+    "shortDuration": "3 days",
+    "longSchedule": "1 day of theory and 6 days of practice on models",
+    "shortSchedule": "1 day of theory and 2 days of practice on models",
+    "materials": "Equipment and consumables included",
+    "jewellery": "Tools and jewellery included",
     "booking": "To enrol, message the studio on Telegram with your course choice and preferred dates. The studio will arrange the schedule with you.",
     "cta": "Book via Telegram",
     "gallery": "See the artists’ work in the gallery",
@@ -801,19 +809,22 @@
     "types": {
       "tattoo": {
         "title": "Tattoo artist course",
-        "audience": "For first-time tattooists and artists who want to practise linework or shading.",
+        "summary": "Linework, shading, solid fills and colour with guidance from a tattoo artist.",
+        "theory": "Skin, hygiene, and choosing needles and cartridges",
         "text": "Study skin, hygiene and how to choose needles and cartridges. Practise outlines, shading, solid fills and colour on models under a tattoo artist’s supervision.",
         "link": "Explore tattooing at the studio"
       },
       "permanent": {
         "title": "Permanent makeup course",
-        "audience": "For beginners and practitioners who want guidance on shaping and shade selection.",
+        "summary": "Techniques for brows, lips and eyeliner with guidance from an instructor.",
+        "theory": "Colour theory, mapping and hygiene",
         "text": "Study colour theory, mapping and hygiene. During supervised practice on models, apply these skills to brows, lips and eyeliner.",
         "link": "Explore permanent makeup at the studio"
       },
       "piercing": {
         "title": "Piercing course",
-        "audience": "For newcomers and practitioners who want to learn piercing techniques with a mentor.",
+        "summary": "Piercing techniques with guidance from an instructor.",
+        "theory": "Anatomy, sterilisation and aftercare",
         "text": "Study the anatomy of the piercing site, instrument sterilisation and aftercare. Practise piercing on models with your instructor.",
         "link": "Explore piercing at the studio"
       }
@@ -821,11 +832,11 @@
     "certificateSection": {
       "certificates": {
         "title": "Your course diploma",
-        "paragraphs": [
-          "After the course, you receive a diploma of completion from Oblivion Tattoo.",
-          "The studio issues the diploma in Romanian and English. If you need another language, ask when booking."
-        ],
+        "description": "After the course, you receive a diploma of completion from Oblivion Tattoo.",
+        "languages": "The studio issues the diploma in Romanian and English.",
+        "otherLanguage": "If you need another language, ask when booking.",
         "images": {
+          "open": "Enlarge photo {index, number} — {alt}",
           "alt1": "Course completion documents being presented at Oblivion Tattoo",
           "alt2": "Course completion documents being presented at Oblivion Tattoo"
         }

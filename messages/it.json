@@ -786,14 +786,22 @@
   "coursesPage": {
     "hero": {
       "title": "Corsi di tatuaggio, trucco permanente e piercing a Chișinău",
-      "lead": "Da Oblivion Tattoo a Chișinău puoi imparare da zero a tatuare, eseguire il trucco permanente o praticare piercing. Confronta programmi, giorni di pratica e costi per scegliere il tuo corso."
+      "lead": "Impara da zero a tatuare, a eseguire il trucco permanente o a fare piercing da Oblivion Tattoo. Confronta i programmi e scegli il tuo corso.",
+      "compare": "Confronta i corsi",
+      "cardCta": "Iscriviti",
+      "benefits": {
+        "practice": "Pratica su modelli",
+        "materials": "Materiali inclusi",
+        "diploma": "Diploma dello studio"
+      }
     },
     "fee": "{price} €",
-    "longSchedule": "7 giorni · 1 giorno di teoria e 6 di pratica su modelli",
-    "shortSchedule": "3 giorni · 1 giorno di teoria e 2 di pratica su modelli",
-    "materials": "Lo studio fornisce le attrezzature e i materiali di consumo, inclusi nel prezzo.",
-    "jewellery": "Il prezzo comprende lezioni, strumenti e gioielli per la pratica.",
-    "document": "Al termine ricevi un diploma di fine corso rilasciato da Oblivion Tattoo.",
+    "longDuration": "7 giorni",
+    "shortDuration": "3 giorni",
+    "longSchedule": "1 giorno di teoria e 6 di pratica su modelli",
+    "shortSchedule": "1 giorno di teoria e 2 di pratica su modelli",
+    "materials": "Attrezzature e materiali di consumo inclusi",
+    "jewellery": "Strumenti e gioielli inclusi",
     "booking": "Per iscriverti, scrivici su Telegram indicando il corso scelto e le date che preferisci. Concorderemo insieme il calendario.",
     "cta": "Iscriviti su Telegram",
     "gallery": "Guarda i lavori degli artisti in galleria",
@@ -801,19 +809,22 @@
     "types": {
       "tattoo": {
         "title": "Corso di tatuaggio",
-        "audience": "Per chi usa la macchinetta per la prima volta e per chi vuole esercitarsi su linee e sfumature.",
+        "summary": "Linee, sfumature e campiture in nero e a colori con la guida di un tatuatore.",
+        "theory": "Pelle, igiene, scelta di aghi e cartucce",
         "text": "Studi la pelle, l’igiene e la scelta di aghi e cartucce. Con la guida di un tatuatore ti eserciti su modelli per tracciare linee, sfumare e realizzare campiture in nero e a colori.",
         "link": "I tatuaggi dello studio"
       },
       "permanent": {
         "title": "Corso di trucco permanente",
-        "audience": "Per principianti e operatori che vogliono esercitarsi nella scelta della forma e della tonalità.",
+        "summary": "Tecniche per sopracciglia, labbra ed eyeliner con la guida di un docente.",
+        "theory": "Teoria del colore, progettazione della forma e igiene",
         "text": "Studi la teoria del colore, la progettazione della forma e l’igiene. Durante la pratica su modelli applichi queste conoscenze a sopracciglia, labbra ed eyeliner con la guida del docente.",
         "link": "Il trucco permanente in studio"
       },
       "piercing": {
         "title": "Corso di piercing",
-        "audience": "Per principianti e operatori che desiderano apprendere la tecnica di perforazione con un docente.",
+        "summary": "Tecniche di piercing con la guida di un docente.",
+        "theory": "Anatomia, sterilizzazione e cura dopo il piercing",
         "text": "Studi l’anatomia della zona, la sterilizzazione degli strumenti e le cure durante la guarigione. Nelle lezioni pratiche ti eserciti su modelli sotto la supervisione del docente.",
         "link": "I tipi di piercing in studio"
       }
@@ -821,11 +832,11 @@
     "certificateSection": {
       "certificates": {
         "title": "Il diploma di fine corso",
-        "paragraphs": [
-          "Al termine ricevi un diploma di fine corso rilasciato da Oblivion Tattoo.",
-          "Il diploma viene rilasciato in romeno e in inglese. Se ti serve in un’altra lingua, parlane con lo studio al momento dell’iscrizione."
-        ],
+        "description": "Al termine ricevi un diploma di fine corso rilasciato da Oblivion Tattoo.",
+        "languages": "Il diploma viene rilasciato in romeno e in inglese.",
+        "otherLanguage": "Se ti serve in un’altra lingua, parlane con lo studio al momento dell’iscrizione.",
         "images": {
+          "open": "Apri la foto {index, number} in grande — {alt}",
           "alt1": "Consegna dei diplomi di fine corso da Oblivion Tattoo",
           "alt2": "Consegna dei diplomi di fine corso da Oblivion Tattoo"
         }

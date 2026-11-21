@@ -100,13 +100,13 @@ export const OurServicesSection = async () => {
                       />
                     </div>
                     <div className={cn('flex min-w-0 flex-1 flex-col gap-2 p-4 sm:p-5 lg:p-4 xl:p-5', isCourse && 'sm:justify-center')}>
-                      <div className="flex items-start justify-between gap-2 group-hover:text-red-600 group-focus-visible:text-red-600">
+                      <div className="flex items-start justify-between gap-2 group-hover:text-red-600 group-focus-visible:text-red-600 motion-safe:transition-colors">
                         <h3 className={cn('text-xl leading-tight font-bold wrap-break-word', (isCourse || card.href === '/tattoo') && 'lg:text-2xl')}>
                           <FoldText text={card.title} subtle />
                         </h3>
                         <ArrowUpRight aria-hidden="true" className="size-5 shrink-0" />
                       </div>
-                      <p className="text-sm leading-relaxed text-zinc-700 group-hover:text-red-600 group-focus-visible:text-red-600">{card.description}</p>
+                      <p className="text-sm leading-relaxed text-zinc-700 group-hover:text-red-600 group-focus-visible:text-red-600 motion-safe:transition-colors">{card.description}</p>
                     </div>
                   </Link>
                 </li>

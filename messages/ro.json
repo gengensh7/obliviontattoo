@@ -786,14 +786,22 @@
   "coursesPage": {
     "hero": {
       "title": "Cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
-      "lead": "La Oblivion Tattoo din Chișinău poți învăța de la zero să tatuezi, să realizezi machiaj permanent sau să faci piercinguri. Compară programele, timpul de practică și costurile înainte de a alege un curs."
+      "lead": "Învață de la zero să tatuezi, să realizezi machiaj permanent sau să faci piercinguri la Oblivion Tattoo. Compară programele și alege cursul potrivit.",
+      "compare": "Compară cursurile",
+      "cardCta": "Înscrie-te",
+      "benefits": {
+        "practice": "Practică pe modele",
+        "materials": "Materiale incluse",
+        "diploma": "Diplomă de la studio"
+      }
     },
     "fee": "{price} €",
-    "longSchedule": "7 zile · o zi de teorie și 6 zile de practică pe modele",
-    "shortSchedule": "3 zile · o zi de teorie și 2 zile de practică pe modele",
-    "materials": "Echipamentul și consumabilele sunt puse la dispoziție de studio și sunt incluse în preț.",
-    "jewellery": "Prețul include lecțiile, instrumentele și bijuteriile folosite la practică.",
-    "document": "La final primești o diplomă de absolvire a cursului de la Oblivion Tattoo.",
+    "longDuration": "7 zile",
+    "shortDuration": "3 zile",
+    "longSchedule": "o zi de teorie și 6 zile de practică pe modele",
+    "shortSchedule": "o zi de teorie și 2 zile de practică pe modele",
+    "materials": "Echipament și consumabile incluse",
+    "jewellery": "Instrumente și bijuterii incluse",
     "booking": "Pentru înscriere, scrie-ne pe Telegram. Spune-ne ce curs ai ales și ce date preferi, ca să stabilim programul împreună.",
     "cta": "Înscriere pe Telegram",
     "gallery": "Vezi lucrările artiștilor în galerie",
@@ -801,19 +809,22 @@
     "types": {
       "tattoo": {
         "title": "Curs de tatuaj",
-        "audience": "Pentru începători și pentru tatuatorii care vor să exerseze conturul și umbrele.",
+        "summary": "Contur, umbre și umplere cu negru sau culoare, sub îndrumarea unui tatuator.",
+        "theory": "Piele, igienă, alegerea acelor și cartușelor",
         "text": "La teorie studiezi pielea, igiena și alegerea acelor și cartușelor. Pe modele exersezi conturul, umbrirea și umplerea cu negru sau culoare sub îndrumarea unui tatuator.",
         "link": "Tatuaje realizate în studio"
       },
       "permanent": {
         "title": "Curs de machiaj permanent",
-        "audience": "Pentru începători și pentru practicienii care vor să aprofundeze alegerea formei și a nuanței.",
+        "summary": "Tehnici pentru sprâncene, buze și conturul ochilor, sub îndrumarea unui specialist.",
+        "theory": "Colorimetrie, desenarea formei și igienă",
         "text": "Studiezi colorimetria, desenarea formei și igiena. Apoi exersezi pe modele tehnici pentru sprâncene, buze și conturul ochilor, sub îndrumarea instructorului.",
         "link": "Machiaj permanent în studio"
       },
       "piercing": {
         "title": "Curs de piercing",
-        "audience": "Pentru începători și pentru cei care vor să învețe tehnica de perforare sub supraveghere.",
+        "summary": "Tehnici de piercing sub îndrumarea unui specialist.",
+        "theory": "Anatomie, sterilizare și îngrijire după piercing",
         "text": "Studiezi anatomia zonei, sterilizarea instrumentelor și îngrijirea în perioada de vindecare. În partea practică exersezi perforarea pe modele, cu instructorul alături.",
         "link": "Tipuri de piercing în studio"
       }
@@ -821,11 +832,11 @@
     "certificateSection": {
       "certificates": {
         "title": "Diploma de absolvire",
-        "paragraphs": [
-          "La final primești o diplomă de absolvire a cursului de la Oblivion Tattoo.",
-          "Diploma se eliberează în română și în engleză. Dacă ai nevoie de altă limbă, discută cu studioul la înscriere."
-        ],
+        "description": "La final primești o diplomă de absolvire a cursului de la Oblivion Tattoo.",
+        "languages": "Diploma se eliberează în română și în engleză.",
+        "otherLanguage": "Dacă ai nevoie de altă limbă, discută cu studioul la înscriere.",
         "images": {
+          "open": "Deschide fotografia {index, number} mărită — {alt}",
           "alt1": "Înmânarea diplomelor de absolvire la Oblivion Tattoo",
           "alt2": "Înmânarea diplomelor de absolvire la Oblivion Tattoo"
         }

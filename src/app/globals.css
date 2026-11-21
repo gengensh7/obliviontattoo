@@ -534,7 +534,7 @@ button {
   scrollbar-width: none;
 }
 
-/* Share the hero heading scale across the permanent makeup, tattoo, and piercing pages. */
+/* Share the hero heading scale across service and course pages. */
 .service-hero-title {
   font-size: min(9.4vw, 40px);
   line-height: 1.06;
@@ -545,5 +545,61 @@ button {
 
   @variant xl {
     @apply text-6xl/none;
+  }
+}
+
+/* Keep the course backdrop visible without particles. */
+.course-hero {
+  background-image: radial-gradient(ellipse at top right, color-mix(in oklab, var(--color-rose-950) 62%, transparent), transparent 64%),
+    linear-gradient(var(--color-zinc-950), var(--color-zinc-900));
+}
+
+/* Reveal the course introduction and comparison grid in two overlapping beats. */
+@media (prefers-reduced-motion: no-preference) {
+  .course-hero-intro {
+    animation: course-hero-enter 360ms cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+
+  .course-hero-cards {
+    animation: course-hero-enter 420ms cubic-bezier(0.23, 1, 0.32, 1) 65ms both;
+  }
+}
+
+@keyframes course-hero-enter {
+  from {
+    opacity: 0.84;
+    transform: translateY(6px);
+  }
+}
+
+/* Give the diploma photos a slow idle tilt that pauses during interaction. */
+@media (prefers-reduced-motion: no-preference) {
+  .course-diploma-card-body {
+    animation: course-diploma-idle 10s ease-in-out infinite;
+  }
+
+  .course-diploma-card + .course-diploma-card .course-diploma-card-body {
+    animation-delay: -5s;
+  }
+
+  .course-diploma-card:has(:focus-visible) .course-diploma-card-body {
+    animation-play-state: paused;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .course-diploma-card:hover .course-diploma-card-body {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes course-diploma-idle {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(-1.5deg) rotateY(-2deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotateX(1.5deg) rotateY(2deg);
   }
 }

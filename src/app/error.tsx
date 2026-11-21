@@ -38,7 +38,7 @@ export default function Error({ error, reset }: ErrorProps) {
         <div className="text-muted-foreground pt-4 text-sm">
           <p>
             Need help?{' '}
-            <a href={SUPPORT_TELEGRAM} data-gtm="telegram" className="text-primary font-medium hover:underline">
+            <a href={SUPPORT_TELEGRAM} data-gtm="telegram" className="text-primary font-medium hover:text-brand-red motion-safe:transition-colors">
               Contact support
             </a>
           </p>

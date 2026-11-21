@@ -1,4 +1,4 @@
-import { ArrowUpRight, Clock, MapPin, Phone } from 'lucide-react'
+import { Clock, MapPin, Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { CtaLink } from '@/components/ui/cta-link'
 import { CONTACT_PHONE, CONTACT_TELEGRAM, LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
@@ -7,7 +7,7 @@ import FoldText from '@/shared/FoldText'
 import { LazyLocationMap } from './LazyLocationMap'
 
 const textLinkClass =
-  'inline-flex w-fit items-center gap-2 rounded-sm font-medium text-white hover:text-brand-red focus-visible:outline-brand-red focus-visible:outline-2 focus-visible:outline-offset-2'
+  'inline-flex w-fit items-center gap-2 rounded-sm font-medium text-white hover:text-brand-red focus-visible:outline-brand-red focus-visible:outline-2 focus-visible:outline-offset-2 motion-safe:transition-colors'
 
 export function LocationSection({ animate = false }: { animate?: boolean }) {
   const t = useTranslations('homePage.locationSection')
@@ -88,7 +88,6 @@ export function LocationSection({ animate = false }: { animate?: boolean }) {
             <p className="leading-relaxed text-zinc-300">{t('description')}</p>
             <CtaLink href={LOCATION_GOOGLE_MAPS} data-gtm="google-maps" target="_blank" rel="noopener noreferrer">
               Google Maps
-              <ArrowUpRight aria-hidden="true" className="size-4 shrink-0" />
             </CtaLink>
           </div>
         </div>

@@ -149,6 +149,23 @@ copy and price close to the surface. The cards turn slightly on two axes over
 10 seconds at different phases. Motion pauses while a booking link has visible
 keyboard focus. Reduced motion presents a static layout.
 
+The `/course` hero fills the visible viewport with a left-aligned headline,
+Telegram booking, and a link to compare the three courses. The comparison
+follows directly below. The tattoo course pairs a graphite panel with a
+black-and-white studio photograph. It spans two rows beside the
+permanent makeup and piercing courses on desktop. On tablets, the tattoo course
+spans both columns. On phones, the three courses stack in reading order. Muted
+pink Aceternity Sparkles sit behind the content on a dark burgundy background.
+Reduced motion keeps the static background and presents the copy and cards
+immediately.
+
+The `/course` diploma section pairs its heading and language details with two
+staggered graduation portraits on a zinc-900 surface. The copy moves above the
+portraits on tablets, and the portraits stack on phones. The cards tilt gently
+in opposite phases and pause their idle motion on hover or visible keyboard
+focus. Aceternity 3D Card Effect follows the mouse. Reduced motion keeps the
+cards still. The original photos open in the shared PhotoSwipe lightbox.
+
 ## Components and Interactivity
 
 Reuse components from `src/components/ui/`, shared sections, and existing galleries.

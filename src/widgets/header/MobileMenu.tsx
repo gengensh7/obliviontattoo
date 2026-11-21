@@ -93,7 +93,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
             <div className="space-y-4">
               <div className="space-y-2">
                 <a
-                  className="flex items-center justify-center gap-2 text-lg font-medium text-black duration-200 hover:text-red-500"
+                  className="flex items-center justify-center gap-2 text-lg font-medium text-black hover:text-red-500 motion-safe:transition-colors motion-safe:duration-200"
                   href={CONTACT_PHONE}
                   data-gtm="phone"
                   rel="noopener noreferrer"
