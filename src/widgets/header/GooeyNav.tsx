@@ -35,8 +35,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 import { useLayoutEffect, useRef, useSyncExternalStore } from 'react'
+import { CourseDropdown } from './CourseDropdown'
 import GlassSurface from './GlassSurface'
 
 export type GooeyNavItem = {
@@ -263,7 +265,12 @@ const build = (gl: WebGL2RenderingContext): Pipeline | null => {
   return { program, uniforms, buffer, position: gl.getAttribLocation(program, 'aPosition') }
 }
 
-export default function GooeyNav({ items, activeIndex }: { items: GooeyNavItem[]; activeIndex: number }) {
+export default function GooeyNav({ items, activeIndex, courseLinks, activeCoursePath }: {
+  items: GooeyNavItem[]
+  activeIndex: number
+  courseLinks: GooeyNavItem[]
+  activeCoursePath?: string
+}) {
   const animate = useSyncExternalStore(subscribeToMotionPreferences, canAnimate, serverCanAnimate)
   const stageRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -707,23 +714,28 @@ export default function GooeyNav({ items, activeIndex }: { items: GooeyNavItem[]
           aria-hidden="true"
         />
         <ul ref={listRef} className="relative flex">
-          {items.map(({ href, destination, label }, index) => (
-            <li key={destination}>
-              <Link
-                href={href}
-                aria-current={index === activeIndex ? 'page' : undefined}
-                data-gtm={destination === '/contacts' ? 'nav-contacts' : 'nav-link'}
-                data-gtm-destination={destination}
-                className={`${linkClass} text-white focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  index === activeIndex
-                    ? 'bg-red-600 motion-safe:group-data-gooey/gooey:bg-transparent'
-                    : 'hover:text-brand-red motion-safe:transition-colors'
-                }`}
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
+          {items.map(({ href, destination, label }, index) => {
+            const active = index === activeIndex
+            return (
+              <li key={destination}>
+                {destination === '/course' ? (
+                  <CourseDropdown catalog={{ href, destination, label }} items={courseLinks} activeCoursePath={activeCoursePath} active={active} />
+                ) : (
+                  <Link
+                    href={href}
+                    aria-current={active ? 'page' : undefined}
+                    data-gtm={destination === '/contacts' ? 'nav-contacts' : 'nav-link'}
+                    data-gtm-destination={destination}
+                    className={`${linkClass} text-white focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      active ? 'bg-red-600 motion-safe:group-data-gooey/gooey:bg-transparent' : 'hover:text-brand-red motion-safe:transition-colors'
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                )}
+              </li>
+            )
+          })}
         </ul>
         <ul
           ref={overlayRef}
@@ -732,7 +744,10 @@ export default function GooeyNav({ items, activeIndex }: { items: GooeyNavItem[]
         >
           {items.map(({ destination, label }) => (
             <li key={destination}>
-              <span className={linkClass}>{label}</span>
+              <span className={destination === '/course' ? `${linkClass} gap-1.5` : linkClass}>
+                {label}
+                {destination === '/course' && <ChevronDown className="size-3.5 shrink-0" />}
+              </span>
             </li>
           ))}
         </ul>

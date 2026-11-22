@@ -32,6 +32,10 @@ and the language switcher. The language options open in a frosted dropdown.
 After scrolling, the glass covers the full header. It refracts the page behind it,
 with a frosted fallback. Gooey Nav uses white text on a red-600 active pill. Navigation, the
 language switcher, and the mobile menu are in `src/widgets/header/`.
+The mobile header opens a graphite Sheet from the left. The panel pairs a compact
+wordmark with a scrollable navigation list, a collapsible course group and a
+contact area with a consultation CTA, social icons and the shared language
+switcher. On short screens, navigation and contacts scroll together.
 
 Use the existing container, section spacing, and responsive Tailwind classes.
 Service cards shift from a single column on phones to multiple columns on wider
@@ -178,6 +182,14 @@ portraits on tablets, and the portraits stack on phones. The cards tilt gently
 in opposite phases and pause their idle motion on hover or visible keyboard
 focus. Aceternity 3D Card Effect follows the mouse. Reduced motion keeps the
 cards still. The original photos open in the shared PhotoSwipe lightbox.
+
+The three course detail pages pair a compact heading, price, duration, and
+Telegram booking link with one photograph of the studio's work. The copy leads
+on phones. Course information, programme, FAQ, and the shared contacts follow
+on zinc surfaces with graphite dividers and small red accents. Breadcrumbs lead
+back to the catalogue. The desktop Courses label also leads to the catalogue,
+and its adjacent button opens the course links. On mobile the links expand
+inside the existing drawer.
 
 The blog opens with a full-height, two-column masthead over Aceternity Background Lines.
 Graphite and burgundy dashes travel along the original paths and fade away.

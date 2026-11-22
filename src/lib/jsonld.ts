@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { courses } from '@/lib/courses'
+import { courses, type Course } from '@/lib/courses'
 import { CONTACT_INSTAGRAM, CONTACT_PHONE_NUMBER, CONTACT_TELEGRAM, LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 import { localizedUrl, siteOrigin } from '@/lib/siteUrl'
 
@@ -115,6 +115,32 @@ export async function buildCoursesJsonLd(locale: string) {
       offers: { '@type': 'Offer', price, priceCurrency: 'EUR', url }
     }
   })
+}
+
+export function buildCoursePageJsonLd(locale: string, course: Course, title: string, description: string, catalogLabel: string, courseLabel: string) {
+  const url = localizedUrl(locale, course.path)
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Course',
+        '@id': `${url}#course`,
+        url,
+        name: title,
+        description,
+        inLanguage: locale,
+        provider: { '@id': businessId },
+        offers: { '@type': 'Offer', price: course.price, priceCurrency: 'EUR', url }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: catalogLabel, item: localizedUrl(locale, '/course') },
+          { '@type': 'ListItem', position: 2, name: courseLabel, item: url }
+        ]
+      }
+    ]
+  }
 }
 
 type BlogPostJsonLdProps = {

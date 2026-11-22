@@ -69,6 +69,18 @@
       "twitterTitle": "Piercing in Chișinău | Oblivion Tattoo Studio",
       "twitterDescription": "Piercing in Chișinău at Oblivion Tattoo. Earlobe 150 MDL, nostril or tongue 250 MDL, navel 300 MDL. Basic jewelry included. Book online."
     },
+    "tattooCourse": {
+      "title": "Tattoo Artist Course in Chișinău | Oblivion Tattoo",
+      "description": "Learn tattooing in Chișinău for €450. One day of theory and six days on models covering lining, shading, solid fill and colour. Equipment included."
+    },
+    "permanentCourse": {
+      "title": "Permanent Makeup Course in Chișinău | Oblivion Tattoo",
+      "description": "Take a seven-day permanent makeup course in Chișinău for €450. Learn colour theory and mapping, work on brows and lips, and practise eyeliner wing mapping."
+    },
+    "piercingCourse": {
+      "title": "Piercing Course in Chișinău | Oblivion Tattoo",
+      "description": "Take a three-day piercing course in Chișinău for €300. Study anatomy, sterilisation and aftercare, then spend two days practising on models. Jewellery included."
+    },
     "coursePageMetadata": {
       "title": "Tattoo & Permanent Makeup Courses in Chișinău | Oblivion Tattoo",
       "description": "Study tattooing or permanent makeup in Chișinău in 7 days for €450 per course, or piercing in 3 days for €300. Supervised practice and materials included.",
@@ -137,14 +149,16 @@
         { "label": "Piercing", "href": "/piercing" },
         { "label": "Gallery", "href": "/gallery" },
         { "label": "Blog", "href": "/blog" },
-        { "label": "Course", "href": "/course" },
+        { "label": "Courses", "href": "/course" },
         { "label": "Contacts", "href": "/contacts" }
       ]
     },
     "headerMobile": {
-      "description": "Navigate through the menu to explore our services.",
+      "studio": "Tattoo studio · Chișinău",
+      "navigation": "Main navigation",
+      "close": "Close menu",
+      "language": "Choose language",
       "home": "Home",
-      "appointment": "Tattoo services are available by appointment only.",
       "workingHours": "Daily from 10:00 to 20:30"
     },
     "heroSection": {
@@ -873,6 +887,158 @@
         "theory": "Anatomy, sterilisation and aftercare",
         "text": "Study the anatomy of the piercing site, instrument sterilisation and aftercare. Practise piercing on models with your instructor.",
         "link": "Explore piercing at the studio"
+      }
+    },
+    "details": {
+      "catalog": "All courses",
+      "link": "Course details",
+      "breadcrumbLabel": "Breadcrumbs",
+      "duration": "Duration",
+      "price": "Course fee",
+      "overview": "How the course works",
+      "format": "Format",
+      "included": "Included in the fee",
+      "diploma": "Diploma",
+      "program": "Course programme",
+      "tattoo": {
+        "title": "Tattoo artist course in Chișinău",
+        "menu": "Tattoo artist course",
+        "lead": "Learn lining, shading and colour. After the theory session, you’ll practise on models under the guidance of an Oblivion Tattoo artist.",
+        "audience": "The course is suitable for beginners. Start with skin, hygiene and needle selection, then put different tattooing techniques into practice with an artist.",
+        "imageAlt": "Black-and-grey forearm tattoo featuring a katana",
+        "contactTitle": "Book the tattoo artist course",
+        "faqTitle": "Tattoo training questions",
+        "program": [
+          {
+            "title": "Skin, hygiene and equipment",
+            "text": "Cover the basics of skin and hygiene, and learn how to choose needles and cartridges."
+          },
+          {
+            "title": "Lining and shading",
+            "text": "Practise outlining and shading on models with guidance from a tattoo artist."
+          },
+          {
+            "title": "Solid fill and colour",
+            "text": "Work on packing solid areas of a design and applying colour during practical sessions."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can I start as a complete beginner?",
+            "answer": "Yes. The course begins with skin, hygiene and choosing equipment before you move on to practical work."
+          },
+          {
+            "question": "Which techniques will I practise on models?",
+            "answer": "You will practise lining, shading, solid fill and working with colour under the guidance of a tattoo artist."
+          },
+          {
+            "question": "Do I need to buy a machine, needles or cartridges?",
+            "answer": "The studio provides the equipment and consumables you’ll use during the course."
+          },
+          {
+            "question": "Will an artist supervise the practical sessions?",
+            "answer": "Yes. The practical sessions take place on models under the guidance of a tattoo artist."
+          },
+          {
+            "question": "What document does the studio award?",
+            "answer": "You receive an Oblivion Tattoo studio diploma of completion. It is issued in Romanian and English."
+          }
+        ]
+      },
+      "permanent": {
+        "title": "Permanent makeup course in Chișinău",
+        "menu": "Permanent makeup course",
+        "lead": "Learn colour theory and how to map shapes. At Oblivion Tattoo, you’ll work on brows and lips on models and practise mapping eyeliner wings.",
+        "audience": "You can join with no previous experience. The course begins with the relationship between colour and shape, then moves into practical work with a permanent makeup artist.",
+        "imageAlt": "Close-up of brows after permanent makeup",
+        "contactTitle": "Book the permanent makeup course",
+        "faqTitle": "Permanent makeup training questions",
+        "program": [
+          {
+            "title": "Colour theory, mapping and hygiene",
+            "text": "The theory session covers the fundamentals of colour, how to map shapes and hygiene."
+          },
+          {
+            "title": "Brows",
+            "text": "Work on brow shape on models under the guidance of an artist."
+          },
+          {
+            "title": "Lips",
+            "text": "Practise permanent lip makeup on models, applying what you learned about shape and colour."
+          },
+          {
+            "title": "Eyeliner wing mapping",
+            "text": "Practise mapping the shape of eyeliner wings during the practical sessions."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can I join if I’ve never done permanent makeup?",
+            "answer": "Yes. The course starts with colour theory, shape mapping and hygiene."
+          },
+          {
+            "question": "Does the course cover colour theory and mapping?",
+            "answer": "Yes. Both are covered in the theory session and inform the practical work."
+          },
+          {
+            "question": "Which areas will I work on with models?",
+            "answer": "You’ll work on brows and lips on models. Practical sessions also include mapping eyeliner wings."
+          },
+          {
+            "question": "Are equipment and consumables provided?",
+            "answer": "Yes. Equipment and consumables for the sessions are included in the course fee."
+          },
+          {
+            "question": "How do I arrange training dates?",
+            "answer": "Message the studio on Telegram with your preferred dates and say you’re interested in the permanent makeup course. The studio will arrange a schedule with you."
+          }
+        ]
+      },
+      "piercing": {
+        "title": "Piercing course in Chișinău",
+        "menu": "Piercing course",
+        "lead": "Study piercing anatomy, instrument sterilisation and aftercare. Then practise piercing techniques on models with an Oblivion Tattoo piercer.",
+        "audience": "The course is open to beginners. You’ll learn about the piercing site and how instruments are prepared before moving on to practical sessions.",
+        "imageAlt": "Close-up of a nostril piercing with a clear crystal stud",
+        "contactTitle": "Book the piercing course",
+        "faqTitle": "Piercing training questions",
+        "program": [
+          {
+            "title": "Anatomy of the piercing site",
+            "text": "Study the anatomy of the area to be pierced during the theory session."
+          },
+          {
+            "title": "Sterilisation and aftercare",
+            "text": "Learn about instrument sterilisation and caring for a piercing while it heals."
+          },
+          {
+            "title": "Piercing technique",
+            "text": "Practise the technique on models with guidance from a piercer."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Do I need any piercing experience?",
+            "answer": "No. The course starts with theory and continues with supervised practice."
+          },
+          {
+            "question": "Does the course cover instrument sterilisation?",
+            "answer": "Yes. The theory session covers instrument sterilisation and the anatomy of the piercing site."
+          },
+          {
+            "question": "Is piercing aftercare part of the syllabus?",
+            "answer": "Yes. The theory session covers caring for a piercing during healing."
+          },
+          {
+            "question": "How do practical sessions work?",
+            "answer": "You practise piercing techniques on models under the guidance of a piercer."
+          },
+          {
+            "question": "Should I bring my own instruments or jewellery?",
+            "answer": "The studio provides the instruments and jewellery you need for the practical sessions."
+          }
+        ],
+        "fallbackAlt": "Illustration of ear, nose and tongue piercings"
       }
     },
     "certificateSection": {

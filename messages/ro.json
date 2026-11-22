@@ -69,6 +69,18 @@
       "twitterTitle": "Piercing în Chișinău | Studioul Oblivion Tattoo",
       "twitterDescription": "Piercing în Chișinău la Oblivion Tattoo. Lobul urechii 150 MDL, nară sau limbă 250 MDL, buric 300 MDL. Bijuteria de bază este inclusă. Programări online."
     },
+    "tattooCourse": {
+      "title": "Curs de tatuaje în Chișinău | Oblivion Tattoo",
+      "description": "Învață să tatuezi în Chișinău pentru 450 €. O zi de teorie și șase zile de practică pe modele. Contur, umbre, umplere și culoare. Echipament inclus."
+    },
+    "permanentCourse": {
+      "title": "Curs de machiaj permanent în Chișinău | Oblivion Tattoo",
+      "description": "Curs de șapte zile în Chișinău, la 450 €. Înveți cromatică, lucrezi pe sprâncene și buze și exersezi trasarea codițelor de eyeliner. Materiale incluse."
+    },
+    "piercingCourse": {
+      "title": "Curs de piercing în Chișinău | Oblivion Tattoo",
+      "description": "Curs de piercing în Chișinău, trei zile la 300 €. Anatomie, sterilizare, îngrijire și două zile de practică pe modele. Instrumente și bijuterii incluse."
+    },
     "coursePageMetadata": {
       "title": "Cursuri de tatuaj și machiaj permanent în Chișinău | Oblivion Tattoo",
       "description": "Cursuri de tatuaj și machiaj permanent în Chișinău: 7 zile și 450 € fiecare. Piercing: 3 zile, 300 €. Practică pe modele și materiale incluse.",
@@ -137,14 +149,16 @@
         { "label": "Piercing", "href": "/piercing" },
         { "label": "Galerie", "href": "/gallery" },
         { "label": "Blog", "href": "/blog" },
-        { "label": "Curs", "href": "/course" },
+        { "label": "Cursuri", "href": "/course" },
         { "label": "Contacte", "href": "/contacts" }
       ]
     },
     "headerMobile": {
-      "description": "Navighează prin meniu pentru a explora serviciile noastre.",
+      "studio": "Studio de tatuaje · Chișinău",
+      "navigation": "Navigare principală",
+      "close": "Închide meniul",
+      "language": "Alege limba",
       "home": "Acasă",
-      "appointment": "Tatuajele se efectuează doar pe bază de programare.",
       "workingHours": "Zilnic între 10:00 și 20:30"
     },
     "heroSection": {
@@ -873,6 +887,158 @@
         "theory": "Anatomie, sterilizare și îngrijire după piercing",
         "text": "Studiezi anatomia zonei, sterilizarea instrumentelor și îngrijirea în perioada de vindecare. În partea practică exersezi perforarea pe modele, cu instructorul alături.",
         "link": "Tipuri de piercing în studio"
+      }
+    },
+    "details": {
+      "catalog": "Toate cursurile",
+      "link": "Detalii despre curs",
+      "breadcrumbLabel": "Cale de navigare",
+      "duration": "Durata",
+      "price": "Prețul cursului",
+      "overview": "Cum se desfășoară cursul",
+      "format": "Format",
+      "included": "Ce include prețul",
+      "diploma": "Diplomă",
+      "program": "Programa cursului",
+      "tattoo": {
+        "title": "Curs de tatuaje în Chișinău",
+        "menu": "Curs de tatuaje",
+        "lead": "Înveți să lucrezi cu linii, umbre și culoare. După teorie, exersezi pe modele sub îndrumarea unui artist tatuator de la Oblivion Tattoo.",
+        "audience": "Cursul se adresează celor care vor să învețe să tatueze de la zero. Începi cu particularitățile pielii și alegerea instrumentelor, apoi exersezi diverse tehnici alături de un tatuator.",
+        "imageAlt": "Tatuaj alb-negru cu o katana pe antebraț",
+        "contactTitle": "Înscrie-te la cursul de tatuaje",
+        "faqTitle": "Întrebări despre cursul de tatuaje",
+        "program": [
+          {
+            "title": "Pielea, igiena și instrumentele",
+            "text": "Înveți despre particularitățile pielii, regulile de bază ale igienei și alegerea acelor și a cartușelor."
+          },
+          {
+            "title": "Contur și umbre",
+            "text": "Exersezi liniile de contur și trecerile dintre umbre pe modele, cu îndrumarea unui artist tatuator."
+          },
+          {
+            "title": "Umplere uniformă și culoare",
+            "text": "La practică înveți să acoperi uniform zonele desenului și să lucrezi cu pigmenți colorați."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Pot începe fără experiență în tatuaje?",
+            "answer": "Da. Înveți întâi despre piele, igienă și alegerea instrumentelor, apoi treci la practică."
+          },
+          {
+            "question": "Ce tehnici exersez pe modele?",
+            "answer": "Exersezi conturul, umbrele, umplerea uniformă și lucrul cu culoarea sub îndrumarea tatuatorului."
+          },
+          {
+            "question": "Trebuie să cumpăr o mașină de tatuat, ace sau cartușe?",
+            "answer": "Studioul pune la dispoziție echipamentul și consumabilele folosite pe durata cursului."
+          },
+          {
+            "question": "Mă îndrumă un tatuator la ședințele de practică?",
+            "answer": "Da. Lucrezi pe modele sub îndrumarea unui artist tatuator."
+          },
+          {
+            "question": "Ce document eliberează studioul?",
+            "answer": "Primești o diplomă Oblivion Tattoo care confirmă absolvirea cursului, redactată în română și engleză."
+          }
+        ]
+      },
+      "permanent": {
+        "title": "Curs de machiaj permanent în Chișinău",
+        "menu": "Curs de machiaj permanent",
+        "lead": "Înveți noțiuni de cromatică și cum să trasezi forma. La Oblivion Tattoo lucrezi pe sprâncenele și buzele modelelor și exersezi trasarea codițelor de eyeliner.",
+        "audience": "Te poți înscrie fără experiență. Începi prin a înțelege relația dintre formă și culoare, apoi aplici aceste noțiuni alături de un specialist în machiaj permanent.",
+        "imageAlt": "Sprâncene după machiaj permanent, fotografiate de aproape",
+        "contactTitle": "Înscrie-te la cursul de machiaj permanent",
+        "faqTitle": "Întrebări despre cursul de machiaj permanent",
+        "program": [
+          {
+            "title": "Cromatică, trasarea formei și igienă",
+            "text": "La teorie studiezi bazele cromaticii, trasarea formei și regulile de igienă."
+          },
+          {
+            "title": "Sprâncene",
+            "text": "Lucrezi la forma sprâncenelor pe modele sub îndrumarea specialistului."
+          },
+          {
+            "title": "Buze",
+            "text": "Exersezi machiajul permanent al buzelor pe modele, ținând cont de formă și culoare."
+          },
+          {
+            "title": "Trasarea codițelor de eyeliner",
+            "text": "În partea practică exersezi și trasarea formei codițelor de eyeliner."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Pot veni dacă nu am mai făcut machiaj permanent?",
+            "answer": "Da. Începi cu noțiunile de cromatică, trasarea formei și regulile de igienă."
+          },
+          {
+            "question": "Se predau cromatica și trasarea formei?",
+            "answer": "Da. Ambele fac parte din teorie și le aplici apoi la practică."
+          },
+          {
+            "question": "Pe ce zone lucrez cu modele?",
+            "answer": "Lucrezi pe sprâncene și buze. În partea practică exersezi și trasarea codițelor de eyeliner."
+          },
+          {
+            "question": "Studioul asigură echipamentul și consumabilele?",
+            "answer": "Da. Echipamentul și consumabilele folosite la curs sunt incluse în preț."
+          },
+          {
+            "question": "Cum stabilesc perioada de curs?",
+            "answer": "Scrie studioului pe Telegram, menționează cursul de machiaj permanent și spune în ce perioadă poți veni. Veți stabili împreună programul."
+          }
+        ]
+      },
+      "piercing": {
+        "title": "Curs de piercing în Chișinău",
+        "menu": "Curs de piercing",
+        "lead": "Înveți despre anatomia zonei, sterilizarea instrumentelor și îngrijirea în timpul vindecării. Apoi exersezi tehnica pe modele alături de un specialist Oblivion Tattoo.",
+        "audience": "Cursul este potrivit pentru începători. Înainte de practică, studiezi particularitățile zonei în care se face piercingul și cum se pregătesc instrumentele.",
+        "imageAlt": "Piercing în nară cu o bijuterie cu cristal transparent",
+        "contactTitle": "Înscrie-te la cursul de piercing",
+        "faqTitle": "Întrebări despre cursul de piercing",
+        "program": [
+          {
+            "title": "Anatomia zonei de perforat",
+            "text": "La teorie studiezi caracteristicile anatomice ale zonei în care se face piercingul."
+          },
+          {
+            "title": "Sterilizare și îngrijire",
+            "text": "Înveți despre sterilizarea instrumentelor și despre îngrijirea piercingului în timpul vindecării."
+          },
+          {
+            "title": "Tehnica de perforare",
+            "text": "Exersezi tehnica pe modele sub îndrumarea unui specialist în piercing."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Am nevoie de experiență în piercing?",
+            "answer": "Nu. Cursul începe cu teorie și continuă cu practică sub îndrumarea unui specialist."
+          },
+          {
+            "question": "Sterilizarea instrumentelor face parte din programă?",
+            "answer": "Da. La teorie studiezi sterilizarea instrumentelor și anatomia zonei în care se face piercingul."
+          },
+          {
+            "question": "Se discută despre îngrijirea piercingului?",
+            "answer": "Da. Îngrijirea piercingului în timpul vindecării face parte din teorie."
+          },
+          {
+            "question": "Cum se desfășoară practica?",
+            "answer": "Exersezi tehnica de perforare pe modele sub îndrumarea unui specialist în piercing."
+          },
+          {
+            "question": "Trebuie să aduc instrumente sau bijuterii?",
+            "answer": "Studioul oferă instrumentele și bijuteriile necesare la ședințele de practică."
+          }
+        ],
+        "fallbackAlt": "Ilustrație cu piercinguri în ureche, nas și limbă"
       }
     },
     "certificateSection": {

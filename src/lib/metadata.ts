@@ -63,22 +63,24 @@ export async function buildMetadata({ locale, namespace, path, alternateLocales,
   const t = await getTranslations({ locale, namespace })
   const pageLabel = pageNumber && pageNumber > 1 ? t('pageLabel', { page: pageNumber }) : ''
   const localizedText = (key: string) => pageLabel ? `${t(key)} — ${pageLabel}` : t(key)
+  const title = localizedText('title')
+  const description = localizedText('description')
   const canonicalUrl = localizedUrl(locale, path)
   const image = `${siteOrigin}/og_image.png`
 
   return {
     ...baseMetadata,
-    title: localizedText('title'),
-    description: localizedText('description'),
+    title,
+    description,
     alternates: { canonical: canonicalUrl, languages: buildLanguageAlternates(path, alternateLocales) },
     ...buildSocialMetadata({
       locale,
       type: 'website',
       url: canonicalUrl,
-      openGraphTitle: localizedText('openGraphTitle'),
-      openGraphDescription: localizedText('openGraphDescription'),
-      twitterTitle: localizedText('twitterTitle'),
-      twitterDescription: localizedText('twitterDescription'),
+      openGraphTitle: t.has('openGraphTitle') ? localizedText('openGraphTitle') : title,
+      openGraphDescription: t.has('openGraphDescription') ? localizedText('openGraphDescription') : description,
+      twitterTitle: t.has('twitterTitle') ? localizedText('twitterTitle') : title,
+      twitterDescription: t.has('twitterDescription') ? localizedText('twitterDescription') : description,
       image
     })
   }

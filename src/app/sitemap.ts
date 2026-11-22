@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 import { getBlogPostsForSitemap } from '@/lib/cachedPrisma'
+import { courses } from '@/lib/courses'
 import { buildLanguageAlternates, localizedUrl } from '@/lib/siteUrl'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -16,6 +17,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...pages,
+    ...courses.flatMap(({ path }) => {
+      const languages = buildLanguageAlternates(path)
+      return routing.locales.map(locale => ({
+        url: localizedUrl(locale, path),
+        alternates: { languages },
+        changeFrequency: 'monthly' as const,
+        priority: 0.8
+      }))
+    }),
     ...routing.locales.map(locale => ({
       url: localizedUrl(locale, '/blog'),
       alternates: { languages: buildLanguageAlternates('/blog') },

@@ -69,6 +69,18 @@
       "twitterTitle": "Piercing a Chișinău | Studio Oblivion Tattoo",
       "twitterDescription": "Piercing a Chișinău da Oblivion Tattoo. Lobo 150 MDL, narice o lingua 250 MDL, ombelico 300 MDL. Gioiello base incluso nel prezzo. Prenota online."
     },
+    "tattooCourse": {
+      "title": "Corso per tatuatori a Chișinău | Oblivion Tattoo",
+      "description": "Impara a tatuare a Chișinău con 450 €. Un giorno di teoria e sei di pratica su modelli. Contorni, sfumature, riempimento e colore. Attrezzatura inclusa."
+    },
+    "permanentCourse": {
+      "title": "Corso di trucco permanente a Chișinău | Oblivion Tattoo",
+      "description": "Corso di trucco permanente a Chișinău, sette giorni a 450 €. Teoria del colore, pratica su sopracciglia e labbra e disegno delle codine dell’eyeliner."
+    },
+    "piercingCourse": {
+      "title": "Corso di piercing a Chișinău | Oblivion Tattoo",
+      "description": "Corso di piercing a Chișinău, tre giorni a 300 €. Anatomia, sterilizzazione, cura e due giorni di pratica su modelli. Strumenti e gioielli inclusi."
+    },
     "coursePageMetadata": {
       "title": "Corsi di tatuaggio e trucco permanente a Chișinău | Oblivion Tattoo",
       "description": "A Chișinău, tatuaggio e trucco permanente durano 7 giorni e costano 450 € a corso. Piercing: 3 giorni, 300 €. Pratica su modelli e materiali inclusi.",
@@ -137,14 +149,16 @@
         { "label": "Piercing", "href": "/piercing" },
         { "label": "Galleria", "href": "/gallery" },
         { "label": "Blog", "href": "/blog" },
-        { "label": "Corso", "href": "/course" },
+        { "label": "Corsi", "href": "/course" },
         { "label": "Contatti", "href": "/contacts" }
       ]
     },
     "headerMobile": {
-      "description": "Naviga nel menu per scoprire i nostri servizi.",
+      "studio": "Studio di tatuaggi · Chișinău",
+      "navigation": "Navigazione principale",
+      "close": "Chiudi menu",
+      "language": "Scegli la lingua",
       "home": "Home",
-      "appointment": "I tatuaggi sono disponibili solo su appuntamento",
       "workingHours": "Tutti i giorni dalle 10:00 alle 20:30"
     },
     "heroSection": {
@@ -873,6 +887,158 @@
         "theory": "Anatomia, sterilizzazione e cura dopo il piercing",
         "text": "Studi l’anatomia della zona, la sterilizzazione degli strumenti e le cure durante la guarigione. Nelle lezioni pratiche ti eserciti su modelli sotto la supervisione del docente.",
         "link": "I tipi di piercing in studio"
+      }
+    },
+    "details": {
+      "catalog": "Tutti i corsi",
+      "link": "Dettagli del corso",
+      "breadcrumbLabel": "Percorso di navigazione",
+      "duration": "Durata",
+      "price": "Costo del corso",
+      "overview": "Come si svolge il corso",
+      "format": "Struttura",
+      "included": "Incluso nel prezzo",
+      "diploma": "Diploma",
+      "program": "Programma del corso",
+      "tattoo": {
+        "title": "Corso per tatuatori a Chișinău",
+        "menu": "Corso per tatuatori",
+        "lead": "Impara a lavorare con linee, ombre e colore. Dopo la teoria farai pratica su modelli con la guida di un tatuatore di Oblivion Tattoo.",
+        "audience": "Il corso è pensato per chi vuole imparare a tatuare da zero. Prima studi le caratteristiche della pelle e la scelta degli strumenti, poi metti in pratica le tecniche di tatuaggio.",
+        "imageAlt": "Tatuaggio in bianco e nero con una katana sull’avambraccio",
+        "contactTitle": "Iscriviti al corso per tatuatori",
+        "faqTitle": "Domande sul corso per tatuatori",
+        "program": [
+          {
+            "title": "Pelle, igiene e strumenti",
+            "text": "Studia le caratteristiche della pelle, le basi dell’igiene e la scelta di aghi e cartucce."
+          },
+          {
+            "title": "Contorno e sfumature",
+            "text": "Esercitati a tracciare i contorni e a creare sfumature su modelli con la guida di un tatuatore."
+          },
+          {
+            "title": "Riempimento uniforme e colore",
+            "text": "Durante la pratica impari a riempire le aree del disegno con un tono uniforme e a lavorare con il colore."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Posso iniziare senza esperienza con i tatuaggi?",
+            "answer": "Sì. Il corso inizia con le basi dell’igiene, le caratteristiche della pelle e la scelta degli strumenti."
+          },
+          {
+            "question": "Quali tecniche eserciterò su modelli?",
+            "answer": "Con la guida del tatuatore, farai pratica con contorni, sfumature, riempimento uniforme e colore."
+          },
+          {
+            "question": "Devo acquistare una macchinetta, aghi o cartucce?",
+            "answer": "Lo studio fornisce l’attrezzatura e i materiali di consumo per la durata del corso."
+          },
+          {
+            "question": "Un tatuatore mi seguirà durante le esercitazioni?",
+            "answer": "Sì. Le esercitazioni si svolgono su modelli con la guida di un tatuatore."
+          },
+          {
+            "question": "Quale documento rilascia lo studio?",
+            "answer": "Riceverai un diploma di fine corso di Oblivion Tattoo, redatto in rumeno e in inglese."
+          }
+        ]
+      },
+      "permanent": {
+        "title": "Corso di trucco permanente a Chișinău",
+        "menu": "Corso di trucco permanente",
+        "lead": "Impara le basi della teoria del colore e del disegno della forma. Da Oblivion Tattoo lavorerai su sopracciglia e labbra di modelli e ti eserciterai a disegnare le codine dell’eyeliner.",
+        "audience": "Puoi iscriverti anche senza esperienza. Parti dal rapporto tra forma e colore nel trucco permanente e applichi questi concetti durante le esercitazioni con uno specialista.",
+        "imageAlt": "Primo piano delle sopracciglia dopo il trucco permanente",
+        "contactTitle": "Iscriviti al corso di trucco permanente",
+        "faqTitle": "Domande sul corso di trucco permanente",
+        "program": [
+          {
+            "title": "Teoria del colore, disegno e igiene",
+            "text": "La teoria comprende le basi del colore, il disegno della forma e le regole di igiene."
+          },
+          {
+            "title": "Sopracciglia",
+            "text": "Lavori sulla forma delle sopracciglia di modelli con la guida di uno specialista."
+          },
+          {
+            "title": "Labbra",
+            "text": "Ti eserciti nel trucco permanente delle labbra su modelli, tenendo conto di forma e colore."
+          },
+          {
+            "title": "Disegno delle codine dell’eyeliner",
+            "text": "La parte pratica comprende esercitazioni per disegnare la forma delle codine dell’eyeliner."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Posso iscrivermi se non ho mai fatto trucco permanente?",
+            "answer": "Sì. Il corso inizia con la teoria del colore, il disegno della forma e l’igiene."
+          },
+          {
+            "question": "Il corso comprende la teoria del colore e il disegno della forma?",
+            "answer": "Sì. Entrambi gli argomenti fanno parte della teoria e sono alla base del lavoro pratico."
+          },
+          {
+            "question": "Su quali zone lavorerò con i modelli?",
+            "answer": "Lavorerai su sopracciglia e labbra. Nella parte pratica ti eserciterai anche a disegnare le codine dell’eyeliner."
+          },
+          {
+            "question": "Lo studio fornisce attrezzatura e materiali di consumo?",
+            "answer": "Sì. L’attrezzatura e i materiali di consumo usati durante le lezioni sono compresi nel prezzo."
+          },
+          {
+            "question": "Come posso concordare le date?",
+            "answer": "Scrivi allo studio su Telegram, indica che ti interessa il corso di trucco permanente e comunica le date in cui sei disponibile. Concorderete il calendario."
+          }
+        ]
+      },
+      "piercing": {
+        "title": "Corso di piercing a Chișinău",
+        "menu": "Corso di piercing",
+        "lead": "Studia l’anatomia della zona da forare, la sterilizzazione degli strumenti e la cura durante la guarigione. Poi fai pratica su modelli con un piercer di Oblivion Tattoo.",
+        "audience": "Il corso è adatto ai principianti. Prima di passare alla pratica, studi le caratteristiche della zona da forare e come si preparano gli strumenti.",
+        "imageAlt": "Primo piano di un piercing alla narice con un cristallo trasparente",
+        "contactTitle": "Iscriviti al corso di piercing",
+        "faqTitle": "Domande sul corso di piercing",
+        "program": [
+          {
+            "title": "Anatomia della zona da forare",
+            "text": "Durante la teoria studi le caratteristiche anatomiche della zona in cui si esegue il piercing."
+          },
+          {
+            "title": "Sterilizzazione e cura",
+            "text": "Impari come si sterilizzano gli strumenti e come ci si prende cura del piercing durante la guarigione."
+          },
+          {
+            "title": "Tecnica di foratura",
+            "text": "Ti eserciti nella tecnica su modelli con la guida di un piercer."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Serve esperienza nel piercing?",
+            "answer": "No. Il corso inizia con la teoria e prosegue con la pratica sotto la guida di un piercer."
+          },
+          {
+            "question": "La sterilizzazione degli strumenti fa parte del programma?",
+            "answer": "Sì. Nella parte teorica si studiano la sterilizzazione degli strumenti e l’anatomia della zona da forare."
+          },
+          {
+            "question": "Il corso tratta la cura del piercing?",
+            "answer": "Sì. La cura del piercing durante la guarigione fa parte della teoria."
+          },
+          {
+            "question": "Come si svolge la parte pratica?",
+            "answer": "Ti eserciti nella tecnica di foratura su modelli con la guida di un piercer."
+          },
+          {
+            "question": "Devo portare strumenti o gioielli?",
+            "answer": "Lo studio fornisce gli strumenti e i gioielli per le esercitazioni."
+          }
+        ],
+        "fallbackAlt": "Illustrazione di piercing a orecchio, naso e lingua"
       }
     },
     "certificateSection": {

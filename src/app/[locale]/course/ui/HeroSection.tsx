@@ -1,9 +1,8 @@
 import { ArrowRight, Clock3, GraduationCap, Package, UsersRound } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import Link from 'next/link'
 import { CtaLink } from '@/components/ui/cta-link'
-import { getPathname } from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { courses } from '@/lib/courses'
 import { cn } from '@/lib/utils'
@@ -21,7 +20,7 @@ const benefits = [
 const linkStyle = 'inline-flex min-h-11 items-center gap-2 rounded-sm text-sm font-medium text-zinc-300 hover:text-brand-red focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red motion-safe:transition-colors'
 const comparisonId = 'compare-courses'
 
-export async function HeroSection({ locale }: { locale: string }) {
+export async function HeroSection() {
   const t = await getTranslations('coursesPage')
 
   return (
@@ -68,9 +67,8 @@ export async function HeroSection({ locale }: { locale: string }) {
 
       <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container flex flex-col gap-3 pb-16 lg:pb-20">
         <div id={comparisonId} role="region" aria-label={t('hero.compare')} tabIndex={-1} className="grid scroll-mt-26 grid-cols-1 gap-3.5 rounded-2xl outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:grid-cols-2 lg:grid-cols-12 lg:gap-4">
-          {courses.map(({ key, price, service, tracking }) => {
+          {courses.map(({ key, path, price, duration, schedule, supplies, service, tracking, image }) => {
             const featured = key === 'tattoo'
-            const short = key === 'piercing'
             const title = t(`types.${key}.title`)
             const titleId = `${key}-course-title`
 
@@ -97,7 +95,7 @@ export async function HeroSection({ locale }: { locale: string }) {
                   </div>
                   <p className="flex items-center gap-2 text-sm/5 font-medium text-zinc-200">
                     <Clock3 aria-hidden="true" className="size-4 shrink-0 text-brand-red" />
-                    {t(short ? 'shortDuration' : 'longDuration')}
+                    {t(duration)}
                   </p>
                 </div>
 
@@ -106,16 +104,16 @@ export async function HeroSection({ locale }: { locale: string }) {
                     {t(`types.${key}.summary`)}
                   </p>
                   <ul className="flex list-disc flex-col gap-1 ps-4 text-sm/5 text-zinc-300 marker:text-brand-red">
-                    <li>{t(short ? 'shortSchedule' : 'longSchedule')}</li>
+                    <li>{t(schedule)}</li>
                     <li>{t(`types.${key}.theory`)}</li>
-                    <li>{t(short ? 'jewellery' : 'materials')}</li>
+                    <li>{t(supplies)}</li>
                   </ul>
                 </div>
 
                 {featured && (
                   <div className="relative h-28 grow overflow-hidden rounded-lg bg-zinc-800 sm:h-40 lg:min-h-36">
                     <Image
-                      src="/images/homePage/hero-section/hero-1.webp"
+                      src={image}
                       alt=""
                       fill
                       sizes="(min-width: 1024px) 55vw, 100vw"
@@ -136,17 +134,20 @@ export async function HeroSection({ locale }: { locale: string }) {
                   >
                     {t('hero.cardCta')}
                   </CtaLink>
-                  <Link href={getPathname({ locale, href: service })} className={linkStyle}>
-                    {t(`types.${key}.link`)}
-                    <ArrowRight aria-hidden="true" className="size-4 shrink-0" />
+                  <Link href={path} aria-label={`${t('details.link')} · ${title}`} className={cn(linkStyle, 'font-semibold text-white underline decoration-zinc-500 underline-offset-4')}>
+                    {t('details.link')}
+                    <ArrowRight aria-hidden="true" className="size-4 shrink-0 text-brand-red" />
                   </Link>
                 </div>
+                <Link href={service} className={cn(linkStyle, 'self-start')}>
+                  {t(`types.${key}.link`)}
+                </Link>
               </section>
             )
           })}
         </div>
 
-        <Link href={getPathname({ locale, href: '/gallery' })} className={cn(linkStyle, 'self-start')}>
+        <Link href="/gallery" className={cn(linkStyle, 'self-start')}>
           {t('gallery')}
           <ArrowRight aria-hidden="true" className="size-4 shrink-0 text-brand-red" />
         </Link>
