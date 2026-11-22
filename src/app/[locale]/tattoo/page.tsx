@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import { getTranslations } from 'next-intl/server'
 import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
@@ -11,7 +10,7 @@ import { buildTattooServiceJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
 import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
-import { LatestTattoo, LatestTattooFallback } from './ui/LatestTattoo'
+import { LatestTattoo } from './ui/LatestTattoo'
 import { ServicesSection } from './ui/ServicesSection'
 
 export const generateMetadata = withSeo('metadata.tattooPageMetadata', '/tattoo')
@@ -24,9 +23,7 @@ export default async function TattooPage({ params }: { params: Promise<{ locale:
       <HeroSection />
       <ServicesSection />
       <AboutSection />
-      <Suspense fallback={<LatestTattooFallback />}>
-        <LatestTattoo />
-      </Suspense>
+      <LatestTattoo />
       <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="bg-zinc-900">
         <FaqSection titleId="tattoo-faq-title" title={t('faq.title')} items={t.raw('faq.items')} className="py-20">
           <div className="flex flex-wrap gap-4">

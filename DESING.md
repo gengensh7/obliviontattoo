@@ -26,7 +26,7 @@ The home page runs in this order.
 
 HeroSlider → Services → About the studio → Tattoo designs → Studio advantages → Portfolio → Contacts → Map
 
-`src/app/[locale]/page.tsx` defines the order. The header is fixed at the top.
+`src/app/[locale]/(home)/page.tsx` defines the order. The header is fixed at the top.
 At the top of the page, React Bits Glass Surface sits behind the desktop Gooey Nav
 and the language switcher. The language options open in a frosted dropdown.
 After scrolling, the glass covers the full header. It refracts the page behind it,
@@ -236,6 +236,18 @@ Add motion only when useful and respect `prefers-reduced-motion`.
 Preserve existing hero transitions and fallback components.
 Keep limited interactivity in focused Client Components to preserve server rendering
 for the rest of the page.
+
+## Loading states
+
+Each public page reserves its own hero composition with graphite placeholders. The
+home and blog index use route groups so their loading screens only apply to the
+index. Shared skeleton primitives live in `src/shared/LoadingSkeleton.tsx`.
+They use the existing CSS pulse and stay still with reduced motion.
+
+The home sketches and portfolio, tattoo portfolio, permanent makeup gallery,
+gallery feed, and featured blog article stream independently. The gallery reserves
+six 4:5 frames for its first batch and keeps earlier photos visible during pagination.
+The article skeleton follows the heading and body of the stored article HTML.
 
 ## Copy and Scope
 

@@ -1,9 +1,11 @@
+import { Suspense } from 'react'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { CtaLink } from '@/components/ui/cta-link'
 import { getPathname } from '@/i18n/navigation'
 import { getPortfolioImages } from '@/lib/cachedPrisma'
 import { SUPABASE_S3_URL } from '@/lib/config'
 import FadeContent from '@/shared/FadeContent'
+import { LoadingStatus, SkeletonBlock } from '@/shared/LoadingSkeleton'
 import FoldText from '@/shared/FoldText'
 import PortfolioMasonry, { type PortfolioPhoto } from './PortfolioMasonry'
 
@@ -35,8 +37,45 @@ const portfolioPreviews: Record<string, Pick<PortfolioPhoto, 'dimensions' | 'blu
   }
 }
 
+function PortfolioPhotosSkeleton() {
+  return (
+    <>
+      <LoadingStatus />
+      <div aria-hidden="true" className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+        {['aspect-5/7', 'aspect-3/4', 'aspect-3/4', 'aspect-7/8', 'aspect-square', 'aspect-square'].map((ratio, index) => (
+          <div key={index} className="break-inside-avoid pb-4">
+            <SkeletonBlock className={ratio} />
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
+
+async function PortfolioPhotos() {
+  const [images, t] = await Promise.all([getPortfolioImages(), getTranslations('homePage.portfolioSection')])
+  return images.length > 0 && (
+    <PortfolioMasonry
+      photos={images.map(({ id, url, alt }) => ({
+        id,
+        alt,
+        src: `${SUPABASE_S3_URL}/${url}`,
+        ...portfolioPreviews[url]
+      }))}
+      openLabel={t('linkLabel')}
+      lightboxLabels={{
+        close: t('close'),
+        previous: t('previous'),
+        next: t('next'),
+        zoom: t('zoom'),
+        error: t('error')
+      }}
+    />
+  )
+}
+
 export const PortfolioSection = async () => {
-  const [locale, images, t] = await Promise.all([getLocale(), getPortfolioImages(), getTranslations('homePage.portfolioSection')])
+  const [locale, t] = await Promise.all([getLocale(), getTranslations('homePage.portfolioSection')])
 
   return (
     <section aria-labelledby="portfolio-title" className="bg-zinc-900 text-white">
@@ -52,24 +91,9 @@ export const PortfolioSection = async () => {
             {t('link')}
           </CtaLink>
         </div>
-        {images.length > 0 && (
-          <PortfolioMasonry
-            photos={images.map(({ id, url, alt }) => ({
-              id,
-              alt,
-              src: `${SUPABASE_S3_URL}/${url}`,
-              ...portfolioPreviews[url]
-            }))}
-            openLabel={t('linkLabel')}
-            lightboxLabels={{
-              close: t('close'),
-              previous: t('previous'),
-              next: t('next'),
-              zoom: t('zoom'),
-              error: t('error')
-            }}
-          />
-        )}
+        <Suspense fallback={<PortfolioPhotosSkeleton />}>
+          <PortfolioPhotos />
+        </Suspense>
       </FadeContent>
     </section>
   )

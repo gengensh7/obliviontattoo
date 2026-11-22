@@ -3,12 +3,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Suspense } from 'react'
 import { routing } from '@/i18n/routing'
 
-export default function Logo({ locale, alt }: { locale: string; alt: string }) {
-  const pathname = usePathname()
-  const isPermanent = pathname?.split('/').filter(Boolean).at(-1) === 'permanent'
+type Props = { locale: string; alt: string }
 
+function LogoLink({ locale, alt, isPermanent = false }: Props & { isPermanent?: boolean }) {
   return (
     <Link href={locale === routing.defaultLocale ? '/' : `/${locale}`} data-gtm="nav-home-logo">
       <Image
@@ -22,4 +22,13 @@ export default function Logo({ locale, alt }: { locale: string; alt: string }) {
       />
     </Link>
   )
+}
+
+function RouteLogo(props: Props) {
+  const pathname = usePathname()
+  return <LogoLink {...props} isPermanent={pathname.split('/').filter(Boolean).at(-1) === 'permanent'} />
+}
+
+export default function Logo(props: Props) {
+  return <Suspense fallback={<LogoLink {...props} />}><RouteLogo {...props} /></Suspense>
 }

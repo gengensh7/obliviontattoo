@@ -7,6 +7,7 @@ import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
 import FadeContent from '@/shared/FadeContent'
 import { FaqSection } from '@/shared/FaqSection'
+import { LoadingStatus } from '@/shared/LoadingSkeleton'
 import FoldText from '@/shared/FoldText'
 import { GallerySection, GallerySectionFallback } from './ui/GallerySection'
 import { HeroSection } from './ui/HeroSection'
@@ -20,7 +21,7 @@ export default async function PermanentPage({ params }: { params: Promise<{ loca
   return (
     <main className="flex flex-col">
       <HeroSection />
-      <Suspense fallback={<GallerySectionFallback />}>
+      <Suspense fallback={<><LoadingStatus /><GallerySectionFallback /></>}>
         <GallerySection />
       </Suspense>
       <ServicesSection />

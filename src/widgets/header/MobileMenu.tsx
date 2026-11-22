@@ -25,7 +25,7 @@ type MobileMenuProps = {
   }
 }
 
-export default function MobileMenu({ currentYear, locale, links, labels }: MobileMenuProps) {
+function MobileNavigation({ locale, links, labels }: Pick<MobileMenuProps, 'locale' | 'links' | 'labels'>) {
   const pathnameRaw = usePathname()
   const pathname = normalize(pathnameRaw)
 
@@ -39,6 +39,41 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
     return pathname === full || pathname.startsWith(full + '/')
   }
 
+  return (
+    <nav className="flex flex-col gap-4">
+      <SheetClose asChild>
+        <Link
+          href={locale === defaultLocale ? '/' : `/${locale}`}
+          data-gtm="nav-home"
+          className={cn(
+            'transition-colors duration-300',
+            pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-brand-red'
+          )}
+        >
+          {labels.home}
+        </Link>
+      </SheetClose>
+
+      {links.map((link) => (
+        <SheetClose key={link.href} asChild>
+          <Link
+            href={withLocale(link.href)}
+            data-gtm={link.href === '/contacts' ? 'nav-contacts' : 'nav-link'}
+            data-gtm-destination={link.href}
+            className={cn(
+              'transition-colors duration-300',
+              isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-brand-red'
+            )}
+          >
+            {link.label}
+          </Link>
+        </SheetClose>
+      ))}
+    </nav>
+  )
+}
+
+export default function MobileMenu({ currentYear, locale, links, labels }: MobileMenuProps) {
   return (
     <div className="flex items-center lg:hidden">
       <Sheet>
@@ -55,36 +90,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
           </SheetHeader>
 
           <div className="flex-1 overflow-y-auto px-6 py-4">
-            <nav className="flex flex-col gap-4">
-              <SheetClose asChild>
-                <Link
-                  href={locale === defaultLocale ? '/' : `/${locale}`}
-                  data-gtm="nav-home"
-                  className={cn(
-                    'transition-colors duration-300',
-                    pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-brand-red'
-                  )}
-                >
-                  {labels.home}
-                </Link>
-              </SheetClose>
-
-              {links.map((link) => (
-                <SheetClose key={link.href} asChild>
-                  <Link
-                    href={withLocale(link.href)}
-                    data-gtm={link.href === '/contacts' ? 'nav-contacts' : 'nav-link'}
-                    data-gtm-destination={link.href}
-                    className={cn(
-                      'transition-colors duration-300',
-                      isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-brand-red'
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                </SheetClose>
-              ))}
-            </nav>
+            <MobileNavigation locale={locale} links={links} labels={labels} />
           </div>
 
           <div className="border-t border-gray-200 px-6 py-4">

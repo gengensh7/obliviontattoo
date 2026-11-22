@@ -10,6 +10,7 @@ import FadeContent from '@/shared/FadeContent'
 import { FaqSection } from '@/shared/FaqSection'
 import FoldText from '@/shared/FoldText'
 import { GalleryFeed } from './ui/GalleryFeed'
+import { GalleryGridSkeleton } from './ui/GalleryGridSkeleton'
 import { GalleryHero } from './ui/GalleryHero'
 
 export const generateMetadata = withSeo('metadata.galleryPageMetadata', '/gallery')
@@ -47,7 +48,7 @@ export default async function Gallery({ params }: PageProps<'/[locale]/gallery'>
       <GalleryHero />
       <section id="gallery" aria-label={t('viewWorks')} className="scroll-mt-16">
         <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container py-10 sm:py-14">
-          <Suspense fallback={<p role="status" className="text-zinc-300">{t('loading')}</p>}>
+          <Suspense fallback={<div role="status" aria-label={t('loading')}><GalleryGridSkeleton /></div>}>
             <GalleryPhotos locale={locale} />
           </Suspense>
         </FadeContent>

@@ -7,10 +7,11 @@ import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
 import FadeContent from '@/shared/FadeContent'
 import { FaqSection } from '@/shared/FaqSection'
+import { LoadingStatus } from '@/shared/LoadingSkeleton'
 import FoldText from '@/shared/FoldText'
-import { BackgroundLines } from './ui/BackgroundLines'
-import { BlogPosts } from './ui/BlogPosts'
-import { FeaturedSkeleton } from './ui/FeaturedSkeleton'
+import { BackgroundLines } from '../ui/BackgroundLines'
+import { BlogPosts } from '../ui/BlogPosts'
+import { FeaturedSkeleton } from '../ui/FeaturedSkeleton'
 
 export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog')
 
@@ -46,7 +47,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: A
           <h2 id="articles-title" className="text-3xl font-bold tracking-tight sm:text-4xl">
             <FoldText text={t('articles')} />
           </h2>
-          <Suspense fallback={<FeaturedSkeleton />}>
+          <Suspense fallback={<><LoadingStatus /><FeaturedSkeleton /></>}>
             <BlogPosts locale={locale} />
           </Suspense>
         </FadeContent>

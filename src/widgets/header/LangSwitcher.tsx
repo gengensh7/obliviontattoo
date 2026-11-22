@@ -1,7 +1,7 @@
 'use client'
 
 import { Languages } from 'lucide-react'
-import { usePathname, useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useTransition } from 'react'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { AppLocale, routing } from '@/i18n/routing'
@@ -10,12 +10,11 @@ import GlassSurface from './GlassSurface'
 
 export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel: string }) => {
   const router = useRouter()
-  const pathname = usePathname()
   const [isPending, startTransition] = useTransition()
 
   const handleLanguageChange = (newLocale: AppLocale) => {
     startTransition(() => {
-      const segments = pathname.split('/')
+      const segments = window.location.pathname.split('/')
       if (routing.locales.includes(segments[1] as AppLocale)) segments.splice(1, 1)
       const path = segments.join('/') || '/'
       const query = path === '/gallery' ? window.location.search : ''

@@ -1,21 +1,23 @@
-import { Skeleton } from '@/components/ui/skeleton'
+import { RouteSkeleton, SkeletonBlock, SkeletonText } from '@/shared/LoadingSkeleton'
 
 export default function BlogPostLoading() {
   return (
-    <main className="min-h-screen bg-zinc-900 pt-30 pb-20">
-      <article className="container flex flex-col gap-8 text-white">
-        <Skeleton className="mx-auto h-12 w-3/4 bg-zinc-800" />
-        <Skeleton className="mx-auto h-5 w-40 bg-zinc-800" />
-        <div className="mx-auto flex w-full max-w-4xl flex-col gap-4">
-          <Skeleton className="h-5 w-full bg-zinc-800" />
-          <Skeleton className="h-5 w-full bg-zinc-800" />
-          <Skeleton className="h-5 w-5/6 bg-zinc-800" />
-          <Skeleton className="mt-6 h-80 w-full bg-zinc-800" />
-          <Skeleton className="h-5 w-full bg-zinc-800" />
-          <Skeleton className="h-5 w-11/12 bg-zinc-800" />
-          <Skeleton className="h-5 w-4/5 bg-zinc-800" />
+    <RouteSkeleton className="min-h-screen bg-zinc-900 pt-30">
+      <div className="container grid gap-8">
+        <div className="grid gap-6">
+          <SkeletonBlock className="h-9 w-5/6 md:h-10" />
+          <SkeletonText />
         </div>
-      </article>
-    </main>
+        {['w-2/3', 'w-1/2', 'w-3/5'].map((width) => (
+          <div key={width} className="grid gap-4">
+            <div className="border-b border-gray-700 pb-2">
+              <SkeletonBlock className={`h-7 md:h-9 ${width}`} />
+            </div>
+            <SkeletonText />
+            <SkeletonText className="w-11/12" />
+          </div>
+        ))}
+      </div>
+    </RouteSkeleton>
   )
 }

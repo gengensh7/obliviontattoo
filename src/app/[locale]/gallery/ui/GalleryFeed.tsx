@@ -1,6 +1,5 @@
 'use client'
 
-import { LoaderCircle } from 'lucide-react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { AppLocale } from '@/i18n/routing'
@@ -75,9 +74,9 @@ export function GalleryFeed({ initial, locale, labels, lightboxLabels }: Props) 
         </div>
       </Lightbox>
       {cursor && (
-        <div ref={sentinel} className="flex justify-center pt-8">
+        <div ref={sentinel} className="flex min-h-14 justify-center pt-8">
           <div role="status" className="flex items-center gap-2 text-sm text-zinc-300">
-            {status === 'loading' && <><LoaderCircle aria-hidden="true" className="size-4 motion-safe:animate-spin" />{labels.loading}</>}
+            {status === 'loading' && <><span aria-hidden="true" className="h-1.5 w-8 rounded-full bg-zinc-500 motion-safe:animate-pulse" />{labels.loading}</>}
           </div>
           {status === 'error' && <button type="button" onClick={load} className="min-h-12 rounded-md border border-zinc-600 px-5 font-semibold text-white hover:border-brand-red">{labels.more}</button>}
         </div>

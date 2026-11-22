@@ -1,12 +1,15 @@
+import { Suspense } from 'react'
 import { hasLocale } from 'next-intl'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { type AppLocale, routing } from '@/i18n/routing'
 import { getSketchImages } from '@/lib/cachedPrisma'
 import FadeContent from '@/shared/FadeContent'
 import FoldText from '@/shared/FoldText'
+import { LoadingStatus } from '@/shared/LoadingSkeleton'
+import { SketchesPlaceholder } from './SketchesPlaceholder'
 import { LazySketchesCarousel } from './LazySketchesCarousel'
 
-export const SketchesSection = async () => {
+async function SketchesSlides() {
   const [images, requestedLocale, t, playbackLabels] = await Promise.all([
     getSketchImages(),
     getLocale(),
@@ -25,6 +28,23 @@ export const SketchesSection = async () => {
     }
   })
 
+  return slides.length > 0 && (
+    <LazySketchesCarousel
+      images={slides}
+      labels={{
+        previous: t('previous'),
+        next: t('next'),
+        openImage: t('openImage'),
+        pause: playbackLabels('pause'),
+        play: playbackLabels('play')
+      }}
+    />
+  )
+}
+
+export const SketchesSection = async () => {
+  const t = await getTranslations('homePage.sketchesSection')
+
   return (
     <section aria-labelledby="sketches-title" className="bg-zinc-900">
       <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-6 py-16 sm:gap-8 lg:py-20">
@@ -35,18 +55,9 @@ export const SketchesSection = async () => {
           <p className="leading-relaxed text-zinc-300">{t('description')}</p>
         </header>
 
-        {slides.length > 0 && (
-          <LazySketchesCarousel
-            images={slides}
-            labels={{
-              previous: t('previous'),
-              next: t('next'),
-              openImage: t('openImage'),
-              pause: playbackLabels('pause'),
-              play: playbackLabels('play')
-            }}
-          />
-        )}
+        <Suspense fallback={<><LoadingStatus /><SketchesPlaceholder /></>}>
+          <SketchesSlides />
+        </Suspense>
       </FadeContent>
     </section>
   )
