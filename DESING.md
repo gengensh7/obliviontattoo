@@ -223,6 +223,10 @@ and same-page anchors.
 Preserve `data-gtm` attributes when editing existing actions.
 Keep the current social media account names regardless of the website name.
 
+Cookie settings open a compact graphite panel at the lower left. Both choices have
+equal weight. The footer reopens the panel, and the lower right stays available
+for the chat launcher. JivoChat loads when the visitor opens chat.
+
 The shared contact section pairs its heading and red Telegram CTA with rows for
 the phone, studio address, and opening hours. The two columns stack below the
 desktop breakpoint. Social links sit below a thin rule and wrap on narrow

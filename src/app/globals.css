@@ -727,3 +727,8 @@ button {
     animation: none;
   }
 }
+
+/* Keep the consent panel and chat launcher above the device's home indicator. */
+.consent-bottom {
+  bottom: calc(16px + env(safe-area-inset-bottom));
+}

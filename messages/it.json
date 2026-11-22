@@ -1,4 +1,13 @@
 {
+  "cookieConsent": {
+    "description": "Usiamo cookie analitici facoltativi per migliorare il sito. Puoi accettarli o rifiutarli.",
+    "reject": "Rifiuta",
+    "accept": "Accetta",
+    "settings": "Impostazioni cookie",
+    "error": "Impossibile salvare la scelta. Riprova.",
+    "openChat": "Apri la chat JivoChat",
+    "chatFallback": "Chat non disponibile. Scrivici su Telegram"
+  },
   "loadingState": "Caricamento…",
   "blogPage": {
     "blog": "Blog",

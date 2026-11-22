@@ -1,13 +1,13 @@
 import { Clock, Gem, MapPin } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision'
 import { CtaLink } from '@/components/ui/cta-link'
 import { SUPABASE_S3_URL } from '@/lib/config'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { getCurrentYear } from '@/lib/getCurrentYear'
 import FadeContent from '@/shared/FadeContent'
 import FoldText from '@/shared/FoldText'
+import { PiercingHeroBackground } from '@/shared/ServiceHeroBackgrounds'
 
 export const HeroSection = async () => {
   const [t, currentYear] = await Promise.all([getTranslations('piercingPage'), getCurrentYear()])
@@ -22,8 +22,7 @@ export const HeroSection = async () => {
       aria-labelledby="piercing-hero-title"
       className="relative isolate flex items-center bg-zinc-950 text-white selection:bg-rose-200 selection:text-zinc-950 lg:min-h-svh"
     >
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-zinc-950 via-zinc-950 to-red-950/40" />
-      <BackgroundBeamsWithCollision />
+      <PiercingHeroBackground />
 
       <FadeContent
         effect="focus"

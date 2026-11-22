@@ -4,7 +4,7 @@ import { ArrowUpRight, ChevronDown, Menu, Phone, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSelectedLayoutSegments } from 'next/navigation'
-import { Suspense, useEffect, useState } from 'react'
+import { Suspense, useEffect, useRef, useState } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { CtaLink } from '@/components/ui/cta-link'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
@@ -13,6 +13,7 @@ import { CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONT
 import { cn } from '@/lib/utils'
 import type { GooeyNavItem } from './GooeyNav'
 import { LangSwitcher } from './LangSwitcher'
+import { scrollToTop } from './scrollToTop'
 
 const socialLinks = [
   { label: 'Instagram', href: CONTACT_INSTAGRAM, tracking: 'instagram' },
@@ -52,7 +53,7 @@ type MobileMenuProps = {
   }
 }
 
-function MobileNavigation({ locale, links, courseLinks, labels }: MobileMenuProps) {
+function MobileNavigation({ locale, links, courseLinks, labels, onHomeReselect }: MobileMenuProps & { onHomeReselect: () => void }) {
   const segments = useSelectedLayoutSegments().filter((segment) => !segment.startsWith('('))
   const currentPath = '/' + segments.join('/')
   const activeSection = segments.length ? '/' + segments[0] : '/'
@@ -107,6 +108,10 @@ function MobileNavigation({ locale, links, courseLinks, labels }: MobileMenuProp
                 <SheetClose asChild>
                   <Link
                     href={getPathname({ locale, href })}
+                    onNavigate={href === '/' && currentPath === '/' ? (event) => {
+                      event.preventDefault()
+                      onHomeReselect()
+                    } : undefined}
                     aria-current={href === currentPath ? 'page' : undefined}
                     data-gtm={href === '/' ? 'nav-home' : href === '/contacts' ? 'nav-contacts' : 'nav-link'}
                     data-gtm-destination={href === '/' ? undefined : href}
@@ -126,6 +131,7 @@ function MobileNavigation({ locale, links, courseLinks, labels }: MobileMenuProp
 
 export default function MobileMenu({ locale, links, courseLinks, labels }: MobileMenuProps) {
   const [open, setOpen] = useState(false)
+  const scrollHomeOnClose = useRef(false)
 
   useEffect(() => {
     if (!open) return
@@ -149,6 +155,11 @@ export default function MobileMenu({ locale, links, courseLinks, labels }: Mobil
 
         <SheetContent
           side="left"
+          onCloseAutoFocus={() => {
+            if (!scrollHomeOnClose.current) return
+            scrollHomeOnClose.current = false
+            requestAnimationFrame(scrollToTop)
+          }}
           className="mobile-menu-drawer h-dvh max-w-100 gap-0 border-white/10 text-zinc-100 shadow-xl shadow-black/30 transition-none sm:max-w-100 lg:hidden"
           overlayClassName="mobile-menu-overlay bg-black/65 lg:hidden"
           showCloseButton={false}
@@ -165,7 +176,13 @@ export default function MobileMenu({ locale, links, courseLinks, labels }: Mobil
 
           <div className="mobile-menu-body flex min-h-0 flex-1 flex-col">
             <Suspense>
-              <MobileNavigation locale={locale} links={links} courseLinks={courseLinks} labels={labels} />
+              <MobileNavigation
+                locale={locale}
+                links={links}
+                courseLinks={courseLinks}
+                labels={labels}
+                onHomeReselect={() => { scrollHomeOnClose.current = true }}
+              />
             </Suspense>
 
             <div className="grid shrink-0 gap-2.5 border-t border-white/10 px-4 py-3">

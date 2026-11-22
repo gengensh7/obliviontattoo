@@ -1,4 +1,13 @@
 {
+  "cookieConsent": {
+    "description": "Folosim cookie-uri opționale de analiză pentru a îmbunătăți site-ul. Le poți accepta sau refuza.",
+    "reject": "Refuză",
+    "accept": "Acceptă",
+    "settings": "Setări cookie",
+    "error": "Nu am putut salva alegerea. Încearcă din nou.",
+    "openChat": "Deschide chatul JivoChat",
+    "chatFallback": "Chatul este indisponibil. Scrie-ne pe Telegram"
+  },
   "loadingState": "Se încarcă…",
   "blogPage": {
     "blog": "Blog",

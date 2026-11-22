@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl'
 import { CtaLink } from '@/components/ui/cta-link'
-import { MorphicBackground } from '@/components/ui/morhic-background'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import FadeContent from '@/shared/FadeContent'
 import FoldText from '@/shared/FoldText'
 import GradientText from '@/shared/GradientText'
+import { PermanentHeroBackground } from '@/shared/ServiceHeroBackgrounds'
 import { HeroServices, type HeroService } from './HeroServices'
 import type { PermanentCardData } from './ProductCard'
 
@@ -34,9 +34,7 @@ export const HeroSection = () => {
       aria-labelledby="permanent-hero-title"
       className="permanent-hero permanent-hero-shell relative isolate text-white selection:bg-rose-200 selection:text-zinc-950"
     >
-      <div aria-hidden="true" className="permanent-hero-backdrop pointer-events-none absolute inset-0 -z-10 overflow-hidden forced-colors:hidden">
-        <MorphicBackground ballColor="#a6608f" />
-      </div>
+      <PermanentHeroBackground />
 
       <FadeContent effect="focus" trigger="mount" duration={0.52} initialOpacity={0.8} className="container permanent-hero-layout">
         <div className="grid min-w-0 justify-items-start gap-5 sm:gap-8 lg:col-span-5">

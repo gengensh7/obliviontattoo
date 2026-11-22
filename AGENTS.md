@@ -147,6 +147,11 @@ Keep the contents of `.env*`, passwords, tokens, `DATABASE_URL`, and service-rol
 Do not overwrite existing environment variables.
 Contact links are stored in `src/lib/contactLinks.ts`. Keep the existing Instagram and Telegram account names regardless of the project name.
 
+The `cookie-consent` cookie controls the existing GTM container (GA4 and Clarity),
+Vercel Analytics, and Speed Insights through `src/widgets/cookie-modal/`. Mount
+these integrations only for `accepted`. The GTM container owns GA4 page views
+and contact-click tracking. Keep JivoChat available on request for either choice.
+
 ## SEO and IndexNow
 
 Use `NEXT_PUBLIC_DOMAIN_URL` as the sole domain variable. Do not introduce `SITE_URL`.

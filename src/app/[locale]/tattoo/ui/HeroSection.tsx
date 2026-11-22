@@ -1,11 +1,11 @@
 import { Gem, Layers2, PenTool } from 'lucide-react'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { CtaLink } from '@/components/ui/cta-link'
-import { Vortex } from '@/components/ui/vortex'
 import { getPathname } from '@/i18n/navigation'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import FadeContent from '@/shared/FadeContent'
 import FoldText from '@/shared/FoldText'
+import { TattooHeroBackground } from '@/shared/ServiceHeroBackgrounds'
 import { HeroCard, type HeroCardData } from './HeroCard'
 
 export const HeroSection = async () => {
@@ -17,17 +17,7 @@ export const HeroSection = async () => {
       aria-labelledby="tattoo-hero-title"
       className="tattoo-hero relative isolate flex min-h-svh items-center overflow-hidden bg-zinc-900 text-white selection:bg-rose-200 selection:text-zinc-950"
     >
-      <Vortex
-        className="tattoo-hero-vortex"
-        particleCount={520}
-        rangeY={210}
-        baseHue={335}
-        rangeHue={34}
-        baseSpeed={0.6}
-        rangeSpeed={1.5}
-        baseRadius={0.85}
-        rangeRadius={1.45}
-      />
+      <TattooHeroBackground />
 
       <FadeContent
         effect="focus"

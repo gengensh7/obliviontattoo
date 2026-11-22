@@ -5,12 +5,23 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Suspense } from 'react'
 import { routing } from '@/i18n/routing'
+import { scrollToTop } from './scrollToTop'
 
 type Props = { locale: string; alt: string }
 
-function LogoLink({ locale, alt, isPermanent = false }: Props & { isPermanent?: boolean }) {
+function LogoLink({ locale, alt, pathname }: Props & { pathname?: string }) {
+  const href = locale === routing.defaultLocale ? '/' : `/${locale}`
+  const isPermanent = pathname?.split('/').filter(Boolean).at(-1) === 'permanent'
+
   return (
-    <Link href={locale === routing.defaultLocale ? '/' : `/${locale}`} data-gtm="nav-home-logo">
+    <Link
+      href={href}
+      data-gtm="nav-home-logo"
+      onNavigate={pathname === href ? (event) => {
+        event.preventDefault()
+        scrollToTop()
+      } : undefined}
+    >
       <Image
         src={isPermanent ? '/logo-fucshia.svg' : '/logo.svg'}
         alt={alt}
@@ -26,7 +37,7 @@ function LogoLink({ locale, alt, isPermanent = false }: Props & { isPermanent?: 
 
 function RouteLogo(props: Props) {
   const pathname = usePathname()
-  return <LogoLink {...props} isPermanent={pathname.split('/').filter(Boolean).at(-1) === 'permanent'} />
+  return <LogoLink {...props} pathname={pathname} />
 }
 
 export default function Logo(props: Props) {

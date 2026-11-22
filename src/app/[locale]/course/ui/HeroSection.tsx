@@ -134,7 +134,7 @@ export async function HeroSection() {
                   >
                     {t('hero.cardCta')}
                   </CtaLink>
-                  <Link href={path} aria-label={`${t('details.link')} · ${title}`} className={cn(linkStyle, 'font-semibold text-white underline decoration-zinc-500 underline-offset-4')}>
+                  <Link href={path} aria-label={`${t('details.link')} · ${title}`} className={cn(linkStyle, 'font-semibold text-white no-underline')}>
                     {t('details.link')}
                     <ArrowRight aria-hidden="true" className="size-4 shrink-0 text-brand-red" />
                   </Link>
