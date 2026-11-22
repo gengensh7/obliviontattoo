@@ -1,13 +1,13 @@
 'use client'
 
-import type { MouseEvent } from 'react'
+import type { MouseEvent, ReactNode } from 'react'
 import { scroller } from 'react-scroll'
 import { CtaLink } from '@/components/ui/cta-link'
 
-export function CompareCoursesLink({ label, targetId }: { label: string; targetId: string }) {
+export function ScrollCtaLink({ children, targetId, className }: { children: ReactNode; targetId: string; className?: string }) {
   const href = `#${targetId}`
 
-  function scrollToComparison(event: MouseEvent<HTMLAnchorElement>) {
+  function scrollToTarget(event: MouseEvent<HTMLAnchorElement>) {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
 
     const target = document.getElementById(targetId)
@@ -22,8 +22,8 @@ export function CompareCoursesLink({ label, targetId }: { label: string; targetI
   }
 
   return (
-    <CtaLink href={href} onClick={scrollToComparison} className="grow px-3 sm:grow-0 sm:px-5">
-      {label}
+    <CtaLink href={href} onClick={scrollToTarget} className={className}>
+      {children}
     </CtaLink>
   )
 }

@@ -1,22 +1,20 @@
-import { RouteSkeleton, SkeletonBlock, SkeletonText } from '@/shared/LoadingSkeleton'
+import { RouteSkeleton, SkeletonBlock, SkeletonHeading, SkeletonText } from '@/shared/LoadingSkeleton'
 
 export default function BlogPostLoading() {
   return (
-    <RouteSkeleton className="min-h-screen bg-zinc-900 pt-30">
-      <div className="container grid gap-8">
-        <div className="grid gap-6">
-          <SkeletonBlock className="h-9 w-5/6 md:h-10" />
+    <RouteSkeleton className="min-h-screen">
+      <div className="container pt-24 pb-16 sm:pt-28 sm:pb-24">
+        <div className="grid gap-6 border-b border-zinc-800 pb-8">
+          <SkeletonBlock className="h-4 w-1/3" />
+          <SkeletonHeading />
+          <SkeletonText />
+          <SkeletonBlock className="h-4 w-40" />
+        </div>
+        <div className="grid gap-6 py-12 pl-6 sm:pl-10">
+          <SkeletonBlock className="h-7 w-3/4" />
+          <SkeletonText />
           <SkeletonText />
         </div>
-        {['w-2/3', 'w-1/2', 'w-3/5'].map((width) => (
-          <div key={width} className="grid gap-4">
-            <div className="border-b border-gray-700 pb-2">
-              <SkeletonBlock className={`h-7 md:h-9 ${width}`} />
-            </div>
-            <SkeletonText />
-            <SkeletonText className="w-11/12" />
-          </div>
-        ))}
       </div>
     </RouteSkeleton>
   )

@@ -1,6 +1,11 @@
 {
   "loadingState": "Loading…",
   "blogPage": {
+    "blog": "Blog",
+    "breadcrumbLabel": "Breadcrumb",
+    "readingTime": "{minutes} min read",
+    "backToBlog": "Back to the blog",
+    "relatedArticles": "More articles",
     "title": "The Oblivion Tattoo blog",
     "lead": "On tattoos and piercings, from our studio in Chișinău.",
     "description": "Our artists answer questions they hear before a session and explain how to care for your tattoo or piercing afterwards.",
@@ -826,7 +831,7 @@
   },
   "coursesPage": {
     "hero": {
-      "title": "Tattoo, permanent makeup and piercing courses in Chișinău",
+      "title": "Tattoo artist training, permanent makeup and piercing courses in Chișinău",
       "lead": "Learn tattooing, permanent makeup or piercing from scratch at Oblivion Tattoo. Compare the programmes and choose the course that suits you.",
       "compare": "Compare courses",
       "cardCta": "Book a place",

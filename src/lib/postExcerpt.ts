@@ -25,7 +25,7 @@ export function postExcerpt(html: string) {
   return excerptFromNodes(htmlToDOM(html))
 }
 
-function firstImage(nodes: DOMNode[]): { src: string; alt: string } | undefined {
+export function firstImage(nodes: DOMNode[]): { src: string; alt: string } | undefined {
   for (const node of nodes) {
     if (node.type !== 'tag') continue
     if (node.name === 'img') {

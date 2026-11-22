@@ -9,11 +9,14 @@ import FadeContent from '@/shared/FadeContent'
 import { FaqSection } from '@/shared/FaqSection'
 import { LoadingStatus } from '@/shared/LoadingSkeleton'
 import FoldText from '@/shared/FoldText'
+import { ScrollCtaLink } from '@/shared/ScrollCtaLink'
 import { BackgroundLines } from '../ui/BackgroundLines'
 import { BlogPosts } from '../ui/BlogPosts'
 import { FeaturedSkeleton } from '../ui/FeaturedSkeleton'
 
 export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog')
+
+const articlesId = 'articles'
 
 export default async function BlogPage({ params }: { params: Promise<{ locale: AppLocale }> }) {
   const { locale } = await params
@@ -34,7 +37,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: A
               <p className="text-base/relaxed text-pretty text-zinc-300">{t('description')}</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
-              <CtaLink href="#articles">{t('browse')}</CtaLink>
+              <ScrollCtaLink targetId={articlesId}>{t('browse')}</ScrollCtaLink>
               <CtaLink href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer">
                 {t('consult')}
               </CtaLink>
@@ -42,7 +45,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: A
           </div>
         </FadeContent>
       </section>
-      <section id="articles" aria-labelledby="articles-title" className="scroll-mt-24">
+      <section id={articlesId} aria-labelledby="articles-title" tabIndex={-1} className="scroll-mt-24">
         <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-6 py-10 sm:gap-8 sm:py-14 lg:pb-20">
           <h2 id="articles-title" className="text-3xl font-bold tracking-tight sm:text-4xl">
             <FoldText text={t('articles')} />

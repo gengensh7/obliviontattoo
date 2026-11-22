@@ -189,6 +189,13 @@ excerpts and the archive follows the cover story in a responsive grid. The reade
 and shared contacts follow the articles. The blog uses the course hero type scale,
 Fold Text on headings and Fade Content on each section.
 
+Individual blog posts use a compact editorial header with breadcrumbs, the localized
+introduction, publication date, estimated reading time and an embedded cover when
+available. The article spans the standard container, with a gutter for Aceternity Tracing Beam.
+Its red tip follows the text at 35% of the viewport height and becomes a static graphite
+rail with reduced motion. The footer links to the blog, consultation and up to two
+other published posts available in the reader's language.
+
 ## Components and Interactivity
 
 Reuse components from `src/components/ui/`, shared sections, and existing galleries.
@@ -247,7 +254,7 @@ They use the existing CSS pulse and stay still with reduced motion.
 The home sketches and portfolio, tattoo portfolio, permanent makeup gallery,
 gallery feed, and featured blog article stream independently. The gallery reserves
 six 4:5 frames for its first batch and keeps earlier photos visible during pagination.
-The article skeleton follows the heading and body of the stored article HTML.
+The article skeleton follows the editorial header and reading column.
 
 ## Copy and Scope
 

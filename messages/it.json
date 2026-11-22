@@ -1,6 +1,11 @@
 {
   "loadingState": "Caricamento…",
   "blogPage": {
+    "blog": "Blog",
+    "breadcrumbLabel": "Percorso di navigazione",
+    "readingTime": "{minutes} min di lettura",
+    "backToBlog": "Torna al blog",
+    "relatedArticles": "Altri articoli",
     "title": "Il blog di Oblivion Tattoo",
     "lead": "Tatuaggi e piercing dal nostro studio di Chișinău.",
     "description": "Gli artisti rispondono alle domande che ricevono prima della seduta e spiegano come prendersi cura del tatuaggio o del piercing.",
@@ -826,7 +831,7 @@
   },
   "coursesPage": {
     "hero": {
-      "title": "Corsi di tatuaggio, trucco permanente e piercing a Chișinău",
+      "title": "Corsi per diventare tatuatore, di trucco permanente e di piercing a Chișinău",
       "lead": "Impara da zero a tatuare, a eseguire il trucco permanente o a fare piercing da Oblivion Tattoo. Confronta i programmi e scegli il tuo corso.",
       "compare": "Confronta i corsi",
       "cardCta": "Iscriviti",

@@ -9,7 +9,7 @@ import { courses } from '@/lib/courses'
 import { cn } from '@/lib/utils'
 import FadeContent from '@/shared/FadeContent'
 import FoldText from '@/shared/FoldText'
-import { CompareCoursesLink } from './CompareCoursesLink'
+import { ScrollCtaLink } from '@/shared/ScrollCtaLink'
 import { CourseSparkles } from './CourseSparkles'
 
 const benefits = [
@@ -49,7 +49,9 @@ export async function HeroSection({ locale }: { locale: string }) {
                 <CtaLink href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer" className="grow px-3 sm:grow-0 sm:px-5">
                   {t('cta')}
                 </CtaLink>
-                <CompareCoursesLink label={t('hero.compare')} targetId={comparisonId} />
+                <ScrollCtaLink targetId={comparisonId} className="grow px-3 sm:grow-0 sm:px-5">
+                  {t('hero.compare')}
+                </ScrollCtaLink>
               </div>
               <ul className="flex flex-wrap gap-1.5 text-xs/5 text-zinc-200 sm:gap-2 sm:text-sm/5">
                 {benefits.map(({ key, Icon }) => (

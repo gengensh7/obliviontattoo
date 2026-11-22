@@ -610,3 +610,65 @@ button {
     }
   }
 }
+
+/* Editorial rhythm for the original HTML stored with each blog translation. */
+.article-copy {
+  @apply min-w-0 text-base/7 text-zinc-300 selection:bg-red-900 selection:text-white sm:text-lg/8;
+}
+
+.article-copy,
+.article-copy :where(article, section, div, header, footer, blockquote, figure, li) {
+  @apply space-y-4;
+}
+
+.article-copy :where(* + section, * + div:has(> h2:first-child), * + h2) {
+  @apply pt-5 sm:pt-7;
+}
+
+.article-copy :where(* + h3, * + h4) {
+  @apply pt-2;
+}
+
+.article-copy :where(h1, h2, h3, h4, h5, h6) {
+  @apply scroll-mt-24 font-bold text-pretty text-zinc-50;
+}
+
+.article-copy :where(h1, h2) {
+  @apply text-2xl/snug tracking-tight;
+}
+
+.article-copy :where(h3) {
+  @apply text-xl/snug tracking-tight;
+}
+
+.article-copy :where(ul, ol) {
+  @apply space-y-2 pl-6;
+}
+
+.article-copy ul { @apply list-disc; }
+.article-copy ol { @apply list-decimal; }
+.article-copy li { @apply pl-1 marker:font-bold marker:text-brand-red; }
+.article-copy strong { @apply font-bold text-zinc-100; }
+.article-copy em { @apply italic; }
+.article-copy a, .article-cover a {
+  @apply text-zinc-100 underline decoration-brand-red underline-offset-4 hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red;
+}
+
+.article-copy blockquote {
+  @apply border-l-2 border-brand-red py-1 pl-5 text-lg/8 text-zinc-200 italic;
+}
+
+.article-copy :where(img, video), .article-cover :where(img:not(.object-cover), video) {
+  @apply block h-auto max-w-full rounded-sm;
+}
+
+.article-cover :where(img:not(.object-cover), video) { @apply max-h-80 object-contain sm:max-h-96; }
+
+.article-copy :where(iframe, embed, object) { @apply max-w-full; }
+.article-copy :where(figcaption, caption), .article-cover figcaption { @apply py-2 text-sm/6 text-zinc-400; }
+.article-copy table { @apply w-full border-collapse text-left text-base/6; }
+.article-copy :where(th, td) { @apply border-b border-zinc-800 px-3 py-2 align-top; }
+.article-copy th { @apply bg-zinc-900 font-bold text-zinc-100; }
+.article-copy pre { @apply max-w-full overflow-x-auto rounded-sm bg-zinc-900 p-4 text-sm/6; }
+.article-copy code { @apply font-mono text-zinc-200; }
+.article-copy hr { @apply border-zinc-800; }
