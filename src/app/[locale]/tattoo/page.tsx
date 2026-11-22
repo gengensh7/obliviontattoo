@@ -33,11 +33,9 @@ export default async function TattooPage({ params }: { params: Promise<{ locale:
             <CtaLink href={getPathname({ locale, href: '/contacts' })} className="w-full md:w-auto">
               {t('booking.contacts')}
             </CtaLink>
-            {locale === 'ru' && (
-              <CtaLink href="/blog/uhod-za-tatu-posle-sansa-oblivion-tattoo" className="w-full md:w-auto">
-                {t('booking.care')}
-              </CtaLink>
-            )}
+            <CtaLink href={getPathname({ locale, href: '/blog/uhod-za-tatu-posle-sansa-oblivion-tattoo' })} className="w-full md:w-auto">
+              {t('booking.care')}
+            </CtaLink>
           </div>
         </FaqSection>
       </FadeContent>

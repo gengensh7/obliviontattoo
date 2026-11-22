@@ -1,29 +1,29 @@
-import dayjs from 'dayjs'
-import { Calendar } from 'lucide-react'
-import Image from 'next/image'
-import { CtaLink } from '@/components/ui/cta-link'
+import { getTranslations } from 'next-intl/server'
 import { getBlogPosts } from '@/lib/cachedPrisma'
-import { postExcerpt } from '@/lib/postExcerpt'
+import { getPathname } from '@/i18n/navigation'
+import type { AppLocale } from '@/i18n/routing'
+import { ArticleCard } from './ArticleCard'
+import { SearchableArticles } from './SearchableArticles'
 
-export async function BlogPosts() {
-  const posts = await getBlogPosts()
+export async function BlogPosts({ locale }: { locale: AppLocale }) {
+  const [posts, t] = await Promise.all([getBlogPosts(locale), getTranslations('blogPage')])
+  const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'Europe/Chisinau' })
+  const articles = posts.map(post => ({
+    title: post.title,
+    slug: post.slug,
+    href: getPathname({ locale, href: `/blog/${post.slug}` }),
+    excerpt: post.excerpt,
+    cover: post.cover,
+    dateTime: post.createdAt.toISOString(),
+    dateLabel: date.format(post.createdAt)
+  }))
+  const labels = { featured: t('featured'), read: t('read') }
+
+  if (!articles.length) return <p className="text-zinc-300">{t('empty')}</p>
+  if (articles.length === 1) return <ArticleCard article={articles[0]} labels={labels} featured />
 
   return (
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-      {posts.map((post) => (
-        <article key={post.id} className="flex flex-col gap-6 rounded-md border border-gray-200 p-4">
-          <Image className="mx-auto" width={64} height={91} src="/logo.svg" alt="Logo Oblivion Tattoo" unoptimized />
-          <h3 className="line-clamp-2 text-2xl font-bold text-white">{post.title}</h3>
-          <p className="line-clamp-6 text-white">{postExcerpt(post.content)}</p>
-          <div className="flex items-center gap-2">
-            <Calendar className="size-5 shrink-0 text-red-500" />
-            <span className="text-white">{dayjs(post.createdAt).format('DD.MM.YYYY')}</span>
-          </div>
-          <CtaLink target="_blank" href={`/blog/${post.slug}`} data-gtm="blog-read-more" className="w-full">
-            Читать далее
-          </CtaLink>
-        </article>
-      ))}
-    </div>
+    <SearchableArticles articles={articles}
+      labels={{ ...labels, search: t('search'), noResults: t('noResults'), clear: t('clear') }} />
   )
 }

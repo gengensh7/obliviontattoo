@@ -179,6 +179,16 @@ in opposite phases and pause their idle motion on hover or visible keyboard
 focus. Aceternity 3D Card Effect follows the mouse. Reduced motion keeps the
 cards still. The original photos open in the shared PhotoSwipe lightbox.
 
+The blog opens with a full-height, two-column masthead over Aceternity Background Lines.
+Graphite and burgundy dashes travel along the original paths and fade away.
+Reduced motion leaves the dark background still. Both hero actions use CtaLink. The newest post pairs a full-width split cover with its date,
+title and excerpt. Embedded article images supply the cover when available.
+Otherwise the cover uses a studio photograph and logo. On phones, the cover
+sits above the text. With multiple posts, a search field filters titles and
+excerpts and the archive follows the cover story in a responsive grid. The reader FAQ
+and shared contacts follow the articles. The blog uses the course hero type scale,
+Fold Text on headings and Fade Content on each section.
+
 ## Components and Interactivity
 
 Reuse components from `src/components/ui/`, shared sections, and existing galleries.

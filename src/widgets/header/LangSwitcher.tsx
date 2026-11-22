@@ -18,9 +18,8 @@ export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel:
       const segments = pathname.split('/')
       if (routing.locales.includes(segments[1] as AppLocale)) segments.splice(1, 1)
       const path = segments.join('/') || '/'
-      const href = newLocale !== routing.defaultLocale && (path === '/blog' || path.startsWith('/blog/')) ? '/' : path
       const query = path === '/gallery' ? window.location.search : ''
-      router.push(getPathname({ locale: newLocale, href }) + query)
+      router.push(getPathname({ locale: newLocale, href: path }) + query)
     })
   }
 

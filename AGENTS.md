@@ -131,7 +131,7 @@ When integrating components from React Bits, 21st.dev, Magic UI, Aceternity UI o
 
 Russian (`ru`) is the default language and has no URL prefix. Other locales use `/ro`, `/uk`, `/it`, and `/en`.
 `src/i18n/routing.ts` holds routing configuration. `src/proxy.ts` handles redirects and localization.
-The blog is available in Russian only. Preserve the existing proxy restrictions.
+The blog uses shared slugs across locales. Store article translations in the language-specific columns of `BlogPost`. List and index only published posts with content for the requested locale.
 Add UI text through the translation files for all five locales.
 Use the existing navigation and metadata helpers.
 

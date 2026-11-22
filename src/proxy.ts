@@ -5,10 +5,6 @@ import { routing } from './i18n/routing'
 
 const intlMiddleware = createMiddleware(routing)
 
-const BLOG_ONLY_LOCALE = 'ru'
-const LOCALES = routing.locales.join('|')
-const BLOG_PATH_RE = new RegExp(`^/(?:${LOCALES})/blog(?:/|$)`)
-
 export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
   const defaultLocalePrefix = `/${routing.defaultLocale}`
@@ -17,16 +13,6 @@ export function proxy(req: NextRequest) {
     const url = req.nextUrl.clone()
     url.pathname = pathname.slice(defaultLocalePrefix.length) || '/'
     return NextResponse.redirect(url, 308)
-  }
-
-  if (BLOG_PATH_RE.test(pathname)) {
-    const locale = pathname.split('/')[1]
-    if (locale && locale !== BLOG_ONLY_LOCALE) {
-      const url = req.nextUrl.clone()
-      url.pathname = `/${locale}`
-      url.search = ''
-      return NextResponse.redirect(url, 301)
-    }
   }
 
   return intlMiddleware(req)

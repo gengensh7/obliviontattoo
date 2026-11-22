@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 import { getBlogPostsForSitemap } from '@/lib/cachedPrisma'
-import { localizedUrl, siteOrigin } from '@/lib/siteUrl'
+import { buildLanguageAlternates, localizedUrl } from '@/lib/siteUrl'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = await getBlogPostsForSitemap()
@@ -16,16 +16,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...pages,
-    {
-      url: `${siteOrigin}/blog`,
-      changeFrequency: 'weekly',
+    ...routing.locales.map(locale => ({
+      url: localizedUrl(locale, '/blog'),
+      alternates: { languages: buildLanguageAlternates('/blog') },
+      changeFrequency: 'weekly' as const,
       priority: 0.6
-    },
-    ...blogPosts.map((post) => ({
-      url: `${siteOrigin}/blog/${post.slug}`,
-      lastModified: post.updatedAt,
-      changeFrequency: 'monthly' as const,
-      priority: 0.5
-    }))
+    })),
+    ...blogPosts.flatMap(post => {
+      const path = `/blog/${post.slug}`
+      const languages = buildLanguageAlternates(path, post.locales)
+      return post.locales.map(locale => ({
+        url: localizedUrl(locale, path),
+        alternates: { languages },
+        lastModified: post.updatedAt,
+        changeFrequency: 'monthly' as const,
+        priority: 0.5
+      }))
+    })
   ]
 }

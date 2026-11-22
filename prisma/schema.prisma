@@ -31,10 +31,38 @@ model Image {
 }
 
 model BlogPost {
-  id        Int      @id @default(autoincrement())
-  title     String
-  slug      String   @unique
-  content   String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id             Int      @id @default(autoincrement())
+  title          String
+  slug           String   @unique
+  content        String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  isPublished    Boolean  @default(false)
+  excerpt        String?
+  seoTitle       String?
+  seoDescription String?
+
+  titleRo          String?
+  excerptRo        String?
+  contentRo        String?
+  seoTitleRo       String?
+  seoDescriptionRo String?
+
+  titleUk          String?
+  excerptUk        String?
+  contentUk        String?
+  seoTitleUk       String?
+  seoDescriptionUk String?
+
+  titleIt          String?
+  excerptIt        String?
+  contentIt        String?
+  seoTitleIt       String?
+  seoDescriptionIt String?
+
+  titleEn          String?
+  excerptEn        String?
+  contentEn        String?
+  seoTitleEn       String?
+  seoDescriptionEn String?
 }

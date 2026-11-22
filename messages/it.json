@@ -1,4 +1,35 @@
 {
+  "blogPage": {
+    "title": "Il blog di Oblivion Tattoo",
+    "lead": "Tatuaggi e piercing dal nostro studio di Chișinău.",
+    "description": "Gli artisti rispondono alle domande che ricevono prima della seduta e spiegano come prendersi cura del tatuaggio o del piercing.",
+    "browse": "Leggi gli articoli",
+    "consult": "Prenota una consulenza",
+    "articles": "Articoli dello studio",
+    "featured": "In primo piano",
+    "read": "Leggi l’articolo",
+    "search": "Cerca per titolo o descrizione",
+    "noResults": "Nessun articolo corrisponde alla ricerca.",
+    "clear": "Cancella la ricerca",
+    "empty": "Non ci sono ancora articoli.",
+    "faq": {
+      "title": "Domande dei lettori",
+      "items": [
+        {
+          "question": "Dove trovo i consigli per la cura di un tatuaggio appena fatto?",
+          "answer": "Apri la guida alla cura del tatuaggio nella sezione articoli. Troverai i consigli degli artisti per le diverse fasi della guarigione."
+        },
+        {
+          "question": "Cosa posso chiedere all’artista prima della seduta?",
+          "answer": "Descrivi la tua idea e la zona del corpo che hai scelto. Se hai un bozzetto o immagini di riferimento, allegali e chiedi come prepararti alla seduta."
+        },
+        {
+          "question": "Come posso fare una domanda su un articolo?",
+          "answer": "Scrivi allo studio su Telegram. Invia il link all’articolo e indica il consiglio di cui vorresti parlare con l’artista."
+        }
+      ]
+    }
+  },
   "metadata": {
     "homePageMetadata": {
       "title": "Oblivion Tattoo, studio di tatuaggi a Chișinău",

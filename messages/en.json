@@ -1,4 +1,35 @@
 {
+  "blogPage": {
+    "title": "The Oblivion Tattoo blog",
+    "lead": "On tattoos and piercings, from our studio in Chișinău.",
+    "description": "Our artists answer questions they hear before a session and explain how to care for your tattoo or piercing afterwards.",
+    "browse": "Browse articles",
+    "consult": "Book a consultation",
+    "articles": "Studio articles",
+    "featured": "Cover story",
+    "read": "Read article",
+    "search": "Search by title or description",
+    "noResults": "No articles match your search.",
+    "clear": "Clear search",
+    "empty": "There are no articles yet.",
+    "faq": {
+      "title": "Reader questions",
+      "items": [
+        {
+          "question": "Where can I find advice on caring for a new tattoo?",
+          "answer": "Open the tattoo aftercare guide in the articles section. It covers the studio artists’ advice for each stage of healing."
+        },
+        {
+          "question": "What can I ask my artist before a session?",
+          "answer": "Describe the piece you have in mind and where you want it placed. Include any sketches or reference images and ask how to prepare for your session."
+        },
+        {
+          "question": "How do I ask about something I read?",
+          "answer": "Message the studio on Telegram. Include the article link and mention the advice you would like to discuss with an artist."
+        }
+      ]
+    }
+  },
   "metadata": {
     "homePageMetadata": {
       "title": "Oblivion Tattoo studio in Chișinău",

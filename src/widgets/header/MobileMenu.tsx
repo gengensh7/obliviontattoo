@@ -39,8 +39,6 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
     return pathname === full || pathname.startsWith(full + '/')
   }
 
-  const filteredLinks = links.filter((l) => !(locale !== 'ru' && l.href.startsWith('/blog')))
-
   return (
     <div className="flex items-center lg:hidden">
       <Sheet>
@@ -71,7 +69,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
                 </Link>
               </SheetClose>
 
-              {filteredLinks.map((link) => (
+              {links.map((link) => (
                 <SheetClose key={link.href} asChild>
                   <Link
                     href={withLocale(link.href)}

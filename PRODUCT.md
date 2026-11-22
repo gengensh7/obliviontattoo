@@ -40,7 +40,7 @@ a blog, and a contact page with a map.
 
 - Russian is the default language and has no URL prefix. Other locales use `/ro`, `/uk`, `/it`, and `/en`.
   UI text is stored in `messages/{ru,ro,uk,it,en}.json`.
-- The blog is available in Russian only. Preserve the restrictions in `src/proxy.ts`.
+- The blog is available in all five site languages. Switching languages keeps the reader on the same article.
 - Use the existing contact links from `src/lib/contactLinks.ts`.
   Keep the current Instagram and Telegram account names regardless of the website name.
 - Preserve routes, integrations, `data-gtm` analytics attributes, authentic photographs,

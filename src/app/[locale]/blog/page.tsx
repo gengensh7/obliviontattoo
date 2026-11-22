@@ -1,45 +1,62 @@
+import { getTranslations } from 'next-intl/server'
 import { Suspense } from 'react'
-import { routing } from '@/i18n/routing'
+import { CtaLink } from '@/components/ui/cta-link'
+import type { AppLocale } from '@/i18n/routing'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { withSeo } from '@/lib/metadata'
+import { ContactsSection } from '@/shared/ContactsSection'
+import FadeContent from '@/shared/FadeContent'
+import { FaqSection } from '@/shared/FaqSection'
+import FoldText from '@/shared/FoldText'
+import { BackgroundLines } from './ui/BackgroundLines'
 import { BlogPosts } from './ui/BlogPosts'
+import { FeaturedSkeleton } from './ui/FeaturedSkeleton'
 
-export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog', [routing.defaultLocale])
+export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog')
 
-export default async function BlogPage() {
+export default async function BlogPage({ params }: { params: Promise<{ locale: AppLocale }> }) {
+  const { locale } = await params
+  const [t, contact] = await Promise.all([getTranslations('blogPage'), getTranslations('homePage.contactsSection')])
+
   return (
-    <main className="flex flex-col">
-      <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30">
-        <div className="container flex flex-col gap-10">
-          <div className="flex flex-col gap-6 text-white">
-            <h1 className="text-center text-3xl font-bold break-all text-white sm:text-4xl">Наш Блог: Актуальные Статьи и Глубокий Анализ</h1>
-            <p className="text-center text-xl break-all text-gray-200">
-              Добро пожаловать в блог, где мы делимся экспертными знаниями, последними новостями и подробными руководствами по всем аспектам. Мы
-              стремимся предоставлять ценный контент, который поможет вам расти и развиваться.
-            </p>
-            <h2 className="text-center">Последние Публикации, Которые Вы Не Должны Пропустить</h2>
+    <main className="bg-zinc-950 text-white">
+      <section aria-labelledby="blog-title" className="relative isolate grid min-h-screen items-center overflow-hidden border-b border-white/15 bg-linear-to-br from-zinc-950 via-zinc-950 to-red-950/40 pt-32 pb-12 sm:pb-16">
+        <BackgroundLines />
+        <FadeContent effect="focus" trigger="mount" duration={0.52} initialOpacity={0.8}
+          className="container grid items-center gap-6 lg:grid-cols-12 lg:gap-8">
+          <h1 id="blog-title" className="service-hero-title font-bold tracking-tight text-balance lg:col-span-7">
+            <FoldText text={t('title')} />
+          </h1>
+          <div className="flex max-w-xl flex-col items-start gap-5 lg:col-span-5 lg:gap-6">
+            <div className="grid gap-2">
+              <p className="text-xl/snug text-balance text-white sm:text-2xl/snug">{t('lead')}</p>
+              <p className="text-base/relaxed text-pretty text-zinc-300">{t('description')}</p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <CtaLink href="#articles">{t('browse')}</CtaLink>
+              <CtaLink href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer">
+                {t('consult')}
+              </CtaLink>
+            </div>
           </div>
-
-          <Suspense
-            fallback={
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3" aria-hidden="true">
-                {[...Array(6)].map((_, index) => (
-                  <div className="h-100 animate-pulse rounded-md border border-zinc-700 bg-zinc-800" key={index} />
-                ))}
-              </div>
-            }
-          >
-            <BlogPosts />
-          </Suspense>
-
-          <div className="flex flex-col gap-6 text-white">
-            <h3 className="text-lg font-bold">Почему Наш Блог Полезен Для Вас?</h3>
-            <p>
-              Мы предлагаем уникальный контент, написанный экспертами, чтобы предоставить вам актуальную и проверенную информацию. Наши статьи помогут
-              вам.
-            </p>
-          </div>
-        </div>
+        </FadeContent>
       </section>
+      <section id="articles" aria-labelledby="articles-title" className="scroll-mt-24">
+        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container grid gap-6 py-10 sm:gap-8 sm:py-14 lg:pb-20">
+          <h2 id="articles-title" className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <FoldText text={t('articles')} />
+          </h2>
+          <Suspense fallback={<FeaturedSkeleton />}>
+            <BlogPosts locale={locale} />
+          </Suspense>
+        </FadeContent>
+      </section>
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3}>
+        <FaqSection titleId="blog-faq-title" title={t('faq.title')} items={t.raw('faq.items')} className="py-16 lg:py-20" />
+      </FadeContent>
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3}>
+        <ContactsSection title={<FoldText text={contact('title')} />} />
+      </FadeContent>
     </main>
   )
 }

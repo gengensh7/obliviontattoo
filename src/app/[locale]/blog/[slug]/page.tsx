@@ -1,6 +1,6 @@
 import parse from 'html-react-parser'
 import { Metadata } from 'next'
-import { Locale } from 'next-intl'
+import type { AppLocale } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
 import { getBlogPost } from '@/lib/cachedPrisma'
 import { buildBlogPostJsonLd } from '@/lib/jsonld'
@@ -8,7 +8,7 @@ import { buildBlogPostMetadata } from '@/lib/metadata'
 
 type MetadataProps = {
   params: Promise<{
-    locale: Locale
+    locale: AppLocale
     slug: string
   }>
 }
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
 
 type Props = {
   params: Promise<{
-    locale: Locale
+    locale: AppLocale
     slug: string
   }>
 }
@@ -28,7 +28,7 @@ type Props = {
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params
 
-  const post = await getBlogPost(slug)
+  const post = await getBlogPost(slug, locale)
 
   if (!post) {
     notFound()
@@ -50,6 +50,7 @@ export default async function BlogPostPage({ params }: Props) {
           __html: JSON.stringify(
             buildBlogPostJsonLd({
               title: post.title,
+              description: post.excerpt,
               slug: post.slug,
               locale,
               createdAt: post.createdAt.toISOString(),

@@ -3,20 +3,13 @@ import type { Locale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { getBlogPost } from '@/lib/cachedPrisma'
-import { routing } from '@/i18n/routing'
-import { localizedUrl, siteOrigin } from '@/lib/siteUrl'
-import { postExcerpt } from '@/lib/postExcerpt'
+import type { AppLocale } from '@/i18n/routing'
+import { buildLanguageAlternates, localizedUrl, siteOrigin } from '@/lib/siteUrl'
 
 const baseMetadata: Metadata = {
   metadataBase: new URL(siteOrigin),
   applicationName: 'Oblivion Tattoo',
   robots: { index: true, follow: true }
-}
-
-function buildLanguageAlternates(path = '', locales: readonly string[] = routing.locales) {
-  const languages = Object.fromEntries(locales.map((locale) => [locale, localizedUrl(locale, path)]))
-  languages['x-default'] = localizedUrl(routing.defaultLocale, path)
-  return languages
 }
 
 const socialLocales: Record<string, string> = {
@@ -98,27 +91,26 @@ export function withSeo(namespace: string, path?: string, alternateLocales?: rea
   }
 }
 
-type BuildBlogPostMetadataParams = { locale: Locale; slug: string }
+type BuildBlogPostMetadataParams = { locale: AppLocale; slug: string }
 
 export async function buildBlogPostMetadata({ locale, slug }: BuildBlogPostMetadataParams): Promise<Metadata> {
-  const post = await getBlogPost(slug)
+  const post = await getBlogPost(slug, locale)
   if (!post) notFound()
 
-  const description = postExcerpt(post.content) || post.title
   const path = `/blog/${post.slug}`
   const canonicalUrl = localizedUrl(locale, path)
 
   return {
     ...baseMetadata,
-    title: post.title,
-    description,
-    alternates: { canonical: canonicalUrl, languages: buildLanguageAlternates(path, [routing.defaultLocale]) },
+    title: post.seoTitle,
+    description: post.seoDescription,
+    alternates: { canonical: canonicalUrl, languages: buildLanguageAlternates(path, post.locales) },
     ...buildSocialMetadata({
       locale,
       type: 'article',
       url: canonicalUrl,
-      openGraphTitle: post.title,
-      openGraphDescription: description,
+      openGraphTitle: post.seoTitle,
+      openGraphDescription: post.seoDescription,
       image: `${siteOrigin}/og_image.png`
     })
   }
