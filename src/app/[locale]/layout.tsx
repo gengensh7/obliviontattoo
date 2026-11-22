@@ -37,7 +37,7 @@ export default async function LocaleLayout({ children }: LayoutProps) {
   const locale = await getLocale()
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <GoogleTagManager gtmId="GTM-5M92WL6J" />
 
       <body className={`${roboto.variable} ${montserrat.variable}`}>

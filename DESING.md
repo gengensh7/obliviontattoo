@@ -58,6 +58,17 @@ proportions and open in the shared PhotoSwipe lightbox. The gallery link sits
 with the section introduction. Reduced motion skips the scroll and reflow
 animations.
 
+The gallery opens with a full-height introduction that pairs a Montserrat
+headline with the studio description, an anchor to the work and Telegram booking.
+Aceternity Dotted Glow fades into the dark gallery surface. The photographs
+follow the document scroll in groups of six, arranged in one, two or three columns.
+Each group tracks its own scroll progress so new photographs append in place.
+On phones the photographs remain still. Reduced motion also freezes the dotted
+background and uses immediate anchor navigation. Photos open in PhotoSwipe.
+The shared FAQ accordion follows the photo feed, then the studio contact section.
+As on `/course`, headings use Fold Text. The introduction comes into focus on
+mount and each later section reveals once on scroll. Reduced motion shows them immediately.
+
 The `/tattoo` hero fills at least the viewport height and leads with a large
 Montserrat headline, standard red CTA links for booking and the gallery, and
 the starting price. The styles card pairs a studio

@@ -740,16 +740,32 @@
     }
   },
   "galleryPage": {
-    "pagination": {
-      "label": "Paginile galeriei",
-      "previous": "Înapoi",
-      "next": "Înainte"
+    "faq": {
+      "title": "Întrebări despre lucrările studioului",
+      "items": [
+        {
+          "question": "Cum îi arăt artistului o lucrare care îmi place?",
+          "answer": "Trimite o captură de ecran pe Telegramul studioului. Spune ce ți-a atras atenția: motivul, liniile, culoarea sau locul tatuajului."
+        },
+        {
+          "question": "Se poate adapta schița la ideea mea?",
+          "answer": "Da. Arată-i artistului un exemplu din galerie sau un desen propriu. La consultație puteți alege detaliile pe care vrei să le păstrezi și cum să le adaptați la zona dorită."
+        },
+        {
+          "question": "Cum aflu cât ar costa un tatuaj asemănător?",
+          "answer": "Trimite fotografia și menționează dimensiunea aproximativă în centimetri, zona corpului și culorile dorite. Artistul îți poate estima prețul pe baza acestor detalii."
+        }
+      ]
     },
+    "viewWorks": "Vezi lucrările",
+    "loading": "Se încarcă fotografiile…",
+    "showMore": "Arată mai multe",
+    "empty": "Galeria încă nu conține fotografii.",
     "seo": {
       "title": "Galeria de tatuaje Oblivion Tattoo din Chișinău",
       "description": "Portofoliu de tatuaje profesionale al studioului Oblivion Tattoo din Chișinău: minimalism, realism și alte stiluri. Vezi cele mai noi lucrări ale maeștrilor noștri."
     },
-    "title": "Galeria de tatuaje Oblivion Tattoo",
+    "title": "Galeria de tatuaje <studio>Oblivion Tattoo</studio>",
     "subtitle": "Lucrări recente ale maeștrilor noștri din Chișinău",
     "text": "Am adunat cele mai bune fotografii cu tatuaje din diferite stiluri: de la minimalism la realism. Derulează mai jos pentru a te inspira și a alege o idee pentru viitorul tău tatuaj."
   },

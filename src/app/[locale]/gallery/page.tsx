@@ -1,55 +1,63 @@
+import { hasLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { notFound } from 'next/navigation'
 import { Suspense } from 'react'
-import { Skeleton } from '@/components/ui/skeleton'
-import { buildMetadata } from '@/lib/metadata'
-import { resolveGalleryPage } from '@/lib/paginationPrisma'
-import { galleryPath } from '@/lib/galleryPath'
+import { routing, type AppLocale } from '@/i18n/routing'
+import { getGalleryImages } from '@/lib/galleryImages'
+import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { GalleryGrid } from './ui/GalleryGrid'
+import FadeContent from '@/shared/FadeContent'
+import { FaqSection } from '@/shared/FaqSection'
+import FoldText from '@/shared/FoldText'
+import { GalleryFeed } from './ui/GalleryFeed'
+import { GalleryHero } from './ui/GalleryHero'
 
-export async function generateMetadata({ params, searchParams }: PageProps<'/[locale]/gallery'>) {
-  const [{ locale }, query] = await Promise.all([params, searchParams])
-  const page = await resolveGalleryPage(query.page)
-  return buildMetadata({ locale, namespace: 'metadata.galleryPageMetadata', path: galleryPath(page), pageNumber: page })
-}
+export const generateMetadata = withSeo('metadata.galleryPageMetadata', '/gallery')
 
-type GallerySearchProps = Pick<PageProps<'/[locale]/gallery'>, 'searchParams'>
-
-async function RequestedGallery({ searchParams }: GallerySearchProps) {
-  const { page } = await searchParams
-  return <GalleryGrid page={await resolveGalleryPage(page)} />
-}
-
-export default async function Gallery({ searchParams }: GallerySearchProps) {
-  const t = await getTranslations('galleryPage')
+async function GalleryPhotos({ locale }: { locale: AppLocale }) {
+  const [initial, t, viewer] = await Promise.all([
+    getGalleryImages(locale),
+    getTranslations('galleryPage'),
+    getTranslations('homePage.portfolioSection')
+  ])
 
   return (
-    <main className="flex min-h-screen flex-col">
-      <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
-        <div className="container flex flex-col gap-10">
-          <div className="flex flex-col gap-6 text-center text-white">
-            <h1 className="text-3xl font-bold text-white sm:text-4xl">{t('title')}</h1>
-            <h2 className="text-xl text-gray-200">{t('subtitle')}</h2>
-            <p className="mx-auto max-w-5xl text-xl text-gray-200">{t('text')}</p>
-          </div>
+    <GalleryFeed
+      key={locale}
+      initial={initial}
+      locale={locale}
+      labels={{ loading: t('loading'), more: t('showMore'), empty: t('empty') }}
+      lightboxLabels={{
+        close: viewer('close'),
+        previous: viewer('previous'),
+        next: viewer('next'),
+        zoom: viewer('zoom'),
+        error: viewer('error')
+      }}
+    />
+  )
+}
 
-          <NuqsAdapter>
-            <Suspense
-              fallback={
-                <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4" aria-hidden="true">
-                  {Array.from({ length: 10 }, (_, index) => (
-                    <Skeleton className="h-105 w-full bg-zinc-800" key={index} />
-                  ))}
-                </div>
-              }
-            >
-              <RequestedGallery searchParams={searchParams} />
-            </Suspense>
-          </NuqsAdapter>
-        </div>
+export default async function Gallery({ params }: PageProps<'/[locale]/gallery'>) {
+  const [{ locale }, t, contact] = await Promise.all([params, getTranslations('galleryPage'), getTranslations('homePage.contactsSection')])
+  if (!hasLocale(routing.locales, locale)) notFound()
+
+  return (
+    <main className="bg-zinc-950 text-white">
+      <GalleryHero />
+      <section id="gallery" aria-label={t('viewWorks')} className="scroll-mt-16">
+        <FadeContent effect="focus" duration={0.44} initialOpacity={0.3} className="container py-10 sm:py-14">
+          <Suspense fallback={<p role="status" className="text-zinc-300">{t('loading')}</p>}>
+            <GalleryPhotos locale={locale} />
+          </Suspense>
+        </FadeContent>
       </section>
-      <ContactsSection />
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3}>
+        <FaqSection titleId="gallery-faq-title" title={t('faq.title')} items={t.raw('faq.items')} className="py-16 lg:py-20" />
+      </FadeContent>
+      <FadeContent effect="focus" duration={0.44} initialOpacity={0.3}>
+        <ContactsSection title={<FoldText text={contact('title')} />} />
+      </FadeContent>
     </main>
   )
 }

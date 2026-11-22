@@ -139,6 +139,8 @@ Use the existing navigation and metadata helpers.
 
 Prisma is server-only and is accessed through `src/lib/prisma.ts` and `src/lib/cachedPrisma.ts`.
 The models are `Image` and `BlogPost`. Caching uses `use cache`, `cacheLife`, and `cacheTag`.
+The gallery renders the first six images on the server. `src/lib/galleryImages.ts`
+also serves `/api/gallery` using the same locale and `(order, id)` cursor ordering.
 Preserve Supabase URLs and image paths, and account for `next.config.ts`.
 Import `SUPABASE_S3_URL` from `src/lib/config.ts` when constructing public Supabase image URLs. Read `NEXT_PUBLIC_SUPABASE_URL_S3` in that config file.
 Keep the contents of `.env*`, passwords, tokens, `DATABASE_URL`, and service-role keys private.

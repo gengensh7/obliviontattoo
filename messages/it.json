@@ -740,16 +740,32 @@
     }
   },
   "galleryPage": {
-    "pagination": {
-      "label": "Pagine della galleria",
-      "previous": "Indietro",
-      "next": "Avanti"
+    "faq": {
+      "title": "Domande sui lavori dello studio",
+      "items": [
+        {
+          "question": "Come posso mostrare al tatuatore un lavoro che mi piace?",
+          "answer": "Invia uno screenshot allo studio su Telegram. Spiega cosa ti ha colpito: il soggetto, le linee, il colore o il punto del corpo in cui è stato realizzato."
+        },
+        {
+          "question": "Si può adattare il disegno alla mia idea?",
+          "answer": "Sì. Mostra al tatuatore un esempio dalla galleria o un tuo disegno. Durante la consulenza potrete scegliere quali dettagli mantenere e come adattarli alla zona del corpo che hai in mente."
+        },
+        {
+          "question": "Come faccio a sapere quanto costerebbe un tatuaggio simile?",
+          "answer": "Invia la foto e indica le dimensioni approssimative in centimetri, la zona del corpo e i colori che desideri. Con questi dettagli il tatuatore potrà darti una stima."
+        }
+      ]
     },
+    "viewWorks": "Guarda i lavori",
+    "loading": "Caricamento delle foto…",
+    "showMore": "Mostra altre foto",
+    "empty": "La galleria non contiene ancora foto.",
     "seo": {
       "title": "Galleria di tatuaggi Oblivion Tattoo a Chisinau",
       "description": "Portfolio di tatuaggi professionali dello studio Oblivion Tattoo a Chisinau: minimalismo, realismo e altri stili. Guarda i lavori più recenti dei nostri artisti."
     },
-    "title": "Galleria dei tatuaggi Oblivion Tattoo",
+    "title": "Galleria dei tatuaggi <studio>Oblivion Tattoo</studio>",
     "subtitle": "Lavori recenti dei nostri artisti a Chisinau",
     "text": "Abbiamo raccolto le migliori foto di tatuaggi in vari stili: dal minimalismo al realismo. Scorri qui sotto per ispirarti e scegliere un’idea per il tuo futuro tatuaggio."
   },

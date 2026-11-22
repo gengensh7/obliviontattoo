@@ -1,13 +1,11 @@
 import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
-import { getBlogPostsForSitemap, getGalleryPageCount } from '@/lib/cachedPrisma'
-import { galleryPath } from '@/lib/galleryPath'
+import { getBlogPostsForSitemap } from '@/lib/cachedPrisma'
 import { localizedUrl, siteOrigin } from '@/lib/siteUrl'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [blogPosts, galleryCount] = await Promise.all([getBlogPostsForSitemap(), getGalleryPageCount()])
-  const galleryPages = Array.from({ length: Math.max(1, galleryCount) }, (_, i) => galleryPath(i + 1))
-  const publicPaths = ['', '/tattoo', '/piercing', '/course', '/permanent', ...galleryPages, '/contacts']
+  const blogPosts = await getBlogPostsForSitemap()
+  const publicPaths = ['', '/tattoo', '/piercing', '/course', '/permanent', '/gallery', '/contacts']
   const pages = routing.locales.flatMap((locale) =>
     publicPaths.map((path) => ({
       url: localizedUrl(locale, path),

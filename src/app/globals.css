@@ -585,3 +585,28 @@ button {
     transform: translateY(-5px) rotateX(1.5deg) rotateY(2deg);
   }
 }
+
+/* Opposing parallax columns follow document scrolling within each six-photo batch. */
+@media (prefers-reduced-motion: no-preference) {
+  html:has(#gallery:target) {
+    @apply scroll-smooth;
+  }
+
+  .gallery-parallax > a {
+    @variant sm {
+      @apply -translate-y-(--gallery-shift);
+    }
+  }
+
+  @media (width >= theme(--breakpoint-sm)) and (width < theme(--breakpoint-lg)) {
+    .gallery-parallax > a:nth-child(even) {
+      @apply translate-y-(--gallery-shift);
+    }
+  }
+
+  .gallery-parallax > a:nth-child(3n + 2) {
+    @variant lg {
+      @apply translate-y-(--gallery-shift);
+    }
+  }
+}

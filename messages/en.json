@@ -740,16 +740,32 @@
     }
   },
   "galleryPage": {
-    "pagination": {
-      "label": "Gallery pages",
-      "previous": "Previous",
-      "next": "Next"
+    "faq": {
+      "title": "Questions about the studio’s work",
+      "items": [
+        {
+          "question": "How can I show an artist a piece I like?",
+          "answer": "Send the studio a screenshot on Telegram. Mention what caught your eye, such as the subject, linework, color or placement."
+        },
+        {
+          "question": "Can the artist adapt a design to my idea?",
+          "answer": "Yes. Show the artist a piece from the gallery or a drawing of your own. During the consultation you can discuss which details to keep and how to fit them to the spot you have in mind."
+        },
+        {
+          "question": "How can I get a price estimate for a similar tattoo?",
+          "answer": "Send the photo along with the approximate size in centimeters, where you want the tattoo and the colors you have in mind. The artist can use those details to estimate the price."
+        }
+      ]
     },
+    "viewWorks": "View the work",
+    "loading": "Loading photos…",
+    "showMore": "Show more",
+    "empty": "There are no photos in the gallery yet.",
     "seo": {
       "title": "Tattoo Gallery Oblivion Tattoo in Chisinau",
       "description": "Portfolio of professional tattoos from Oblivion Tattoo studio in Chisinau: minimalism, realism, and other styles. Check out the latest works of our artists."
     },
-    "title": "Oblivion Tattoo Gallery",
+    "title": "<studio>Oblivion Tattoo</studio> Gallery",
     "subtitle": "Fresh works of our artists in Chisinau",
     "text": "We have collected the best photos of tattoos in various styles: from minimalism to realism. Scroll below to get inspired and choose an idea for your future tattoo."
   },
